@@ -1,0 +1,12 @@
+{
+  "validation": {
+    "exact_cap_not_truncated": 0,
+    "actual_truncated": 1,
+    "count": 207
+  },
+  "calibration-fit": {
+    "exact_cap_not_truncated": 0,
+    "actual_truncated": 2,
+    "count": 1000
+  }
+}

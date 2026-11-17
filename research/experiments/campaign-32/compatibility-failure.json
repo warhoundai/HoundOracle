@@ -1,0 +1,8 @@
+{
+  "worker": "i-0bde64a72482685d1",
+  "stage": "building-local-runtime",
+  "cause": "CMake BLAS detection requires pkg-config; missing system executable. No model inference ran.",
+  "repair": "Add pkg-config/ninja-build to explicit system prerequisites. One bounded repair worker within existing10USD reservation; preserve first failure.",
+  "maximum_workers_amendment": 2,
+  "accuracy_result": null
+}

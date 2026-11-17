@@ -1,0 +1,20 @@
+[
+  {
+    "path": "/workspace/houndoracle-models/minilm-vitc-fever-1920/onnx/model.onnx",
+    "bytes": 328597332,
+    "sha256": "f81c0550e9a8543d4aaf643f939f79479d8870c503003e381ad94e46007c8d48",
+    "reason": "Task-generated reproducible ONNX export; original safetensors retained. Stable1921 untouched."
+  },
+  {
+    "path": "/workspace/houndoracle-models/minilm-vitc-scaled-1935/onnx/model.onnx",
+    "bytes": 328597332,
+    "sha256": "3000a486032be2dceef7ccd98c20d6b3c3985b5dddbfb4c2f831c4d7d99b7920",
+    "reason": "Task-generated reproducible ONNX export; original safetensors retained. Stable1921 untouched."
+  },
+  {
+    "path": "/workspace/houndoracle-models/minilm-fever-1912/onnx/model.onnx",
+    "bytes": 328597332,
+    "sha256": "e6feeda91802e5a2296d459b581389c2ce8f0e7e8a74a13aaba571e420b07b2e",
+    "reason": "Task-generated reproducible ONNX export; original safetensors retained. Stable1921 untouched."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "checkpoint": "deberta-vitc-fever-1963",
+  "checkpoint_manifest": "retained-checkpoint.json",
+  "mapping": "provisional-mapping.json",
+  "threshold": 0.8,
+  "max_length": 256,
+  "truncated_inputs": "MAYBE",
+  "selection": "Fixed after development; independently risk-gated then evaluated once on sealed600",
+  "research_population": "Historical human-labeled VitaminC real-revision claims with supplied evidence and source/event-uniform sampling; no arbitrary web guarantee",
+  "validation": {
+    "locked_rows": 600,
+    "overall_verdict_accuracy": 0.765,
+    "raw_accuracy": 0.84,
+    "definitive_coverage": 0.5366666666666666,
+    "correct_definitive_fraction": 0.49666666666666665,
+    "accepted_precision": 0.9254658385093167,
+    "paired_overall_accuracy_gain_95pct_interval": [
+      0.125,
+      0.20333333333333337
+    ]
+  },
+  "role": "Strongest tested research accuracy/useful-answer configuration; stable1921 remains preserved rollback and default public engine unchanged",
+  "strict99_goal_passed": false,
+  "independent_citation_audit": false,
+  "production_qualified": false,
+  "gemini_advantage_established": false
+}

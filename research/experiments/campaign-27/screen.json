@@ -1,0 +1,98 @@
+{
+  "baseline": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.7777777777777778,
+    "definitive_coverage": 0.6956521739130435,
+    "correct_definitive_fraction": 0.5652173913043478,
+    "selective_risk": 0.1875,
+    "definitive_count": 144,
+    "correct_definitive_count": 117,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 207,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "candidate": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.7729468599033816,
+    "definitive_coverage": 0.6956521739130435,
+    "correct_definitive_fraction": 0.5555555555555556,
+    "selective_risk": 0.20138888888888884,
+    "definitive_count": 144,
+    "correct_definitive_count": 115,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 207,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "provisional_baseline": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.6521739130434783,
+    "definitive_coverage": 0.4106280193236715,
+    "correct_definitive_fraction": 0.37681159420289856,
+    "selective_risk": 0.08235294117647063,
+    "definitive_count": 85,
+    "correct_definitive_count": 78,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 207,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "provisional_candidate": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.6570048309178744,
+    "definitive_coverage": 0.3864734299516908,
+    "correct_definitive_fraction": 0.3671497584541063,
+    "selective_risk": 0.050000000000000044,
+    "definitive_count": 80,
+    "correct_definitive_count": 76,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 207,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "raw_accuracy_delta": -0.004830917874396157,
+  "correct_definitive_delta": -0.009661835748792258,
+  "screen_passed": false,
+  "decision": "reject-before-fresh-risk",
+  "fresh_risk_opened": false,
+  "locked_opened": false,
+  "precision99_qualified": false,
+  "scope": "Reused development screen, cached encoder timings not candidate latency; calibration provisional, citations unaudited; extra encoder inference adds compute."
+}

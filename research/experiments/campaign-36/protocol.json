@@ -1,0 +1,14 @@
+{
+  "hypothesis": "A frozen semantic evaluator may benefit from enforcing the logical correspondence between a proposition and its explicitly negated view, without treating agreement as independent evidence.",
+  "model": "Frozen adapted DeBERTa29",
+  "base_checkpoint_sha256": "c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70",
+  "policy": "One fixed arithmetic mean of original relation scores and negated-view scores with YES/NO swapped, MAYBE unchanged. No sweep or learned weight.",
+  "wrapper": "It is not true that {complete original proposition}",
+  "scope": "Explicitly declared historical propositions only, not unparsed user questions; consistent supplied-evidence entailment setting. Related views are not independent sources.",
+  "inputs": "Same reused207development cases; no fresh or locked inputs",
+  "gate": "Raw accuracy improvement>=.02 over frozen29; raw definitive coverage regression<=.02. No promotion from development.",
+  "calibration": "Raw relation scores unqualified; old calibration cannot be applied to a changed policy.",
+  "resources": "Local CPU2threads, no new cloud spend; at most207new negated model evaluations plus3parity checks. Run after35 to avoid competing CPU training.",
+  "selection": "Single declared policy; not choose between wrapper or aggregation alternatives after seeing results.",
+  "production_qualified": false
+}

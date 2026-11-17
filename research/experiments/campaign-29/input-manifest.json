@@ -1,0 +1,17 @@
+{
+  "model_id": "cross-encoder/nli-deberta-v3-base",
+  "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "initial_weights_sha256": "d8148c6d49e0a7925134294c56326c71fe0ab1dc390e37355e00c7efbb488afa",
+  "inputs_sha256": "79bb3f9a12c806d8cfed9ca4539c10c741e179302613e6710a59376a51b6c392",
+  "training_rows": 6400,
+  "excluded_overlap_components": 0,
+  "fresh_risk_or_locked_included": false,
+  "attribution": [
+    "Schuster, Fisch & Barzilay, Get Your Vitamin C!, NAACL2021",
+    "Wikipedia contributors, applicable CC-BY-SA3.0",
+    "Thorne et al., FEVER, NAACL2018",
+    "SNLI/MultiNLI and cross-encoder model authors; source model card and separate data licenses reviewed"
+  ],
+  "archive_sha256": "ab2656059ec53abbed96102515fb5a93e34dbad413eb3a7585713dc546fb5f68",
+  "archive_bytes": 1458353
+}

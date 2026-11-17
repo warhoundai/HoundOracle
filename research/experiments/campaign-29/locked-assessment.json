@@ -1,0 +1,252 @@
+{
+  "stage": "locked",
+  "count": 600,
+  "conditional80_research_gate": {
+    "threshold": 0.8,
+    "alpha": 0.025,
+    "selected_rows": 322,
+    "selected_groups": 322,
+    "fully_correct_groups": 298,
+    "group_correctness_lower_bound": 0.8911273652411864,
+    "qualified": true,
+    "method": "one-sided Clopper-Pearson on group-any-error events",
+    "assumptions": "Independent/exchangeable sampled components; does not guarantee row-weighted risk for arbitrary group sizes or distribution shift.",
+    "row_weighted_risk_guaranteed": false
+  },
+  "conditional80_research_gate_passed": true,
+  "raw": {
+    "count": 600,
+    "groups": 600,
+    "accuracy_all_decisions": 0.84,
+    "definitive_coverage": 0.7266666666666667,
+    "correct_definitive_fraction": 0.6133333333333333,
+    "selective_risk": 0.15596330275229353,
+    "definitive_count": 436,
+    "correct_definitive_count": 368,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.27731801599657047,
+      "p95": 0.49601501905017353,
+      "p99": 0.5942118805710196
+    },
+    "observed_latency_count": 600,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "selected80": {
+    "count": 600,
+    "groups": 600,
+    "accuracy_all_decisions": 0.765,
+    "definitive_coverage": 0.5366666666666666,
+    "correct_definitive_fraction": 0.49666666666666665,
+    "selective_risk": 0.07453416149068326,
+    "definitive_count": 322,
+    "correct_definitive_count": 298,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.27731801599657047,
+      "p95": 0.49601501905017353,
+      "p99": 0.5942118805710196
+    },
+    "observed_latency_count": 600,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "correctness_calibration": {
+    "eligible": 436,
+    "brier": 0.10255624766081187,
+    "ece_10_fixed_bins": 0.053125440710727743,
+    "reliability_bins": [
+      {
+        "lower": 0.1,
+        "count": 4,
+        "mean_confidence": 0.17942241471548853,
+        "empirical_correctness": 0.25
+      },
+      {
+        "lower": 0.2,
+        "count": 3,
+        "mean_confidence": 0.25623889400736916,
+        "empirical_correctness": 0.3333333333333333
+      },
+      {
+        "lower": 0.30000000000000004,
+        "count": 14,
+        "mean_confidence": 0.35339597215476276,
+        "empirical_correctness": 0.5
+      },
+      {
+        "lower": 0.4,
+        "count": 12,
+        "mean_confidence": 0.45270304493505215,
+        "empirical_correctness": 0.4166666666666667
+      },
+      {
+        "lower": 0.5,
+        "count": 16,
+        "mean_confidence": 0.5466626315548425,
+        "empirical_correctness": 0.4375
+      },
+      {
+        "lower": 0.6000000000000001,
+        "count": 28,
+        "mean_confidence": 0.6524605866123049,
+        "empirical_correctness": 0.5714285714285714
+      },
+      {
+        "lower": 0.7000000000000001,
+        "count": 37,
+        "mean_confidence": 0.7555213104669359,
+        "empirical_correctness": 0.8918918918918919
+      },
+      {
+        "lower": 0.8,
+        "count": 73,
+        "mean_confidence": 0.8581967777093545,
+        "empirical_correctness": 0.7808219178082192
+      },
+      {
+        "lower": 0.9,
+        "count": 249,
+        "mean_confidence": 0.9459653383687585,
+        "empirical_correctness": 0.9678714859437751
+      }
+    ],
+    "risk_coverage": [
+      {
+        "threshold": 0.5,
+        "coverage": 0.6716666666666666,
+        "selective_risk": 0.12158808933002485
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.645,
+        "selective_risk": 0.10335917312661502
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.5983333333333334,
+        "selective_risk": 0.07799442896935938
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.5366666666666666,
+        "selective_risk": 0.07453416149068326
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.49666666666666665,
+        "selective_risk": 0.06375838926174493
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.415,
+        "selective_risk": 0.032128514056224855
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.21333333333333335,
+        "selective_risk": 0.0234375
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.0,
+        "selective_risk": null
+      }
+    ],
+    "note": "Correctness calibration among candidate definitive answers; not a per-answer guarantee."
+  },
+  "strict99_joint_goal": {
+    "count": 600,
+    "correct_all_decisions": 174,
+    "accuracy_all_decisions": 0.29,
+    "accuracy_lower_bound": 0.253968527068018,
+    "target_accuracy": 0.99,
+    "family_alpha": 0.05,
+    "selective": {
+      "target_precision": 0.99,
+      "minimum_coverage": 0.35,
+      "alpha": 0.025,
+      "valid_questions": 600,
+      "accepted": 0,
+      "errors": 0,
+      "coverage": 0.0,
+      "correct_definitive_fraction": 0.0,
+      "empirical_precision": null,
+      "one_sided_error_upper": 1.0,
+      "citations_independently_audited": false,
+      "confidence_contract_satisfied": true,
+      "gate_passed": false,
+      "scope": "Only under independently sampled/exchangeable source-event components and independent ground truth/span audit. Fixed selection policy; no tuning on this evaluation or optional-stopping guarantee. Not an individual-answer truth probability or distribution-shift guarantee."
+    },
+    "gate_passed": false,
+    "scope": "Joint fixed-policy held-out gate conditional on independent sampling/labels/span audit; does not certify arbitrary future questions or shifted retrieval distributions."
+  },
+  "production_qualified": false,
+  "scope": "One fixed historical supplied-evidence population. No independent citation audit, general API qualification, Gemini comparison or distribution-shift guarantee. Timings from separate runs are not paired.",
+  "baseline_selected80": {
+    "count": 600,
+    "groups": 600,
+    "accuracy_all_decisions": 0.6016666666666667,
+    "definitive_coverage": 0.36333333333333334,
+    "correct_definitive_fraction": 0.3333333333333333,
+    "selective_risk": 0.08256880733944949,
+    "definitive_count": 218,
+    "correct_definitive_count": 200,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 600,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "paired_selected": {
+    "accuracy_delta": {
+      "mean": 0.16337416666666665,
+      "cluster_bootstrap_95pct_interval": [
+        0.125,
+        0.20333333333333337
+      ]
+    },
+    "coverage_delta": {
+      "mean": 0.17322583333333333,
+      "cluster_bootstrap_95pct_interval": [
+        0.13333333333333336,
+        0.21499999999999997
+      ]
+    },
+    "p50_latency_reduction": null,
+    "p95_latency_reduction": null
+  },
+  "research_noninferiority_passed": true,
+  "paired_raw": {
+    "accuracy_delta": {
+      "mean": 0.0810575,
+      "cluster_bootstrap_95pct_interval": [
+        0.04833333333333334,
+        0.11499999999999999
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.004642499999999997,
+      "cluster_bootstrap_95pct_interval": [
+        -0.030000000000000027,
+        0.020000000000000018
+      ]
+    },
+    "p50_latency_reduction": null,
+    "p95_latency_reduction": null
+  }
+}

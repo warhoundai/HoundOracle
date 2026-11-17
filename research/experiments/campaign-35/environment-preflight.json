@@ -1,0 +1,9 @@
+{
+  "all_retained_base_files_verified": true,
+  "conflicting_actual_encoder_inputs": 0,
+  "median_pair_token_jaccard": 0.9285714285714286,
+  "new_cloud_spend_usd": 0,
+  "aws_access": "requires reauthentication",
+  "cpu_quota": "2cores",
+  "memory_limit_bytes": 8589934592
+}

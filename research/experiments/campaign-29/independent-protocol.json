@@ -1,0 +1,9 @@
+{
+  "candidate_checkpoint_sha256": "c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70",
+  "mapping_sha256": "c2c095b63c5ede0d484e8766b2d8af0bfa1126054698a6d953f7cf6fcbe5d25f",
+  "policy": "Fixed logistic correctness map and80% threshold; no tuning on fresh risk or locked cohort; truncated inputs abstain",
+  "risk": "campaign19 sealed1000 independent components; certify80 at alpha.025; require>=30 selected groups. This is conditional research-population qualification, not citations or a per-answer guarantee.",
+  "locked": "Open sealed600 only if fresh80 risk gate passes. Compare same cohort against stable1921 frozen head/map; no refit. Paired bootstrap2000 seed1963. Raw accuracy noninferiority margin.01, coverage margin.02; use95% lower bounds. Strict99 joint audit gate separately; absence of citation audit prevents promotion.",
+  "production_qualified": false,
+  "no_new_cloud_resources": true
+}

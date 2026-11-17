@@ -1,0 +1,4226 @@
+{
+  "baseline_top3": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.6521739130434783,
+    "definitive_coverage": 0.7536231884057971,
+    "correct_definitive_fraction": 0.5024154589371981,
+    "selective_risk": 0.33333333333333337,
+    "definitive_count": 156,
+    "correct_definitive_count": 104,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.14495479199831607,
+      "p95": 0.2538483028045448,
+      "p99": 0.3026210846602044
+    },
+    "observed_latency_count": 207,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "candidate_top1": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.7777777777777778,
+    "definitive_coverage": 0.6763285024154589,
+    "correct_definitive_fraction": 0.5555555555555556,
+    "selective_risk": 0.1785714285714286,
+    "definitive_count": 140,
+    "correct_definitive_count": 115,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.06342090199905215,
+      "p95": 0.1444640769004763,
+      "p99": 0.2132301289751194
+    },
+    "observed_latency_count": 207,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "comparison": {
+    "accuracy_delta": {
+      "mean": 0.12498067632850242,
+      "cluster_bootstrap_95pct_interval": [
+        0.07246376811594202,
+        0.17874396135265702
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.07669806763285024,
+      "cluster_bootstrap_95pct_interval": [
+        -0.13043478260869568,
+        -0.024154589371980673
+      ]
+    },
+    "p50_latency_reduction": {
+      "mean": 0.558242443259288,
+      "cluster_bootstrap_95pct_interval": [
+        0.5326200872906117,
+        0.5872370711810703
+      ]
+    },
+    "p95_latency_reduction": {
+      "mean": 0.45707266883709824,
+      "cluster_bootstrap_95pct_interval": [
+        0.36735324170239264,
+        0.5607551569705557
+      ]
+    }
+  },
+  "raw_accuracy_delta": 0.12560386473429952,
+  "research_gate_passed": true,
+  "production_qualified": false,
+  "scope": "Same supplied-corpus reused development queries, raw encoder candidate labels. Selection latency is model/packing only, not agent workflow. Single-passage result does not justify dropping contradiction or multi-hop checks.",
+  "records": {
+    "top1": [
+      {
+        "id": "vitaminc:5ec55989c9e77c000842bb0f_2",
+        "group_id": "694017ea1204b248285ef6eecbf0333d164c3b25de6df29e108ed8f1858e64e4",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.06261529499897733,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465e36_1",
+        "group_id": "ef90698fdd9950bf670ae7d19fc2354807a1d077bd1c0796604f9996ed52353d",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05400990899943281,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29888c9e77c0008d935dc_2",
+        "group_id": "1874b6f3db90cf74164e622d6aecdaf59680504a0f34d7cbcf4bb9b4f5304678",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.1412862400029553,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55990c9e77c000842d3b7_3",
+        "group_id": "3c69a7f77fac3161a4f7df3c1ddd3c8d35ab3642b89c735160bd7d5066e83992",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.21421706099499715,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32ac9e77c0009294db1_3",
+        "group_id": "a7f454d63dfcf33d0f2a44dd8f7c3a260bd69af7ef58ab63de73dd3c5a9e642a",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06306832600239431,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29887c9e77c0008d92e4c_1",
+        "group_id": "e842500ad57db4c357f22f0827c0c94ba622b4cc13457eaa9b2fe7edc878db6f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.054330873004801106,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c00084432c3_4",
+        "group_id": "ac7bbf9c39338cc3e954b5248bacc8210ecfedea975369304867d169ef6529de",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.057208120000723284,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2dc9e77c0008407787_2",
+        "group_id": "6472c4085b74132b2707b12d13618c98fc48205fa8ec36aeffe6016593bede72",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10696434999408666,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d94438_2",
+        "group_id": "6a53965932d5c650be2f5e042dcc68f640c07e88da79fc521b1037471f518b9a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04703711500042118,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f30c9e77c00084087a5_2",
+        "group_id": "31d4b29c8283f59714e43f7f7bb0027b670c3a639a68bcb8ff4d91bcc551e8eb",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.07462268899689661,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed7ec9e77c0009ce080e_4",
+        "group_id": "f1bf5409da1d1840decfd79297010f89f5502b1109ab0a98770b2c7c0671381f",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.08198122199974023,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed81c9e77c0009ce1af8_4",
+        "group_id": "0618acaa1210a79a616585829cc926976541b7da95748af0ef033733ee367978",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.059819334994244855,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467267_1",
+        "group_id": "27509dac78e4219fb475f0d802cd05f31a69cc05063e5044bb0b2514d0bdfac8",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.07287523700506426,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295163_3",
+        "group_id": "20721d077681f04ee2d085fece2a0b977f3c4e665dcd80f8f61a21cfad878fdd",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.0580226589954691,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c00084893b1_1",
+        "group_id": "ee2c60eef13bd943125a2eea29012af6ac493c9845855029172a4dc5a3b57a76",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07731351500115125,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5918_1",
+        "group_id": "a69169548b105cd77dac0b23b377de2cba22fb3ba1a7aa856775bc40e76ae5d1",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15444595200096956,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6af5_1",
+        "group_id": "9272d5f7045509e3dfbe075d5967688cb8f5db5f1d023f29e102f492e45a512e",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.06284379399585305,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467192_2",
+        "group_id": "100dca6719da7c04c32fe5252172541ead2dd01830f48be9891c4c721a092080",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07434170399938012,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441e96_1",
+        "group_id": "17025f44938fcc3097f8c7c30cdb960c1b92add2ce9510987112796293c4a53b",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.09558510500210105,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072fc9e77c00084d2b4b_1",
+        "group_id": "f6c92a5e913d3d34aad3eb87e72ae88da295215f9d507de378c9445d445d1ea0",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09329755900398595,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417e3d_4",
+        "group_id": "3bb8db451fa2422797952d791e40eb8dff340d9a26359d051ef292c012671957",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0556387869946775,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295171_2",
+        "group_id": "8a88165a4b74afdfad8d117686ebf63592e91fe104c2b32093a02d49e84238b4",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06254340899613453,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de05c9e77c0008489b1b_1",
+        "group_id": "3bf2e679b92d030529a97ec7d63f4d35d2b9456c323c393f3529ed46cf013030",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07775947400659788,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a64e7_4",
+        "group_id": "acf463af748971bf740bf2e246d5ce8e65f6fc7b1d14d7278bc03b6490f69dde",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.060546098997292574,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415adb_2",
+        "group_id": "30074b12810322ace18dfafe3ff256071cb736a06c6fe3835fffc12454c41c33",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04704273500101408,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295791_2",
+        "group_id": "43364659750a2c557e078b50a93886a3725afe8a361f585e93c591a0e11caefe",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0692225890015834,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f32c9e77c0008409a85_1",
+        "group_id": "6aac277fd635d3800b9dd0848a4895dbc82ab3a0f61b4c09b3b2dc343465782b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06212876600329764,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a65d5_2",
+        "group_id": "cf5685bbaa380b38a3bf9e6155f85b2cfe3f7825292aea95e1ad6197127fa703",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0661066850007046,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fec9e77c0008417390_2",
+        "group_id": "d481a7e910284acfde338691fa0197e7e098af12ca51a521b4f9e7d0b42c985b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06462332299997797,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842d810_3",
+        "group_id": "093dd0bb94293d4be5dbd92f43bc704bde5ce8fb5ef066dd2207538cdd1f9f93",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.06748009500006447,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c0008440f05_1",
+        "group_id": "cb4f02f29d77e9874f0d1e5d0eac460bc32e20c6b504ec68d63aa8765e3ab3ce",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06342090199905215,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c00084423ad_1",
+        "group_id": "6f019591a2d72e538946bb4cb3b40e8c78956c2ef4fa42e5e43eed562367a71f",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06870092800090788,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417c7d_1",
+        "group_id": "5f92fe22869834c0cb3ae9c0eaa186622e5583167fe51545278a502564c73cb5",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0649993889965117,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29885c9e77c0008d92689_4",
+        "group_id": "f036bcdf9c1ce515997c92f26d8d77af6bef140f0fa077e48ab2964b29350c0f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.058888428000500426,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6979_2",
+        "group_id": "64b0fd41df9ee2ddd63fbe7cc29655e6981a16a4f2f8a193d088549ef8fb0cfe",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06602062699676026,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c000844320b_2",
+        "group_id": "8895eb4cc17a4f35d980c15547f89ba16f34a72edbf27b5604576ae627576df7",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.0620959580046474,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb32c_2",
+        "group_id": "5501d125d8a28c0e0a421eadcb723ad85637661543e2da4b50594d43a91ecdb4",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1276158199980273,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416380_2",
+        "group_id": "a74346c33e02a78c8ab3a82e51255ea8cc173eb197ff5597f578d73d5a94005c",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10434257500310196,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f31c9e77c00084093b9_2",
+        "group_id": "afbaf806fbe3c652892f0f3c3c5001ac3404bcbe2aa207b15a23a6bc34a218ef",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08600544900400564,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441dca_1",
+        "group_id": "d3a6ba342987293ad7c1d2a8bc7fc8db2cf47338692d2f54559f87b76a78c675",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.08568211200326914,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d93ee7_2",
+        "group_id": "dd15c0f96f62cf3bc44634952e62fb186572bb57f68293a54683f829be98ebc8",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.07894438499351963,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842dab6_2",
+        "group_id": "aed7133ce3ebf732e24f1ce0e4d915512168f4daf30b34196f31bf25b360aec5",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.052691921999212354,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417d29_1",
+        "group_id": "6c60eeea9577a0032e1409159264800c3e8cf29e10f15d863a4409df075abd91",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.051031147995672654,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de05c9e77c0008489b09_1",
+        "group_id": "a0dd42721b05020251286c74fcd12be437da5a66fc9fd215d1754c3375b4747b",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.048008391000621486,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417ad8_3",
+        "group_id": "a725cb739e7bbbfafc27fc3d1a88ff2107867f6ce0803c4e6ec1562c1679f33c",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05198596399714006,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad03c9e77c00084a75e1_2",
+        "group_id": "53aba26bfdf045f4e2090bfe0fa0a71d32d1f45540e0685a2058d32da3df5420",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09145033999811858,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842db6b_1",
+        "group_id": "4abef3531ff1ef4f7c5218fa7cc117c0e0c456005986339a9c1c56e6e40920f7",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0384077740018256,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c00084431ac_4",
+        "group_id": "78ffbca5979cd3df5bb295c65d47c7612a388085ecb0bebf8d5694c9a5cb59f1",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.046230528998421505,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0bc9e77c000848b6fd_3",
+        "group_id": "3d7aa56cef4f0d4c0398653c206ae8802160cd50b303ab22d1d01fe3758f1fbf",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.045174995000706986,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce1062_1",
+        "group_id": "cea41fd75e5a39565733c86bdbf715233070025b5ad7d9e51b6c78c93432dcd8",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09460039999976289,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fec9e77c000841773f_2",
+        "group_id": "a5d55ae5d87d27f70994438e7e7b714184c3891da77c39ca9d7350ac89b0b87f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.19776819399703527,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848a971_2",
+        "group_id": "b02223f816f0b165a32d251b3a44d812947e880579dc1db3664ce758b63e31ab",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07744653099507559,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2ac9e77c0008407483_3",
+        "group_id": "d38992afd39dddde6bcedd49a311072c8b18ea5973ce05774c10adeb46de4211",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.05913730499742087,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c00084179b5_2",
+        "group_id": "d137ca701077ac36ad44def967b94137707ff1dcbe6b2e937a9b6877967d3699",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06575612799497321,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598bc9e77c000842bf0a_2",
+        "group_id": "9095f7506ac2643ba264bf87e9677ea13b0c23a7f1dac94c4b857ccfcfc11561",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10930416799965315,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c9d0_1",
+        "group_id": "066e6123dc4a750242facf59a5b2c78a741480d2505a1fd21d4fe9c2ba2a95eb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06758725300460355,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848b231_1",
+        "group_id": "c27f1dc05b2f78089ad0f96f3419937aabe489acfaa15b8e4462c6144cffecb6",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.054957599997578654,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c83e_1",
+        "group_id": "ca798ff0d9f03a6599518963f42d4d3fd6830a77a554b8bfdfa630ba88d9175c",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10639911899488652,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a64cd_1",
+        "group_id": "595739c5343992d677956216c6dc6c3d218a15a1a8ed298a8de1c1385bc2c97f",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.15308915799687384,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2bc9e77c00084075cc_2",
+        "group_id": "089bc6fb3e0b1db2d63b097778814cb3f116907ea762f9f6d8f161364282ec3b",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.061246494005899876,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda497_1",
+        "group_id": "b9b15f565a39ef2b22ca631ec02580905ac23ece6d26912622c2d702cf965a09",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.07494787000177894,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9464c9e77c0008467af5_1",
+        "group_id": "25395e7b05b752aa445f2780b3b91ce66eedce51072e0f9623401a60b0973f5f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.045194824000645895,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415af1_2",
+        "group_id": "c4e82eb648098f285c6798b2f89292814f7845dd296197c5ee43a9ecec5d2302",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08598602999700233,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c0008442bda_1",
+        "group_id": "133503f16acffc01b204a6d1ec1e421df6502cc00ff62cfdc777ab721c160fea",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09003896999638528,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d940a7_3",
+        "group_id": "4b692898927a35362655d0eec867385ee04bd68dde7dc571b43d8769bac2d148",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.07822383600432659,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad03c9e77c00084a773e_1",
+        "group_id": "25b63cfff8f75189f917fb286aa9c138c8ba8933dc475c3dffc5466979e07a98",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11604507800075226,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de07c9e77c000848a343_3",
+        "group_id": "6a0a85d69e8e936b0666833f9a6ea83f4ebc774cbe4112bb331039bc238fcfe5",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06281327799661085,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb13c_1",
+        "group_id": "7b782a0e45f75dd6172067f0e5f545ffcd88df8a0cf8d0ea945fec934622f4cb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05523543999879621,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008416048_2",
+        "group_id": "c07e952da8a3e38b4d93ddee32158b11e76d7b1ff99381906e8960da89ac2d4e",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.10340560099575669,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c00092952c6_4",
+        "group_id": "1c54ca5e212189bb164ba0925ef3fa281334b0551885050c2e1c3a4192e8383b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04126645799988182,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c000844167b_2",
+        "group_id": "d2318378b03f12eceac7d8377d59f3530ae84bbd92d9d1c3f1f7089dc826ad52",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.0794450089961174,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acfec9e77c00084a5761_2",
+        "group_id": "513306cb207c5da5da1be7db6dee329dae543fc1e8f7c1db066e7973283bb2e1",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.09331593399838312,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441df3_1",
+        "group_id": "437507cf82f96d1db54105f277b445f83cc3838283ccfecc6222296037c4e8ef",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05054047600424383,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5b28_1",
+        "group_id": "51bfba827faf691667a15781222f450811bd8cee0e5d471adcbf76d252ad6687",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.05714931699912995,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c0008442d0c_1",
+        "group_id": "4156e59aa16bd2b837e464868b33a201904e4a1a7051081c76d11f0b2de9c678",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0650283680006396,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842d802_1",
+        "group_id": "f5465248ceae8df176da28485d2302038f2d4794cc22df9ade1f0456b8192068",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.05706854900199687,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda0b5_1",
+        "group_id": "c73c765abaa4744803569dc8254961e738f0cbef45c9202bf2f024bbb9fb7ed3",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05180668600223726,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb079_1",
+        "group_id": "331ddb4a4217683bbb195227523c3562c4d9029755e45a824228fd8fd172c680",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.040072774994769134,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c0008442eae_3",
+        "group_id": "155b97f0104566cf1f12b161ae7d759dfde96f5f62c2e728b45af7aecfc4c65a",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.04676680699776625,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c000846781a_2",
+        "group_id": "4a489c5dc266d2ce8edeb9d4c01442521dfbbd7107d5a957a973247af7b580ec",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09292481599550229,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9464c9e77c0008467e93_2",
+        "group_id": "5a79b876dc341dd9cd7064b6131558784333ced9b39747bde3d43ef512d31d39",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0804827789979754,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c000841675c_1",
+        "group_id": "a1ac93b08c7fd12bfea9b37f5ff6ab08e1f6bdb5802ad921cc345f3be429f498",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.059162227997148875,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad00c9e77c00084a5fdc_2",
+        "group_id": "c179e414ba1912feee982c8147afba013ccdcc477929e478d451d8e2a2c59aa0",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.11054353599320166,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a70cf_2",
+        "group_id": "4f3fe7336ac783178990fff997ac2c4de3cc97acfe0113cd18800dc7fd181568",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04562498000450432,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072ec9e77c00084d2613_2",
+        "group_id": "d30afeff8d0bd86e281e7728dda2e521a3ed07e0a2c3be17bd5606b1d65e0f04",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.0475379060007981,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465cf7_2",
+        "group_id": "671eeef0a3f37f9423409a76baa63fcdb26609274bd633ca0e9dffb42d8b7674",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.07113452500198036,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c000846663b_1",
+        "group_id": "017d3ee112e830c58cde25d076572d92f94a529192c9dd55bceacd41d23dc88b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.037750563002191484,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fec9e77c00084170a4_3",
+        "group_id": "01e64e6bc6429a979aa8f331523304df18db7fa9bf2ba2f1897b9a8076019c80",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1026888019987382,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295803_3",
+        "group_id": "24f30a45bdb4481576d3a540c3235a8ec42abf3687e0da8b23f9e5192936c32f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06880329900013749,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008466069_3",
+        "group_id": "955a3fb4a5d2681cf86366b015afbe7261e3055376c6e701ee4f9513cf46c0cc",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08587505600007717,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2fc9e77c0008407f1c_2",
+        "group_id": "74ac2370bc3b9bb8280591aa835df95a8f14fb45654a759ad94b3d160ae26c27",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07924804399954155,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55990c9e77c000842cfdc_4",
+        "group_id": "424f960cae7e7935b7f2a3f1dab79b51415eecfb82c20f4bd2d77495ce349f2a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05810303700127406,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c000844152e_4",
+        "group_id": "d174627ec1335e20def4f9523403180ad0c112ef649012466e242db971b753b8",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04962717300077202,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5b81_4",
+        "group_id": "fa7eaae9b283489d1e60a02c42f6f9b3c26af8a6f3e47899d980c06afb72ffd2",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.03774644699296914,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda6a2_3",
+        "group_id": "2d335b295dd3c0b29f5b2ec4870c4b0cb226b1420e5c852a395e688833f23914",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.03848635099711828,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416800_1",
+        "group_id": "07554d404288240decef667a750d2728da8c59ea8fba5f94278db491f17e879a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08735538300243206,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c0008489406_1",
+        "group_id": "2d32416f6e1eb1d10e10216a0762e76cf181dc0860ce1bfd93329ad087977c81",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.2585661489938502,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de08c9e77c000848a493_1",
+        "group_id": "810b2399ce6c08aa24bb9f0a15ea2c0d96bc142aa03f50ee872747b6967cb2cc",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04932707999978447,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441662_1",
+        "group_id": "0d10647633547f5517aaca10c06281fff49a46b287886115eb939e4a992bbfdb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04610836299980292,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f31c9e77c0008408b8f_4",
+        "group_id": "acbd63da45b787ab7ed06ac150d00f050220cb31b4e5c042e1fb4514999d1ddd",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11843060300452635,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ee39329c9e77c0008cc9249_2",
+        "group_id": "6887a74823202376ae32cd0875f86deffd7e77f51bfdec721350db4ffb12fbe7",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.0500198840018129,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed7ec9e77c0009ce083e_1",
+        "group_id": "08061469f80a3311383375ebe9cbca911f4ece6bd81d2d5d8325d6982fe47438",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04604357200150844,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c000844334a_1",
+        "group_id": "837a7e15fc3a7c165558a620a1462672415d03992db2deda410366d06a82886c",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.09417741500510601,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdad86_2",
+        "group_id": "67cf4762747bb38bd4d9e02c90957d135d9fcfb8c179eab4dbbccf7a26972bd4",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.054070848993433174,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416242_2",
+        "group_id": "35ba885a14b54bb65535cfdb8b7a3fd7ac593958d59417c2e0f15f0544e0cdb6",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08175904399831779,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465dbe_2",
+        "group_id": "f3cf5f52bb8b3f23446f58c3eeb5d1d722eecd6708d7dcb5fcd52e59ed343bce",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06331045299884863,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c00084412ac_2",
+        "group_id": "8b065948eb2e60595f666eda60f6e5c6857535fb5461136989136723c2c5c428",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.05482955199840944,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295488_1",
+        "group_id": "8eb2fa3c99fe4f003fc7b75eb8014f7a10359d055057a835a914bd0e561f4be1",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06294218200491741,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848b2ca_1",
+        "group_id": "ded7122a75bb1291c400f7a5912b92102461b8a31c50cd999293d0350d7a83df",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10061198599578347,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466e2b_2",
+        "group_id": "b585a0c02320ff9e16be2cb3d72295c7d7228cc6f8ddf13e73d32107cbd5cbeb",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.09038895900448551,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cda883_1",
+        "group_id": "a5beb06a4a041aa0d7d54c7ddbc4f2a90b2409471b4090de82f23e99c4006c71",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05255675400258042,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465eff_3",
+        "group_id": "83457f247be6b6b92d1aeae098152844a4ccc8daddcc74a27643f93654ab40ce",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07424851899850182,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466e48_1",
+        "group_id": "454a9a4bc162636ef5f62b2631a7f5d2cbb3f940346945cf726a0c8f49d2a540",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04163071899529314,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9464c9e77c0008467bd8_2",
+        "group_id": "b148f5119778ed2e81e61536939df70be6e858ddeb1239bbfc24fa2af168a4fb",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07885645699570887,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415d00_3",
+        "group_id": "591ad17d38b412888dd0d2490a4a4f302eee334e0c8a75427ee58e2411032ad8",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.08519326200621435,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295215_1",
+        "group_id": "6c7fb4ef362dab472c79b42961d79cc788cb5be36c844fb5d8a88d647a8116e4",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04692707499634707,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6d66_1",
+        "group_id": "d97ad7bd012e91b3919f80c7c44c2a0bcfe50f2a09638e8656d9ea2781b6eefc",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.0822588450027979,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb244_4",
+        "group_id": "b1060a35d06f4f13342bcb4a277f6c8d657ee472c0be424861ed53ba0ea876c9",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09916975499800174,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598fc9e77c000842cb87_4",
+        "group_id": "c7be424a79644bc37f31e289b700d18717a4570f535c369599bb92b290d0178e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0671278260051622,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de07c9e77c000848a13f_1",
+        "group_id": "9b187bcc200b433181bd465ecdab624d912a1ac5f83d50b6b99bb14994020f84",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.035451538002234884,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acfcc9e77c00084a54a8_1",
+        "group_id": "7f5c245d5508abff69dd9080e7719a50247340916707efee2a467f5506a34f82",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.07993722399987746,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441746_3",
+        "group_id": "30e79c2d693655d405c1f14750ec56e4af3f502a9dbec3e46d8ab08907fed83f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09348284199950285,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f32c9e77c00084097c0_1",
+        "group_id": "e3ae8f7bf4fae1876af96c81cc92ba44ae9755023f349ce56b7ad50ae893b6a8",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09978767800203059,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573cc9e77c0008fa1bdb_1",
+        "group_id": "67aa1426c3fc89e93db626d83e24965c7459beb876045bd739d346426fbeb97c",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08612971600086894,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598bc9e77c000842bfd5_1",
+        "group_id": "9205a343de05e53f64a0a44fbd1f54ac47eb91a34c6223b0dc32c0ae4303a77a",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 3.354994987603277e-06,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda775_1",
+        "group_id": "7cc7cb35fa7d8f141b4fbd321ef7748e1175993cbcf6818b4b4fe5672819cacc",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.15852390399959404,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdaa9b_1",
+        "group_id": "1f3bc266a579a37ed31919b42a67dce5c9ff6b4b9e5bb0bb2d059e08e51fa625",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06897999300417723,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c000848939d_2",
+        "group_id": "7bf5c64424ae1e62840c41be104fb7bee8a31ee59914f3d10414e3dea833fd55",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.050291796993406024,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c00084424c9_2",
+        "group_id": "f529fe483e1e941e83607b0d0c90a5b4f37227f53dd7995f1b99dc874bd5b3f0",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.03794022499641869,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573cc9e77c0008fa1c1b_1",
+        "group_id": "1a36f9ad6b73dba63696dae585bb44c7e0bca7bd098e57adf83bc1c0b70d457b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.037415099002828356,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c0008441338_2",
+        "group_id": "b03ae46870883811e2cef1cfdc4c54adc55f0a3b73b6d796cff4611e02448e2f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14672662100201705,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c00084419cc_2",
+        "group_id": "ff21ef185a325e45639f7701ac8cd8f0aeee6446f51af8079f3590cef2095046",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.04816702799871564,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c0008443379_1",
+        "group_id": "6b2783c52d0e322b64fe4699c3da34c642b87c8910b9aafa56a46f437be1ca2a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.03725624499929836,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a622b_1",
+        "group_id": "3ed43be2e29e8d02b428befe1bba073ed5e79f5f25a1e477c065f6243ab04194",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0787671660000342,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c00084677d0_1",
+        "group_id": "49b9321bfeeb6f3fa2d2e4b5da2528cc8e7cce023f50ee761947109cd448c371",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.07445582399668638,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c000929521f_2",
+        "group_id": "901aefdc2555cf447b1ddd557c9af65cc83bfa5e44d1cccaf68faa2f6480c9a4",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06992202499532141,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a69ca_1",
+        "group_id": "8e9c32112b22669dcd7bb7cba65c22e83b28a04f01e4abe7785338b2081daab4",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.03956834099517437,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdad55_1",
+        "group_id": "cbddf6d45553e4c8d4579d917092fe025b6ff188a9fb27aaab991263353af8fb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11595011200552108,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55989c9e77c000842ba68_3",
+        "group_id": "b823ef18008d28354ae1a32b5289c00f9a2d1fe7699e0dd8159e124c108357d1",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04745435399672715,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55988c9e77c000842b920_2",
+        "group_id": "6026592fb2de789b683a4efc4d21f1fc0c54bc6cb64fbcc1a558c0f135cb4781",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04807305800204631,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb2988ac9e77c0008d9456b_2",
+        "group_id": "03bc087b07cdd98a7572438b70166f94c297ab35fc23bb0032a85fc57051829a",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.05432925299828639,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573ac9e77c0008fa1838_3",
+        "group_id": "760892446e542aab546c79d3ae8b46a2f5135c6183fd75b451c5927f9d33cbde",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.05161131900240434,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de04c9e77c0008489534_1",
+        "group_id": "1498c4e5a09402f53a6fb20ef8b2727998fba6dbfd225c49e042b0f65f330710",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.052002747004735284,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c00084674df_2",
+        "group_id": "93875880de75cb2d1bb42211b4c1108d7e5c6227a717ea75a10023c0b8f5d12f",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.044432490001781844,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede0730c9e77c00084d35a9_4",
+        "group_id": "4905a499a89c295ac7b4d070dfa9f159db97412659734745d3c57fa058e81528",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04957298599765636,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de08c9e77c000848a56d_1",
+        "group_id": "32250f68eecad365ee349aa7ffd83e1bb7bfcb81ab0a0c4beff27110e9d36662",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.07995997100078966,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848ad2b_1",
+        "group_id": "f8bc73cec09049a9ed04c11999b171f4d9cdffdb9674eed116dab5a8e9e3b55f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05631187400285853,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29887c9e77c0008d93186_2",
+        "group_id": "759d030a39510a9576f4c76a3ed93d6dc1d8e673f164f2739a4928b66b97265f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1650931749973097,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ee393b7c9e77c0008ccc7e6_2",
+        "group_id": "e7ef0b7ce17e42ca60ba6c1e39b921f8c198aa490264fb7f166b73cf8febe084",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.03988681200280553,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29885c9e77c0008d928b0_3",
+        "group_id": "89e37755e13cf20e4f8828af9f493180ecc19acb27e7f7d2595b7b8f39a65efc",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08919999499630649,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842dfd1_1",
+        "group_id": "0d40294e6e6bd9672af4b49cd028764b648826556eec7ff61d3cd984863e8dc7",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.04656738499761559,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467117_1",
+        "group_id": "8db070ca25f16fdf1712f739aed6a6e995d5e8afddfd0e825dffb749f32a57d1",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.06912611999723595,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d93e09_2",
+        "group_id": "04aeb2cb37fd5a33199bf18cb3bbdc4a0c21c447d0558d44109251eb0e00f73e",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.049194175997399725,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c000846711a_3",
+        "group_id": "d8eab0ce09bd42cdb0d75655c1344b9cf973da538d580937661058ddb67bdea4",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.0866897199957748,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072fc9e77c00084d30fe_4",
+        "group_id": "7828b081f73964a91cfb1de07e3b74fa09b3f0724b2c543244b17c1779a448f0",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06901790000119945,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848ac34_4",
+        "group_id": "ed68a26f47e507821163e7abdc320bf70f93b0e051c957a9a615471f1d8af62a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05412430199794471,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f31c9e77c0008408f19_2",
+        "group_id": "8da90c709f0d94967f4f1c6a46965ebf38da9e6bf0ee0c0a1b2533860807a0b3",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.08458546600013506,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce14ae_4",
+        "group_id": "24ccc2f1c911cc53d05e49a6a81b794be0a679f063c832e22fb048b7a81b07b4",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14582600699941395,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573bc9e77c0008fa19c1_1",
+        "group_id": "a099d814af9db32cdbe2e273eb2a8b7042500bbc96e40cbe254ee631a52fb8ff",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.058780291001312435,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465ddb_3",
+        "group_id": "1af19fd0cd4f697dc6b17b82f8c8fab663181108f693dfe7ed683df0b579c86f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.056760077000944875,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416757_2",
+        "group_id": "5092880411b861ed55cdd6b1742947d9d6607815fd1fe62433df71dc73b9d55e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0630225499990047,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c0008489279_1",
+        "group_id": "5da5402c918b6f9be9aaa2a8a731f0ab0f781e7cb347774f055314fba6fc973e",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04900047000410268,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848a9ef_3",
+        "group_id": "2e4af39e19c19f603fff28c7809483f6cff0828bb0d6d7e457dbfc86a153231b",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.049691451000398956,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce13e7_3",
+        "group_id": "2e88ba6ff9de92cf6acd8b98feaf746f52558d8e6af960429626fc0ebb0f097d",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05383934100245824,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29888c9e77c0008d932e4_2",
+        "group_id": "4ee94ececbf10dceee345de5cc532c2b9ddc7a279b8440c249e07c2715abb83d",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.044156060997920576,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008442377_2",
+        "group_id": "3227e2748c0e1e47c98c12ba5e025955910a621120ecd9aaae6c80b580ddeb16",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06663155400019605,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c000844201b_1",
+        "group_id": "04f0ca3e1f32df17aa37b473745a0acf51d87042de3c6e19a39c9beefaae96f2",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.03675450399896363,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466667_1",
+        "group_id": "88b84b82cdc8c785afce4ee5a2b505ddbaf63fe2520fbdb8a993c0dcfa4e9124",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.040372479998040944,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c00084161ae_4",
+        "group_id": "c8d0cda2890d0eb52b2a0d447793bc74bc51f2bd451e9cf190aa41e426c087a8",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06551940100325737,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29887c9e77c0008d930f7_1",
+        "group_id": "b92de090ba3236a276ab5cc09ebf1b3532bb7c34102f8f4231282ed824aae59d",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.052628451005148236,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466ec1_1",
+        "group_id": "15b7124728cc6ed4bbeab5a75e02668aa7df91bdfcd87f15703975c633cc86cf",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08746582199819386,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416b03_2",
+        "group_id": "c155bdb4f67d61b31ae02cac16e2f8670cc669bbc5a3ad43cd0e075decc5bc10",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.049414761997468304,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467315_3",
+        "group_id": "d1616400ca186b59ed38e5b6196bc677493620575aedeb3fd47b7fc5391de87c",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.0552800000004936,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848aed1_3",
+        "group_id": "3ec4c8e749d524ef82ac728e60be83d265eba10dd3197b0807fbe6859050021b",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.0774131669968483,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c00092950a5_1",
+        "group_id": "44b0aa9263b9173d4dff5ae6bd514c221faacc4a6cf247c36f04dc786e561654",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11292977099947166,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c00084672e4_2",
+        "group_id": "11bdc91a0cf10032a04a8f55e5f4e67054b31122e106151d0bfe2dcb02813c8e",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.052214469003956765,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467143_2",
+        "group_id": "9b31d0b0c0cbb2a5dcc522cac2d5eaf6f6b26bdeee0face607336b91d298b962",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.07230733100004727,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de06c9e77c0008489de3_2",
+        "group_id": "c5fb5ff47d65fc6b723e337156519245ecc51ec235150fb91a819fab810f0ad6",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.05408433300181059,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842dfd3_1",
+        "group_id": "0765da985786bf582807c5b3a43c53b917589a99878eeea3f26e70bf4c919f47",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04498691000480903,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417967_2",
+        "group_id": "8c06ba703a13f7126b279cadd248fdad2c94cae42c6b06ff1b98d0c90c8c2e4e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.0792372619980597,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f30c9e77c0008408a5e_2",
+        "group_id": "04a6aa9352d9dc955e6d586dfecc74d6b0cac477ec89b939e384fc39021f2875",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04508085200359346,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2fc9e77c0008407e35_1",
+        "group_id": "941321f5e7bb90318da33d0bb022dbef03518b63005871967349fd4278a2a5c9",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.040233359002741054,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdab55_2",
+        "group_id": "8180ef9594b7dda55d95183b6c0e2082c97927680191d7f531baff1252bd55b2",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07991755699913483,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d9443d_1",
+        "group_id": "75c91dbca43941dc7678d7537b7d04e0b017f7abebe8ded3892b881758d86e7d",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04541019899625098,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415b5f_2",
+        "group_id": "a5f7c20f8c48caf14b3a524d4dd8e88b135856c0b74633264e85e27fef43fa7d",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04126012600318063,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda15e_1",
+        "group_id": "9ff811e22f8fdfe0b4f2f6e2510018a0a8fd9998550bad80bcea6e1b9ab9aaa8",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.0480721209969488,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad03c9e77c00084a770d_1",
+        "group_id": "adcbccacfea84286305c4770f33bfb29ec09ed1c755b032da6f9e90ecdf4f863",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08120254599634791,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de05c9e77c0008489801_1",
+        "group_id": "d2187abb80e9efaf6be10ede8ea9bf87f8acb125cf37f4a212fe8776a6b09c4a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06544011599908117,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c73b_2",
+        "group_id": "97ec182f5feb57a97682ff8b0c88245c27d249c2fa604efbdc5ce9b60603dc07",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.09358741599862697,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072ec9e77c00084d24fc_2",
+        "group_id": "b2f3000928a675eb7a4d99a589d35bdd2d83de18355bba31e52ad54f435091e1",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.037872120999963954,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32ac9e77c0009294d4b_1",
+        "group_id": "619fa7c1ddb0c07818309d4a56fa267842e9c53ae02fd164122d9440e19611fb",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.07717323300312273,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29883c9e77c0008d9242b_2",
+        "group_id": "a658f4a98289fa6b83f74ce4fa0a0b31002a6154cc3c53f90638c76f52607a6f",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.043073815999377985,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2cc9e77c0008407618_4",
+        "group_id": "9ff0fbf8be7ea6cd3cc746350ce643d62f197c23a5ce3c97fb11565905dd3e8f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.053198346999124624,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed7ec9e77c0009ce0a05_2",
+        "group_id": "c1f5332c60f39837c67626633f1bac282ababf4c590ca6b44cb647c0205e97fc",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.05943700399802765,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072fc9e77c00084d346c_1",
+        "group_id": "c10cff19b6854489433b946848dc702d3a645639b9d5edeb97a115622a21b489",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08642152899847133,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842df7e_2",
+        "group_id": "b30e77a69a83be543b49ca02ac60c3876c415bf4792a40ede7e8e485981f2211",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.0615075239984435,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c00084669ef_1",
+        "group_id": "ab8a7eda7a33712b915baa1df8d1c8ca6c3ee2e49fce3b43eb99e7ce075455b9",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05024431199854007,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6953_3",
+        "group_id": "d5e7f559d002aed19843b56a8aae420c03a3a50b8a8cbf5d3c0765371387307a",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.04147282100166194,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c861_4",
+        "group_id": "f9e7e13fc39ccb2aaa47c042def3efc8112901f81832f5e6ad377b821fa2160e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.16421396499936236,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a6555_1",
+        "group_id": "ab945b9213882b5597de650378ab1c6b5e47fe3844bb0a874f11627738e5f259",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.07211104199814145,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466fc0_3",
+        "group_id": "58f20d08960d177b92fb3cedcfd002b6517fbbf4597201507355c1fafe6e3305",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.0832210890002898,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598dc9e77c000842c3e8_2",
+        "group_id": "01919db491e8049f1150ca4d6c053f16401b3a5efdfe74a99a598dadbcb4bd9f",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.0764727479981957,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5c15_1",
+        "group_id": "e3d7503e76aebeea4471331f3fd76dd8a354f1476345c2470bc0ecbab6820316",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.06797518100211164,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848b084_3",
+        "group_id": "a0f9f65acbff7fe5d6a9a4aadcb19a77a38961976f928f15c0edd4c3941f4d18",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.04875669400644256,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d94302_1",
+        "group_id": "d5e9e7b2c1f40356761ef46112968f739b4ada3abe02d0046585b73169cbffda",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06685163100337377,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32ac9e77c0009294da9_1",
+        "group_id": "b891f85550dd578ddeb149c224d3c8716651735e1a625368309ae3d90df0c2ce",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06664382400049362,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce16f7_3",
+        "group_id": "92870e765fc21a0afd492548e110f65627a891d293db1bc44367520152384228",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.2856591949966969,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      }
+    ],
+    "top3": [
+      {
+        "id": "vitaminc:5ec55989c9e77c000842bb0f_2",
+        "group_id": "694017ea1204b248285ef6eecbf0333d164c3b25de6df29e108ed8f1858e64e4",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.15679831099987496,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465e36_1",
+        "group_id": "ef90698fdd9950bf670ae7d19fc2354807a1d077bd1c0796604f9996ed52353d",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.20549875999859069,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29888c9e77c0008d935dc_2",
+        "group_id": "1874b6f3db90cf74164e622d6aecdaf59680504a0f34d7cbcf4bb9b4f5304678",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.1792854340019403,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55990c9e77c000842d3b7_3",
+        "group_id": "3c69a7f77fac3161a4f7df3c1ddd3c8d35ab3642b89c735160bd7d5066e83992",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.26254551600140985,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32ac9e77c0009294db1_3",
+        "group_id": "a7f454d63dfcf33d0f2a44dd8f7c3a260bd69af7ef58ab63de73dd3c5a9e642a",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1344915849986137,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29887c9e77c0008d92e4c_1",
+        "group_id": "e842500ad57db4c357f22f0827c0c94ba622b4cc13457eaa9b2fe7edc878db6f",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.13664456800324842,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c00084432c3_4",
+        "group_id": "ac7bbf9c39338cc3e954b5248bacc8210ecfedea975369304867d169ef6529de",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09803424299752805,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2dc9e77c0008407787_2",
+        "group_id": "6472c4085b74132b2707b12d13618c98fc48205fa8ec36aeffe6016593bede72",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.20159097800205927,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d94438_2",
+        "group_id": "6a53965932d5c650be2f5e042dcc68f640c07e88da79fc521b1037471f518b9a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09855901799892308,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f30c9e77c00084087a5_2",
+        "group_id": "31d4b29c8283f59714e43f7f7bb0027b670c3a639a68bcb8ff4d91bcc551e8eb",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.14524363400414586,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed7ec9e77c0009ce080e_4",
+        "group_id": "f1bf5409da1d1840decfd79297010f89f5502b1109ab0a98770b2c7c0671381f",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.24003879600059008,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed81c9e77c0009ce1af8_4",
+        "group_id": "0618acaa1210a79a616585829cc926976541b7da95748af0ef033733ee367978",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11419030700199073,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467267_1",
+        "group_id": "27509dac78e4219fb475f0d802cd05f31a69cc05063e5044bb0b2514d0bdfac8",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1679349940022803,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295163_3",
+        "group_id": "20721d077681f04ee2d085fece2a0b977f3c4e665dcd80f8f61a21cfad878fdd",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.12361123799928464,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c00084893b1_1",
+        "group_id": "ee2c60eef13bd943125a2eea29012af6ac493c9845855029172a4dc5a3b57a76",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.19131533300242154,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5918_1",
+        "group_id": "a69169548b105cd77dac0b23b377de2cba22fb3ba1a7aa856775bc40e76ae5d1",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.3161378919976414,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6af5_1",
+        "group_id": "9272d5f7045509e3dfbe075d5967688cb8f5db5f1d023f29e102f492e45a512e",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.10424721400340786,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467192_2",
+        "group_id": "100dca6719da7c04c32fe5252172541ead2dd01830f48be9891c4c721a092080",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.16554745699977502,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441e96_1",
+        "group_id": "17025f44938fcc3097f8c7c30cdb960c1b92add2ce9510987112796293c4a53b",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.18562071899941657,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072fc9e77c00084d2b4b_1",
+        "group_id": "f6c92a5e913d3d34aad3eb87e72ae88da295215f9d507de378c9445d445d1ea0",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15716763399541378,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417e3d_4",
+        "group_id": "3bb8db451fa2422797952d791e40eb8dff340d9a26359d051ef292c012671957",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1012183080019895,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295171_2",
+        "group_id": "8a88165a4b74afdfad8d117686ebf63592e91fe104c2b32093a02d49e84238b4",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.2706228339957306,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de05c9e77c0008489b1b_1",
+        "group_id": "3bf2e679b92d030529a97ec7d63f4d35d2b9456c323c393f3529ed46cf013030",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.14687632699497044,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a64e7_4",
+        "group_id": "acf463af748971bf740bf2e246d5ce8e65f6fc7b1d14d7278bc03b6490f69dde",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.24003086399898166,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415adb_2",
+        "group_id": "30074b12810322ace18dfafe3ff256071cb736a06c6fe3835fffc12454c41c33",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.13803644300060114,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295791_2",
+        "group_id": "43364659750a2c557e078b50a93886a3725afe8a361f585e93c591a0e11caefe",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.23974040000030072,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f32c9e77c0008409a85_1",
+        "group_id": "6aac277fd635d3800b9dd0848a4895dbc82ab3a0f61b4c09b3b2dc343465782b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.13737629899696913,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a65d5_2",
+        "group_id": "cf5685bbaa380b38a3bf9e6155f85b2cfe3f7825292aea95e1ad6197127fa703",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10368441299942788,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fec9e77c0008417390_2",
+        "group_id": "d481a7e910284acfde338691fa0197e7e098af12ca51a521b4f9e7d0b42c985b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10560265700041782,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842d810_3",
+        "group_id": "093dd0bb94293d4be5dbd92f43bc704bde5ce8fb5ef066dd2207538cdd1f9f93",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.15268207999906735,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c0008440f05_1",
+        "group_id": "cb4f02f29d77e9874f0d1e5d0eac460bc32e20c6b504ec68d63aa8765e3ab3ce",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1912811279980815,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c00084423ad_1",
+        "group_id": "6f019591a2d72e538946bb4cb3b40e8c78956c2ef4fa42e5e43eed562367a71f",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.17572432899760315,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417c7d_1",
+        "group_id": "5f92fe22869834c0cb3ae9c0eaa186622e5583167fe51545278a502564c73cb5",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11787411499972222,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29885c9e77c0008d92689_4",
+        "group_id": "f036bcdf9c1ce515997c92f26d8d77af6bef140f0fa077e48ab2964b29350c0f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.12948276400129544,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6979_2",
+        "group_id": "64b0fd41df9ee2ddd63fbe7cc29655e6981a16a4f2f8a193d088549ef8fb0cfe",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.24903718299901811,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c000844320b_2",
+        "group_id": "8895eb4cc17a4f35d980c15547f89ba16f34a72edbf27b5604576ae627576df7",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.11550141400221037,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb32c_2",
+        "group_id": "5501d125d8a28c0e0a421eadcb723ad85637661543e2da4b50594d43a91ecdb4",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.20797412899992196,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416380_2",
+        "group_id": "a74346c33e02a78c8ab3a82e51255ea8cc173eb197ff5597f578d73d5a94005c",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.16644136299873935,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f31c9e77c00084093b9_2",
+        "group_id": "afbaf806fbe3c652892f0f3c3c5001ac3404bcbe2aa207b15a23a6bc34a218ef",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.14021048600261565,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441dca_1",
+        "group_id": "d3a6ba342987293ad7c1d2a8bc7fc8db2cf47338692d2f54559f87b76a78c675",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.2412447750029969,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d93ee7_2",
+        "group_id": "dd15c0f96f62cf3bc44634952e62fb186572bb57f68293a54683f829be98ebc8",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.1399084699951345,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842dab6_2",
+        "group_id": "aed7133ce3ebf732e24f1ce0e4d915512168f4daf30b34196f31bf25b360aec5",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.14302182699611876,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417d29_1",
+        "group_id": "6c60eeea9577a0032e1409159264800c3e8cf29e10f15d863a4409df075abd91",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10291356900415849,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de05c9e77c0008489b09_1",
+        "group_id": "a0dd42721b05020251286c74fcd12be437da5a66fc9fd215d1754c3375b4747b",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.20475623500533402,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417ad8_3",
+        "group_id": "a725cb739e7bbbfafc27fc3d1a88ff2107867f6ce0803c4e6ec1562c1679f33c",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10716822199901799,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad03c9e77c00084a75e1_2",
+        "group_id": "53aba26bfdf045f4e2090bfe0fa0a71d32d1f45540e0685a2058d32da3df5420",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.16720653900119942,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842db6b_1",
+        "group_id": "4abef3531ff1ef4f7c5218fa7cc117c0e0c456005986339a9c1c56e6e40920f7",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.33212365000508726,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c00084431ac_4",
+        "group_id": "78ffbca5979cd3df5bb295c65d47c7612a388085ecb0bebf8d5694c9a5cb59f1",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11183804200118175,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0bc9e77c000848b6fd_3",
+        "group_id": "3d7aa56cef4f0d4c0398653c206ae8802160cd50b303ab22d1d01fe3758f1fbf",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.11411712900007842,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce1062_1",
+        "group_id": "cea41fd75e5a39565733c86bdbf715233070025b5ad7d9e51b6c78c93432dcd8",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.2315973870063317,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fec9e77c000841773f_2",
+        "group_id": "a5d55ae5d87d27f70994438e7e7b714184c3891da77c39ca9d7350ac89b0b87f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.2526396380053484,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848a971_2",
+        "group_id": "b02223f816f0b165a32d251b3a44d812947e880579dc1db3664ce758b63e31ab",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10699472499982221,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2ac9e77c0008407483_3",
+        "group_id": "d38992afd39dddde6bcedd49a311072c8b18ea5973ce05774c10adeb46de4211",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.14059276299667545,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c00084179b5_2",
+        "group_id": "d137ca701077ac36ad44def967b94137707ff1dcbe6b2e937a9b6877967d3699",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14069128800474573,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598bc9e77c000842bf0a_2",
+        "group_id": "9095f7506ac2643ba264bf87e9677ea13b0c23a7f1dac94c4b857ccfcfc11561",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14318588300375268,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c9d0_1",
+        "group_id": "066e6123dc4a750242facf59a5b2c78a741480d2505a1fd21d4fe9c2ba2a95eb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.16478751400427427,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848b231_1",
+        "group_id": "c27f1dc05b2f78089ad0f96f3419937aabe489acfaa15b8e4462c6144cffecb6",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.12164343199401628,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c83e_1",
+        "group_id": "ca798ff0d9f03a6599518963f42d4d3fd6830a77a554b8bfdfa630ba88d9175c",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.2093324079978629,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a64cd_1",
+        "group_id": "595739c5343992d677956216c6dc6c3d218a15a1a8ed298a8de1c1385bc2c97f",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.25493491900124354,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2bc9e77c00084075cc_2",
+        "group_id": "089bc6fb3e0b1db2d63b097778814cb3f116907ea762f9f6d8f161364282ec3b",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1314463649978279,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda497_1",
+        "group_id": "b9b15f565a39ef2b22ca631ec02580905ac23ece6d26912622c2d702cf965a09",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.22524648399848957,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9464c9e77c0008467af5_1",
+        "group_id": "25395e7b05b752aa445f2780b3b91ce66eedce51072e0f9623401a60b0973f5f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11269499800255289,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415af1_2",
+        "group_id": "c4e82eb648098f285c6798b2f89292814f7845dd296197c5ee43a9ecec5d2302",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15559918700455455,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c0008442bda_1",
+        "group_id": "133503f16acffc01b204a6d1ec1e421df6502cc00ff62cfdc777ab721c160fea",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.13944349400117062,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d940a7_3",
+        "group_id": "4b692898927a35362655d0eec867385ee04bd68dde7dc571b43d8769bac2d148",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.1618390619987622,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad03c9e77c00084a773e_1",
+        "group_id": "25b63cfff8f75189f917fb286aa9c138c8ba8933dc475c3dffc5466979e07a98",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.17310662800446153,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de07c9e77c000848a343_3",
+        "group_id": "6a0a85d69e8e936b0666833f9a6ea83f4ebc774cbe4112bb331039bc238fcfe5",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.14495479199831607,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb13c_1",
+        "group_id": "7b782a0e45f75dd6172067f0e5f545ffcd88df8a0cf8d0ea945fec934622f4cb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15665470299427398,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008416048_2",
+        "group_id": "c07e952da8a3e38b4d93ddee32158b11e76d7b1ff99381906e8960da89ac2d4e",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.231230716999562,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c00092952c6_4",
+        "group_id": "1c54ca5e212189bb164ba0925ef3fa281334b0551885050c2e1c3a4192e8383b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09723674499400659,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c000844167b_2",
+        "group_id": "d2318378b03f12eceac7d8377d59f3530ae84bbd92d9d1c3f1f7089dc826ad52",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.24938435700460104,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acfec9e77c00084a5761_2",
+        "group_id": "513306cb207c5da5da1be7db6dee329dae543fc1e8f7c1db066e7973283bb2e1",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.1620829669991508,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441df3_1",
+        "group_id": "437507cf82f96d1db54105f277b445f83cc3838283ccfecc6222296037c4e8ef",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.06312705699383514,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5b28_1",
+        "group_id": "51bfba827faf691667a15781222f450811bd8cee0e5d471adcbf76d252ad6687",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.1461515619957936,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c0008442d0c_1",
+        "group_id": "4156e59aa16bd2b837e464868b33a201904e4a1a7051081c76d11f0b2de9c678",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.17420644400408491,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842d802_1",
+        "group_id": "f5465248ceae8df176da28485d2302038f2d4794cc22df9ade1f0456b8192068",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.09461016700515756,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda0b5_1",
+        "group_id": "c73c765abaa4744803569dc8254961e738f0cbef45c9202bf2f024bbb9fb7ed3",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1291998379965662,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb079_1",
+        "group_id": "331ddb4a4217683bbb195227523c3562c4d9029755e45a824228fd8fd172c680",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.19686345499940217,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c0008442eae_3",
+        "group_id": "155b97f0104566cf1f12b161ae7d759dfde96f5f62c2e728b45af7aecfc4c65a",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.12933099799556658,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c000846781a_2",
+        "group_id": "4a489c5dc266d2ce8edeb9d4c01442521dfbbd7107d5a957a973247af7b580ec",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.18081116599933011,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9464c9e77c0008467e93_2",
+        "group_id": "5a79b876dc341dd9cd7064b6131558784333ced9b39747bde3d43ef512d31d39",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1444833950008615,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c000841675c_1",
+        "group_id": "a1ac93b08c7fd12bfea9b37f5ff6ab08e1f6bdb5802ad921cc345f3be429f498",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09338339399982942,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad00c9e77c00084a5fdc_2",
+        "group_id": "c179e414ba1912feee982c8147afba013ccdcc477929e478d451d8e2a2c59aa0",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.21028288300294662,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a70cf_2",
+        "group_id": "4f3fe7336ac783178990fff997ac2c4de3cc97acfe0113cd18800dc7fd181568",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.1617510409996612,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072ec9e77c00084d2613_2",
+        "group_id": "d30afeff8d0bd86e281e7728dda2e521a3ed07e0a2c3be17bd5606b1d65e0f04",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.14632117500150343,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465cf7_2",
+        "group_id": "671eeef0a3f37f9423409a76baa63fcdb26609274bd633ca0e9dffb42d8b7674",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.1467800700047519,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c000846663b_1",
+        "group_id": "017d3ee112e830c58cde25d076572d92f94a529192c9dd55bceacd41d23dc88b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.13362371800030814,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fec9e77c00084170a4_3",
+        "group_id": "01e64e6bc6429a979aa8f331523304df18db7fa9bf2ba2f1897b9a8076019c80",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.16736737600149354,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295803_3",
+        "group_id": "24f30a45bdb4481576d3a540c3235a8ec42abf3687e0da8b23f9e5192936c32f",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.1432091379974736,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008466069_3",
+        "group_id": "955a3fb4a5d2681cf86366b015afbe7261e3055376c6e701ee4f9513cf46c0cc",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15409306200308492,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2fc9e77c0008407f1c_2",
+        "group_id": "74ac2370bc3b9bb8280591aa835df95a8f14fb45654a759ad94b3d160ae26c27",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.12978796500101453,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55990c9e77c000842cfdc_4",
+        "group_id": "424f960cae7e7935b7f2a3f1dab79b51415eecfb82c20f4bd2d77495ce349f2a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.16198185800021747,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c000844152e_4",
+        "group_id": "d174627ec1335e20def4f9523403180ad0c112ef649012466e242db971b753b8",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.1264178869969328,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5b81_4",
+        "group_id": "fa7eaae9b283489d1e60a02c42f6f9b3c26af8a6f3e47899d980c06afb72ffd2",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09077622900076676,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda6a2_3",
+        "group_id": "2d335b295dd3c0b29f5b2ec4870c4b0cb226b1420e5c852a395e688833f23914",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.19700828599889064,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416800_1",
+        "group_id": "07554d404288240decef667a750d2728da8c59ea8fba5f94278db491f17e879a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14289681600348558,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c0008489406_1",
+        "group_id": "2d32416f6e1eb1d10e10216a0762e76cf181dc0860ce1bfd93329ad087977c81",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.30286710200016387,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de08c9e77c000848a493_1",
+        "group_id": "810b2399ce6c08aa24bb9f0a15ea2c0d96bc142aa03f50ee872747b6967cb2cc",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10874910699931206,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441662_1",
+        "group_id": "0d10647633547f5517aaca10c06281fff49a46b287886115eb939e4a992bbfdb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09641339900554158,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f31c9e77c0008408b8f_4",
+        "group_id": "acbd63da45b787ab7ed06ac150d00f050220cb31b4e5c042e1fb4514999d1ddd",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.17214435600180877,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ee39329c9e77c0008cc9249_2",
+        "group_id": "6887a74823202376ae32cd0875f86deffd7e77f51bfdec721350db4ffb12fbe7",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.08818021200568182,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed7ec9e77c0009ce083e_1",
+        "group_id": "08061469f80a3311383375ebe9cbca911f4ece6bd81d2d5d8325d6982fe47438",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11163032500189729,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c000844334a_1",
+        "group_id": "837a7e15fc3a7c165558a620a1462672415d03992db2deda410366d06a82886c",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.24060860900499392,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdad86_2",
+        "group_id": "67cf4762747bb38bd4d9e02c90957d135d9fcfb8c179eab4dbbccf7a26972bd4",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.11633655799960252,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416242_2",
+        "group_id": "35ba885a14b54bb65535cfdb8b7a3fd7ac593958d59417c2e0f15f0544e0cdb6",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.16842622099647997,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465dbe_2",
+        "group_id": "f3cf5f52bb8b3f23446f58c3eeb5d1d722eecd6708d7dcb5fcd52e59ed343bce",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.12312339300115127,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c00084412ac_2",
+        "group_id": "8b065948eb2e60595f666eda60f6e5c6857535fb5461136989136723c2c5c428",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1666195340003469,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295488_1",
+        "group_id": "8eb2fa3c99fe4f003fc7b75eb8014f7a10359d055057a835a914bd0e561f4be1",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.127360017002502,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848b2ca_1",
+        "group_id": "ded7122a75bb1291c400f7a5912b92102461b8a31c50cd999293d0350d7a83df",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.0879582279958413,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466e2b_2",
+        "group_id": "b585a0c02320ff9e16be2cb3d72295c7d7228cc6f8ddf13e73d32107cbd5cbeb",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.15442338900174946,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cda883_1",
+        "group_id": "a5beb06a4a041aa0d7d54c7ddbc4f2a90b2409471b4090de82f23e99c4006c71",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15933687500364613,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465eff_3",
+        "group_id": "83457f247be6b6b92d1aeae098152844a4ccc8daddcc74a27643f93654ab40ce",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.11093487000471214,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466e48_1",
+        "group_id": "454a9a4bc162636ef5f62b2631a7f5d2cbb3f940346945cf726a0c8f49d2a540",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.2636001220016624,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9464c9e77c0008467bd8_2",
+        "group_id": "b148f5119778ed2e81e61536939df70be6e858ddeb1239bbfc24fa2af168a4fb",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.14413835600134917,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415d00_3",
+        "group_id": "591ad17d38b412888dd0d2490a4a4f302eee334e0c8a75427ee58e2411032ad8",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.11215777799952775,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c0009295215_1",
+        "group_id": "6c7fb4ef362dab472c79b42961d79cc788cb5be36c844fb5d8a88d647a8116e4",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14702507099718787,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6d66_1",
+        "group_id": "d97ad7bd012e91b3919f80c7c44c2a0bcfe50f2a09638e8656d9ea2781b6eefc",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.19095234899577918,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdb244_4",
+        "group_id": "b1060a35d06f4f13342bcb4a277f6c8d657ee472c0be424861ed53ba0ea876c9",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.178947534004692,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598fc9e77c000842cb87_4",
+        "group_id": "c7be424a79644bc37f31e289b700d18717a4570f535c369599bb92b290d0178e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.181359998001426,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de07c9e77c000848a13f_1",
+        "group_id": "9b187bcc200b433181bd465ecdab624d912a1ac5f83d50b6b99bb14994020f84",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10421562199917389,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acfcc9e77c00084a54a8_1",
+        "group_id": "7f5c245d5508abff69dd9080e7719a50247340916707efee2a467f5506a34f82",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.13990293700044276,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008441746_3",
+        "group_id": "30e79c2d693655d405c1f14750ec56e4af3f502a9dbec3e46d8ab08907fed83f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1687948709950433,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f32c9e77c00084097c0_1",
+        "group_id": "e3ae8f7bf4fae1876af96c81cc92ba44ae9755023f349ce56b7ad50ae893b6a8",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.22225751799851423,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573cc9e77c0008fa1bdb_1",
+        "group_id": "67aa1426c3fc89e93db626d83e24965c7459beb876045bd739d346426fbeb97c",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.2239312469973811,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598bc9e77c000842bfd5_1",
+        "group_id": "9205a343de05e53f64a0a44fbd1f54ac47eb91a34c6223b0dc32c0ae4303a77a",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.00014401200314750895,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda775_1",
+        "group_id": "7cc7cb35fa7d8f141b4fbd321ef7748e1175993cbcf6818b4b4fe5672819cacc",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1919745650011464,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdaa9b_1",
+        "group_id": "1f3bc266a579a37ed31919b42a67dce5c9ff6b4b9e5bb0bb2d059e08e51fa625",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.26187655899411766,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c000848939d_2",
+        "group_id": "7bf5c64424ae1e62840c41be104fb7bee8a31ee59914f3d10414e3dea833fd55",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10892038400197634,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50ec9e77c00084424c9_2",
+        "group_id": "f529fe483e1e941e83607b0d0c90a5b4f37227f53dd7995f1b99dc874bd5b3f0",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.19897065199620556,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573cc9e77c0008fa1c1b_1",
+        "group_id": "1a36f9ad6b73dba63696dae585bb44c7e0bca7bd098e57adf83bc1c0b70d457b",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11152527300146176,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50cc9e77c0008441338_2",
+        "group_id": "b03ae46870883811e2cef1cfdc4c54adc55f0a3b73b6d796cff4611e02448e2f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.29876681300083874,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c00084419cc_2",
+        "group_id": "ff21ef185a325e45639f7701ac8cd8f0aeee6446f51af8079f3590cef2095046",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.10874547499406617,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50fc9e77c0008443379_1",
+        "group_id": "6b2783c52d0e322b64fe4699c3da34c642b87c8910b9aafa56a46f437be1ca2a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.12523980900004972,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a622b_1",
+        "group_id": "3ed43be2e29e8d02b428befe1bba073ed5e79f5f25a1e477c065f6243ab04194",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.2543663020042004,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c00084677d0_1",
+        "group_id": "49b9321bfeeb6f3fa2d2e4b5da2528cc8e7cce023f50ee761947109cd448c371",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.12320904800435528,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c000929521f_2",
+        "group_id": "901aefdc2555cf447b1ddd557c9af65cc83bfa5e44d1cccaf68faa2f6480c9a4",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.19763547900220146,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a69ca_1",
+        "group_id": "8e9c32112b22669dcd7bb7cba65c22e83b28a04f01e4abe7785338b2081daab4",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.09232992799661588,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdad55_1",
+        "group_id": "cbddf6d45553e4c8d4579d917092fe025b6ff188a9fb27aaab991263353af8fb",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.24387219300115248,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55989c9e77c000842ba68_3",
+        "group_id": "b823ef18008d28354ae1a32b5289c00f9a2d1fe7699e0dd8159e124c108357d1",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.09652654999808874,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55988c9e77c000842b920_2",
+        "group_id": "6026592fb2de789b683a4efc4d21f1fc0c54bc6cb64fbcc1a558c0f135cb4781",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.20219427999836626,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb2988ac9e77c0008d9456b_2",
+        "group_id": "03bc087b07cdd98a7572438b70166f94c297ab35fc23bb0032a85fc57051829a",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.09187474500504322,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573ac9e77c0008fa1838_3",
+        "group_id": "760892446e542aab546c79d3ae8b46a2f5135c6183fd75b451c5927f9d33cbde",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.21351420800056076,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de04c9e77c0008489534_1",
+        "group_id": "1498c4e5a09402f53a6fb20ef8b2727998fba6dbfd225c49e042b0f65f330710",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1202197940001497,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c00084674df_2",
+        "group_id": "93875880de75cb2d1bb42211b4c1108d7e5c6227a717ea75a10023c0b8f5d12f",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10396566399867879,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede0730c9e77c00084d35a9_4",
+        "group_id": "4905a499a89c295ac7b4d070dfa9f159db97412659734745d3c57fa058e81528",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11786195899912855,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de08c9e77c000848a56d_1",
+        "group_id": "32250f68eecad365ee349aa7ffd83e1bb7bfcb81ab0a0c4beff27110e9d36662",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.193591978000768,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848ad2b_1",
+        "group_id": "f8bc73cec09049a9ed04c11999b171f4d9cdffdb9674eed116dab5a8e9e3b55f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14729052799521014,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29887c9e77c0008d93186_2",
+        "group_id": "759d030a39510a9576f4c76a3ed93d6dc1d8e673f164f2739a4928b66b97265f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.21114820199727546,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ee393b7c9e77c0008ccc7e6_2",
+        "group_id": "e7ef0b7ce17e42ca60ba6c1e39b921f8c198aa490264fb7f166b73cf8febe084",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11593463199824328,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29885c9e77c0008d928b0_3",
+        "group_id": "89e37755e13cf20e4f8828af9f493180ecc19acb27e7f7d2595b7b8f39a65efc",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1888275040037115,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842dfd1_1",
+        "group_id": "0d40294e6e6bd9672af4b49cd028764b648826556eec7ff61d3cd984863e8dc7",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.08678339299513027,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467117_1",
+        "group_id": "8db070ca25f16fdf1712f739aed6a6e995d5e8afddfd0e825dffb749f32a57d1",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.17471855800249614,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d93e09_2",
+        "group_id": "04aeb2cb37fd5a33199bf18cb3bbdc4a0c21c447d0558d44109251eb0e00f73e",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.10029595100058941,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c000846711a_3",
+        "group_id": "d8eab0ce09bd42cdb0d75655c1344b9cf973da538d580937661058ddb67bdea4",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.1502260550041683,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072fc9e77c00084d30fe_4",
+        "group_id": "7828b081f73964a91cfb1de07e3b74fa09b3f0724b2c543244b17c1779a448f0",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1245685699977912,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848ac34_4",
+        "group_id": "ed68a26f47e507821163e7abdc320bf70f93b0e051c957a9a615471f1d8af62a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11192971199488966,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f31c9e77c0008408f19_2",
+        "group_id": "8da90c709f0d94967f4f1c6a46965ebf38da9e6bf0ee0c0a1b2533860807a0b3",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.13972621499851812,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce14ae_4",
+        "group_id": "24ccc2f1c911cc53d05e49a6a81b794be0a679f063c832e22fb048b7a81b07b4",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.22220082499552518,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb9573bc9e77c0008fa19c1_1",
+        "group_id": "a099d814af9db32cdbe2e273eb2a8b7042500bbc96e40cbe254ee631a52fb8ff",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.20511886200256413,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9461c9e77c0008465ddb_3",
+        "group_id": "1af19fd0cd4f697dc6b17b82f8c8fab663181108f693dfe7ed683df0b579c86f",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.13539880399912363,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416757_2",
+        "group_id": "5092880411b861ed55cdd6b1742947d9d6607815fd1fe62433df71dc73b9d55e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.05850049799482804,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de03c9e77c0008489279_1",
+        "group_id": "5da5402c918b6f9be9aaa2a8a731f0ab0f781e7cb347774f055314fba6fc973e",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10025796499394346,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de09c9e77c000848a9ef_3",
+        "group_id": "2e4af39e19c19f603fff28c7809483f6cff0828bb0d6d7e457dbfc86a153231b",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.10514492700167466,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce13e7_3",
+        "group_id": "2e88ba6ff9de92cf6acd8b98feaf746f52558d8e6af960429626fc0ebb0f097d",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11254199799441267,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29888c9e77c0008d932e4_2",
+        "group_id": "4ee94ececbf10dceee345de5cc532c2b9ddc7a279b8440c249e07c2715abb83d",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10405011900002137,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c0008442377_2",
+        "group_id": "3227e2748c0e1e47c98c12ba5e025955910a621120ecd9aaae6c80b580ddeb16",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.16394182300427929,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec7d50dc9e77c000844201b_1",
+        "group_id": "04f0ca3e1f32df17aa37b473745a0acf51d87042de3c6e19a39c9beefaae96f2",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.09363759199914057,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466667_1",
+        "group_id": "88b84b82cdc8c785afce4ee5a2b505ddbaf63fe2520fbdb8a993c0dcfa4e9124",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.09209173799899872,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c00084161ae_4",
+        "group_id": "c8d0cda2890d0eb52b2a0d447793bc74bc51f2bd451e9cf190aa41e426c087a8",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.23555676099931588,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29887c9e77c0008d930f7_1",
+        "group_id": "b92de090ba3236a276ab5cc09ebf1b3532bb7c34102f8f4231282ed824aae59d",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.20840007099468494,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466ec1_1",
+        "group_id": "15b7124728cc6ed4bbeab5a75e02668aa7df91bdfcd87f15703975c633cc86cf",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.14159199600544525,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fdc9e77c0008416b03_2",
+        "group_id": "c155bdb4f67d61b31ae02cac16e2f8670cc669bbc5a3ad43cd0e075decc5bc10",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.1645437379993382,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467315_3",
+        "group_id": "d1616400ca186b59ed38e5b6196bc677493620575aedeb3fd47b7fc5391de87c",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.10667144800390815,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848aed1_3",
+        "group_id": "3ec4c8e749d524ef82ac728e60be83d265eba10dd3197b0807fbe6859050021b",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.2450233300041873,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32bc9e77c00092950a5_1",
+        "group_id": "44b0aa9263b9173d4dff5ae6bd514c221faacc4a6cf247c36f04dc786e561654",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.16526153400627663,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c00084672e4_2",
+        "group_id": "11bdc91a0cf10032a04a8f55e5f4e67054b31122e106151d0bfe2dcb02813c8e",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10397535900119692,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9463c9e77c0008467143_2",
+        "group_id": "9b31d0b0c0cbb2a5dcc522cac2d5eaf6f6b26bdeee0face607336b91d298b962",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.1355758159988909,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de06c9e77c0008489de3_2",
+        "group_id": "c5fb5ff47d65fc6b723e337156519245ecc51ec235150fb91a819fab810f0ad6",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.15344860700133722,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842dfd3_1",
+        "group_id": "0765da985786bf582807c5b3a43c53b917589a99878eeea3f26e70bf4c919f47",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.09327585799474036,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284ffc9e77c0008417967_2",
+        "group_id": "8c06ba703a13f7126b279cadd248fdad2c94cae42c6b06ff1b98d0c90c8c2e4e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1729391580010997,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f30c9e77c0008408a5e_2",
+        "group_id": "04a6aa9352d9dc955e6d586dfecc74d6b0cac477ec89b939e384fc39021f2875",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.11562594099814305,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2fc9e77c0008407e35_1",
+        "group_id": "941321f5e7bb90318da33d0bb022dbef03518b63005871967349fd4278a2a5c9",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.12925277699832805,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97dc9e77c0009cdab55_2",
+        "group_id": "8180ef9594b7dda55d95183b6c0e2082c97927680191d7f531baff1252bd55b2",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.07290922199899796,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d9443d_1",
+        "group_id": "75c91dbca43941dc7678d7537b7d04e0b017f7abebe8ded3892b881758d86e7d",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.12527786400460172,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec284fcc9e77c0008415b5f_2",
+        "group_id": "a5f7c20f8c48caf14b3a524d4dd8e88b135856c0b74633264e85e27fef43fa7d",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.10117012000409886,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ea2d97bc9e77c0009cda15e_1",
+        "group_id": "9ff811e22f8fdfe0b4f2f6e2510018a0a8fd9998550bad80bcea6e1b9ab9aaa8",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.1699338570033433,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad03c9e77c00084a770d_1",
+        "group_id": "adcbccacfea84286305c4770f33bfb29ec09ed1c755b032da6f9e90ecdf4f863",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.11852398199698655,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de05c9e77c0008489801_1",
+        "group_id": "d2187abb80e9efaf6be10ede8ea9bf87f8acb125cf37f4a212fe8776a6b09c4a",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1307018780062208,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c73b_2",
+        "group_id": "97ec182f5feb57a97682ff8b0c88245c27d249c2fa604efbdc5ce9b60603dc07",
+        "expected": "YES",
+        "decision": "NO",
+        "latency_seconds": 0.13353995000215946,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072ec9e77c00084d24fc_2",
+        "group_id": "b2f3000928a675eb7a4d99a589d35bdd2d83de18355bba31e52ad54f435091e1",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.09146976599731715,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32ac9e77c0009294d4b_1",
+        "group_id": "619fa7c1ddb0c07818309d4a56fa267842e9c53ae02fd164122d9440e19611fb",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.11636044699844206,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29883c9e77c0008d9242b_2",
+        "group_id": "a658f4a98289fa6b83f74ce4fa0a0b31002a6154cc3c53f90638c76f52607a6f",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "latency_seconds": 0.10345067999878665,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebe6f2cc9e77c0008407618_4",
+        "group_id": "9ff0fbf8be7ea6cd3cc746350ce643d62f197c23a5ce3c97fb11565905dd3e8f",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.09401796200108947,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed7ec9e77c0009ce0a05_2",
+        "group_id": "c1f5332c60f39837c67626633f1bac282ababf4c590ca6b44cb647c0205e97fc",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.1484313850014587,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ede072fc9e77c00084d346c_1",
+        "group_id": "c10cff19b6854489433b946848dc702d3a645639b9d5edeb97a115622a21b489",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.1764004919969011,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec55991c9e77c000842df7e_2",
+        "group_id": "b30e77a69a83be543b49ca02ac60c3876c415bf4792a40ede7e8e485981f2211",
+        "expected": "NO",
+        "decision": "YES",
+        "latency_seconds": 0.09664257099939277,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c00084669ef_1",
+        "group_id": "ab8a7eda7a33712b915baa1df8d1c8ca6c3ee2e49fce3b43eb99e7ce075455b9",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.10090132300683763,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad02c9e77c00084a6953_3",
+        "group_id": "d5e7f559d002aed19843b56a8aae420c03a3a50b8a8cbf5d3c0765371387307a",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.08602151700324612,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598ec9e77c000842c861_4",
+        "group_id": "f9e7e13fc39ccb2aaa47c042def3efc8112901f81832f5e6ad377b821fa2160e",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.2382297110016225,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7ad01c9e77c00084a6555_1",
+        "group_id": "ab945b9213882b5597de650378ab1c6b5e47fe3844bb0a874f11627738e5f259",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15192786200350383,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ece9462c9e77c0008466fc0_3",
+        "group_id": "58f20d08960d177b92fb3cedcfd002b6517fbbf4597201507355c1fafe6e3305",
+        "expected": "NO",
+        "decision": "NO",
+        "latency_seconds": 0.18580903400288662,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ec5598dc9e77c000842c3e8_2",
+        "group_id": "01919db491e8049f1150ca4d6c053f16401b3a5efdfe74a99a598dadbcb4bd9f",
+        "expected": "MAYBE",
+        "decision": "NO",
+        "latency_seconds": 0.1644654060000903,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed7acffc9e77c00084a5c15_1",
+        "group_id": "e3d7503e76aebeea4471331f3fd76dd8a354f1476345c2470bc0ecbab6820316",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "latency_seconds": 0.12550499900680734,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ed4de0ac9e77c000848b084_3",
+        "group_id": "a0f9f65acbff7fe5d6a9a4aadcb19a77a38961976f928f15c0edd4c3941f4d18",
+        "expected": "MAYBE",
+        "decision": "YES",
+        "latency_seconds": 0.1959801039993181,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eb29889c9e77c0008d94302_1",
+        "group_id": "d5e9e7b2c1f40356761ef46112968f739b4ada3abe02d0046585b73169cbffda",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.15394000399828656,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5ebbf32ac9e77c0009294da9_1",
+        "group_id": "b891f85550dd578ddeb149c224d3c8716651735e1a625368309ae3d90df0c2ce",
+        "expected": "YES",
+        "decision": "YES",
+        "latency_seconds": 0.23073015000409214,
+        "context_truncated": false,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      },
+      {
+        "id": "vitaminc:5eafed80c9e77c0009ce16f7_3",
+        "group_id": "92870e765fc21a0afd492548e110f65627a891d293db1bc44367520152384228",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "latency_seconds": 0.28887982300511794,
+        "context_truncated": true,
+        "citation_supported": null,
+        "all_in_cost_usd": null
+      }
+    ]
+  }
+}

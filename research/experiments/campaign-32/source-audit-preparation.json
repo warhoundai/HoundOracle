@@ -1,0 +1,299 @@
+{
+  "rows": 48,
+  "all_transformed_labels_claims_passages_match_original": true,
+  "labels_changed": 0,
+  "rows_removed": 0,
+  "audit_sampling": "All48preselected cases, not only model errors",
+  "review_status": "Pending independent blinded adjudication; no audited labels invented",
+  "scope": "Some annotations/context may be ambiguous; model agreement is not proof the gold label is wrong. Existing scores unchanged. Revision references do not establish passage match or objective truth.",
+  "records": [
+    {
+      "id": "vitaminc:5ed7acffc9e77c00084a5b81_4",
+      "group_id": "fa7eaae9b283489d1e60a02c42f6f9b3c26af8a6f3e47899d980c06afb72ffd2",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Thaddeus+Young&oldid=670709337",
+      "original_record_sha256": "c7232a885fb379ab0ca512fe27c365cc08b2335732d2a49a4dd25b615351ea8e"
+    },
+    {
+      "id": "vitaminc:5eb29888c9e77c0008d935dc_2",
+      "group_id": "1874b6f3db90cf74164e622d6aecdaf59680504a0f34d7cbcf4bb9b4f5304678",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Om+Shanti+Om&oldid=845101376",
+      "original_record_sha256": "ecef4291507e76745952862d49ba517482b8c32aa81575687df674b596e7911a"
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdaa9b_1",
+      "group_id": "1f3bc266a579a37ed31919b42a67dce5c9ff6b4b9e5bb0bb2d059e08e51fa625",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Pair+of+Kings&oldid=526264406",
+      "original_record_sha256": "ac01a1a0223cda98216cd6ddc0f3f3924ae3b4afc8f73785141897a638421d7a"
+    },
+    {
+      "id": "vitaminc:5ed7ad00c9e77c00084a5fdc_2",
+      "group_id": "c179e414ba1912feee982c8147afba013ccdcc477929e478d451d8e2a2c59aa0",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Eurosport+1&oldid=879215963",
+      "original_record_sha256": "7690911c93da6928ca933a027072010d8c926f2a8b4e004daec865a74da0bc63"
+    },
+    {
+      "id": "vitaminc:5ec5598fc9e77c000842cb87_4",
+      "group_id": "c7be424a79644bc37f31e289b700d18717a4570f535c369599bb92b290d0178e",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Cato+the+Younger&oldid=486427862",
+      "original_record_sha256": "09778f4628555dce8096a8642434f1deeb633f236295d71ff305cc75dfd26c54"
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c00092950a5_1",
+      "group_id": "44b0aa9263b9173d4dff5ae6bd514c221faacc4a6cf247c36f04dc786e561654",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Sunrisers+Hyderabad&oldid=893815669",
+      "original_record_sha256": "efd2b33a028cb4a98f51692f91c3974ec212341a65c9d9d70a103f74501fcb9c"
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a6d66_1",
+      "group_id": "d97ad7bd012e91b3919f80c7c44c2a0bcfe50f2a09638e8656d9ea2781b6eefc",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Luka+Don%C4%8Di%C4%87&oldid=903338003",
+      "original_record_sha256": "1e9619d8872c6155ffdd64faa7345c9249edd0c8eb72e3bffd7d624099bcc30b"
+    },
+    {
+      "id": "vitaminc:5eafed7ec9e77c0009ce080e_4",
+      "group_id": "f1bf5409da1d1840decfd79297010f89f5502b1109ab0a98770b2c7c0671381f",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Da+Sweet+Blood+of+Jesus&oldid=650211161",
+      "original_record_sha256": "258fad55e74a132d9c7aa7a7061e8e75b9d3dea4813b718bbdb9fb38f548e37c"
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c0008441662_1",
+      "group_id": "0d10647633547f5517aaca10c06281fff49a46b287886115eb939e4a992bbfdb",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Josh+Stewart&oldid=617534176",
+      "original_record_sha256": "a0c50937228992292e03529bdd0c19a31f73fd7855cd0d7955ae4456fbbcdab8"
+    },
+    {
+      "id": "vitaminc:5ec7d50ec9e77c00084424c9_2",
+      "group_id": "f529fe483e1e941e83607b0d0c90a5b4f37227f53dd7995f1b99dc874bd5b3f0",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Type+O+Negative&oldid=585409075",
+      "original_record_sha256": "fef83b194b4b105fea56a3d4c92e03862f0a342a50f25915d51b74b6cb231b8a"
+    },
+    {
+      "id": "vitaminc:5ebe6f30c9e77c0008408a5e_2",
+      "group_id": "04a6aa9352d9dc955e6d586dfecc74d6b0cac477ec89b939e384fc39021f2875",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Javagal+Srinath&oldid=883380699",
+      "original_record_sha256": "56ff1d86eb5ca3c05271980555b7e70e361441df35792d8a8b2abc1c6dc0ab09"
+    },
+    {
+      "id": "vitaminc:5eb9573bc9e77c0008fa19c1_1",
+      "group_id": "a099d814af9db32cdbe2e273eb2a8b7042500bbc96e40cbe254ee631a52fb8ff",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Justin+Bieber+discography&oldid=924632669",
+      "original_record_sha256": "374bf35ff0e08a1ec13dfe7e95c856e3c8d8c4a57543fe6b7345c4afee04737f"
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c00084677d0_1",
+      "group_id": "49b9321bfeeb6f3fa2d2e4b5da2528cc8e7cce023f50ee761947109cd448c371",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=The+Distillers&oldid=257585135",
+      "original_record_sha256": "508ed9bee33da4b8b3994a3c555b88c5545b71e26a7addf479d6411d3353019f"
+    },
+    {
+      "id": "vitaminc:5ece9464c9e77c0008467af5_1",
+      "group_id": "25395e7b05b752aa445f2780b3b91ce66eedce51072e0f9623401a60b0973f5f",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Hempstead%2C+New+York&oldid=818193255",
+      "original_record_sha256": "6faf163b56c7fff532771a005759fc7a5d7a73113e2289993e6eee0d3775e4df"
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a6af5_1",
+      "group_id": "9272d5f7045509e3dfbe075d5967688cb8f5db5f1d023f29e102f492e45a512e",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=The+Blair+Witch+Project&oldid=881189083",
+      "original_record_sha256": "9cb76ce93e754ffbcac647db8850512d067e4c51436741c23581a6533260647e"
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466667_1",
+      "group_id": "88b84b82cdc8c785afce4ee5a2b505ddbaf63fe2520fbdb8a993c0dcfa4e9124",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Kenneth+Williams&oldid=833125889",
+      "original_record_sha256": "4b9ff2683868053d77d45414658a049de9373a38c3866f9a981e0beed91f6493"
+    },
+    {
+      "id": "vitaminc:5ede0730c9e77c00084d35a9_4",
+      "group_id": "4905a499a89c295ac7b4d070dfa9f159db97412659734745d3c57fa058e81528",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Always+Outnumbered%2C+Never+Outgunned&oldid=214263392",
+      "original_record_sha256": "54ab44624b0ab3bf51aa3ec086da84145ddd78c4f6cc90d05e43a364f40a6594"
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466e48_1",
+      "group_id": "454a9a4bc162636ef5f62b2631a7f5d2cbb3f940346945cf726a0c8f49d2a540",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=S%C3%A3o+Paulo&oldid=839726890",
+      "original_record_sha256": "ca590ecd808a8fd3bd6020b440db729045d04001c38cbb9f0a4ba957bfe258e3"
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c00084674df_2",
+      "group_id": "93875880de75cb2d1bb42211b4c1108d7e5c6227a717ea75a10023c0b8f5d12f",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Night+in+the+Woods&oldid=839987080",
+      "original_record_sha256": "801c59162d8b3a1d97a4976e76b4cb95cad26e7361c54240e79dd5e0574e6d46"
+    },
+    {
+      "id": "vitaminc:5ebe6f2dc9e77c0008407787_2",
+      "group_id": "6472c4085b74132b2707b12d13618c98fc48205fa8ec36aeffe6016593bede72",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Kiko+Alonso&oldid=872041101",
+      "original_record_sha256": "83c51d6b81628b45ff0255fbf09319740cd3c4a7ae39097f13a64ddf1808afe1"
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c00084672e4_2",
+      "group_id": "11bdc91a0cf10032a04a8f55e5f4e67054b31122e106151d0bfe2dcb02813c8e",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Rotten+Tomatoes&oldid=861217011",
+      "original_record_sha256": "df4fa55f3e048d367991913628e4071987cc2a93a5937512bcc08731a10ab320"
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c000846663b_1",
+      "group_id": "017d3ee112e830c58cde25d076572d92f94a529192c9dd55bceacd41d23dc88b",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Four+Loko&oldid=802578509",
+      "original_record_sha256": "dd84172d3e8f0b6288f95a38618d1c826d3ce3d13f13fa0ab0e771d0e9e5e5ed"
+    },
+    {
+      "id": "vitaminc:5ec5598bc9e77c000842bfd5_1",
+      "group_id": "9205a343de05e53f64a0a44fbd1f54ac47eb91a34c6223b0dc32c0ae4303a77a",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Leptospirosis&oldid=911208813",
+      "original_record_sha256": "a65336531291cdd4b9295e7bda7bd822d6ab03945326bf814154d6afe5cff306"
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c000929521f_2",
+      "group_id": "901aefdc2555cf447b1ddd557c9af65cc83bfa5e44d1cccaf68faa2f6480c9a4",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Stock+market+index&oldid=301599408",
+      "original_record_sha256": "99c4afe4530aba7feded439dee2b3ab14ad27183f1487cdc8be5a66d84080a00"
+    },
+    {
+      "id": "vitaminc:5ede072fc9e77c00084d2b4b_1",
+      "group_id": "f6c92a5e913d3d34aad3eb87e72ae88da295215f9d507de378c9445d445d1ea0",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Miroslav+Stoch&oldid=573036988",
+      "original_record_sha256": "59fdd80436b80f75565467c78467140b701ced5018e822170279302b2b536906"
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c00084423ad_1",
+      "group_id": "6f019591a2d72e538946bb4cb3b40e8c78956c2ef4fa42e5e43eed562367a71f",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Alessandro+Diamanti&oldid=826036517",
+      "original_record_sha256": "cef3afa7ad49dd2e6f0ddf0fc22c3978a95fe3e49fe86984c694af353b4010c7"
+    },
+    {
+      "id": "vitaminc:5eafed7ec9e77c0009ce083e_1",
+      "group_id": "08061469f80a3311383375ebe9cbca911f4ece6bd81d2d5d8325d6982fe47438",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Dammu&oldid=651760139",
+      "original_record_sha256": "0adae8f94eb89f9aec0c1ad207e35483d2d653189deebdbd1ece3f9d287f644e"
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c0008416380_2",
+      "group_id": "a74346c33e02a78c8ab3a82e51255ea8cc173eb197ff5597f578d73d5a94005c",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=BMW+7+Series+-LRB-E38-RRB-&oldid=729417345",
+      "original_record_sha256": "1cd25d09b227a93e11ef777dd2c1b076af9ab964fdc166c09e0ab966a39e9a1d"
+    },
+    {
+      "id": "vitaminc:5ed4de0ac9e77c000848b084_3",
+      "group_id": "a0f9f65acbff7fe5d6a9a4aadcb19a77a38961976f928f15c0edd4c3941f4d18",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Maxthon&oldid=384987955",
+      "original_record_sha256": "c019c101c46219f39919249000554d8d81e1cc0ad9fe109baf297f9e0bce9705"
+    },
+    {
+      "id": "vitaminc:5ed7ad01c9e77c00084a64cd_1",
+      "group_id": "595739c5343992d677956216c6dc6c3d218a15a1a8ed298a8de1c1385bc2c97f",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Flight+of+the+Conchords&oldid=862762279",
+      "original_record_sha256": "47c22c4e70e97b0e190ab8ce403eaf7d9e75e09a710e60873d45c09bc0b94b78"
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c00084419cc_2",
+      "group_id": "ff21ef185a325e45639f7701ac8cd8f0aeee6446f51af8079f3590cef2095046",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Greta+Scacchi&oldid=740801935",
+      "original_record_sha256": "220d49d98dcbfe20888aff34012d498036da46daa40e56aa71cf800f2765c8df"
+    },
+    {
+      "id": "vitaminc:5ed4de0ac9e77c000848aed1_3",
+      "group_id": "3ec4c8e749d524ef82ac728e60be83d265eba10dd3197b0807fbe6859050021b",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Egg+as+food&oldid=547840700",
+      "original_record_sha256": "bc54322cf4e774527d4c6a46d2ad02647aaecd33f2f90e2456be090642b9459c"
+    },
+    {
+      "id": "vitaminc:5ed4de09c9e77c000848a971_2",
+      "group_id": "b02223f816f0b165a32d251b3a44d812947e880579dc1db3664ce758b63e31ab",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=2006+Mumbai+train+bombings&oldid=139926649",
+      "original_record_sha256": "39c6431fe5fd25b5cfab1f28454ae0016eba2b4abc37618555dc38c0a9be42c3"
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466fc0_3",
+      "group_id": "58f20d08960d177b92fb3cedcfd002b6517fbbf4597201507355c1fafe6e3305",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Darknet+market&oldid=801291514",
+      "original_record_sha256": "6fde8af3733e7db47ad453f8183c4e8b0773e521f7b758b1a20d6a4eaa1c5f89"
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a69ca_1",
+      "group_id": "8e9c32112b22669dcd7bb7cba65c22e83b28a04f01e4abe7785338b2081daab4",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Game+Boy+Color&oldid=796618084",
+      "original_record_sha256": "229a1cbccfeb7f7411f8e56dca5f696e69bfacfa63e8631e8d872bd9bd51405a"
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a70cf_2",
+      "group_id": "4f3fe7336ac783178990fff997ac2c4de3cc97acfe0113cd18800dc7fd181568",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Darren+Criss&oldid=648284329",
+      "original_record_sha256": "c118cfa724d72a59b22289050a9ff179bbd5efc5348b55cfad5f5291221301d2"
+    },
+    {
+      "id": "vitaminc:5ec7d50ec9e77c0008442eae_3",
+      "group_id": "155b97f0104566cf1f12b161ae7d759dfde96f5f62c2e728b45af7aecfc4c65a",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Ed+Begley+Jr.&oldid=726648944",
+      "original_record_sha256": "ca2b89185817daec91cf98da1b08e2b6c851c8164d496d6122dda6be551eebb3"
+    },
+    {
+      "id": "vitaminc:5ed7acfec9e77c00084a5761_2",
+      "group_id": "513306cb207c5da5da1be7db6dee329dae543fc1e8f7c1db066e7973283bb2e1",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Andr%C3%A9+Gomes&oldid=893152950",
+      "original_record_sha256": "7db49248c29ed6783d4398d953b33daab374cc4b8b2b4e7bcb3c068f996a5eb4"
+    },
+    {
+      "id": "vitaminc:5eafed7ec9e77c0009ce0a05_2",
+      "group_id": "c1f5332c60f39837c67626633f1bac282ababf4c590ca6b44cb647c0205e97fc",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Drink&oldid=669388255",
+      "original_record_sha256": "671a2a549a6e6e9957f90ec394ce640ec0fdc02b9f60b14d030a2c6cc6df9a4d"
+    },
+    {
+      "id": "vitaminc:5ec7d50fc9e77c000844320b_2",
+      "group_id": "8895eb4cc17a4f35d980c15547f89ba16f34a72edbf27b5604576ae627576df7",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=U-God&oldid=444914343",
+      "original_record_sha256": "473c3362fd6c9debfdfbcb914714f7a9f4be85e212ef596ac747e89198508ea7"
+    },
+    {
+      "id": "vitaminc:5ea2d97bc9e77c0009cda6a2_3",
+      "group_id": "2d335b295dd3c0b29f5b2ec4870c4b0cb226b1420e5c852a395e688833f23914",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Shania+Twain+discography&oldid=443118826",
+      "original_record_sha256": "075d1ce67147cfe48050bae2a3819aa4c6e11ed0a994701843bd56c4abe75cdf"
+    },
+    {
+      "id": "vitaminc:5eafed80c9e77c0009ce16f7_3",
+      "group_id": "92870e765fc21a0afd492548e110f65627a891d293db1bc44367520152384228",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Demographics+of+Albania&oldid=743666345",
+      "original_record_sha256": "bc6ec1137c33f0ffb0a1ebf949d35968aa20e15a578ac4e0303413060eabb340"
+    },
+    {
+      "id": "vitaminc:5eb29889c9e77c0008d940a7_3",
+      "group_id": "4b692898927a35362655d0eec867385ee04bd68dde7dc571b43d8769bac2d148",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Alfredo+Morelos&oldid=880998345",
+      "original_record_sha256": "403c17dc38686c566d90c72964b5cbfe59bf6621f545ed3b2db89c31760d4312"
+    },
+    {
+      "id": "vitaminc:5ebe6f30c9e77c00084087a5_2",
+      "group_id": "31d4b29c8283f59714e43f7f7bb0027b670c3a639a68bcb8ff4d91bcc551e8eb",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=Four+Seasons+Hotels+and+Resorts&oldid=873146808",
+      "original_record_sha256": "2e8d4a15d3bff31c711441d14f6c6c2e792670afa478a84bd46ec26a7fe0ded2"
+    },
+    {
+      "id": "vitaminc:5ed4de06c9e77c0008489de3_2",
+      "group_id": "c5fb5ff47d65fc6b723e337156519245ecc51ec235150fb91a819fab810f0ad6",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=2005+Kashmir+earthquake&oldid=921983193",
+      "original_record_sha256": "1097ac7a99684444f7ab04f34599754a7c944904be025e9d2aba4029275f3d91"
+    },
+    {
+      "id": "vitaminc:5eb9573ac9e77c0008fa1838_3",
+      "group_id": "760892446e542aab546c79d3ae8b46a2f5135c6183fd75b451c5927f9d33cbde",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=The+Fog&oldid=920423161",
+      "original_record_sha256": "8259a4ec8ec7d7379b32d812f0f14d7ee05cbb693a23c9c4bd7874a3ae3b7726"
+    },
+    {
+      "id": "vitaminc:5ee39329c9e77c0008cc9249_2",
+      "group_id": "6887a74823202376ae32cd0875f86deffd7e77f51bfdec721350db4ffb12fbe7",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=2020+coronavirus+pandemic+in+Jersey&oldid=947527461",
+      "original_record_sha256": "4555dad858fd6b28cb4eca63c059eda9d3556da2deee91abe24e3ca1dea36012"
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c0008467143_2",
+      "group_id": "9b31d0b0c0cbb2a5dcc522cac2d5eaf6f6b26bdeee0face607336b91d298b962",
+      "revision_url": "https://en.wikipedia.org/w/index.php?title=That+Awkward+Moment&oldid=593156300",
+      "original_record_sha256": "4e5c6e7faa0ee7106e959d7a45dca0c7e6eb357627c9bfcffbf6fe643017e6e3"
+    }
+  ]
+}

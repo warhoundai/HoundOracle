@@ -1,0 +1,13 @@
+{
+  "hypothesis": "A worse individually trained encoder may provide complementary errors; a fixed logistic stack can improve useful definitive answers.",
+  "baseline": "minilm-vitc-fever-1921 plus campaign09 head/map",
+  "second_encoder": "minilm-vitc-scaled-1935, rejected as a standalone replacement",
+  "training": "campaign08-round2 development only; cache-aligned claim/source groups",
+  "screen": "reused campaign09 validation207, development evidence only",
+  "calibration_fit": "campaign19 calibration-fit, no fresh risk or locked access",
+  "candidate": "standardized logistic regression C1 seed1961, base logits/token/group features plus second logits/absolute differences/agreement",
+  "screen_gate": "raw accuracy gain>=0.02 OR provisional correct-definitive gain>=0.02; raw regression<=0.01; coverage regression<=0.02",
+  "target": {"precision": 0.99, "minimum_definitive_coverage": 0.35, "confidence_policy": 0.99, "independent_citation_audit_required": true},
+  "promotion": "never from reused development; passing candidate must qualify on fresh risk then frozen independent test",
+  "resource_limit": "local cached-score experiment, no paid inference, preserve stable model and sealed panels"
+}

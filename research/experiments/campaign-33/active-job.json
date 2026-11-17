@@ -1,0 +1,11 @@
+{
+  "project": "project-f6e3c8ea-6b96-44a8-afa",
+  "region": "us-central1",
+  "job": "houndoracle-reasoning33-20261116",
+  "execution": "houndoracle-reasoning33-20261116-d97lm",
+  "status": "COMPLETED_48_OF_48_LOGS_EXPORTED_JOB_DELETED",
+  "maximum_model_calls": 48,
+  "maximum_seconds": 1800,
+  "reserved_usd": 4,
+  "succeeded_tasks": 1
+}

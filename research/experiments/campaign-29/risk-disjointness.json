@@ -1,0 +1,9 @@
+{
+  "risk_rows": 1000,
+  "overlap_components": {
+    "training": 0,
+    "validation": 0,
+    "calibration-fit": 0
+  },
+  "scope": "New source/event risk components sealed in campaign19; public pretrained-model corpus contamination remains possible."
+}

@@ -1,0 +1,24 @@
+{
+  "hypothesis": "A local instruction-trained4B generative evidence adjudicator can reduce semantic errors beyond the adapted NLI model, despite higher compute. Test before integration.",
+  "input_sha256": "9308542cc9d2b50d99f3a27a9a225c040181a8d1d292fccf59cb948fd6197cce",
+  "dataset": "48 deterministic group-disjoint development cases,16per label, selected with SHA256 seed1970. Reused development only; no fresh/locked use.",
+  "baseline": "Fixed adapted DeBERTa29 raw candidate on same supplied evidence",
+  "model": {
+    "repo": "unsloth/Qwen3-4B-Instruct-2507-GGUF",
+    "revision": "a06e946bb6b655725eafa393f4a9745d460374c9",
+    "file": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "bytes": 2497281120,
+    "sha256": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597"
+  },
+  "engine": "llama-cpp-python0.3.16 MIT; CPU8threads ctx4096; temperature0 seed1970 max128outputtokens; JSONschema output; no cloud inference in local candidate",
+  "scope": "Complete permitted supplied evidence, no outside model memory; NO requires contradiction. Both raw systems unqualified; public API unchanged.",
+  "gate": "All-decision accuracy gain>=2percentage points; no definitive coverage loss>2points; failures always incorrect. Initial48screen cannot qualify99.",
+  "resources": {
+    "aws_reservation_usd": 10,
+    "one_worker": "c7i.2xlarge",
+    "watchdog_minutes": 40,
+    "program_timeout_seconds": 1800,
+    "gpu": false
+  },
+  "rollback": "Stable and new29research checkpoints unchanged; reject failed screen before independent data."
+}

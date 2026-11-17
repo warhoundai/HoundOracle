@@ -1,0 +1,34 @@
+{
+  "hypothesis": "A larger published evidence-understanding encoder trained on MNLI, FEVER-NLI and ANLI may address semantic errors that more MiniLM fine-tuning did not fix.",
+  "model_id": "cross-encoder/nli-deberta-v3-base",
+  "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "declared_model_license": "Apache-2.0",
+  "training_datasets": [
+    "SNLI",
+    "MultiNLI"
+  ],
+  "licensing_note": "Model and Microsoft base declareMIT/Apache-compatible terms; SNLI/MNLI cards reviewed separately; no source or weight redistribution. ANLI candidate rejected before use.",
+  "input_policy": "Same supplied evidence/questions, ONNX FP32, max256, CPU4threads; no model code execution, no fallback",
+  "partition": "reused development validation207 only for the first screen; no fresh risk or locked panel in bundle",
+  "primary_gate": "at least+0.02 raw three-way accuracy versus stable raw+logistic head on paired207; never promote on development",
+  "next_gate": "if screen passes, separately fit/calibrate and qualify on fresh risk, then frozen held-out evaluation",
+  "target": {
+    "precision": 0.99,
+    "minimum_definitive_coverage": 0.35,
+    "independent_evidence_audit_required": true
+  },
+  "resources": {
+    "aws_reservation_usd": 5,
+    "maximum_active_workers": 1,
+    "watchdog_minutes": 12,
+    "gpu": false
+  },
+  "unknowns": [
+    "general web accuracy",
+    "calibration",
+    "citation sufficiency",
+    "all-in query cost",
+    "paired end-to-end latency",
+    "original pretraining contamination"
+  ]
+}

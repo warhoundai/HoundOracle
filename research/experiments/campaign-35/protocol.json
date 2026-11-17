@@ -1,0 +1,36 @@
+{
+  "hypothesis": "Contrastive supervision may improve sensitivity to small factual revisions. Compare identical low-rank adapter training with CE-only versus CE plus pairwise ranking; do not attribute an adapter effect to ranking alone.",
+  "base_checkpoint_sha256": "c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70",
+  "seed": 1983,
+  "training_pairs": 512,
+  "training_rows": 1024,
+  "source_groups": 512,
+  "training_data": "Human VitaminC real-revision pairs from existing training partition only; no generated labels or new held-out inputs. Some rows were already seen by the base model.",
+  "controls": [
+    "CE-only adapter",
+    "CE plus0.2pairwise softplus ranking adapter"
+  ],
+  "optimizer": "AdamW, attention-adapter LR2e-4, classifier LR2e-5, weight_decay.01 gradientclip1; identical both arms",
+  "batch_rows": 8,
+  "epochs": 1,
+  "rank": 8,
+  "last_attention_layers": 4,
+  "trainable": "Only query/value low-rank factors and classifier; base weights frozen",
+  "max_length": 256,
+  "pair_margin": 1.0,
+  "selection": "Same512pairs and batch order for both arms. Fixed final checkpoint, no intermediate validation selection.",
+  "screen": "Reused207development cases; no independent promotion.",
+  "gate": "Raw accuracy improvement>=.02 versus frozen29 baseline and raw definitive coverage regression<=.02. Reject incomplete training. If both pass prefer higher correct-definitive fraction, then accuracy, then CE-only.",
+  "resources": {
+    "local_cpu_threads": 2,
+    "local_memory_limit_bytes": 8589934592,
+    "maximum_training_seconds_per_arm": 900,
+    "new_cloud_spend_usd": 0,
+    "large_base_weights_copied": false,
+    "maximum_process_seconds": 2400
+  },
+  "future_gate": "Only a passing development candidate may proceed to separately frozen calibration and fresh independent cohorts. Existing consumed600must not be used to tune.",
+  "excluded_contradictory_identity_pairs": 2,
+  "inputs_sha256": "68c4e85e98bc3c233b18ab04faaee19d2b627dccc0ab502944bdaf54711cab94",
+  "production_qualified": false
+}

@@ -1,0 +1,27 @@
+{
+  "hypothesis": "4B generative screen failed with syntactically valid but semantically wrong answers. Isolate higher model capacity with same prompt, schema, evidence and48questions.",
+  "input_sha256": "56e40bd1852262e30a304be61244a9b7289de9ab3a1dd258bb7cb7222bd4ae29",
+  "dataset": "48 deterministic group-disjoint development cases,16per label, selected with SHA256 seed1970. Reused development only; no fresh/locked use.",
+  "baseline": "Fixed adapted DeBERTa29 raw candidate on same supplied evidence",
+  "model": {
+    "repo": "unsloth/Qwen3-30B-A3B-Instruct-2507-GGUF",
+    "revision": "eea7b2be5805a5f151f8847ede8e5f9a9284bf77",
+    "file": "Qwen3-30B-A3B-Instruct-2507-Q4_K_M.gguf",
+    "bytes": 18556686752,
+    "sha256": "6c997b8af17debdfb01d890214400ccbab00db6acc0ba8da5de1cc906c4774d0"
+  },
+  "engine": "llama-cpp-python0.3.16 MIT; CPU8threads ctx4096; temperature0 seed1970 max128outputtokens; JSONschema output; no cloud inference in local candidate",
+  "scope": "Complete permitted supplied evidence, no outside model memory; NO requires contradiction. Both raw systems unqualified; public API unchanged.",
+  "gate": "All-decision accuracy gain>=2percentage points; no definitive coverage loss>2points; failures always incorrect. Initial48screen cannot qualify99.",
+  "resources": {
+    "aws_reservation_usd": 15,
+    "one_worker": "m7i.2xlarge8CPU32GiB",
+    "disk_gib": 50,
+    "watchdog_minutes": 40,
+    "program_timeout_seconds": 1800,
+    "gpu": false
+  },
+  "rollback": "Stable and new29research checkpoints unchanged; reject failed screen before independent data.",
+  "archive_sha256": "3dad2b6db6226e6746411cdf9a9a53122afcf30437bbaefa4398eea0f6ada8f5",
+  "prompt_unchanged_from32": true
+}

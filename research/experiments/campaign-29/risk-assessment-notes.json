@@ -1,0 +1,8 @@
+{
+  "diagnostics_nontruncated_input_rows": 999,
+  "diagnostics_risk_coverage_denominator": 999,
+  "policy_metrics_denominator": 1000,
+  "reason": "One truncated input abstains. Descriptive calibration bins and curves use the nontruncated subset; full policy summary includes all1000. No threshold or calibration refit after risk observations.",
+  "strict99_failed": true,
+  "production_qualified": false
+}

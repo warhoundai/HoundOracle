@@ -1,0 +1,23 @@
+{
+  "directory": "/workspace/houndoracle-models/deberta-vitc-fever-1963",
+  "files": {
+    "config.json": {
+      "bytes": 1095,
+      "sha256": "7cdc1841aeafb7a0bad7941e1d451f280136b61f30f6d7e730af85df74d84c53"
+    },
+    "model.safetensors": {
+      "bytes": 737722356,
+      "sha256": "c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70"
+    },
+    "tokenizer_config.json": {
+      "bytes": 505,
+      "sha256": "3dd09fcbf87e99e22a6e9d359ab7ecaceca29dd3774e509df9de6a16ecdaa394"
+    },
+    "tokenizer.json": {
+      "bytes": 8339973,
+      "sha256": "561fd1b229749e08cc8b9b0a77e467b07ac5549418682e603925753429a8cd3e"
+    }
+  },
+  "stable1921_preserved": true,
+  "production_qualified": false
+}

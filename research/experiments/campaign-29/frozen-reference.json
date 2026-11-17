@@ -1,0 +1,8 @@
+{
+  "files": {
+    "research/experiments/campaign-09/continued-mixture-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "research/experiments/campaign-09/continued-mixture-calibration.json": "e05263845b94dcbb2d1b8edc05dd5ce46185f23b2a082a572ff19dac248bcbfc",
+    "research/experiments/campaign-08/round-2/trained-manifest.json": "0d02011b4d6f46ae3c00bc805eca089afa6eccb509f86c0944e6b43899f7cd7c"
+  },
+  "selection": "Existing stable1921 reference; no reference selection on fresh risk/locked"
+}

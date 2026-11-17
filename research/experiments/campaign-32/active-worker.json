@@ -1,0 +1,13 @@
+{
+  "role": "houndoracle-qwen32-20261116",
+  "security_group": "sg-0e8f7c6aab224dc1f",
+  "instance_id": "i-0d270b0fff4564d23",
+  "state": "pending",
+  "previous_worker": "i-0bde64a72482685d1",
+  "bucket": "houndoracle-research-751446514671-20261116",
+  "prefix": "qwen32/output/",
+  "region": "us-east-1",
+  "status": "COMPLETED_REJECTED_BOTH_WORKERS_TERMINATED_IAM_SG_DELETED",
+  "watchdog_minutes": 40,
+  "attached_volumes": 0
+}

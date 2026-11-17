@@ -1,0 +1,26 @@
+{
+  "model_id": "cross-encoder/nli-deberta-v3-base",
+  "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "files": {
+    "config.json": {
+      "bytes": 1052,
+      "sha256": "897e756eb59d3183adb505952e7910e7cbc7750a43f3b3747a96b688d2b02a47"
+    },
+    "tokenizer.json": {
+      "bytes": 8656624,
+      "sha256": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964"
+    },
+    "README.md": {
+      "bytes": 2856,
+      "sha256": "b6a6dd82d5fee7036e3b815ce1d28458df294d8525fc234fb7e7277b6b79d878"
+    },
+    "onnx/model.onnx": {
+      "bytes": 738574335,
+      "sha256": "369ebf04fce8206c83b8fd62e9dc860144f10351a7f885ed3076beb17b7c6dda"
+    }
+  },
+  "input_rows": 207,
+  "source_sha256": "92094d929aad48af10aacb45c9bad0bbd30f74d094633a1cfe4bc7b0e22d0168",
+  "source_bytes": 45574,
+  "dataset_text_or_weights_redistributed": false
+}

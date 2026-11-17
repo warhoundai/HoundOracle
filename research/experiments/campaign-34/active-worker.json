@@ -1,0 +1,12 @@
+{
+  "role": "houndoracle-qwen34-20261116",
+  "security_group": "sg-0b8ae5875d77bcf1e",
+  "instance_id": "i-0927514528c509ee3",
+  "state": "pending",
+  "region": "us-east-1",
+  "bucket": "houndoracle-research-751446514671-20261116",
+  "prefix": "qwen34/output/",
+  "status": "COMPLETED_REJECTED_WORKER_TERMINATED_IAM_SG_DELETED",
+  "watchdog_minutes": 40,
+  "attached_volumes": 0
+}

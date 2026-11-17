@@ -1,0 +1,18 @@
+{
+  "instance_id": "i-0d5d6256c11453ede",
+  "region": "us-east-1",
+  "type": "c7i.2xlarge",
+  "security_group": "sg-096cf1c18a7529fc7",
+  "role_and_instance_profile": "houndoracle-nli29-20261116",
+  "inline_policy": "OwnExperimentArtifacts",
+  "bucket": "houndoracle-research-751446514671-20261116",
+  "input_key": "nli29/input/source.tar.gz",
+  "output_prefix": "nli29/output/",
+  "training_timeout_seconds": 1800,
+  "worker_watchdog_minutes": 40,
+  "reserved_usd": 5,
+  "status": "COMPLETED_WORKER_TERMINATED_IAM_PROFILE_SG_DELETED",
+  "cleanup": "After termination: RemoveRoleFromInstanceProfile, DeleteInstanceProfile, DeleteRolePolicy, DeleteRole, DeleteSecurityGroup; confirm no attached root volumes. Preserve stable1921.",
+  "scope": "6400 fixed supervised training rows;207 reused development plus1000 calibration-fit; no fresh risk or locked in worker inputs",
+  "attached_volumes_after_cleanup": 0
+}

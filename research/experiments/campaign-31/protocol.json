@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Blindly joining three retrieved documents distracts the trained encoder; using the highest-BM25 passage can improve this single-gold-passage historical diagnostic.",
+  "candidate": "top1 context",
+  "baseline": "top3 concatenation",
+  "encoder": "same frozen1921 ONNX FP32,256tokens,1thread; no retraining",
+  "workload": "reused207 development queries, supplied historical207-document corpus; not live-web or independent evaluation",
+  "latency": "alternate execution order per query after a fixed warmup",
+  "acceptance": "raw accuracy gain>=0.02 and no latency regression; retained research-only pending broader multi-hop/contradiction tests",
+  "target99": "not a qualification experiment; cannot replace independent precision/coverage/citation gates or enable public YES/NO",
+  "cost": "local CPU, no paid provider or cloud worker"
+}

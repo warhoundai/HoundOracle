@@ -1,0 +1,22 @@
+{
+  "hypothesis": "The larger generic encoder failed without domain adaptation; one supervised revision-adaptation epoch may improve evidence-grounded semantics beyond the stable smaller model.",
+  "initial_model": "cross-encoder/nli-deberta-v3-base",
+  "revision": "6c749ce3425cd33b46d187e45b92bbf96ee12ec7",
+  "train_rows": 6400,
+  "seed": 1963,
+  "epochs": 1,
+  "optimizer": "AdamW",
+  "learning_rate": 0.00002,
+  "weight_decay": 0.01,
+  "batch_size": 8,
+  "max_length": 256,
+  "frozen": "input embeddings (retain vocabulary and reduce CPU optimizer state)",
+  "data": "fixed random subset of campaign19 public human revision/FEVER replay training; exclude normalized source page, claim and passage overlaps with validation/calibration-fit",
+  "screen": "reused207-query development, no independent promotion",
+  "calibration": "dedicated calibration-fit1000, no fresh risk/test on training worker",
+  "screen_gate": "raw accuracy improves>=0.02 OR provisional correct-definitive improves>=0.02; raw regression<=0.01; coverage regression<=0.02",
+  "target": {"precision": 0.99, "minimum_definitive_coverage": 0.35, "independent_citation_audit_required": true},
+  "resource_limit": {"aws_reservation_usd": 5, "maximum_workers": 1, "training_timeout_seconds": 1800, "worker_watchdog_minutes": 40, "gpu": false},
+  "rollback": "stable1921 checkpoint unchanged; incomplete training or failed gates cannot replace it",
+  "redistribution": "No source text or weights in Apache code repository; upstream model Apache2 and dataset attribution/share-alike terms remain separate"
+}

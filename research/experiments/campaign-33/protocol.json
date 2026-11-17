@@ -1,0 +1,28 @@
+{
+  "hypothesis": "Higher reasoning effort can resolve evidence semantics missed by compact evaluators; compare LOW versus HIGH without model/prompt/evidence changes.",
+  "model": "gemini-3.8-flash",
+  "location": "global",
+  "sdk": "2.34.0",
+  "levels": [
+    "LOW",
+    "HIGH"
+  ],
+  "temperature": 0,
+  "seed": 1970,
+  "max_output_tokens": 4096,
+  "max_input_tokens": 8192,
+  "response_format": "evidence_indices",
+  "provided_evidence_only": true,
+  "search_grounding": false,
+  "dataset": "24 balanced reused development cases, subset of32; one call per level/case. No independent promotion.",
+  "dataset_sha256": "7a61dbf6cbdac9307ebf497d3a595999ec36f250ffc6d64bb26053fadd132e69",
+  "maximum_calls": 48,
+  "model_reservation_usd": 1.032192,
+  "compute_allowance_usd": 0.5,
+  "reserved_total_usd": 4,
+  "billing": "Read-only Cloud Billing API disabled; actual credits/invoices unknown. Existing user50USD authorization covers pay-as-you-go; no API enabling or IAM grants.",
+  "timeout_seconds": 1800,
+  "retry_policy": "No SDK retries; no job retries; uncertain attempts retain full reservation.",
+  "raw_report": "All planned slots including failure/deferred; no citation-quality or calibrated truth guarantee.",
+  "code_sha256": "57bc3bbab75a3dd7b1a00f9cb3067914ce97f1da99dad24da54ca0cd44b73351"
+}
