@@ -1,0 +1,20 @@
+{
+  "model_id": "houndoracle/minilm-vitc-average-1932",
+  "revision": "c930fc6325fc01cea620a5bf0424a31c08ed27d1b901f7ac52d7fd0d826e4e56",
+  "declared_license": "Local research; upstream model and dataset redistribution rights require review",
+  "max_length": 256,
+  "files": {
+    "config.json": {
+      "sha256": "3ad0190d54812dd589ade1aefe22222eb78960681a1ce59be4cc85b172da6a69",
+      "bytes": 987
+    },
+    "tokenizer.json": {
+      "sha256": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6",
+      "bytes": 1356048
+    },
+    "onnx/model.onnx": {
+      "sha256": "ea8f9a5ba612d1f6faed4166843cfdfb276a993c38e2823e4879199f1ada5e4b",
+      "bytes": 328597332
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "qualified": true,
+  "model_selected": "fp32",
+  "comparisons": {
+    "int8-dense-pc": {
+      "p50_reduction": 0.6592953916818598,
+      "p95_reduction": 0.6618198892849062,
+      "file_size_reduction": 0.39217798639947565,
+      "passed": false,
+      "p50_reduction_95_question_bootstrap_interval": [
+        0.6533960734029814,
+        0.6662502379765501
+      ],
+      "p95_reduction_95_question_bootstrap_interval": [
+        0.6207919933429036,
+        0.6832971197863942
+      ]
+    },
+    "int8-full-pc": {
+      "p50_reduction": 0.6542365158559683,
+      "p95_reduction": 0.6483539358874879,
+      "file_size_reduction": 0.7482233239800011,
+      "passed": false,
+      "p50_reduction_95_question_bootstrap_interval": [
+        0.6484453483305255,
+        0.6610670499249585
+      ],
+      "p95_reduction_95_question_bootstrap_interval": [
+        0.5991015664731161,
+        0.6698659178203531
+      ]
+    }
+  },
+  "file_sha256": {
+    "dataset-manifest.json": "25db8c2692d10af77cab5a37213c57af701fee65352bb90c4331f74a3681abd9",
+    "fp32-analysis.json": "298c90a3153966cf414aa4574e191fec7a0a8ee13ccc2ce52e443677a0af7b58",
+    "fp32-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "fp32-calibration.json": "0952cd768c325ffb89c9a026e4c32a4cfd9f9beb94f16e491c17ed484e2dd518",
+    "int8-dense-pc-analysis.json": "3c5248f40aa5b4cbc4120f095b4f30977a32a1f100aca0b57c6e7c06fdcfc3f4",
+    "int8-dense-pc-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "int8-dense-pc-calibration.json": "6987200e7e02032909eb8223b8363cc0eb4c2d33f58b49c30f3904cd81d8c3d4",
+    "int8-full-pc-analysis.json": "fd8611b9668089ff589de5dbf0f873c6c0e3910299e3f38478823d7ee1c53b40",
+    "int8-full-pc-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "int8-full-pc-calibration.json": "55de11d09c632ae714b5355990ba1c9f735721471249ac5dd30e59715ce3810b",
+    "int8-dense-pc-manifest.json": "0bae1b897e92d72db4d9a7807fcc9f09a7d28574c44279784454c3404013650d",
+    "int8-full-pc-manifest.json": "faa8e8c7febcd74af7da55e8f80be32d65415edc100d2a41209c32d9cc6c95fe"
+  },
+  "locked_predictions_seen": false,
+  "production_qualified": false,
+  "scope": "Local one-thread conditional evidence path; bootstrap captures workload sampling, not all host/environment variability. No end-to-end network/Gemini claim."
+}

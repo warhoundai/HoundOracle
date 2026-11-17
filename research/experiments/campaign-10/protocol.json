@@ -1,0 +1,11 @@
+{
+ "baseline":"Frozen selected campaign09 continued-mixture FP32 model/head/correctness mapping; no new gradient training or label/threshold changes.",
+ "hypothesis":"Dynamic integer quantization targets the native dense kernels that dominate local runtime, reducing CPU time and memory while preserving independently measured semantic quality.",
+ "variants":[{"name":"fp32","change":"Unmodified selected model"},{"name":"int8-dense","change":"ONNX Runtime1.32 dynamic U8U8, per_channel=false, reduce_range=false, MatMul only"},{"name":"int8-full","change":"Same fixed quantization plus Gather embedding weights"}],
+ "data":"Reused validation207 and frozen head/map;1000 new independent risk queries and600 new locked queries from unused components excluding all prior campaign cohorts. No new model fitting. Old600-query test is retired and never relabeled.",
+ "screen":"Validation raw accuracy drop<=.01, label agreement>=.98, definitive coverage loss<=.02. Keep80% floor, exact per-query risk bound with alpha=.05/3 and at least30 selected. Reject failed variants before locked use.",
+ "performance":"Paired local verify_evidence path at one CPU thread, no result cache, same validation queries and repeated seeded order, after other CPU jobs finish. Require>=20% point reduction in P50 andP95 and>=30% model-file reduction; record uncertainty and peak process RSS. This is not network/agent/Gemini latency.",
+ "selection":"Choose smallest qualified variant passing quality/performance gates before locked predictions; retain FP32 if no improvement. Do not select a winner from test results.",
+ "heldout":"Paired noninferiority margins declared before scoring: epsilon=.01 raw accuracy, delta=.02 definitive coverage, with selective-risk upper<=.20. Report paired intervals; do not claim equivalence outside those tolerances.",
+ "limits":"Local CPU only; two fixed quantization configurations, no new cloud spending, public weights or production deployment. Preserve both failed and successful artifacts."
+}

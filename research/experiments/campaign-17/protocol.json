@@ -1,0 +1,7 @@
+{
+  "hypothesis": "A fixed verdict-conditional correctness map may improve selective coverage when YES/NO score reliability differs, without changing the trained encoder or raw verdicts.",
+  "intervention": "Fit separate regularized logistic correctness maps for YES and NO on the existing1000 independent calibration-fit queries; C1, fixed seed1933, no hyperparameter sweep. At least30 eligible examples and both correctness outcomes required per label. Unqualified labels abstain.",
+  "screen": "Compare to frozen campaign09 continued-mixture on207 reused validation components, preserving80% floor. Require at least2point improvement in correct-definitive/all or equivalent precision with2point coverage gain; raw verdicts must remain identical. Development screen is not risk qualification.",
+  "qualification": "If screen passes, assess both fixed maps on1000 new unused component queries with exact Bonferroni alpha=.05/2, >=30 accepted. Existing risk sets are diagnostics only and cannot qualify this new intervention. Fresh locked600 confirmation only after frozen selection; no test-dependent calibration.",
+  "limits": "One conditional map, local inexpensive screen. No encoder/head changes or tuning on pilot14 answers. No risk floor relaxation, unqualified promotion, Gemini advantage or public release inferred."
+}

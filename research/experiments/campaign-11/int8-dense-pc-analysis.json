@@ -1,0 +1,52 @@
+{
+  "variant": "int8-dense-pc",
+  "raw_validation": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.7632850241545893,
+    "definitive_coverage": 0.6859903381642513,
+    "correct_definitive_fraction": 0.5458937198067633,
+    "selective_risk": 0.204225352112676,
+    "definitive_count": 142,
+    "correct_definitive_count": 113,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "calibrated_validation": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.6328502415458938,
+    "definitive_coverage": 0.3719806763285024,
+    "correct_definitive_fraction": 0.34782608695652173,
+    "selective_risk": 0.06493506493506496,
+    "definitive_count": 77,
+    "correct_definitive_count": 72,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "certificate": {
+    "threshold": 0.8,
+    "alpha": 0.016666666666666666,
+    "selected_rows": 326,
+    "selected_groups": 326,
+    "fully_correct_groups": 297,
+    "group_correctness_lower_bound": 0.8715048445723533,
+    "qualified": true,
+    "method": "one-sided Clopper-Pearson on group-any-error events",
+    "assumptions": "Independent/exchangeable sampled components; does not guarantee row-weighted risk for arbitrary group sizes or distribution shift.",
+    "row_weighted_risk_guaranteed": false,
+    "row_risk_upper": 0.12849515542764667,
+    "risk_unit": "One independent query per component; not all-pair case correctness"
+  },
+  "locked_scored": false,
+  "label_agreement_fp32": 0.961352657004831,
+  "validation_quality_passed": false
+}

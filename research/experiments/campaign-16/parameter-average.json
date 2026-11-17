@@ -1,0 +1,36 @@
+{
+  "parents": {
+    "minilm-vitc-fever-1920": "4be90152ff0ae33ff663ce9c5b01598ca3d678677957624b7c2a3b1c021388af",
+    "minilm-vitc-fever-1921": "8bdfefab3243dca9df371923315f71e735b0df8d3ba0c7461844012bab4b5ddf"
+  },
+  "weights": [
+    0.5,
+    0.5
+  ],
+  "parity_checks": [
+    {
+      "batch": 1,
+      "length": 8,
+      "max_error": 1.430511474609375e-06
+    },
+    {
+      "batch": 2,
+      "length": 64,
+      "max_error": 1.5832483768463135e-06
+    },
+    {
+      "batch": 1,
+      "length": 256,
+      "max_error": 9.462237358093262e-07
+    },
+    {
+      "batch": 2,
+      "length": 256,
+      "max_error": 5.206093192100525e-07
+    }
+  ],
+  "seconds": 5.212942334997933,
+  "gradient_updates": 0,
+  "new_cloud_cost_usd": 0,
+  "production_qualified": false
+}

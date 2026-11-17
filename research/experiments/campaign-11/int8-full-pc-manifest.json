@@ -1,0 +1,32 @@
+{
+  "model_id": "houndoracle/minilm-vitc-fever-1921-int8-full-pc",
+  "revision": "d2ba588cd279a6859721809e2c05fce62e67f8b14fa5e936b20390bbd23ce5cf",
+  "max_length": 256,
+  "declared_license": "Local research checkpoint; base/data redistribution compatibility review required",
+  "quantization": {
+    "source_onnx_sha256": "56148d5f12ef499168f4a11da8ad603009903d5abc1f204fa7d021c81d636cbd",
+    "runtime": "1.32.0",
+    "ops": [
+      "MatMul",
+      "Gather"
+    ],
+    "weight_type": "QInt8",
+    "per_channel": true,
+    "reduce_range": false,
+    "seconds": 3.1783896409979207
+  },
+  "files": {
+    "config.json": {
+      "sha256": "3ad0190d54812dd589ade1aefe22222eb78960681a1ce59be4cc85b172da6a69",
+      "bytes": 987
+    },
+    "tokenizer.json": {
+      "sha256": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6",
+      "bytes": 1356048
+    },
+    "onnx/model_quint8_avx2.onnx": {
+      "sha256": "d2ba588cd279a6859721809e2c05fce62e67f8b14fa5e936b20390bbd23ce5cf",
+      "bytes": 82733144
+    }
+  }
+}

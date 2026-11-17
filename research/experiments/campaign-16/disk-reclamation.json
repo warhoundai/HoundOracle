@@ -1,0 +1,17 @@
+[
+  {
+    "artifact": "minilm-vitc-fever-1921-fused",
+    "bytes_removed": 329862922,
+    "reason": "Rejected reproducible runtime conversion; retained source manifests/profiles/parent weights"
+  },
+  {
+    "artifact": "minilm-vitc-fever-1921-int8-mixed2",
+    "bytes_removed": 126473227,
+    "reason": "Rejected reproducible runtime conversion; retained source manifests/profiles/parent weights"
+  },
+  {
+    "artifact": "minilm-vitc-fever-1921-int8-mixed3",
+    "bytes_removed": 147664209,
+    "reason": "Rejected reproducible runtime conversion; retained source manifests/profiles/parent weights"
+  }
+]

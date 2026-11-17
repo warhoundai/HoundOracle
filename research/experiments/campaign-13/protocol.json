@@ -1,0 +1,6 @@
+{
+ "hypothesis":"Native full-precision attention/normalization graph fusion may reduce local CPU overhead without lossy weights. Source model remains the preselected independently evaluated continued encoder.",
+ "configuration":"Official ORT1.32 transformer optimizer, bert-compatible Roberta,12heads/768hidden, CPU, opt_level0 before Python fusions, no GELU approximation, no embedding-layernorm fusion. No new training, quantization, labels or thresholds.",
+ "screen":"Paired source/fused raw encoder outputs on reused207 validation queries, fixed head, maxabsolute logit error<=1e-4 and identical head decisions. Warm one-thread timing is provisional and must improve P50/P95>=15% before further qualification/profile work. Otherwise reject and retain source FP32.",
+ "scope":"One bounded local graph experiment, no new cloud spending, public release or claim of Gemini/agent acceleration. Fresh calibration/locked qualification required before promotion if speed screen passes."
+}

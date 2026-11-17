@@ -1,0 +1,7 @@
+{
+  "quantized_variants_rejected": true,
+  "selected": "fp32",
+  "reason": "Per-channel variants improved local P50/P95 about66%, but changed3.86% validation labels and reduced accuracy/coverage beyond gates.",
+  "locked_scored": false,
+  "next": "Final bounded precision-localization experiment: leave final1/2/3 encoder blocks floating; classifier already Gemm and was never quantized."
+}

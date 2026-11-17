@@ -1,0 +1,49 @@
+{
+  "model_id": "houndoracle/minilm-vitc-fever-1921-fused",
+  "revision": "c0371d537f0b9a9a190815e42ad59d1a854e8ea7a880c0677a9c6d4f654ac841",
+  "max_length": 256,
+  "declared_license": "Local research; source/model redistribution compatibility review required",
+  "files": {
+    "config.json": {
+      "sha256": "3ad0190d54812dd589ade1aefe22222eb78960681a1ce59be4cc85b172da6a69",
+      "bytes": 987
+    },
+    "tokenizer.json": {
+      "sha256": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6",
+      "bytes": 1356048
+    },
+    "onnx/model.onnx": {
+      "sha256": "c0371d537f0b9a9a190815e42ad59d1a854e8ea7a880c0677a9c6d4f654ac841",
+      "bytes": 328504313
+    }
+  },
+  "optimization": {
+    "runtime": "1.32.0",
+    "model_type": "bert-compatible Roberta",
+    "heads": 12,
+    "hidden_size": 768,
+    "ort_preoptimization_level": 0,
+    "gelu_approximation": false,
+    "embedding_layernorm_fusion": false,
+    "source_sha256": "56148d5f12ef499168f4a11da8ad603009903d5abc1f204fa7d021c81d636cbd",
+    "fused_operator_statistics": {
+      "EmbedLayerNormalization": 0,
+      "Attention": 6,
+      "MultiHeadAttention": 0,
+      "Gelu": 0,
+      "FastGelu": 0,
+      "BiasGelu": 6,
+      "GemmFastGelu": 0,
+      "LayerNormalization": 1,
+      "SimplifiedLayerNormalization": 0,
+      "SkipLayerNormalization": 12,
+      "SkipSimplifiedLayerNormalization": 0,
+      "RotaryEmbedding": 0,
+      "QOrderedAttention": 0,
+      "QOrderedGelu": 0,
+      "QOrderedLayerNormalization": 0,
+      "QOrderedMatMul": 0
+    },
+    "seconds": 7.610973054001079
+  }
+}

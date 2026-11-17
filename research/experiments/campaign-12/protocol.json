@@ -1,0 +1,27 @@
+{
+  "baseline": "Frozen selected campaign09 continued-mixture FP32 model/head/correctness mapping; no new gradient training or label/threshold changes.",
+  "hypothesis": "Preserve final1/2/3 encoder blocks in FP32, quantize remaining MatMul+Gather with per-channel QInt8. Classifier Gemm was already floating; default MatMulConstBOnly is true. Test sensitivity of final encoder representation without changing head/map or weights.",
+  "variants": [
+    {
+      "name": "fp32"
+    },
+    {
+      "name": "int8-mixed1",
+      "fp32_final_blocks": 1
+    },
+    {
+      "name": "int8-mixed2",
+      "fp32_final_blocks": 2
+    },
+    {
+      "name": "int8-mixed3",
+      "fp32_final_blocks": 3
+    }
+  ],
+  "data": "1000 further unused risk queries; reused validation and frozen head/map. Same600 locked snapshot remains entirely unscored after campaign10/11 rejected variants. No selection based on its outcomes.",
+  "screen": "Validation raw accuracy drop<=.01, label agreement>=.98, definitive coverage loss<=.02. Keep80% floor, exact per-query risk bound with alpha=.05/4 and at least30 selected. Reject failed variants before locked use.",
+  "performance": "Paired local verify_evidence path at one CPU thread, no result cache, same validation queries and repeated seeded order, after other CPU jobs finish. Require>=20% point reduction in P50 andP95 and>=30% model-file reduction; record uncertainty and peak process RSS. This is not network/agent/Gemini latency.",
+  "selection": "Choose smallest qualified variant passing quality/performance gates before locked predictions; retain FP32 if no improvement. Do not select a winner from test results.",
+  "heldout": "Paired noninferiority margins declared before scoring: epsilon=.01 raw accuracy, delta=.02 definitive coverage, with selective-risk upper<=.20. Report paired intervals; do not claim equivalence outside those tolerances.",
+  "limits": "Final bounded quantization episode, three fixed precision masks. If none passes, retain FP32 and stop this quantization campaign rather than lower gates."
+}

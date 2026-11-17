@@ -1,0 +1,24 @@
+{
+  "baseline": "Frozen selected campaign09 continued-mixture FP32 model/head/correctness mapping; no new gradient training or label/threshold changes.",
+  "hypothesis": "Per-channel signed quantization reduces the measured per-tensor distortion. Host has AVX512_VNNI; official ORT documentation states VNNI avoids the U8S8 saturation issue, so reduce_range remains false. Only the fixed quantization recipe changes; weights/head/map untouched.",
+  "variants": [
+    {
+      "name": "fp32",
+      "change": "Frozen selected model"
+    },
+    {
+      "name": "int8-dense-pc",
+      "change": "Dynamic QInt8, per_channel=true, reduce_range=false, MatMul only"
+    },
+    {
+      "name": "int8-full-pc",
+      "change": "Same plus Gather"
+    }
+  ],
+  "data": "Reused validation and frozen map/head,1000 further unused independent risk queries. Reuse campaign10 locked600 snapshot only because no predictions were made after its variants failed; exact hash remains fixed. This is not tuning on locked outcomes.",
+  "screen": "Validation raw accuracy drop<=.01, label agreement>=.98, definitive coverage loss<=.02. Keep80% floor, exact per-query risk bound with alpha=.05/3 and at least30 selected. Reject failed variants before locked use.",
+  "performance": "Paired local verify_evidence path at one CPU thread, no result cache, same validation queries and repeated seeded order, after other CPU jobs finish. Require>=20% point reduction in P50 andP95 and>=30% model-file reduction; record uncertainty and peak process RSS. This is not network/agent/Gemini latency.",
+  "selection": "Choose smallest qualified variant passing quality/performance gates before locked predictions; retain FP32 if no improvement. Do not select a winner from test results.",
+  "heldout": "Paired noninferiority margins declared before scoring: epsilon=.01 raw accuracy, delta=.02 definitive coverage, with selective-risk upper<=.20. Report paired intervals; do not claim equivalence outside those tolerances.",
+  "limits": "One additional bounded local episode, two fixed channel quantization variants. No new cloud spending, public release or threshold relaxation."
+}

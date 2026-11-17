@@ -1,0 +1,51 @@
+{
+  "qualified": true,
+  "model_selected": "fp32",
+  "comparisons": {
+    "int8-dense": {
+      "p50_reduction": 0.3591551897759805,
+      "p95_reduction": 0.33879042671536785,
+      "file_size_reduction": 0.3928212813365143,
+      "passed": false,
+      "p50_reduction_95_question_bootstrap_interval": [
+        0.3448128460914259,
+        0.3759818533953606
+      ],
+      "p95_reduction_95_question_bootstrap_interval": [
+        0.2710228856775979,
+        0.3967910414128486
+      ]
+    },
+    "int8-full": {
+      "p50_reduction": 0.3569872187331494,
+      "p95_reduction": 0.3188643036437152,
+      "file_size_reduction": 0.7488666189170398,
+      "passed": false,
+      "p50_reduction_95_question_bootstrap_interval": [
+        0.34614724385460566,
+        0.3745578545830287
+      ],
+      "p95_reduction_95_question_bootstrap_interval": [
+        0.27072640078732657,
+        0.3967994366404522
+      ]
+    }
+  },
+  "file_sha256": {
+    "dataset-manifest.json": "46eade30c5309527ebb4dcd01484f1ea5cfe8bc933886d662617a6f18eed5de1",
+    "fp32-analysis.json": "2372dfb8b22ad8c3bc5c683219cb6f8446d100febdb373b183fae28c19facb7d",
+    "fp32-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "fp32-calibration.json": "a1f59d0d6eea621e45681506085b008ec3b4a023bfcc5647500fb2c677e3959f",
+    "int8-dense-analysis.json": "5fd7bf087aea3d3b525c4538caf245d0a1cb62ff4987852b48e46b5bbb9ecfe2",
+    "int8-dense-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "int8-dense-calibration.json": "0f86506cb192847aad6f86675e3cac034565465c491e2f756dbbf91356a300c8",
+    "int8-full-analysis.json": "3afffe158aecc17bb0d1e95d4b605646a8456a89c0198d86393f93b1951de3db",
+    "int8-full-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "int8-full-calibration.json": "4038389f935392c1cebd2c5aa21d0bb77ca194bd7dc8d1bdae95b861decd25f6",
+    "int8-dense-manifest.json": "5e38706ea4484bee1c71e6bdb57d2c73abe937fa8c9e405b26d1da178d0d8d68",
+    "int8-full-manifest.json": "8b497618c27864c7df3bd44b903ad73880836368482782a85c496153bac80c49"
+  },
+  "locked_predictions_seen": false,
+  "production_qualified": false,
+  "scope": "Local one-thread conditional evidence path; bootstrap captures workload sampling, not all host/environment variability. No end-to-end network/Gemini claim."
+}

@@ -1,0 +1,86 @@
+{
+  "baseline": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.7777777777777778,
+    "definitive_coverage": 0.6956521739130435,
+    "correct_definitive_fraction": 0.5652173913043478,
+    "selective_risk": 0.1875,
+    "definitive_count": 144,
+    "correct_definitive_count": 117,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "observed_latency_count": 207,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "variants": {
+    "mlp16": {
+      "raw_validation": {
+        "count": 207,
+        "groups": 207,
+        "accuracy_all_decisions": 0.782608695652174,
+        "definitive_coverage": 0.6908212560386473,
+        "correct_definitive_fraction": 0.5652173913043478,
+        "selective_risk": 0.18181818181818177,
+        "definitive_count": 143,
+        "correct_definitive_count": 117,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": null,
+        "observed_latency_count": 207,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 0
+      },
+      "raw_accuracy_delta": 0.004830917874396157,
+      "screen_passed": false,
+      "training_seconds": 0.49211572500280454,
+      "iterations": 500,
+      "training_loss": 0.2680741117009568,
+      "warnings": [
+        "lbfgs failed to converge after 500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+      ],
+      "numeric_checkpoint_probability_max_error": 1.7763568394002505e-15
+    },
+    "mlp32": {
+      "raw_validation": {
+        "count": 207,
+        "groups": 207,
+        "accuracy_all_decisions": 0.7729468599033816,
+        "definitive_coverage": 0.6908212560386473,
+        "correct_definitive_fraction": 0.5603864734299517,
+        "selective_risk": 0.18881118881118886,
+        "definitive_count": 143,
+        "correct_definitive_count": 116,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": null,
+        "observed_latency_count": 207,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 0
+      },
+      "raw_accuracy_delta": -0.004830917874396157,
+      "screen_passed": false,
+      "training_seconds": 0.6045602270023664,
+      "iterations": 500,
+      "training_loss": 0.25176638415492797,
+      "warnings": [
+        "lbfgs failed to converge after 500 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=500).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+      ],
+      "numeric_checkpoint_probability_max_error": 1.9984014443252818e-15
+    }
+  },
+  "training_rows": 3201,
+  "training_source_sha256": "073892e15e5315ddc16cf4e2bdf2dd851bae5ce5a25343b9173889a2c5da4f74",
+  "locked_scored": false,
+  "new_cloud_cost_usd": 0,
+  "decision": "reject-all-before-fresh-risk",
+  "scope": "Development screen only; no inference timing, independent quality or Gemini claim."
+}

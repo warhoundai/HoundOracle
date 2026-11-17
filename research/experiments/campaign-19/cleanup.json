@@ -1,0 +1,7 @@
+{
+  "instance": "terminated",
+  "profile": "deleted",
+  "role": "deleted",
+  "security_group": "deleted",
+  "scope": "Only explicitly task-created training19 resources. Private artifact bucket retained temporarily for pending workflow18, with2day expiry."
+}

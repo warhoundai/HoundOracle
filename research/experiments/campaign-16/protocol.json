@@ -1,0 +1,9 @@
+{
+  "hypothesis": "A fixed equal-weight average of related checkpoints1920/1921 can reduce variance without doubling encoder calls. This is parameter interpolation, not a new gradient-training run or a prediction ensemble.",
+  "parameters": "Exactly0.5 each, no alpha sweep, identical architecture/tokenizer; floating parameters averaged in FP32, nonfloating tensors must be identical. Save safe weights; verify dynamic ONNX/Torch parity before scoring.",
+  "training_control": "Train one equally supervised logistic head on the same3201 previous development examples, C1, standard five features. Baseline is campaign09 continued-mixture with its original head. No test/cohort14 labels used for selection.",
+  "development_gate": "At least2percentage-point improvement in raw accuracy or correctly-definitive coverage over frozen continued baseline; raw loss<=1point and definitive coverage loss<=2points. Reused207 development queries only; independent confirmation required if it passes.",
+  "risk": "If screen passes, fit mapping on existing1000 fit queries and qualify on1000 new unused component-uniform queries; floor80%, exact Bonferroni alpha.05/2, >=30 accepted. Only select by development after risk qualification.",
+  "heldout": "If qualified,600 fresh independent test queries paired with baseline; predeclared raw/coverage noninferiority margins .01/.02, selective risk upper<=.20. No locked-data tuning.",
+  "limits": "One checkpoint average and one head fit, no encoder gradient updates. No cloud provisioning for this local screen. Preserve all three parent/best checkpoints and all experiment records. Discard only previously rejected, reproducible local runtime conversions to free disk."
+}

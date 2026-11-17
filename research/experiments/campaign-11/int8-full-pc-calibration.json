@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "population": "vitaminc-component-uniform-query-1923",
+  "model_config": {
+    "model_id": "houndoracle/minilm-vitc-fever-1921-int8-full-pc",
+    "revision": "d2ba588cd279a6859721809e2c05fce62e67f8b14fa5e936b20390bbd23ce5cf",
+    "variant": "int8",
+    "threads": 1,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "d2ba588cd279a6859721809e2c05fce62e67f8b14fa5e936b20390bbd23ce5cf",
+    "aggregation_head": "int8-full-pc",
+    "head_digest": "a92aedab2eb54bb32349d6308e4fbdef0816a8d2b748f0ad2e71df80b3f2b95a"
+  },
+  "mapping": {
+    "method": "temperature",
+    "temperature": 1.862836783716754,
+    "loss": 0.5036642858992462
+  },
+  "certificate": {
+    "threshold": 0.8,
+    "alpha": 0.016666666666666666,
+    "selected_rows": 325,
+    "selected_groups": 325,
+    "fully_correct_groups": 297,
+    "group_correctness_lower_bound": 0.874680273027244,
+    "qualified": true,
+    "method": "one-sided Clopper-Pearson on group-any-error events",
+    "assumptions": "Independent/exchangeable sampled components; does not guarantee row-weighted risk for arbitrary group sizes or distribution shift.",
+    "row_weighted_risk_guaranteed": false,
+    "row_risk_upper": 0.12531972697275595,
+    "risk_unit": "One independent query per component; not all-pair case correctness"
+  },
+  "production_qualified": false,
+  "scope": "Conditional human evidence labels on independently sampled revision queries."
+}

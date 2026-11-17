@@ -1,0 +1,43 @@
+{
+  "model_id": "houndoracle/minilm-vitc-fever-1921-int8-mixed1",
+  "revision": "740e441abb44af5af1e02b1c3cab84f5916234946aeccb9852ea58f9d4bfc0e4",
+  "max_length": 256,
+  "declared_license": "Local research checkpoint; base/data redistribution compatibility review required",
+  "quantization": {
+    "source_onnx_sha256": "56148d5f12ef499168f4a11da8ad603009903d5abc1f204fa7d021c81d636cbd",
+    "runtime": "1.32.0",
+    "ops": [
+      "MatMul",
+      "Gather"
+    ],
+    "fp32_final_blocks": 1,
+    "nodes_to_exclude": [
+      "/inner/roberta/encoder/layer.5/attention/self/query/MatMul",
+      "/inner/roberta/encoder/layer.5/attention/self/key/MatMul",
+      "/inner/roberta/encoder/layer.5/attention/self/value/MatMul",
+      "/inner/roberta/encoder/layer.5/attention/self/MatMul",
+      "/inner/roberta/encoder/layer.5/attention/self/MatMul_1",
+      "/inner/roberta/encoder/layer.5/attention/output/dense/MatMul",
+      "/inner/roberta/encoder/layer.5/intermediate/dense/MatMul",
+      "/inner/roberta/encoder/layer.5/output/dense/MatMul"
+    ],
+    "weight_type": "QInt8",
+    "per_channel": true,
+    "reduce_range": false,
+    "seconds": 3.520418169002369
+  },
+  "files": {
+    "config.json": {
+      "sha256": "3ad0190d54812dd589ade1aefe22222eb78960681a1ce59be4cc85b172da6a69",
+      "bytes": 987
+    },
+    "tokenizer.json": {
+      "sha256": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6",
+      "bytes": 1356048
+    },
+    "onnx/model_quint8_avx2.onnx": {
+      "sha256": "740e441abb44af5af1e02b1c3cab84f5916234946aeccb9852ea58f9d4bfc0e4",
+      "bytes": 103923602
+    }
+  }
+}

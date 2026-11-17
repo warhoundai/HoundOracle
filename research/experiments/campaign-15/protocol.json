@@ -1,0 +1,9 @@
+{
+  "baseline": "campaign09 continued-mixture FP32 encoder/logistic head, frozen weights",
+  "hypothesis": "A small nonlinear head can model conditional reliability of the same encoder logits and context-length features better than multinomial logistic regression, without another encoder call.",
+  "intervention": "Train two fixed sklearn ReLU MLPs, hidden16 and hidden32, alpha0.01, solver lbfgs, max_iter500, seed1931; same3201 labeled head-training examples and identical five standardized features as the logistic control. No encoder updates. Serialize numeric JSON only.",
+  "development_gate": "Require at least0.02 raw-accuracy OR0.02 correctly-definitive coverage improvement over logistic on the identical207 reused validation components, with raw accuracy loss<=0.01 and definitive coverage loss<=0.02. This is screening, not independent evidence.",
+  "qualification": "Only if development passes, fit correctness mapping on existing independent calibration-fit1000; choose temperature/logistic/isotonic by development Brier. Qualify baseline and both fixed heads on1000 new unused component queries using exact alpha=.05/3 risk bound, n>=30, minimum80%. No thresholds lowered.",
+  "locked": "Only a preselected qualified candidate proceeds to600 new independent test components, paired with frozen logistic reference. Margins raw accuracy-.01 and definitive coverage-.02; accepted-error upper<=.20. Prefer conservative exact discordance bounds to degenerate bootstrap. No test-dependent selection.",
+  "limits": "At most two head fits, no hyperparameter sweep or automatic retraining; local episode. No architecture/production promotion or all-in Gemini claim from development alone. GCP pilot14 cohort remains untouched by head selection."
+}
