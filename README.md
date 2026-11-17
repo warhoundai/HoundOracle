@@ -1,5 +1,7 @@
 # HoundOracle
 
+[Project page](https://warhoundai.github.io/HoundOracle/) · [Public repository](https://github.com/warhoundai/HoundOracle)
+
 Development preview of WarHound AI's local-first factual verification infrastructure
 for AI agents. Apache-2.0 code; evidence and model licenses remain separate.
 
@@ -71,4 +73,4 @@ Gemini-relative performance advantage or production release is claimed.
 The optional Google reCAPTCHA helper and its live test harness are separately AGPL-3.0-only; see [their license and setup](integrations/recaptcha-local/README.md). They are excluded from the Apache-licensed Python wheel.
 
 The [project page source](site/index.html) and [publication status](docs/publication.md)
-are prepared for an honest public research preview.
+describe the public research preview.
