@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "population": "vitaminc-real-human-revision-pairs-1920",
+  "model_config": {
+    "model_id": "cross-encoder/nli-MiniLM2-L6-H768",
+    "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+    "variant": "fp32",
+    "threads": 1,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "807d33fffefd95ad60e2a91f54eed50a92aa53c077945a6842bb587a49a3fdf3",
+    "aggregation_head": "original-frozen",
+    "head_digest": "04d2668704172f3665bd8cac37f4019d26bd0ae4cff4cb1eed5ac406ec34ce13"
+  },
+  "mapping": {
+    "method": "temperature",
+    "temperature": 1.635678579742979,
+    "loss": 0.6090349646774119
+  },
+  "certificate": {
+    "threshold": 0.8,
+    "alpha": 0.0125,
+    "selected_rows": 55,
+    "selected_groups": 40,
+    "fully_correct_groups": 35,
+    "group_correctness_lower_bound": 0.7107697704633174,
+    "qualified": false,
+    "method": "one-sided Clopper-Pearson on group-any-error events",
+    "assumptions": "Independent/exchangeable sampled components; does not guarantee row-weighted risk for arbitrary group sizes or distribution shift.",
+    "row_weighted_risk_guaranteed": false,
+    "row_risk_upper_bootstrap": 0.14285714285714285,
+    "production_qualified": false
+  },
+  "production_qualified": false,
+  "scope": "Conditional dataset-label correctness on supplied historical revision evidence, not current-world truth or arbitrary retrieval."
+}

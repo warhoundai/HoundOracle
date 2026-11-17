@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "population": "vitaminc-real-human-revision-pairs-1920",
+  "model_config": {
+    "model_id": "houndoracle/minilm-vitc-fever-1920",
+    "revision": "4be90152ff0ae33ff663ce9c5b01598ca3d678677957624b7c2a3b1c021388af",
+    "variant": "fp32",
+    "threads": 1,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "f81c0550e9a8543d4aaf643f939f79479d8870c503003e381ad94e46007c8d48",
+    "aggregation_head": "contrastive-mixture",
+    "head_digest": "764e68a0fdea9a3fba2ab7dc66c7bf2255f312db899219fe00aa6a2efa32c82a"
+  },
+  "mapping": {
+    "method": "logistic",
+    "weight": 0.7177533596934398,
+    "bias": -0.25568307222685627
+  },
+  "certificate": {
+    "threshold": 0.8,
+    "alpha": 0.0125,
+    "selected_rows": 210,
+    "selected_groups": 131,
+    "fully_correct_groups": 114,
+    "group_correctness_lower_bound": 0.7899660601371032,
+    "qualified": false,
+    "method": "one-sided Clopper-Pearson on group-any-error events",
+    "assumptions": "Independent/exchangeable sampled components; does not guarantee row-weighted risk for arbitrary group sizes or distribution shift.",
+    "row_weighted_risk_guaranteed": false,
+    "row_risk_upper_bootstrap": 0.1211199825002734,
+    "production_qualified": false
+  },
+  "production_qualified": false,
+  "scope": "Conditional dataset-label correctness on supplied historical revision evidence, not current-world truth or arbitrary retrieval."
+}

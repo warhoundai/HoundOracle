@@ -1,0 +1,36 @@
+{
+  "revision": "be6febb761b0b2807687e61e0b5282e459df2fa0",
+  "files": {
+    "train.jsonl": {
+      "url": "https://huggingface.co/datasets/tals/vitaminc/resolve/be6febb761b0b2807687e61e0b5282e459df2fa0/train.jsonl",
+      "bytes": 193958244,
+      "sha256": "7461c6fd1a13459590317c5ccdc8651dd2daf7c1ad8ae4b10ccd88d164fccd5a"
+    },
+    "dev.jsonl": {
+      "url": "https://huggingface.co/datasets/tals/vitaminc/resolve/be6febb761b0b2807687e61e0b5282e459df2fa0/dev.jsonl",
+      "bytes": 32876983,
+      "sha256": "544934677f5d133873e6d38f4557f8966f4efa5d3d70874ffe6913f2091b86b5"
+    },
+    "test.jsonl": {
+      "url": "https://huggingface.co/datasets/tals/vitaminc/resolve/be6febb761b0b2807687e61e0b5282e459df2fa0/test.jsonl",
+      "bytes": 28717099,
+      "sha256": "7ad1808dbc30c62e0a1427a53022d0dfaff668a1fde3c4b612a2d266edd753ad"
+    },
+    "LICENSE": {
+      "sha256": "e5727854e203fc66d725caa6d8e97e541f64a906d1d15d19e63f32bb52134dd1"
+    },
+    "paper.pdf": {
+      "sha256": "2afdd1fb8129cbde6f766ecaf017d8c0b73530cffcf5000f6725ff900038b83d"
+    }
+  },
+  "rights": {
+    "data": "CC-BY-SA-3.0 / applicable Wikipedia article terms; synthetic annotations also derive from FEVER.",
+    "code": "Upstream code MIT, separate from dataset rights.",
+    "handling": "Local research; preserve attribution. No dataset text or neural weights redistributed in Apache code repository.",
+    "attribution": [
+      "Schuster, Fisch & Barzilay, NAACL2021, Get Your Vitamin C!",
+      "Wikipedia contributors"
+    ],
+    "paper": "https://aclanthology.org/2021.naacl-main.52/"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "baseline": "141a9c7, original FP32 encoder/logistic research router at .85",
+  "scope": "Local CPU only, maximum 20 minutes; no new provider calls, public release or production replacement.",
+  "hypotheses": [
+    {
+      "id": "source-original",
+      "change": "Prefix each passage with its supplied document title before original encoder inference; train the same logistic head on old development only."
+    },
+    {
+      "id": "source-finetuned",
+      "change": "Same title-prefixed input using the frozen campaign06 fine-tuned encoder; no new encoder training."
+    },
+    {
+      "id": "grounding-head",
+      "change": "Add title/claim overlap and metadata completeness signals to original frozen logits, train logistic head only; signals are not proof of entity identity."
+    }
+  ],
+  "screen": "Use old development/validation/calibration only, never call these fresh independent benchmarks. Calibrate on dedicated old fit partition, qualify on old risk partition. Fixed .85 operating threshold. Candidate must improve correct-definitive coverage by >=.02 absolute, not reduce accuracy, and not increase selective risk vs original .85 route. Only then reserve untouched data for independent assessment.",
+  "stopping": "Stop this episode after three rejected controlled candidates or at time limit / missing independent evidence. Preserve best baseline and all negative results.",
+  "security": "Titles and retrieved content remain untrusted metadata. Prefixing is an experimental feature, never grounds a fact by itself. No source text/weights redistributed.",
+  "implementation_corrections": [
+    "Initial source challenge invocation interrupted before any result artifact: adapter had not been wired to candidate inference. Corrected before interpreting outcomes. Retired cases only; no fresh data consumed.",
+    "Input audit found12 blank evidence spans in old screening data. Title-prefix v1 could turn empty spans into title-only premises. Withdraw v1 results as promotion evidence. v2 preserves blank spans unchanged; refit using corrected raw predictions only for affected rows and identical cached encoder logits for all others. No threshold or label changes."
+  ]
+}

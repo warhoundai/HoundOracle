@@ -1,0 +1,40 @@
+{
+  "baseline": "141a9c7",
+  "production_replacement": false,
+  "fresh_risk_scored": false,
+  "fresh_locked_scored": false,
+  "candidates": {
+    "grounding-head": {
+      "decision": "reject",
+      "strict_errors": 4,
+      "strict_definitive": 15
+    },
+    "source-original-v2": {
+      "decision": "reject-broad-promotion",
+      "strict_errors": 4,
+      "strict_definitive": 19
+    },
+    "source-finetuned-v2": {
+      "decision": "reject-broad-promotion",
+      "strict_errors": 11,
+      "strict_definitive": 31
+    }
+  },
+  "withdrawn": [
+    "source-original v1: blank-span input bug",
+    "source-finetuned v1: blank-span input bug"
+  ],
+  "retained": [
+    "citation metric provenance correction",
+    "blank-span evidence safeguard"
+  ],
+  "stopping_reason": "Three failed controlled candidates; remaining fresh cohort is98.2% NEI; live GCP still requires reauthentication. No further tuning on heldout labels.",
+  "tests": {
+    "python311": 132,
+    "python312": 132,
+    "lint": "passed",
+    "sdist_wheel": "passed"
+  },
+  "new_cloud_charges": 0,
+  "background_execution": false
+}

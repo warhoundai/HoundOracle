@@ -1,0 +1,62 @@
+{
+  "withdrawn_variant": "source-finetuned",
+  "new_variant": "source-finetuned-v2",
+  "source_sha256": {
+    "development": "6dd8eab9e7077231be5f221326cac83556959400a398d10fc9567401c1d11298",
+    "validation": "68ec6cc4aea686fbbd6f822d91e3639cae126cf5a9c9760cb652af67a45e9a37",
+    "calibration": "158fe58b4f755081c4cc2f4a637d5c2e45b98734c47e9fef22d1e816279ece80"
+  },
+  "recomputed_rows": [
+    {
+      "id": "fever:223766",
+      "split": "development"
+    },
+    {
+      "id": "fever:36856",
+      "split": "development"
+    },
+    {
+      "id": "fever:100457",
+      "split": "development"
+    },
+    {
+      "id": "fever:11812",
+      "split": "development"
+    },
+    {
+      "id": "fever:156449",
+      "split": "development"
+    },
+    {
+      "id": "fever:13432",
+      "split": "development"
+    },
+    {
+      "id": "fever:153926",
+      "split": "development"
+    },
+    {
+      "id": "fever:132411",
+      "split": "development"
+    },
+    {
+      "id": "fever:4455",
+      "split": "development"
+    },
+    {
+      "id": "fever:141638",
+      "split": "validation"
+    },
+    {
+      "id": "fever:5109",
+      "split": "calibration"
+    },
+    {
+      "id": "fever:121180",
+      "split": "calibration"
+    }
+  ],
+  "unaffected_encoder_logits_reused": 3668,
+  "same_head_hyperparameters": true,
+  "fresh_data_scored": false
+}

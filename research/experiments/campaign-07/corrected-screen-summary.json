@@ -1,0 +1,131 @@
+{
+  "source-original-v2": {
+    "baseline": {
+      "count": 480,
+      "groups": 62,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16041666666666668,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.06493506493506496,
+      "definitive_count": 77,
+      "correct_definitive_count": 72,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": null,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "candidate": {
+      "count": 480,
+      "groups": 62,
+      "accuracy_all_decisions": 0.6791666666666667,
+      "definitive_coverage": 0.37916666666666665,
+      "correct_definitive_fraction": 0.35833333333333334,
+      "selective_risk": 0.05494505494505497,
+      "definitive_count": 182,
+      "correct_definitive_count": 172,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": null,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "correct_definitive_gain": 0.20833333333333334,
+    "paired_group_bootstrap_95_gain_interval": [
+      0.1455675804834837,
+      0.27100395806589644
+    ],
+    "screen_passed": true,
+    "independent": false,
+    "production_qualified": false,
+    "note": "Repeated old validation screen; interval is exploratory, not multiplicity-adjusted independent proof. Latency and citation scores withheld: inherited traces do not establish those comparisons."
+  },
+  "source-finetuned-v2": {
+    "baseline": {
+      "count": 480,
+      "groups": 62,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16041666666666668,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.06493506493506496,
+      "definitive_count": 77,
+      "correct_definitive_count": 72,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": null,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "candidate": {
+      "count": 480,
+      "groups": 62,
+      "accuracy_all_decisions": 0.7708333333333334,
+      "definitive_coverage": 0.48125,
+      "correct_definitive_fraction": 0.45416666666666666,
+      "selective_risk": 0.05627705627705626,
+      "definitive_count": 231,
+      "correct_definitive_count": 218,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": null,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "correct_definitive_gain": 0.3041666666666667,
+    "paired_group_bootstrap_95_gain_interval": [
+      0.23114987855126906,
+      0.3771981259117944
+    ],
+    "screen_passed": true,
+    "independent": false,
+    "production_qualified": false,
+    "note": "Repeated old validation screen; interval is exploratory, not multiplicity-adjusted independent proof. Latency and citation scores withheld: inherited traces do not establish those comparisons."
+  },
+  "grounding-head": {
+    "baseline": {
+      "count": 480,
+      "groups": 62,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16041666666666668,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.06493506493506496,
+      "definitive_count": 77,
+      "correct_definitive_count": 72,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": null,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "candidate": {
+      "count": 480,
+      "groups": 62,
+      "accuracy_all_decisions": 0.5104166666666666,
+      "definitive_coverage": 0.2,
+      "correct_definitive_fraction": 0.1875,
+      "selective_risk": 0.0625,
+      "definitive_count": 96,
+      "correct_definitive_count": 90,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": null,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "correct_definitive_gain": 0.037500000000000006,
+    "paired_group_bootstrap_95_gain_interval": [
+      0.0,
+      0.07158573512100863
+    ],
+    "screen_passed": true,
+    "independent": false,
+    "production_qualified": false,
+    "note": "Repeated old validation screen; interval is exploratory, not multiplicity-adjusted independent proof. Latency and citation scores withheld: inherited traces do not establish those comparisons."
+  }
+}

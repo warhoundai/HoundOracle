@@ -1,0 +1,22 @@
+{
+  "vitaminc-train": {
+    "cases": 548,
+    "cases_with_same_claim_different_evidence_label": 547
+  },
+  "validation": {
+    "cases": 207,
+    "cases_with_same_claim_different_evidence_label": 207
+  },
+  "calibration-fit": {
+    "cases": 199,
+    "cases_with_same_claim_different_evidence_label": 199
+  },
+  "calibration-risk": {
+    "cases": 209,
+    "cases_with_same_claim_different_evidence_label": 209
+  },
+  "locked": {
+    "cases": 212,
+    "cases_with_same_claim_different_evidence_label": 212
+  }
+}

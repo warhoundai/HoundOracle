@@ -1,0 +1,28 @@
+{
+  "baseline": "e55a817; original FP32 MiniLM + logistic head preserved",
+  "scope": "Continue local CPU training with public VitaminC data. No new paid cloud resources, public dataset/weight distribution or production promotion. Bounded campaign up to60 local minutes; evaluate first run before deciding further training.",
+  "scientific_target": "Evidence sensitivity under human-annotated Wikipedia revisions; matched-evidence conditional verification, NOT current-world truth or live retrieval performance.",
+  "data": "Pinned tals/vitaminc revision be6febb761b0b2807687e61e0b5282e459df2fa0, real revisions only; exclude FEVER-derived synthetic examples. Group page, case ID, normalized exact claim and evidence globally; exclude multi-official-split components. New evaluation components exclude every prior observed FEVER page/claim/span. Keep each selected revision case complete, one case per component. No Gemini labels.",
+  "splits": "Train approximately1600 VitaminC pairs plus1600 historical FEVER development pairs. New VitaminC validation approximately600, calibration-fit600, calibration-risk600 from unused official dev components; locked approximately600 from official test. Count complete cases rather than silently splitting contrastive pairs.",
+  "models": [
+    "Original encoder + frozen old head reference",
+    "Original encoder + same-mixture logistic head control",
+    "New one-epoch same-mixture encoder + logistic head",
+    "Prior FEVER-only fine-tuned encoder + frozen head, recalibrated on same new fit/risk partitions; additional stronger neural reference."
+  ],
+  "training": {
+    "seed": 1920,
+    "epochs": 1,
+    "learning_rate": 2e-05,
+    "batch_size": 8,
+    "max_length": 256,
+    "cpu_threads": 2,
+    "maximum_training_seconds": 1500,
+    "checkpoint_selection": "Final fixed epoch only; no test-dependent checkpoint selection"
+  },
+  "calibration": "Compare logistic, temperature and isotonic maps using new validation; fit map on new dedicated fit components, assess risk on independent dedicated risk components. Keep raw entailment scores distinct from calibrated dataset-label correctness. Confidence floor .80; fixed .85 routing comparison also reported. Models outside supported population remain unqualified.",
+  "screen": "Before locked evaluation: validation accuracy and correct-definitive coverage must not decrease vs same-mixture original-encoder control; independent risk upper bound<=.20 with>=30 accepted and>=20 components. Contrastive case accuracy and old FEVER validation are additional safety diagnostics. If a candidate fails, keep locked data untouched and diagnose only training/validation/risk.",
+  "report": "Per-question IDs, predictions, costs/latencies where measured, grouped uncertainty, contrastive consistency, versions, hashes, losses and rejected runs. No claim of Gemini superiority without live paired measurements.",
+  "baseline_rule": "Compare against strongest baseline validation quality, not a deliberately weak reference. Calibration group-any-error upper bounds use Bonferroni alpha=.05/4 for four declared model/head configurations; additionally report empirical row error and clustered bootstrap. No distribution-free truth guarantee.",
+  "material_improvement": "Before examining candidate validation: require >=2 percentage points correct-definitive coverage or raw accuracy improvement over the strongest baseline, with no loss of calibrated accuracy/coverage. Raw and complete contrastive case accuracy prevent claiming a win through abstention alone."
+}

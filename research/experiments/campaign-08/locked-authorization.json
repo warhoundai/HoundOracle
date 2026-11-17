@@ -1,0 +1,26 @@
+{
+  "qualified": false,
+  "quality_gate": true,
+  "material_improvement": true,
+  "independent_risk_gate": false,
+  "model_selected": "contrastive-mixture",
+  "file_sha256": {
+    "dataset-manifest.json": "b3a9788cedd4acce47604f1623e4b309621fdf110b406c8718ad387d957ff68d",
+    "trained-manifest.json": "27537be41f68575e90a10311e86e77b37e87af74393701409dfbfe106c0587b3",
+    "original-mixture-head.json": "48f15f7a75d617a70aaa83d4fcd0b2f681ccf5867f21ccbb82ca08704c059fbc",
+    "original-mixture-calibration.json": "022f2bca7c14e6ecff1ff5ca1e2f980e1f616f429bc873a39b7b3259b1d1c687",
+    "original-mixture-analysis.json": "fde43cc51d5a76f91bd60b9d1184e71302cf8d93f3be363fa3c750d89ed97091",
+    "original-frozen-head.json": "2f777698002c5d1444d8b044907ff90b7956101b031a64f3142aa785719a2c0f",
+    "original-frozen-calibration.json": "82cd9d4da332c8c74a626b9c92bfd753f114b69ab3bb7a998cc38c08cb95ddf4",
+    "original-frozen-analysis.json": "09de2619b26b8fcd991f59ceb050da514973333f6e3ae233954d564d5c68b5fe",
+    "fever-finetuned-frozen-head.json": "7466a58e21a79a383081f51a12d2c4597d64113c4fdc287dae51097d764c5c18",
+    "fever-finetuned-frozen-calibration.json": "00c4b99324f056158f0a5011cd0c2824514ff459ba75f6d1487217c17f83ed90",
+    "fever-finetuned-frozen-analysis.json": "8b2b11eefa55ffe94602772c77c1633d5ed4e422a1d8d113ec9ab4a5595915ca",
+    "contrastive-mixture-head.json": "90f7324ce38bf451018c1d14b70b4a0cb2e022d3406feced336d1eae658c4fcc",
+    "contrastive-mixture-calibration.json": "4e19412fa517b150538902571dedc7f69a6b6508bbba9588d2c1a5eff230d5ba",
+    "contrastive-mixture-analysis.json": "ee2da2c50a71ed8c2e69aeb58252bc23a2d10cac2e4a6ff7fb989612f140e460"
+  },
+  "locked_predictions_seen": false,
+  "production_qualified": false,
+  "meaning": "Authorization to evaluate the frozen research configuration once, not permission for cloud spending or publication."
+}

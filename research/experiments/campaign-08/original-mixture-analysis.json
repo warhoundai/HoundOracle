@@ -1,0 +1,514 @@
+{
+  "variant": "original-mixture",
+  "certificate": {
+    "threshold": 0.8,
+    "alpha": 0.0125,
+    "selected_rows": 76,
+    "selected_groups": 58,
+    "fully_correct_groups": 51,
+    "group_correctness_lower_bound": 0.7502160559587525,
+    "qualified": false,
+    "method": "one-sided Clopper-Pearson on group-any-error events",
+    "assumptions": "Independent/exchangeable sampled components; does not guarantee row-weighted risk for arbitrary group sizes or distribution shift.",
+    "row_weighted_risk_guaranteed": false,
+    "row_risk_upper_bootstrap": 0.14294320137693622,
+    "production_qualified": false
+  },
+  "selected_mapping": "isotonic",
+  "methods": {
+    "temperature": {
+      "mapping": {
+        "method": "temperature",
+        "temperature": 1.5988263068924364,
+        "loss": 0.6224256499430013
+      },
+      "validation": {
+        "eligible": 456,
+        "brier": 0.19981044025860845,
+        "ece_10_fixed_bins": 0.02994895090870442,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 67,
+            "mean_confidence": 0.46753280891698845,
+            "empirical_correctness": 0.4925373134328358
+          },
+          {
+            "lower": 0.5,
+            "count": 123,
+            "mean_confidence": 0.5442543295691243,
+            "empirical_correctness": 0.5365853658536586
+          },
+          {
+            "lower": 0.6000000000000001,
+            "count": 107,
+            "mean_confidence": 0.6409716714596495,
+            "empirical_correctness": 0.6355140186915887
+          },
+          {
+            "lower": 0.7000000000000001,
+            "count": 88,
+            "mean_confidence": 0.7598105240726337,
+            "empirical_correctness": 0.8295454545454546
+          },
+          {
+            "lower": 0.8,
+            "count": 71,
+            "mean_confidence": 0.8265141613096562,
+            "empirical_correctness": 0.8873239436619719
+          }
+        ],
+        "risk_coverage": [
+          {
+            "threshold": 0.5,
+            "coverage": 0.6505016722408027,
+            "selective_risk": 0.3059125964010283
+          },
+          {
+            "threshold": 0.6,
+            "coverage": 0.44481605351170567,
+            "selective_risk": 0.23308270676691734
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.26588628762541805,
+            "selective_risk": 0.14465408805031443
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.11872909698996656,
+            "selective_risk": 0.11267605633802813
+          },
+          {
+            "threshold": 0.85,
+            "coverage": 0.008361204013377926,
+            "selective_risk": 0.0
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.0,
+            "selective_risk": null
+          },
+          {
+            "threshold": 0.95,
+            "coverage": 0.0,
+            "selective_risk": null
+          },
+          {
+            "threshold": 0.99,
+            "coverage": 0.0,
+            "selective_risk": null
+          }
+        ],
+        "note": "Correctness calibration among candidate definitive answers; not a per-answer guarantee."
+      }
+    },
+    "logistic": {
+      "mapping": {
+        "method": "logistic",
+        "weight": 0.6083875713858603,
+        "bias": 0.021747035296246647
+      },
+      "validation": {
+        "eligible": 456,
+        "brier": 0.19995011510741573,
+        "ece_10_fixed_bins": 0.02893777688927576,
+        "reliability_bins": [
+          {
+            "lower": 0.4,
+            "count": 60,
+            "mean_confidence": 0.4704158996500945,
+            "empirical_correctness": 0.45
+          },
+          {
+            "lower": 0.5,
+            "count": 130,
+            "mean_confidence": 0.5459884500606141,
+            "empirical_correctness": 0.5538461538461539
+          },
+          {
+            "lower": 0.6000000000000001,
+            "count": 108,
+            "mean_confidence": 0.6428753187980062,
+            "empirical_correctness": 0.6388888888888888
+          },
+          {
+            "lower": 0.7000000000000001,
+            "count": 91,
+            "mean_confidence": 0.7605062938352373,
+            "empirical_correctness": 0.8131868131868132
+          },
+          {
+            "lower": 0.8,
+            "count": 67,
+            "mean_confidence": 0.8250043418028981,
+            "empirical_correctness": 0.9104477611940298
+          }
+        ],
+        "risk_coverage": [
+          {
+            "threshold": 0.5,
+            "coverage": 0.6622073578595318,
+            "selective_risk": 0.303030303030303
+          },
+          {
+            "threshold": 0.6,
+            "coverage": 0.44481605351170567,
+            "selective_risk": 0.23308270676691734
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.26421404682274247,
+            "selective_risk": 0.14556962025316456
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.11204013377926421,
+            "selective_risk": 0.08955223880597019
+          },
+          {
+            "threshold": 0.85,
+            "coverage": 0.008361204013377926,
+            "selective_risk": 0.0
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.0,
+            "selective_risk": null
+          },
+          {
+            "threshold": 0.95,
+            "coverage": 0.0,
+            "selective_risk": null
+          },
+          {
+            "threshold": 0.99,
+            "coverage": 0.0,
+            "selective_risk": null
+          }
+        ],
+        "note": "Correctness calibration among candidate definitive answers; not a per-answer guarantee."
+      }
+    },
+    "isotonic": {
+      "mapping": {
+        "method": "isotonic",
+        "x": [
+          0.36312327521400584,
+          0.393919666097079,
+          0.4023179324982174,
+          0.4495309071730449,
+          0.45089923486476663,
+          0.49959738122112773,
+          0.5000703349446041,
+          0.5141763112275739,
+          0.5147233015097098,
+          0.6875804583950692,
+          0.6877980593167665,
+          0.8146564128006241,
+          0.8160486244040047,
+          0.8636949042097382,
+          0.863854091907568,
+          0.871212122779293,
+          0.8720470609217151,
+          0.9298522801004632,
+          0.9299682672118098,
+          0.951113690950929
+        ],
+        "y": [
+          0.36363636363636365,
+          0.36363636363636365,
+          0.4444444444444444,
+          0.4444444444444444,
+          0.48717948717948717,
+          0.48717948717948717,
+          0.5454545454545454,
+          0.5454545454545454,
+          0.5748031496062992,
+          0.5748031496062992,
+          0.6222222222222222,
+          0.6222222222222222,
+          0.6944444444444444,
+          0.6944444444444444,
+          0.75,
+          0.75,
+          0.8450704225352113,
+          0.8450704225352113,
+          1.0,
+          1.0
+        ]
+      },
+      "validation": {
+        "eligible": 456,
+        "brier": 0.19764034193392072,
+        "ece_10_fixed_bins": 0.038449022668921334,
+        "reliability_bins": [
+          {
+            "lower": 0.30000000000000004,
+            "count": 11,
+            "mean_confidence": 0.36734579362860964,
+            "empirical_correctness": 0.18181818181818182
+          },
+          {
+            "lower": 0.4,
+            "count": 56,
+            "mean_confidence": 0.47263894392125444,
+            "empirical_correctness": 0.5535714285714286
+          },
+          {
+            "lower": 0.5,
+            "count": 152,
+            "mean_confidence": 0.5726792374637381,
+            "empirical_correctness": 0.5460526315789473
+          },
+          {
+            "lower": 0.6000000000000001,
+            "count": 116,
+            "mean_confidence": 0.6407371251104773,
+            "empirical_correctness": 0.6637931034482759
+          },
+          {
+            "lower": 0.7000000000000001,
+            "count": 7,
+            "mean_confidence": 0.7508177166640969,
+            "empirical_correctness": 1.0
+          },
+          {
+            "lower": 0.8,
+            "count": 87,
+            "mean_confidence": 0.8448997942335688,
+            "empirical_correctness": 0.8735632183908046
+          },
+          {
+            "lower": 0.9,
+            "count": 27,
+            "mean_confidence": 1.0,
+            "empirical_correctness": 1.0
+          }
+        ],
+        "risk_coverage": [
+          {
+            "threshold": 0.5,
+            "coverage": 0.6505016722408027,
+            "selective_risk": 0.3059125964010283
+          },
+          {
+            "threshold": 0.6,
+            "coverage": 0.3963210702341137,
+            "selective_risk": 0.21097046413502107
+          },
+          {
+            "threshold": 0.7,
+            "coverage": 0.20234113712374582,
+            "selective_risk": 0.09090909090909094
+          },
+          {
+            "threshold": 0.8,
+            "coverage": 0.19063545150501673,
+            "selective_risk": 0.0964912280701754
+          },
+          {
+            "threshold": 0.85,
+            "coverage": 0.0451505016722408,
+            "selective_risk": 0.0
+          },
+          {
+            "threshold": 0.9,
+            "coverage": 0.0451505016722408,
+            "selective_risk": 0.0
+          },
+          {
+            "threshold": 0.95,
+            "coverage": 0.0451505016722408,
+            "selective_risk": 0.0
+          },
+          {
+            "threshold": 0.99,
+            "coverage": 0.0451505016722408,
+            "selective_risk": 0.0
+          }
+        ],
+        "note": "Correctness calibration among candidate definitive answers; not a per-answer guarantee."
+      }
+    }
+  },
+  "raw_validation": {
+    "count": 602,
+    "groups": 207,
+    "accuracy_all_decisions": 0.6162790697674418,
+    "definitive_coverage": 0.7641196013289037,
+    "correct_definitive_fraction": 0.5066445182724253,
+    "selective_risk": 0.3369565217391305,
+    "definitive_count": 460,
+    "correct_definitive_count": 305,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0,
+    "complete_case_accuracy": 0.2898550724637681,
+    "macro_f1": 0.5644394039115651
+  },
+  "calibrated_validation_080": {
+    "count": 602,
+    "groups": 207,
+    "accuracy_all_decisions": 0.24750830564784054,
+    "definitive_coverage": 0.0,
+    "correct_definitive_fraction": 0.0,
+    "selective_risk": null,
+    "definitive_count": 0,
+    "correct_definitive_count": 0,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0,
+    "complete_case_accuracy": 0.0,
+    "macro_f1": 0.13226808699511763
+  },
+  "calibrated_validation_085": {
+    "count": 602,
+    "groups": 207,
+    "accuracy_all_decisions": 0.24750830564784054,
+    "definitive_coverage": 0.0,
+    "correct_definitive_fraction": 0.0,
+    "selective_risk": null,
+    "definitive_count": 0,
+    "correct_definitive_count": 0,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0,
+    "complete_case_accuracy": 0.0,
+    "macro_f1": 0.13226808699511763
+  },
+  "validation_grouped_intervals": {
+    "accuracy_all_decisions": [
+      0.21245901981665938,
+      0.28370190906441267
+    ],
+    "definitive_coverage": [
+      0.0,
+      0.0
+    ],
+    "selective_risk": null
+  },
+  "independent_risk": {
+    "count": 602,
+    "groups": 209,
+    "accuracy_all_decisions": 0.25083056478405313,
+    "definitive_coverage": 0.0,
+    "correct_definitive_fraction": 0.0,
+    "selective_risk": null,
+    "definitive_count": 0,
+    "correct_definitive_count": 0,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0,
+    "complete_case_accuracy": 0.0,
+    "macro_f1": 0.13368747233289066
+  },
+  "risk_calibration": {
+    "eligible": 450,
+    "brier": 0.20341955110895624,
+    "ece_10_fixed_bins": 0.06155284706740288,
+    "reliability_bins": [
+      {
+        "lower": 0.30000000000000004,
+        "count": 6,
+        "mean_confidence": 0.3665162236949156,
+        "empirical_correctness": 0.5
+      },
+      {
+        "lower": 0.4,
+        "count": 65,
+        "mean_confidence": 0.4696732192161035,
+        "empirical_correctness": 0.35384615384615387
+      },
+      {
+        "lower": 0.5,
+        "count": 164,
+        "mean_confidence": 0.5715819613457408,
+        "empirical_correctness": 0.5548780487804879
+      },
+      {
+        "lower": 0.6000000000000001,
+        "count": 133,
+        "mean_confidence": 0.6445032588761664,
+        "empirical_correctness": 0.7293233082706767
+      },
+      {
+        "lower": 0.7000000000000001,
+        "count": 6,
+        "mean_confidence": 0.7470624787017083,
+        "empirical_correctness": 1.0
+      },
+      {
+        "lower": 0.8,
+        "count": 57,
+        "mean_confidence": 0.8450704225352111,
+        "empirical_correctness": 0.8947368421052632
+      },
+      {
+        "lower": 0.9,
+        "count": 19,
+        "mean_confidence": 1.0,
+        "empirical_correctness": 0.9473684210526315
+      }
+    ],
+    "risk_coverage": [
+      {
+        "threshold": 0.5,
+        "coverage": 0.6295681063122923,
+        "selective_risk": 0.30606860158311344
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.35714285714285715,
+        "selective_risk": 0.19999999999999996
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.1362126245847176,
+        "selective_risk": 0.08536585365853655
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.12624584717607973,
+        "selective_risk": 0.09210526315789469
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.03156146179401993,
+        "selective_risk": 0.052631578947368474
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.03156146179401993,
+        "selective_risk": 0.052631578947368474
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.03156146179401993,
+        "selective_risk": 0.052631578947368474
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.03156146179401993,
+        "selective_risk": 0.052631578947368474
+      }
+    ],
+    "note": "Correctness calibration among candidate definitive answers; not a per-answer guarantee."
+  },
+  "locked_scored": false,
+  "new_cloud_cost_usd": 0,
+  "operational_cost": null,
+  "latency_comparison": null
+}
