@@ -1,14 +1,13 @@
 # Research preview publication
 
-Publication status: public research source snapshot prepared for GitHub. GitHub authentication is
-`warhoundai`, which also owns the four released Hound repositories. No organization
-or legal ownership relationship is inferred. The user created the public HoundOracle repository after repository creation
-was denied to the integration. Publication is GitHub-only; OPS is unchanged.
+Publication status: source is public at https://github.com/warhoundai/HoundOracle.
+The GitHub Pages project page is live at https://warhoundai.github.io/HoundOracle/
+(HTTP 200 verified). Composio GitHub performed the publication. OPS and Hostinger
+were not changed. No production release tag was created.
 
-The intended code repository is https://github.com/warhoundai/HoundOracle.
+The code repository is https://github.com/warhoundai/HoundOracle.
 The static project page in `site/` is prepared for GitHub Pages at
-https://warhoundai.github.io/HoundOracle/. Repository and page deployment verification is recorded in the publication
-handoff; the page is not live until its deployment succeeds. `.github/workflows/pages.yml` deploys the page after Pages is
+https://warhoundai.github.io/HoundOracle/. The page and source URLs were verified after publication. `.github/workflows/pages.yml` deploys the page after Pages is
 enabled with GitHub Actions as its source. No production API is exposed.
 
 The page provides an accurate title, description, canonical, Open Graph metadata,
@@ -30,7 +29,11 @@ a reviewed source-only initial snapshot. A scan of current tracked files found
 only the deliberately fake signed-URL fixture (`Signature=test`); this is not a
 claim that historical credentials have been comprehensively audited.
 
-The initial public commit is a source-only snapshot of local commit
-`62c4b83`. Private development history is deliberately not pushed. Research
-metadata, licenses and experiment reports are retained; models and private
-evidence remain outside this repository.
+The public source snapshot was compared against all 907 scanned local files:
+zero missing or changed Git blobs. The initialization notice is an additional
+file. Source-only publication excludes private development history. First complete
+snapshot: `417f9cf8772e5475d525277e86d33393b91f18ba`.
+
+GitHub CI initially failed because optional CAPTCHA dependencies were absent from
+the stale lockfile. The lockfile was refreshed without dropping `--locked`; the
+follow-up CI result must be checked independently of successful page deployment.
