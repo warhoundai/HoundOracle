@@ -1,0 +1,163 @@
+{
+  "balanced-locked": {
+    "n": 300,
+    "calls_avoided": 24,
+    "calls_avoided_95_binomial_interval": null,
+    "false_abstentions": 1,
+    "false_abstention_fraction_95_binomial_interval": null,
+    "strata": {
+      "YES": {
+        "n": 100,
+        "abstentions": 1,
+        "95_binomial_interval": [
+          0.00025314603297742064,
+          0.054459385392080645
+        ]
+      },
+      "NO": {
+        "n": 100,
+        "abstentions": 0,
+        "95_binomial_interval": [
+          0.0,
+          0.03621669264517641
+        ]
+      },
+      "MAYBE": {
+        "n": 100,
+        "abstentions": 23,
+        "95_binomial_interval": [
+          0.1517316113010475,
+          0.3248587327751031
+        ]
+      }
+    },
+    "calls_avoided_95_stratified_bonferroni_interval": [
+      0.04585461130714354,
+      0.15305742456991078
+    ],
+    "false_abstention_95_stratified_bonferroni_interval": [
+      4.1926637037404976e-05,
+      0.034997750149790494
+    ]
+  },
+  "balanced-risk": {
+    "n": 300,
+    "calls_avoided": 21,
+    "calls_avoided_95_binomial_interval": null,
+    "false_abstentions": 1,
+    "false_abstention_fraction_95_binomial_interval": null,
+    "strata": {
+      "YES": {
+        "n": 100,
+        "abstentions": 1,
+        "95_binomial_interval": [
+          0.00025314603297742064,
+          0.054459385392080645
+        ]
+      },
+      "NO": {
+        "n": 100,
+        "abstentions": 0,
+        "95_binomial_interval": [
+          0.0,
+          0.03621669264517641
+        ]
+      },
+      "MAYBE": {
+        "n": 100,
+        "abstentions": 20,
+        "95_binomial_interval": [
+          0.12665555210195584,
+          0.2918426890886281
+        ]
+      }
+    },
+    "calls_avoided_95_stratified_bonferroni_interval": [
+      0.03790014319384057,
+      0.14190264754234647
+    ],
+    "false_abstention_95_stratified_bonferroni_interval": [
+      4.1926637037404976e-05,
+      0.034997750149790494
+    ]
+  },
+  "strict-locked": {
+    "n": 200,
+    "calls_avoided": 43,
+    "calls_avoided_95_binomial_interval": [
+      0.16018169533233634,
+      0.2784710438840571
+    ],
+    "false_abstentions": 0,
+    "false_abstention_fraction_95_binomial_interval": [
+      0.0,
+      0.01827534035513624
+    ],
+    "strata": {
+      "YES": {
+        "n": 12,
+        "abstentions": 0,
+        "95_binomial_interval": [
+          0.0,
+          0.2646484693970512
+        ]
+      },
+      "NO": {
+        "n": 5,
+        "abstentions": 0,
+        "95_binomial_interval": [
+          0.0,
+          0.5218237501049814
+        ]
+      },
+      "MAYBE": {
+        "n": 183,
+        "abstentions": 43,
+        "95_binomial_interval": [
+          0.1755723243718538,
+          0.30316683067147765
+        ]
+      }
+    }
+  },
+  "strict-risk": {
+    "n": 400,
+    "calls_avoided": 75,
+    "calls_avoided_95_binomial_interval": [
+      0.15043384881331712,
+      0.22926364569946
+    ],
+    "false_abstentions": 0,
+    "false_abstention_fraction_95_binomial_interval": [
+      0.0,
+      0.00917980458366526
+    ],
+    "strata": {
+      "YES": {
+        "n": 16,
+        "abstentions": 0,
+        "95_binomial_interval": [
+          0.0,
+          0.2059072142078227
+        ]
+      },
+      "NO": {
+        "n": 18,
+        "abstentions": 0,
+        "95_binomial_interval": [
+          0.0,
+          0.1853019681378522
+        ]
+      },
+      "MAYBE": {
+        "n": 366,
+        "abstentions": 75,
+        "95_binomial_interval": [
+          0.16473165187936525,
+          0.24995260933727464
+        ]
+      }
+    }
+  },
+  "interpretation": "Intervals describe within-panel group-sampled proportions; not simultaneous guarantees or transport across regimes. Balanced sampling differs from natural frequencies. Exact definitive baseline preservation is structural; fallback quality/latency/cost remain unmeasured."
+}

@@ -1,0 +1,10 @@
+{
+  "queries": 60,
+  "profiled_total_seconds": 1.701102533,
+  "onnx_run_seconds": 1.6635693900000001,
+  "fraction_inside_onnx_run": 0.9779359901758492,
+  "outside_onnx_seconds_per_query": 0.0006255523833333314,
+  "maximum_fraction_latency_removed_if_all_cost_outside_onnx_disappeared": 0.0220640098241508,
+  "decision": "Do not rewrite the Python wrapper in C++; inference already uses native ONNX Runtime and Rust tokenization.",
+  "limitations": "Profile is local only; ONNX run includes its thin Python wrapper. No claimed acceleration of the native kernel itself or network latency."
+}

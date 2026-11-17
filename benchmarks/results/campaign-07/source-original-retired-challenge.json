@@ -1,0 +1,48 @@
+{
+  "balanced": {
+    "baseline": {
+      "selected": 48,
+      "errors": 2,
+      "n": 300,
+      "correct_all": 146,
+      "seconds": 0.043916583992540836,
+      "selective_risk": 0.041666666666666664,
+      "one_sided_error_upper": 0.12541440447448027,
+      "correct_definitive_fraction": 0.15333333333333332
+    },
+    "grounding": {
+      "selected": 102,
+      "errors": 4,
+      "n": 300,
+      "correct_all": 196,
+      "seconds": 53.65239002500675,
+      "selective_risk": 0.0392156862745098,
+      "one_sided_error_upper": 0.0874919003081029,
+      "correct_definitive_fraction": 0.32666666666666666
+    }
+  },
+  "strict": {
+    "baseline": {
+      "selected": 12,
+      "errors": 2,
+      "n": 200,
+      "correct_all": 185,
+      "seconds": 0.017357610997351003,
+      "selective_risk": 0.16666666666666666,
+      "one_sided_error_upper": 0.43810543511531136,
+      "correct_definitive_fraction": 0.05
+    },
+    "grounding": {
+      "selected": 19,
+      "errors": 4,
+      "n": 200,
+      "correct_all": 188,
+      "seconds": 23.26877049299037,
+      "selective_risk": 0.21052631578947367,
+      "one_sided_error_upper": 0.4191202289169427,
+      "correct_definitive_fraction": 0.075
+    }
+  },
+  "fresh": false,
+  "interpretation": "Retired challenge only; no post-hoc threshold tuning or production qualification. Head-only timing excludes shared encoder; no end-to-end speed claim."
+}

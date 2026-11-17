@@ -1,0 +1,54 @@
+{
+  "balanced-risk": {
+    "n": 300,
+    "baseline_definitive": 59,
+    "new_definitive": 0,
+    "additional_calls_avoided": 21,
+    "additional_calls_avoided_fraction": 0.07,
+    "false_abstentions": 1,
+    "local_p50_seconds": 0.08783382200090273,
+    "local_p95_seconds": 0.15785030899969574,
+    "gemini_accuracy": null,
+    "all_in_cost": null,
+    "note": "Fallback not executed. No end-to-end Gemini advantage established. Definitive baseline preserved, not independently requalified."
+  },
+  "strict-risk": {
+    "n": 400,
+    "baseline_definitive": 20,
+    "new_definitive": 0,
+    "additional_calls_avoided": 75,
+    "additional_calls_avoided_fraction": 0.1875,
+    "false_abstentions": 0,
+    "local_p50_seconds": 0.09410048600057053,
+    "local_p95_seconds": 0.19959075319984546,
+    "gemini_accuracy": null,
+    "all_in_cost": null,
+    "note": "Fallback not executed. No end-to-end Gemini advantage established. Definitive baseline preserved, not independently requalified."
+  },
+  "balanced-locked": {
+    "n": 300,
+    "baseline_definitive": 58,
+    "new_definitive": 0,
+    "additional_calls_avoided": 24,
+    "additional_calls_avoided_fraction": 0.08,
+    "false_abstentions": 1,
+    "local_p50_seconds": 0.0917940549998093,
+    "local_p95_seconds": 0.1890347044990449,
+    "gemini_accuracy": null,
+    "all_in_cost": null,
+    "note": "Fallback not executed. No end-to-end Gemini advantage established. Definitive baseline preserved, not independently requalified."
+  },
+  "strict-locked": {
+    "n": 200,
+    "baseline_definitive": 14,
+    "new_definitive": 0,
+    "additional_calls_avoided": 43,
+    "additional_calls_avoided_fraction": 0.215,
+    "false_abstentions": 0,
+    "local_p50_seconds": 0.09122406799997407,
+    "local_p95_seconds": 0.16521332944894299,
+    "gemini_accuracy": null,
+    "all_in_cost": null,
+    "note": "Fallback not executed. No end-to-end Gemini advantage established. Definitive baseline preserved, not independently requalified."
+  }
+}
