@@ -1,0 +1,299 @@
+{
+  "freeze": {
+    "baseline_commit": "9123fdb",
+    "dataset_evaluation_digest": "c9a3370aa178944aa733d0be092373ac2e4f53ada510bb14aa238554b5339279",
+    "variants": {
+      "fp32": "032d5f74ee462b05e449e38d1c123674da73a4920d870309f31fe564af7ecec8",
+      "int8": "642bc9b7fadc15a86a892ec3fbc745b2aa56092b267926c6bfa24b79b3a3b339",
+      "logistic": "364c45573f2b65c4712a846eca38cfdd7ffb35ba46aec1ba10b244b5e86ee5fc",
+      "mlp": "70bd77a0442d37382a05ee4e304b3e53345a72970097ed093f83f4e7e51f2082",
+      "logistic-int8": "9e040797a4f82ef36114f1a4dd66d8933a08841ffab50ba721c5ac566e2dfd48",
+      "mlp-int8": "b19f8a540db8222c9ecc0426b6474a5d7c9cd7725199d0cf24f775b4aa638149"
+    },
+    "head_digest": "6cf925cf96377035ed452107c2b8a46e2b6c2399a1982d321b9ed0a629c48012",
+    "selection": "All four calibrated head configurations retained as a validation Pareto set; raw encoders are negative controls.",
+    "production_replacement": false,
+    "locked_test_tuning_permitted": false
+  },
+  "systems": {
+    "fp32": {
+      "count": 600,
+      "groups": 69,
+      "accuracy_all_decisions": 0.34,
+      "definitive_coverage": 0.0,
+      "correct_definitive_fraction": 0.0,
+      "selective_risk": null,
+      "definitive_count": 0,
+      "correct_definitive_count": 0,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.05136577650000618,
+        "p95": 0.09041345134924084,
+        "p99": 0.17624859787938474
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "intervals": {
+        "accuracy_all_decisions": [
+          0.2998040245309684,
+          0.38992537313432835
+        ],
+        "definitive_coverage": [
+          0.0,
+          0.0
+        ],
+        "selective_risk": null,
+        "correct_definitive_fraction": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_records": "/workspace/houndoracle-data/locked-results/fp32.jsonl",
+      "raw_sha256": "b370c7a06783269760a55b9695b294cc97836aa55048365dcab0c865df40040f"
+    },
+    "int8": {
+      "count": 600,
+      "groups": 69,
+      "accuracy_all_decisions": 0.34,
+      "definitive_coverage": 0.0,
+      "correct_definitive_fraction": 0.0,
+      "selective_risk": null,
+      "definitive_count": 0,
+      "correct_definitive_count": 0,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.03434690399990359,
+        "p95": 0.06319084970004951,
+        "p99": 0.12239134839961478
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "intervals": {
+        "accuracy_all_decisions": [
+          0.2998040245309684,
+          0.38992537313432835
+        ],
+        "definitive_coverage": [
+          0.0,
+          0.0
+        ],
+        "selective_risk": null,
+        "correct_definitive_fraction": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_records": "/workspace/houndoracle-data/locked-results/int8.jsonl",
+      "raw_sha256": "316f54f825899c255f8e4af05aad612545bd98043ad7b9e3c51bdcd837080cd8"
+    },
+    "logistic": {
+      "count": 600,
+      "groups": 69,
+      "accuracy_all_decisions": 0.54,
+      "definitive_coverage": 0.265,
+      "correct_definitive_fraction": 0.22833333333333333,
+      "selective_risk": 0.1383647798742138,
+      "definitive_count": 159,
+      "correct_definitive_count": 137,
+      "citation_supported_definitive_fraction": 0.8616352201257862,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.0514210829996955,
+        "p95": 0.0904686890990433,
+        "p99": 0.17630664243951283
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "intervals": {
+        "accuracy_all_decisions": [
+          0.4938056155928111,
+          0.5892920020120724
+        ],
+        "definitive_coverage": [
+          0.21389738522347218,
+          0.31530439429068247
+        ],
+        "selective_risk": [
+          0.08946898496240596,
+          0.1952662721893491
+        ],
+        "correct_definitive_fraction": [
+          0.18113585951021546,
+          0.274429000462036
+        ]
+      },
+      "raw_records": "/workspace/houndoracle-data/locked-results/logistic.jsonl",
+      "raw_sha256": "52aa21851f121d8663623eb02292ba414ff21f1d81e70db80bb3f7219cbfb4ee"
+    },
+    "mlp": {
+      "count": 600,
+      "groups": 69,
+      "accuracy_all_decisions": 0.575,
+      "definitive_coverage": 0.30833333333333335,
+      "correct_definitive_fraction": 0.2633333333333333,
+      "selective_risk": 0.1459459459459459,
+      "definitive_count": 185,
+      "correct_definitive_count": 158,
+      "citation_supported_definitive_fraction": 0.8540540540540541,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.051392921499882505,
+        "p95": 0.09043935670028984,
+        "p99": 0.1762762425697019
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "intervals": {
+        "accuracy_all_decisions": [
+          0.5257703900851357,
+          0.6277810960249687
+        ],
+        "definitive_coverage": [
+          0.2475712027868271,
+          0.36522081478945567
+        ],
+        "selective_risk": [
+          0.101123595505618,
+          0.1966347429885871
+        ],
+        "correct_definitive_fraction": [
+          0.20999891774891774,
+          0.3156033909574468
+        ]
+      },
+      "raw_records": "/workspace/houndoracle-data/locked-results/mlp.jsonl",
+      "raw_sha256": "529ee9b52214d7d416e1b5396e065fa7fc9575c1d5616be272aea50a7772dd50"
+    },
+    "logistic-int8": {
+      "count": 600,
+      "groups": 69,
+      "accuracy_all_decisions": 0.59,
+      "definitive_coverage": 0.345,
+      "correct_definitive_fraction": 0.28833333333333333,
+      "selective_risk": 0.16425120772946855,
+      "definitive_count": 207,
+      "correct_definitive_count": 173,
+      "citation_supported_definitive_fraction": 0.8357487922705314,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.03440860499995324,
+        "p95": 0.06322825640040719,
+        "p99": 0.12250157743035742
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "intervals": {
+        "accuracy_all_decisions": [
+          0.5437876864487464,
+          0.6345862857893222
+        ],
+        "definitive_coverage": [
+          0.2860008818342151,
+          0.39845569235446116
+        ],
+        "selective_risk": [
+          0.12161679536679534,
+          0.21196487126548458
+        ],
+        "correct_definitive_fraction": [
+          0.2361395385570449,
+          0.33592332547242043
+        ]
+      },
+      "raw_records": "/workspace/houndoracle-data/locked-results/logistic-int8.jsonl",
+      "raw_sha256": "8abeceab3a1012f12beeafa25ad7d0594f96f2c556f4a2ea2b151d16100ca724"
+    },
+    "mlp-int8": {
+      "count": 600,
+      "groups": 69,
+      "accuracy_all_decisions": 0.5683333333333334,
+      "definitive_coverage": 0.29833333333333334,
+      "correct_definitive_fraction": 0.255,
+      "selective_risk": 0.14525139664804465,
+      "definitive_count": 179,
+      "correct_definitive_count": 153,
+      "citation_supported_definitive_fraction": 0.8547486033519553,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.03438142049981252,
+        "p95": 0.06320572445069955,
+        "p99": 0.12241108862959661
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "intervals": {
+        "accuracy_all_decisions": [
+          0.5196793770068081,
+          0.6189152307569348
+        ],
+        "definitive_coverage": [
+          0.24458440766661163,
+          0.3461567164179104
+        ],
+        "selective_risk": [
+          0.10046650717703347,
+          0.19769831156419232
+        ],
+        "correct_definitive_fraction": [
+          0.20593160991832088,
+          0.29913493923808654
+        ]
+      },
+      "raw_records": "/workspace/houndoracle-data/locked-results/mlp-int8.jsonl",
+      "raw_sha256": "7ebded658ce077edb6bd9c99b06522e109244b5becb8a5ab32ac62e6d98de82b"
+    },
+    "core-baseline": {
+      "count": 600,
+      "groups": 69,
+      "accuracy_all_decisions": 0.34,
+      "definitive_coverage": 0.0,
+      "correct_definitive_fraction": 0.0,
+      "selective_risk": null,
+      "definitive_count": 0,
+      "correct_definitive_count": 0,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.00036809399989579106,
+        "p95": 0.0005922225504491507,
+        "p99": 0.0010245577599744132
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "intervals": {
+        "accuracy_all_decisions": [
+          0.2998040245309684,
+          0.38992537313432835
+        ],
+        "definitive_coverage": [
+          0.0,
+          0.0
+        ],
+        "selective_risk": null,
+        "correct_definitive_fraction": [
+          0.0,
+          0.0
+        ]
+      },
+      "raw_records": "/workspace/houndoracle-data/locked-results/core-baseline.jsonl",
+      "raw_sha256": "402a744a18f19a0cd2c2be53bb462a5eb6d2ffeb90424797b6b80820e9af0705"
+    }
+  },
+  "gemini": "not executed: project CPU quota blocked both job submissions",
+  "scope": "historical FEVER evidence-conditioned task; not live-world research or complete AI-agent workflow",
+  "unknowns": [
+    "all-in monetary costs",
+    "S3 reuse economics",
+    "Gemini relative accuracy/cost/latency",
+    "independent human citation re-audit"
+  ]
+}

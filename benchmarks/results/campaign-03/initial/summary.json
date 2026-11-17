@@ -1,0 +1,384 @@
+{
+  "campaign": "oracle-cloud-03",
+  "expected_task_records": 40,
+  "token_accounting_audit": [
+    {
+      "total": 252,
+      "accounted": 252,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 251,
+      "accounted": 251,
+      "residual": 0
+    },
+    {
+      "total": 485,
+      "accounted": 485,
+      "residual": 0
+    },
+    {
+      "total": 334,
+      "accounted": 334,
+      "residual": 0
+    },
+    {
+      "total": 368,
+      "accounted": 368,
+      "residual": 0
+    },
+    {
+      "total": 368,
+      "accounted": 368,
+      "residual": 0
+    },
+    {
+      "total": 357,
+      "accounted": 357,
+      "residual": 0
+    },
+    {
+      "total": 234,
+      "accounted": 234,
+      "residual": 0
+    },
+    {
+      "total": 245,
+      "accounted": 245,
+      "residual": 0
+    },
+    {
+      "total": 274,
+      "accounted": 274,
+      "residual": 0
+    },
+    {
+      "total": 252,
+      "accounted": 252,
+      "residual": 0
+    },
+    {
+      "total": 252,
+      "accounted": 252,
+      "residual": 0
+    },
+    {
+      "total": 249,
+      "accounted": 249,
+      "residual": 0
+    },
+    {
+      "total": 253,
+      "accounted": 253,
+      "residual": 0
+    },
+    {
+      "total": 314,
+      "accounted": 314,
+      "residual": 0
+    },
+    {
+      "total": 375,
+      "accounted": 375,
+      "residual": 0
+    },
+    {
+      "total": 367,
+      "accounted": 367,
+      "residual": 0
+    },
+    {
+      "total": 235,
+      "accounted": 235,
+      "residual": 0
+    },
+    {
+      "total": 234,
+      "accounted": 234,
+      "residual": 0
+    },
+    {
+      "total": 259,
+      "accounted": 259,
+      "residual": 0
+    },
+    {
+      "total": 278,
+      "accounted": 278,
+      "residual": 0
+    },
+    {
+      "total": 412,
+      "accounted": 412,
+      "residual": 0
+    },
+    {
+      "total": 311,
+      "accounted": 311,
+      "residual": 0
+    },
+    {
+      "total": 368,
+      "accounted": 368,
+      "residual": 0
+    },
+    {
+      "total": 252,
+      "accounted": 252,
+      "residual": 0
+    },
+    {
+      "total": 275,
+      "accounted": 275,
+      "residual": 0
+    },
+    {
+      "total": 337,
+      "accounted": 337,
+      "residual": 0
+    },
+    {
+      "total": 402,
+      "accounted": 402,
+      "residual": 0
+    },
+    {
+      "total": 414,
+      "accounted": 414,
+      "residual": 0
+    },
+    {
+      "total": 397,
+      "accounted": 397,
+      "residual": 0
+    },
+    {
+      "total": 266,
+      "accounted": 266,
+      "residual": 0
+    },
+    {
+      "total": 252,
+      "accounted": 252,
+      "residual": 0
+    },
+    {
+      "total": 311,
+      "accounted": 311,
+      "residual": 0
+    },
+    {
+      "total": 210,
+      "accounted": 210,
+      "residual": 0
+    }
+  ],
+  "complete": true,
+  "systems": {
+    "development:mlp": {
+      "task_executions": 12,
+      "unique_questions": 6,
+      "accuracy": 0.8333333333333334,
+      "definitive_coverage": 0.5,
+      "correct_definitive_fraction": 0.5,
+      "accepted_accuracy": 1.0,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.35876542100232517,
+        0.9957892554855106
+      ],
+      "p50_seconds": 1.6151393019999958,
+      "p95_seconds": 4.203840344699995,
+      "p99_seconds": 5.89573145374,
+      "token_list_price_cost_usd": 0.006099,
+      "model_calls": 10,
+      "failed_queries": 0,
+      "reported_input_tokens": 1842,
+      "reported_visible_output_tokens": 923,
+      "reported_reasoning_tokens": 335,
+      "model_calls_without_reported_reasoning_count": 8,
+      "actual_invoiced_all_in_cost_usd": null
+    },
+    "development:baseline": {
+      "task_executions": 12,
+      "unique_questions": 6,
+      "accuracy": 0.8333333333333334,
+      "definitive_coverage": 0.5,
+      "correct_definitive_fraction": 0.5,
+      "accepted_accuracy": 1.0,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.35876542100232517,
+        0.9957892554855106
+      ],
+      "p50_seconds": 1.8055906424999932,
+      "p95_seconds": 2.837815721699997,
+      "p99_seconds": 3.348347548339997,
+      "token_list_price_cost_usd": 0.00613875,
+      "model_calls": 12,
+      "failed_queries": 0,
+      "reported_input_tokens": 2220,
+      "reported_visible_output_tokens": 1193,
+      "reported_reasoning_tokens": 0,
+      "model_calls_without_reported_reasoning_count": 12,
+      "actual_invoiced_all_in_cost_usd": null
+    },
+    "confirmation:selected": {
+      "task_executions": 8,
+      "unique_questions": 4,
+      "accuracy": 1.0,
+      "definitive_coverage": 0.75,
+      "correct_definitive_fraction": 0.75,
+      "accepted_accuracy": 1.0,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.3976353643835253,
+        1
+      ],
+      "p50_seconds": 0.7058176949999933,
+      "p95_seconds": 2.5607127779500027,
+      "p99_seconds": 2.7489277259900033,
+      "token_list_price_cost_usd": 0.00278175,
+      "model_calls": 4,
+      "failed_queries": 0,
+      "reported_input_tokens": 764,
+      "reported_visible_output_tokens": 341,
+      "reported_reasoning_tokens": 248,
+      "model_calls_without_reported_reasoning_count": 2,
+      "actual_invoiced_all_in_cost_usd": null
+    },
+    "confirmation:baseline": {
+      "task_executions": 8,
+      "unique_questions": 4,
+      "accuracy": 1.0,
+      "definitive_coverage": 0.75,
+      "correct_definitive_fraction": 0.75,
+      "accepted_accuracy": 1.0,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.3976353643835253,
+        1
+      ],
+      "p50_seconds": 1.5712448344999927,
+      "p95_seconds": 1.9449450797500076,
+      "p99_seconds": 1.9901405447500071,
+      "token_list_price_cost_usd": 0.004767,
+      "model_calls": 8,
+      "failed_queries": 0,
+      "reported_input_tokens": 1716,
+      "reported_visible_output_tokens": 834,
+      "reported_reasoning_tokens": 94,
+      "model_calls_without_reported_reasoning_count": 7,
+      "actual_invoiced_all_in_cost_usd": null
+    }
+  },
+  "selection": [
+    {
+      "baseline": {
+        "accuracy": 0.8333333333333334,
+        "count": 12,
+        "coverage": 0.5,
+        "model_calls": 12,
+        "p95": 2.315680899,
+        "token_cost_usd": 0.00613875
+      },
+      "campaign": "oracle-cloud-03",
+      "initial": {
+        "accuracy": 0.8333333333333334,
+        "count": 12,
+        "coverage": 0.5,
+        "model_calls": 10,
+        "p95": 2.4734971649999977,
+        "token_cost_usd": 0.006099
+      },
+      "initial_worse": true,
+      "kind": "selection",
+      "rule": "Freeze before fresh confirmation; no confirmation-based tuning",
+      "selected": "precision"
+    }
+  ],
+  "unavailable_models": [],
+  "limitations": [
+    "Tiny pilot; confidence intervals are wide.",
+    "Matched historical evidence, no Google Search grounding or autonomous agent tool loop.",
+    "Model list-price usage is not verified all-in billing; startup/compute/egress/logging remain separate.",
+    "Incomplete execution must not be reported as a completed comparison."
+  ],
+  "comparisons": [
+    {
+      "phase": "development",
+      "candidate": "mlp",
+      "unique_questions": 6,
+      "candidate_minus_baseline": {
+        "accuracy": 0.0,
+        "coverage": 0.0,
+        "cost": -3.3124999999999518e-06,
+        "p50": -0.19045134049999746,
+        "p95": 1.3660246229999982
+      },
+      "paired_question_cluster_bootstrap_95pct_intervals": {
+        "accuracy": [
+          0.0,
+          0.0
+        ],
+        "coverage": [
+          0.0,
+          0.0
+        ],
+        "cost": [
+          -0.0002915,
+          0.00025093750000000013
+        ],
+        "p50": [
+          -1.0355888604999777,
+          0.23473034350000432
+        ],
+        "p95": [
+          -0.13741959915001134,
+          2.8427237260000027
+        ]
+      },
+      "bootstrap_seed": 1905,
+      "bootstrap_draws": 10000,
+      "caveat": "Only 2-6 clusters. Empirical bootstrap is unstable and cannot establish equivalence or generalization; zero observed accuracy difference does not prove no regression. See question-level exact intervals."
+    },
+    {
+      "phase": "confirmation",
+      "candidate": "selected",
+      "unique_questions": 4,
+      "candidate_minus_baseline": {
+        "accuracy": 0.0,
+        "coverage": 0.0,
+        "cost": -0.00024815625000000006,
+        "p50": -0.8654271394999995,
+        "p95": 0.6157676981999951
+      },
+      "paired_question_cluster_bootstrap_95pct_intervals": {
+        "accuracy": [
+          0.0,
+          0.0
+        ],
+        "coverage": [
+          0.0,
+          0.0
+        ],
+        "cost": [
+          -0.0006106875,
+          0.000114375
+        ],
+        "p50": [
+          -1.508805776999992,
+          0.3469541080000056
+        ],
+        "p95": [
+          -1.4988404019999848,
+          0.7945420519999971
+        ]
+      },
+      "bootstrap_seed": 1905,
+      "bootstrap_draws": 10000,
+      "caveat": "Only 2-6 clusters. Empirical bootstrap is unstable and cannot establish equivalence or generalization; zero observed accuracy difference does not prove no regression. See question-level exact intervals."
+    }
+  ]
+}

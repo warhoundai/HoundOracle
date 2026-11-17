@@ -1,0 +1,44 @@
+{
+  "kind": "COUNTERFACTUAL_CITATION_POSTPROCESSOR_AUDIT",
+  "results": {
+    "oracle-cloud-03": {
+      "development:mlp": {
+        "model_responses": 10,
+        "definitive": 4,
+        "blocked_unverifiable_definitive": 0
+      },
+      "development:baseline": {
+        "model_responses": 12,
+        "definitive": 6,
+        "blocked_unverifiable_definitive": 0
+      },
+      "confirmation:selected": {
+        "model_responses": 4,
+        "definitive": 2,
+        "blocked_unverifiable_definitive": 0
+      },
+      "confirmation:baseline": {
+        "model_responses": 8,
+        "definitive": 6,
+        "blocked_unverifiable_definitive": 0
+      }
+    },
+    "oracle-cloud-03b": {
+      "supplemental:baseline": {
+        "model_responses": 6,
+        "definitive": 3,
+        "blocked_unverifiable_definitive": 0
+      },
+      "supplemental:selected": {
+        "model_responses": 6,
+        "definitive": 3,
+        "blocked_unverifiable_definitive": 0
+      }
+    }
+  },
+  "limitations": [
+    "No new model generation, quality labeling or live latency measurement.",
+    "URL/quote presence does not establish entailment or source independence.",
+    "The submitted campaign05 is unchanged; audit both arms equally after collecting its frozen outputs."
+  ]
+}

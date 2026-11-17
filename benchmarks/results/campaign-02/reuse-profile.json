@@ -1,0 +1,128 @@
+{
+  "workload": "60 fixed validation questions x 3 interleaved repetitions; evidence already supplied",
+  "model_load_seconds": {
+    "fp32": 1.5135763019998194,
+    "int8": 0.26593719299944496
+  },
+  "peak_combined_process_rss_kib": 651612,
+  "cold": {
+    "fp32": {
+      "count": 180,
+      "groups": 10,
+      "accuracy_all_decisions": 0.4666666666666667,
+      "definitive_coverage": 0.21666666666666667,
+      "correct_definitive_fraction": 0.16666666666666666,
+      "selective_risk": 0.23076923076923073,
+      "definitive_count": 39,
+      "correct_definitive_count": 30,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.046608304000073986,
+        "p95": 0.09340312910071587,
+        "p99": 0.10089006913966843
+      },
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "int8": {
+      "count": 180,
+      "groups": 10,
+      "accuracy_all_decisions": 0.43333333333333335,
+      "definitive_coverage": 0.16666666666666666,
+      "correct_definitive_fraction": 0.13333333333333333,
+      "selective_risk": 0.19999999999999996,
+      "definitive_count": 30,
+      "correct_definitive_count": 24,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.030978734500422433,
+        "p95": 0.06550862835024417,
+        "p99": 0.07057184464991224
+      },
+      "cache_hits": 0,
+      "failed_queries": 0
+    }
+  },
+  "warm": {
+    "fp32": {
+      "count": 180,
+      "groups": 10,
+      "accuracy_all_decisions": 0.4666666666666667,
+      "definitive_coverage": 0.21666666666666667,
+      "correct_definitive_fraction": 0.16666666666666666,
+      "selective_risk": 0.23076923076923073,
+      "definitive_count": 39,
+      "correct_definitive_count": 30,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 5.516200008059968e-05,
+        "p95": 0.00017872675030048383,
+        "p99": 0.0002850307399239688
+      },
+      "cache_hits": 180,
+      "failed_queries": 0
+    },
+    "int8": {
+      "count": 180,
+      "groups": 10,
+      "accuracy_all_decisions": 0.43333333333333335,
+      "definitive_coverage": 0.16666666666666666,
+      "correct_definitive_fraction": 0.13333333333333333,
+      "selective_risk": 0.19999999999999996,
+      "definitive_count": 30,
+      "correct_definitive_count": 24,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 5.512649977390538e-05,
+        "p95": 0.00015914089976831693,
+        "p99": 0.0005035528197458962
+      },
+      "cache_hits": 180,
+      "failed_queries": 0
+    }
+  },
+  "paired_quantization": {
+    "accuracy_delta": {
+      "mean": -0.033265852391587615,
+      "cluster_bootstrap_95pct_interval": [
+        -0.10000000000000003,
+        0.0
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.04762057751628209,
+      "cluster_bootstrap_95pct_interval": [
+        -0.10529115341545353,
+        0.0
+      ]
+    },
+    "p50_latency_reduction": {
+      "mean": 0.3290201034003394,
+      "cluster_bootstrap_95pct_interval": [
+        0.31162789374146765,
+        0.34826959912146327
+      ]
+    },
+    "p95_latency_reduction": {
+      "mean": 0.28355431433855705,
+      "cluster_bootstrap_95pct_interval": [
+        0.10704267201980933,
+        0.3284268603735804
+      ]
+    }
+  },
+  "limitations": [
+    "Both model variants resident; peak RSS is not per-model memory.",
+    "Cold means no answer/feature cache, not a new process or downloaded model.",
+    "Warm priming is excluded from hit latency; cache-hit rates here are workload construction, not production forecasts.",
+    "No S3, live searches, Gemini agent calls or invoiced costs were measured."
+  ]
+}

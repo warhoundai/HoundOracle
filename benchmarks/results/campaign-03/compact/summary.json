@@ -1,0 +1,162 @@
+{
+  "campaign": "oracle-cloud-03b",
+  "expected_task_records": 12,
+  "token_accounting_audit": [
+    {
+      "total": 369,
+      "accounted": 369,
+      "residual": 0
+    },
+    {
+      "total": 363,
+      "accounted": 363,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    },
+    {
+      "total": 497,
+      "accounted": 497,
+      "residual": 0
+    },
+    {
+      "total": 363,
+      "accounted": 363,
+      "residual": 0
+    },
+    {
+      "total": 306,
+      "accounted": 306,
+      "residual": 0
+    },
+    {
+      "total": 306,
+      "accounted": 306,
+      "residual": 0
+    },
+    {
+      "total": 553,
+      "accounted": 553,
+      "residual": 0
+    },
+    {
+      "total": 363,
+      "accounted": 363,
+      "residual": 0
+    },
+    {
+      "total": 306,
+      "accounted": 306,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    }
+  ],
+  "complete": true,
+  "systems": {
+    "supplemental:baseline": {
+      "task_executions": 6,
+      "unique_questions": 2,
+      "accuracy": 0.5,
+      "definitive_coverage": 0.5,
+      "correct_definitive_fraction": 0.5,
+      "accepted_accuracy": 1.0,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.01257911709342505,
+        0.9874208829065749
+      ],
+      "p50_seconds": 1.3348019450000024,
+      "p95_seconds": 2.651852243500006,
+      "p99_seconds": 2.933516311900008,
+      "token_list_price_cost_usd": 0.00250275,
+      "model_calls": 6,
+      "failed_queries": 0,
+      "reported_input_tokens": 1902,
+      "reported_visible_output_tokens": 103,
+      "reported_reasoning_tokens": 184,
+      "model_calls_without_reported_reasoning_count": 5,
+      "actual_invoiced_all_in_cost_usd": null
+    },
+    "supplemental:selected": {
+      "task_executions": 6,
+      "unique_questions": 2,
+      "accuracy": 0.5,
+      "definitive_coverage": 0.5,
+      "correct_definitive_fraction": 0.5,
+      "accepted_accuracy": 1.0,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.01257911709342505,
+        0.9874208829065749
+      ],
+      "p50_seconds": 1.3448072600000103,
+      "p95_seconds": 1.781880283500005,
+      "p99_seconds": 1.8332078351000043,
+      "token_list_price_cost_usd": 0.0022965,
+      "model_calls": 6,
+      "failed_queries": 0,
+      "reported_input_tokens": 1902,
+      "reported_visible_output_tokens": 98,
+      "reported_reasoning_tokens": 134,
+      "model_calls_without_reported_reasoning_count": 5,
+      "actual_invoiced_all_in_cost_usd": null
+    }
+  },
+  "selection": [],
+  "unavailable_models": [],
+  "limitations": [
+    "Tiny pilot; confidence intervals are wide.",
+    "Matched historical evidence, no Google Search grounding or autonomous agent tool loop.",
+    "Model list-price usage is not verified all-in billing; startup/compute/egress/logging remain separate.",
+    "Incomplete execution must not be reported as a completed comparison."
+  ],
+  "comparisons": [
+    {
+      "phase": "supplemental",
+      "candidate": "selected",
+      "unique_questions": 2,
+      "candidate_minus_baseline": {
+        "accuracy": 0.0,
+        "coverage": 0.0,
+        "cost": -3.437500000000001e-05,
+        "p50": 0.010005315000007897,
+        "p95": -0.8699719600000009
+      },
+      "paired_question_cluster_bootstrap_95pct_intervals": {
+        "accuracy": [
+          0.0,
+          0.0
+        ],
+        "coverage": [
+          0.0,
+          0.0
+        ],
+        "cost": [
+          -7.75000000000001e-05,
+          8.749999999999969e-06
+        ],
+        "p50": [
+          -0.3283405939999824,
+          0.21309122600000308
+        ],
+        "p95": [
+          -1.1578926060000043,
+          0.22736854800000117
+        ]
+      },
+      "bootstrap_seed": 1905,
+      "bootstrap_draws": 10000,
+      "caveat": "Only 2-6 clusters. Empirical bootstrap is unstable and cannot establish equivalence or generalization; zero observed accuracy difference does not prove no regression. See question-level exact intervals."
+    }
+  ]
+}

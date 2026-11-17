@@ -1,0 +1,30 @@
+{
+  "python": "3.12.14",
+  "baseline_commit": "9123fdb",
+  "tests_python_3_11": 83,
+  "tests_python_3_12": 83,
+  "audit": "No known third-party vulnerabilities; unpublished houndoracle itself skipped by vulnerability database",
+  "build": "sdist and wheel passed",
+  "format_and_lint": "passed",
+  "artifacts": {
+    "benchmarks/results/campaign-02/logistic-int8.jsonl": "974c5a5fd0100c8e1b334adb67c66394725fef3769e48473810ee15a3d5cd54e",
+    "benchmarks/results/campaign-02/calibration-and-risk.png": "e1e74f09ee920a96bf0776e70f29f88d29a2fed773258cb17c774d12b388c9f4",
+    "benchmarks/results/campaign-02/reuse-profile.json": "84922f571e66ea289234c251579df01b85c29a5ccac0320dbe1ef69fd6783a7d",
+    "benchmarks/results/campaign-02/calibration-and-risk.svg": "4f34d2e37a6b316ce014327bdb4310cff9a8c15ff05f30546203b004a87a118a",
+    "benchmarks/results/campaign-02/mlp-int8.jsonl": "73cd62a60f88b9282abb093fbf2c7682ef29275bec44d4668b0ff3e34576746a",
+    "benchmarks/results/campaign-02/int8.jsonl": "3ddbedf0190ec729050e3de0b27b86ef24e39405bc3c257221fab25dc8b4b394",
+    "benchmarks/results/campaign-02/DATA_RIGHTS.md": "fbbf2c794812504c85ad1034bed06c97d18df98558ab835073ea462b2e519b0c",
+    "benchmarks/results/campaign-02/fp32.jsonl": "7c3eac5bfc3fbdcf567c6aba142fb980f8e152e3b1046190f614fdad7274f880",
+    "benchmarks/results/campaign-02/mlp.jsonl": "6b77c3b2f4351b1ed7a2c690f60479702564ea3f0d817b2f185f5ea7ec7b8c78",
+    "benchmarks/results/campaign-02/core-baseline.jsonl": "2b2edb1bd2aa47fcc2b0c3f5c0069695b56afa3b51f1db95bacc522cc31b8d1e",
+    "benchmarks/results/campaign-02/summary.json": "2e283487a32cb5842055e42ed4cec94396a797dff0d96df9a56cb11d39600757",
+    "benchmarks/results/campaign-02/logistic.jsonl": "294285c1c969992ba0ad16f0a9b22fd18e0161637dfeb44b90c5629ba43340c1",
+    "research/experiments/results/trained-aggregators.json": "b8060f4158f12d91c1b833db7e6946b0d214b5d25ca13d8fbb2abe5ebc52c813",
+    "research/experiments/results/calibration-fp32.json": "8cde67080588f56f20b43beb805da94f993f6023f89b6a9e771b9ee82828e32d",
+    "research/experiments/results/calibration-mlp.json": "c96178f2d4e048cd0937d958d3ebdc28c70993158765da43e5b987bcf126e908",
+    "research/experiments/results/calibration-mlp-int8.json": "3623b5afe1f1d0d9d9e8bee9698ed13b7b558a6d6dce4e2ee2c1605bbbc10184",
+    "research/experiments/results/calibration-int8.json": "ae593b15a2b4f1ef46f397cd4b0ce971e9e1ab221c4e9bfb6bdf564c68044413",
+    "research/experiments/results/calibration-logistic.json": "0fdb2a8d821fb0c3af93ebd9835efe36a3a9607aa30060cd52cd710d74c9f799",
+    "research/experiments/results/calibration-logistic-int8.json": "86ee78004356542731feeb347ad0fb9111aa96245440827bed3c47586a4a71de"
+  }
+}
