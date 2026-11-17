@@ -1,0 +1,47 @@
+{
+  "qualified": true,
+  "model_selected": "continued-mixture",
+  "models": {
+    "original-frozen": {
+      "risk_qualified": true,
+      "correct_definitive_validation": 0.27053140096618356
+    },
+    "fever-frozen": {
+      "risk_qualified": true,
+      "correct_definitive_validation": 0.19806763285024154
+    },
+    "parent-frozen": {
+      "risk_qualified": true,
+      "correct_definitive_validation": 0.34299516908212563
+    },
+    "parent-mixture": {
+      "risk_qualified": true,
+      "correct_definitive_validation": 0.3333333333333333
+    },
+    "continued-mixture": {
+      "risk_qualified": true,
+      "correct_definitive_validation": 0.37681159420289856
+    }
+  },
+  "file_sha256": {
+    "dataset-manifest.json": "3c76ea3f8cca2a780ae6b6092c7d309a8a21c6fe443b295dda9968034ce76304",
+    "original-frozen-head.json": "2f777698002c5d1444d8b044907ff90b7956101b031a64f3142aa785719a2c0f",
+    "original-frozen-calibration.json": "b7f506271366f23055bcf9474aead1358f3ebc7228952843eb9d46cc21069840",
+    "original-frozen-analysis.json": "433f3fd863900ce60e3507d9403f4b96123fe21dfd70faf81be3b5702656e1c2",
+    "fever-frozen-head.json": "7466a58e21a79a383081f51a12d2c4597d64113c4fdc287dae51097d764c5c18",
+    "fever-frozen-calibration.json": "887949adbd0733da4b89f937b9045ee2d5b83522feffb45b64994c17387a8fcf",
+    "fever-frozen-analysis.json": "4191bea4bab9c758d93643bac4e8a6513bedd49fc6a155051f709e2556f5df93",
+    "parent-frozen-head.json": "90f7324ce38bf451018c1d14b70b4a0cb2e022d3406feced336d1eae658c4fcc",
+    "parent-frozen-calibration.json": "892839cc65f68143f3c14400576171a73d250f466a2ee3c3b6df7b0df64ba423",
+    "parent-frozen-analysis.json": "635a37f3d35f8d74f41fc42f8969443b6004e988c570997fcf0b57ba8ce6b2cf",
+    "parent-mixture-head.json": "385bac696f3bb1fe21b3de73e5232f45d448d43d605dbeef295c327abbacdd74",
+    "parent-mixture-calibration.json": "d5feff6bda72d8977ae5b3e8c00a8fb5c59bae4ee50aff7cebff901559702eb8",
+    "parent-mixture-analysis.json": "f72e0ee4dc4f65e249eb7433dff36402f06ad7d1c062dd080468df572dffb501",
+    "continued-mixture-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "continued-mixture-calibration.json": "e05263845b94dcbb2d1b8edc05dd5ce46185f23b2a082a572ff19dac248bcbfc",
+    "continued-mixture-analysis.json": "1d56b769127cc7020edf9eb978d1cb74131549d2c2d69d2ed9f63dcfccf5588a"
+  },
+  "locked_predictions_seen": false,
+  "production_qualified": false,
+  "population": "Component-uniform one query per independent revision component; no all-pair or current-world guarantee."
+}

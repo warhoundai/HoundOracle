@@ -1,0 +1,35 @@
+{
+  "qualified": false,
+  "model_selected": null,
+  "decisions": {
+    "parent-frozen": {
+      "risk_qualified": false,
+      "quality_and_material_improvement": true
+    },
+    "parent-mixture": {
+      "risk_qualified": false,
+      "quality_and_material_improvement": false
+    },
+    "continued-mixture": {
+      "risk_qualified": false,
+      "quality_and_material_improvement": false
+    }
+  },
+  "locked_predictions_seen": false,
+  "production_qualified": false,
+  "file_sha256": {
+    "dataset-manifest.json": "6ddf443dedbe8ba84685bbd72313043e1759e57033521d16845d9f6e359b1006",
+    "dataset-manifest-extended.json": "e4857c6935a41de511805d85ea891fe7473b0f4860e997b21b87f74c02406f37",
+    "trained-manifest.json": "0d02011b4d6f46ae3c00bc805eca089afa6eccb509f86c0944e6b43899f7cd7c",
+    "parent-frozen-head.json": "90f7324ce38bf451018c1d14b70b4a0cb2e022d3406feced336d1eae658c4fcc",
+    "parent-frozen-calibration.json": "880fcbff4ea96cc4a46f20dd79eea06ed8d8028c9feb2aa8d5743ecfc8c07809",
+    "parent-frozen-analysis.json": "59922a6bb63de77d0f7a1a4d94cd2c0ee798a20fdac6dbd78190653509e9c8b4",
+    "parent-mixture-head.json": "385bac696f3bb1fe21b3de73e5232f45d448d43d605dbeef295c327abbacdd74",
+    "parent-mixture-calibration.json": "8fd1223bbe463f5db9c35c1fab11de7d411c29a6b3c9064ce18062985e5d5376",
+    "parent-mixture-analysis.json": "83c1ddb5f0a179c6642f1be41669a01ed6ed47095406f8327a9f21f8e067a84b",
+    "continued-mixture-head.json": "e198973991c677b643dda00da80b123cc9bfacc6979e009d94c0609732cb063e",
+    "continued-mixture-calibration.json": "aac9098f98ae1ba5536e6291a6257fac46daabd5a65d6d257468dc1d8a776c0a",
+    "continued-mixture-analysis.json": "b45700b4e83eed192ae4756a60038071111e77de635df9956e399c13c8b0387c"
+  },
+  "scope": "One-shot conditional revision-evidence research test; no cloud expenditure, public release or general-world truth authorization."
+}

@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "tolerance": 0.0001,
+  "cases": [
+    {
+      "batch": 1,
+      "sequence_length": 16,
+      "max_absolute_error": 1.1324882507324219e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 35,
+      "max_absolute_error": 1.0728836059570312e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 42,
+      "max_absolute_error": 4.76837158203125e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 48,
+      "max_absolute_error": 1.1920928955078125e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 55,
+      "max_absolute_error": 4.76837158203125e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 64,
+      "max_absolute_error": 2.384185791015625e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 78,
+      "max_absolute_error": 2.428889274597168e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 245,
+      "max_absolute_error": 5.960464477539062e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 2,
+      "sequence_length": 245,
+      "max_absolute_error": 1.0728836059570312e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 3,
+      "sequence_length": 78,
+      "max_absolute_error": 2.473592758178711e-06,
+      "argmax_matches": true
+    }
+  ],
+  "model_config": {
+    "model_id": "houndoracle/minilm-vitc-fever-1921",
+    "revision": "8bdfefab3243dca9df371923315f71e735b0df8d3ba0c7461844012bab4b5ddf",
+    "variant": "fp32",
+    "threads": 2,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "56148d5f12ef499168f4a11da8ad603009903d5abc1f204fa7d021c81d636cbd"
+  }
+}

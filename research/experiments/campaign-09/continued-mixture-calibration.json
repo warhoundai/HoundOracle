@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "population": "vitaminc-component-uniform-query-1922",
+  "model_config": {
+    "model_id": "houndoracle/minilm-vitc-fever-1921",
+    "revision": "8bdfefab3243dca9df371923315f71e735b0df8d3ba0c7461844012bab4b5ddf",
+    "variant": "fp32",
+    "threads": 1,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "56148d5f12ef499168f4a11da8ad603009903d5abc1f204fa7d021c81d636cbd",
+    "aggregation_head": "continued-mixture",
+    "head_digest": "a92aedab2eb54bb32349d6308e4fbdef0816a8d2b748f0ad2e71df80b3f2b95a"
+  },
+  "mapping": {
+    "method": "temperature",
+    "temperature": 1.862836783716754,
+    "loss": 0.5036642858992462
+  },
+  "certificate": {
+    "threshold": 0.8,
+    "alpha": 0.01,
+    "selected_rows": 354,
+    "selected_groups": 354,
+    "fully_correct_groups": 321,
+    "group_correctness_lower_bound": 0.8646981406913292,
+    "qualified": true,
+    "method": "one-sided Clopper-Pearson on group-any-error events",
+    "assumptions": "Only for the declared component-uniform query population, independent/exchangeable components and a fixed pre-risk selection rule. Not all-pairs row weighting, per-input truth, adversarial retrieval or arbitrary shift.",
+    "row_weighted_risk_guaranteed": true,
+    "row_risk_upper": 0.13530185930867078,
+    "risk_unit": "One query per independent component; case-any-error equals query error only for this sampling design."
+  },
+  "production_qualified": false,
+  "scope": "Conditional human evidence labels on independently sampled revision queries."
+}

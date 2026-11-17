@@ -1,0 +1,12 @@
+{
+  "parent_checkpoint": "4be90152ff0ae33ff663ce9c5b01598ca3d678677957624b7c2a3b1c021388af",
+  "hypothesis": "Additional unused real revision cases with replay improve evidence sensitivity beyond the first mixed-data model.",
+  "training": "One epoch; same architecture, objective, AdamW2e-5, batch8, max256; seed1921. AdamW restarted, no claim of optimizer-state continuation.",
+  "data": "Approximately1600 new VitaminC pairs,800 previous VitaminC replay pairs,800 FEVER replay. Validation/fit reused; risk newly component-disjoint. Locked original600 remain unscored.",
+  "controls": "Compare parent frozen head and parent encoder with equally supervised replay-mixture head; no weak-reference-only comparison.",
+  "authorization": "User explicitly said Continue after first bounded episode. Continue locally; no new cloud expenditure authorized.",
+  "limits": "Training1500seconds; complete export and evaluate before another stage. No automatic production/public promotion.",
+  "gate": "Same80% confidence floor and conservative independent risk gate; at least2point quality/coverage gain, no quality/coverage loss against stronger parent controls.",
+  "risk_power_extension": "Before any round2 scoring, expand independent risk from602pairs to1804pairs/620components with1202 unused dev pairs. Original risk file remains immutable. Same alpha and confidence thresholds.",
+  "selection": "Select best qualified parent/new configuration by validation correct-definitive fraction, then raw complete-case accuracy and raw accuracy. Preserve parent if continued encoder fails. Freeze selected configuration before locked predictions. Any newly trained encoder promotion additionally needs material improvement and no quality/coverage loss vs parent controls."
+}

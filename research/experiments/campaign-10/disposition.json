@@ -1,0 +1,7 @@
+{
+  "selected": "fp32",
+  "quantized_variants_rejected": true,
+  "reason": "Per-tensor U8U8 changed5-7% validation labels and reduced definitive coverage; dense also lost accuracy. Despite~33-36% faster local CPU paths, quality gates fail.",
+  "locked_scored": false,
+  "continuation": "Separate fixed per-channel QInt8 variants on VNNI-capable CPU; same quality thresholds. Reserved untouched locked snapshot may be reused before any predictions."
+}

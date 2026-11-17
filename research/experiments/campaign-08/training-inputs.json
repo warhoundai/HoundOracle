@@ -1,0 +1,8 @@
+{
+  "training_rows": 3200,
+  "tokenizer_version": "0.22.2",
+  "source_sha256": "5de1f6a8b0e501c125054870c486437c7b513c054e299e92b38e940edabd18df",
+  "tokens_sha256": "0323ea437a167a7724f78cf437153eee4863cc9e50d3cb6170ea212965814163",
+  "base_safetensors_sha256": "ec9c5b6a08b60d7a01b465c7ed44b496244dfd1bed3274c95875a74cea89ab35",
+  "training_script_sha256": "39cbbc70b4ba4b463f0aab2d2b1be62f3d81916b7a8eb943146945e1500b4f0c"
+}
