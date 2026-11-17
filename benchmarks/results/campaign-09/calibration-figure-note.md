@@ -1,0 +1,1 @@
+These are descriptive frozen-test diagnostics, not threshold selection. Curves use uncapped mapped correctness; the deployed research floor remains.80 and public confidence is conservatively capped. Bin intervals are not simultaneous guarantees. Conditional human evidence labels, not current-world truth.
