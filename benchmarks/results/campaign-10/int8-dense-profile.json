@@ -1,0 +1,14 @@
+{
+  "variant": "int8-dense",
+  "queries": 621,
+  "unique_queries": 207,
+  "repetitions": 3,
+  "threads": 1,
+  "model_initialization_seconds": 0.6985229929996422,
+  "p50_seconds": 0.03435985000032815,
+  "p95_seconds": 0.0733783459982078,
+  "peak_process_rss_bytes": 508166144,
+  "resident_bytes_after_queries": 387670016,
+  "model_bytes": 199517307,
+  "scope": "Isolated process, warm model, local verify_evidence call including encoding/head/calibration/hash, result cache disabled. No retrieval/agent/Gemini timing."
+}

@@ -1,0 +1,21 @@
+{
+  "parity_passed": true,
+  "max_absolute_encoder_logit_error": 6.67572021484375e-06,
+  "head_labels_identical": true,
+  "summaries": {
+    "source": {
+      "p50_seconds": 0.05304595599955064,
+      "p95_seconds": 0.1124797930024215
+    },
+    "fused": {
+      "p50_seconds": 0.054690182998456294,
+      "p95_seconds": 0.11742901899924618
+    }
+  },
+  "p50_reduction": -0.03099627422907747,
+  "p95_reduction": -0.04400102333685951,
+  "screen_passed": false,
+  "decision": "reject-no-material-speed-or-parity",
+  "locked_scored": false,
+  "scope": "Provisional paired raw encoder+head timing, warm models, one thread, three repeats; not an end-to-end agent/Gemini measurement."
+}
