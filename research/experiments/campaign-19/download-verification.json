@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "4ee94fda4f4eefed88a451199a3cbb3eb070d784ce84c24ee38326bca30088fd",
+  "archive_bytes": 607319334,
+  "local_checkpoint_sha256": "b9c422ab6bf63dc35d92ceede86a45332e02e30bd319ec84aa5959e1e9d09952",
+  "all_manifest_file_hashes_verified": true,
+  "export_parity_passed": true,
+  "archive_retained_in_private_s3": true,
+  "local_archive_removed_to_free_disk": true
+}

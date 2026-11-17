@@ -1,0 +1,20 @@
+{
+  "training_rows": 9601,
+  "steps": 1201,
+  "training_seconds": 924.334176684,
+  "mean_training_batch_loss": 0.5656940276291745,
+  "mean_first25_training_loss": 0.5984281498193741,
+  "mean_last25_training_loss": 0.485310440659523,
+  "encoder_validation_cross_entropy": 0.5901026031797706,
+  "head_validation_cross_entropy": 0.6176877890632112,
+  "cross_entropy_eligible_queries": 207,
+  "validation_queries": 207,
+  "screen_passed": false,
+  "raw_accuracy_delta": -0.009661835748792313,
+  "correct_definitive_delta": -0.0531400966183575,
+  "decision": "REJECTED_NO_STABLE_REPLACEMENT",
+  "locked_scored": false,
+  "risk_scored": false,
+  "inference_cost_comparison": null,
+  "note": "End-of-run reused development diagnostics, not checkpoint selection or independent improvement. Training batch mean and query validation CE have different weighting/populations. CPU8 training timing does not measure query serving latency."
+}

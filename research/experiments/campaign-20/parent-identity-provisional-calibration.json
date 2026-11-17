@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "population": "vitaminc-component-uniform-query-1935",
+  "model_config": {
+    "model_id": "houndoracle/minilm-vitc-fever-1921",
+    "revision": "8bdfefab3243dca9df371923315f71e735b0df8d3ba0c7461844012bab4b5ddf",
+    "variant": "fp32",
+    "threads": 1,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "56148d5f12ef499168f4a11da8ad603009903d5abc1f204fa7d021c81d636cbd",
+    "aggregation_head": "parent-identity",
+    "head_digest": "f24de67cc1c9182436786280097ffd9ea062a0f594a86feace7f9bf16e0a3d32"
+  },
+  "mapping": {
+    "method": "temperature",
+    "temperature": 1.538928883841742,
+    "loss": 0.5036098791684955
+  },
+  "certificate": {
+    "qualified": false
+  },
+  "production_qualified": false
+}

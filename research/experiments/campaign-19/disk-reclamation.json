@@ -1,0 +1,37 @@
+[
+  {
+    "artifact": "minilm-vitc-average-1932",
+    "bytes_removed": 658450415,
+    "reason": "Rejected reproducible research challenger; retained source parents/manifests/outputs"
+  },
+  {
+    "artifact": "minilm-vitc-fever-1921-int8-dense",
+    "bytes_removed": 200875352,
+    "reason": "Rejected reproducible research challenger; retained source parents/manifests/outputs"
+  },
+  {
+    "artifact": "minilm-vitc-fever-1921-int8-dense-pc",
+    "bytes_removed": 201086736,
+    "reason": "Rejected reproducible research challenger; retained source parents/manifests/outputs"
+  },
+  {
+    "artifact": "deberta-small",
+    "bytes_removed": 181164461,
+    "reason": "Rejected reproducible local conversion/challenger; source manifests and parent best checkpoints retained"
+  },
+  {
+    "artifact": "minilm-vitc-fever-1921-int8-full",
+    "bytes_removed": 83879818,
+    "reason": "Rejected reproducible local conversion/challenger; source manifests and parent best checkpoints retained"
+  },
+  {
+    "artifact": "minilm-vitc-fever-1921-int8-full-pc",
+    "bytes_removed": 84091204,
+    "reason": "Rejected reproducible local conversion/challenger; source manifests and parent best checkpoints retained"
+  },
+  {
+    "artifact": "minilm-vitc-fever-1921-int8-mixed1",
+    "bytes_removed": 105282245,
+    "reason": "Rejected reproducible local conversion/challenger; source manifests and parent best checkpoints retained"
+  }
+]

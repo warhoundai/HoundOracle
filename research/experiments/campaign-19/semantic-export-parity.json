@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "batch": 1,
+      "length": 8,
+      "max_absolute_error": 4.172325134277344e-07
+    },
+    {
+      "batch": 2,
+      "length": 64,
+      "max_absolute_error": 8.344650268554688e-07
+    },
+    {
+      "batch": 1,
+      "length": 256,
+      "max_absolute_error": 1.3113021850585938e-06
+    },
+    {
+      "batch": 2,
+      "length": 256,
+      "max_absolute_error": 2.5033950805664062e-06
+    }
+  ]
+}

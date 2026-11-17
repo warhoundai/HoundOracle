@@ -1,0 +1,20 @@
+{
+  "model_id": "houndoracle/minilm-vitc-scaled-1935",
+  "revision": "b9c422ab6bf63dc35d92ceede86a45332e02e30bd319ec84aa5959e1e9d09952",
+  "declared_license": "Private research checkpoint; redistribution requires upstream model/data license review",
+  "max_length": 256,
+  "files": {
+    "config.json": {
+      "sha256": "3ad0190d54812dd589ade1aefe22222eb78960681a1ce59be4cc85b172da6a69",
+      "bytes": 987
+    },
+    "tokenizer.json": {
+      "sha256": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6",
+      "bytes": 1356048
+    },
+    "onnx/model.onnx": {
+      "sha256": "3000a486032be2dceef7ccd98c20d6b3c3985b5dddbfb4c2f831c4d7d99b7920",
+      "bytes": 328597332
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "initial_sha256": {
+    "model.safetensors": "8bdfefab3243dca9df371923315f71e735b0df8d3ba0c7461844012bab4b5ddf",
+    "config.json": "3ad0190d54812dd589ade1aefe22222eb78960681a1ce59be4cc85b172da6a69",
+    "tokenizer.json": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6"
+  },
+  "token_inputs_sha256": "4300febf4a62a4f0d0995d6a35314a23d92ca8967ffe5f26960cb29dbc03684c",
+  "training_source_sha256": "a4f06f7bf4a3822ee58e1622742059456853ab66aab45f3df83c9d89ec331498",
+  "rows": 9601,
+  "heldout_records_included": false,
+  "archive_sha256": "f4e0fe12586d42a34ec496df739150ee30a391e58f9638cd459d1a24f7115162",
+  "archive_bytes": 304501587,
+  "training_script_sha256": "666a8b4b603afdda514a95a9209ce4d5ce2cc8260b9534f42674c2b3d38a2055"
+}
