@@ -1,0 +1,111 @@
+{
+  "questions": 120,
+  "repetitions": 3,
+  "summaries": {
+    "1": {
+      "count": 360,
+      "groups": 16,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16666666666666666,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.09999999999999998,
+      "definitive_count": 60,
+      "correct_definitive_count": 54,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.04891529500002889,
+        "p95": 0.10064101660004782,
+        "p99": 0.1310569839099299
+      },
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "2": {
+      "count": 360,
+      "groups": 16,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16666666666666666,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.09999999999999998,
+      "definitive_count": 60,
+      "correct_definitive_count": 54,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.030879242499963766,
+        "p95": 0.07553092545001625,
+        "p99": 0.11083722282002448
+      },
+      "cache_hits": 0,
+      "failed_queries": 0
+    }
+  },
+  "paired": {
+    "accuracy_delta": {
+      "mean": 0.0,
+      "cluster_bootstrap_95pct_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "coverage_delta": {
+      "mean": 0.0,
+      "cluster_bootstrap_95pct_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "p50_latency_reduction": {
+      "mean": 0.3680657447252231,
+      "cluster_bootstrap_95pct_interval": [
+        0.303123850941058,
+        0.4189996432578478
+      ]
+    },
+    "p95_latency_reduction": {
+      "mean": 0.1949281737226415,
+      "cluster_bootstrap_95pct_interval": [
+        0.01050342512632559,
+        0.39902029153331525
+      ]
+    }
+  },
+  "maximum_aggregate_logit_absolute_difference": 0.0,
+  "calibrated_decision_drift": 0,
+  "observed_p95_reduction": 0.24950156505096,
+  "decision": "retain-runtime-experiment-only",
+  "model_configs": {
+    "1": {
+      "model_id": "cross-encoder/nli-MiniLM2-L6-H768",
+      "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+      "variant": "fp32",
+      "threads": 1,
+      "max_length": 512,
+      "runtime": "1.32.0",
+      "tokenizers": "0.22.2",
+      "file_sha256": "807d33fffefd95ad60e2a91f54eed50a92aa53c077945a6842bb587a49a3fdf3",
+      "aggregation_head": "logistic",
+      "head_digest": "04d2668704172f3665bd8cac37f4019d26bd0ae4cff4cb1eed5ac406ec34ce13"
+    },
+    "2": {
+      "model_id": "cross-encoder/nli-MiniLM2-L6-H768",
+      "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+      "variant": "fp32",
+      "threads": 2,
+      "max_length": 512,
+      "runtime": "1.32.0",
+      "tokenizers": "0.22.2",
+      "file_sha256": "807d33fffefd95ad60e2a91f54eed50a92aa53c077945a6842bb587a49a3fdf3",
+      "aggregation_head": "logistic",
+      "head_digest": "04d2668704172f3665bd8cac37f4019d26bd0ae4cff4cb1eed5ac406ec34ce13"
+    }
+  },
+  "limitations": [
+    "Local CPU inference only. Two models resident; no per-model memory claim.",
+    "Calibration reused only for diagnostic comparison; changed thread configuration is not production-qualified.",
+    "New held-out calibration and live Gemini measurements required before promotion."
+  ]
+}

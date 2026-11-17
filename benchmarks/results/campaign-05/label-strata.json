@@ -1,0 +1,266 @@
+{
+  "YES:selected": {
+    "task_executions": 48,
+    "unique_questions": 16,
+    "accuracy": 0.9375,
+    "definitive_coverage": 0.9375,
+    "correct_definitive_fraction": 0.9375,
+    "accepted_accuracy": 1.0,
+    "question_all_repetitions_correct_95pct_interval": [
+      0.697679261565468,
+      0.9984188882772341
+    ],
+    "p50_seconds": 1.757492193499985,
+    "p95_seconds": 4.835496372399999,
+    "p99_seconds": 5.606335988999988,
+    "unknown_latency_count": 0,
+    "latency_quantile_bounds_seconds": {
+      "p50": [
+        1.757492193499985,
+        1.757492193499985
+      ],
+      "p95": [
+        4.835496372399999,
+        4.835496372399999
+      ],
+      "p99": [
+        5.606335988999987,
+        5.606335988999987
+      ]
+    },
+    "known_reported_token_cost_usd": 0.0268275,
+    "unreported_token_cost_calls": 0,
+    "token_cost_total_bounds_usd": [
+      0.0268275,
+      0.0268275
+    ],
+    "token_list_price_cost_usd": 0.0268275,
+    "model_calls": 33,
+    "failed_queries": 0,
+    "reported_input_tokens": 6270,
+    "reported_visible_output_tokens": 3893,
+    "reported_reasoning_tokens": 2007,
+    "model_calls_without_reported_reasoning_count": 21,
+    "actual_invoiced_all_in_cost_usd": null
+  },
+  "YES:baseline": {
+    "task_executions": 48,
+    "unique_questions": 16,
+    "accuracy": 0.875,
+    "definitive_coverage": 0.875,
+    "correct_definitive_fraction": 0.875,
+    "accepted_accuracy": 1.0,
+    "question_all_repetitions_correct_95pct_interval": [
+      0.4762291801038727,
+      0.9273379617471178
+    ],
+    "p50_seconds": null,
+    "p95_seconds": null,
+    "p99_seconds": null,
+    "unknown_latency_count": 1,
+    "latency_quantile_bounds_seconds": {
+      "p50": [
+        2.212865815999976,
+        2.2327946269999757
+      ],
+      "p95": [
+        9.949020116299994,
+        15.89671834554997
+      ],
+      "p99": [
+        39.14985842568002,
+        null
+      ]
+    },
+    "known_reported_token_cost_usd": 0.0438435,
+    "unreported_token_cost_calls": 1,
+    "token_cost_total_bounds_usd": [
+      0.0438435,
+      0.0653475
+    ],
+    "token_list_price_cost_usd": null,
+    "model_calls": 48,
+    "failed_queries": 1,
+    "reported_input_tokens": 9303,
+    "reported_visible_output_tokens": 6082,
+    "reported_reasoning_tokens": 3749,
+    "model_calls_without_reported_reasoning_count": 28,
+    "actual_invoiced_all_in_cost_usd": null
+  },
+  "NO:baseline": {
+    "task_executions": 48,
+    "unique_questions": 16,
+    "accuracy": 0.7291666666666666,
+    "definitive_coverage": 0.7291666666666666,
+    "correct_definitive_fraction": 0.7291666666666666,
+    "accepted_accuracy": 1.0,
+    "question_all_repetitions_correct_95pct_interval": [
+      0.35434609430207814,
+      0.8480163249188779
+    ],
+    "p50_seconds": 2.501750423499999,
+    "p95_seconds": 6.975759572499987,
+    "p99_seconds": 40.89184191513002,
+    "unknown_latency_count": 0,
+    "latency_quantile_bounds_seconds": {
+      "p50": [
+        2.501750423499999,
+        2.501750423499999
+      ],
+      "p95": [
+        6.975759572499988,
+        6.975759572499988
+      ],
+      "p99": [
+        40.89184191513002,
+        40.89184191513002
+      ]
+    },
+    "known_reported_token_cost_usd": 0.04045725,
+    "unreported_token_cost_calls": 0,
+    "token_cost_total_bounds_usd": [
+      0.04045725,
+      0.04045725
+    ],
+    "token_list_price_cost_usd": 0.04045725,
+    "model_calls": 48,
+    "failed_queries": 0,
+    "reported_input_tokens": 10188,
+    "reported_visible_output_tokens": 6066,
+    "reported_reasoning_tokens": 2685,
+    "model_calls_without_reported_reasoning_count": 37,
+    "actual_invoiced_all_in_cost_usd": null
+  },
+  "NO:selected": {
+    "task_executions": 48,
+    "unique_questions": 16,
+    "accuracy": 0.7291666666666666,
+    "definitive_coverage": 0.7291666666666666,
+    "correct_definitive_fraction": 0.7291666666666666,
+    "accepted_accuracy": 1.0,
+    "question_all_repetitions_correct_95pct_interval": [
+      0.41337936354864135,
+      0.8898300452828825
+    ],
+    "p50_seconds": 2.190065000000004,
+    "p95_seconds": 5.655492266300012,
+    "p99_seconds": 7.854857499369996,
+    "unknown_latency_count": 0,
+    "latency_quantile_bounds_seconds": {
+      "p50": [
+        2.190065000000004,
+        2.190065000000004
+      ],
+      "p95": [
+        5.655492266300012,
+        5.655492266300012
+      ],
+      "p99": [
+        7.854857499369995,
+        7.854857499369995
+      ]
+    },
+    "known_reported_token_cost_usd": 0.03333975,
+    "unreported_token_cost_calls": 0,
+    "token_cost_total_bounds_usd": [
+      0.03333975,
+      0.03333975
+    ],
+    "token_list_price_cost_usd": 0.03333975,
+    "model_calls": 39,
+    "failed_queries": 0,
+    "reported_input_tokens": 7698,
+    "reported_visible_output_tokens": 4587,
+    "reported_reasoning_tokens": 2764,
+    "model_calls_without_reported_reasoning_count": 28,
+    "actual_invoiced_all_in_cost_usd": null
+  },
+  "MAYBE:baseline": {
+    "task_executions": 48,
+    "unique_questions": 16,
+    "accuracy": 0.875,
+    "definitive_coverage": 0.10416666666666667,
+    "correct_definitive_fraction": 0.0,
+    "accepted_accuracy": 0.0,
+    "question_all_repetitions_correct_95pct_interval": [
+      0.5435434537683883,
+      0.9595262660940541
+    ],
+    "p50_seconds": null,
+    "p95_seconds": null,
+    "p99_seconds": null,
+    "unknown_latency_count": 1,
+    "latency_quantile_bounds_seconds": {
+      "p50": [
+        2.208565532000023,
+        2.2583513129999915
+      ],
+      "p95": [
+        11.296005003199973,
+        22.271095739549956
+      ],
+      "p99": [
+        33.37045076070002,
+        null
+      ]
+    },
+    "known_reported_token_cost_usd": 0.02528025,
+    "unreported_token_cost_calls": 1,
+    "token_cost_total_bounds_usd": [
+      0.02528025,
+      0.04678425
+    ],
+    "token_list_price_cost_usd": null,
+    "model_calls": 48,
+    "failed_queries": 1,
+    "reported_input_tokens": 8792,
+    "reported_visible_output_tokens": 3258,
+    "reported_reasoning_tokens": 1725,
+    "model_calls_without_reported_reasoning_count": 34,
+    "actual_invoiced_all_in_cost_usd": null
+  },
+  "MAYBE:selected": {
+    "task_executions": 48,
+    "unique_questions": 16,
+    "accuracy": 0.8958333333333334,
+    "definitive_coverage": 0.08333333333333333,
+    "correct_definitive_fraction": 0.0,
+    "accepted_accuracy": 0.0,
+    "question_all_repetitions_correct_95pct_interval": [
+      0.5435434537683883,
+      0.9595262660940541
+    ],
+    "p50_seconds": null,
+    "p95_seconds": null,
+    "p99_seconds": null,
+    "unknown_latency_count": 1,
+    "latency_quantile_bounds_seconds": {
+      "p50": [
+        1.7362542019999978,
+        1.7606640865000145
+      ],
+      "p95": [
+        8.807471552050039,
+        13.69506113555001
+      ],
+      "p99": [
+        19.697324077540014,
+        null
+      ]
+    },
+    "known_reported_token_cost_usd": 0.0256815,
+    "unreported_token_cost_calls": 0,
+    "token_cost_total_bounds_usd": [
+      0.0256815,
+      0.0256815
+    ],
+    "token_list_price_cost_usd": 0.0256815,
+    "model_calls": 47,
+    "failed_queries": 1,
+    "reported_input_tokens": 8792,
+    "reported_visible_output_tokens": 3358,
+    "reported_reasoning_tokens": 1732,
+    "model_calls_without_reported_reasoning_count": 35,
+    "actual_invoiced_all_in_cost_usd": null
+  }
+}

@@ -1,0 +1,1465 @@
+{
+  "campaign": "oracle-cloud-05",
+  "expected_task_records": 288,
+  "token_accounting_audit": [
+    {
+      "total": 256,
+      "accounted": 256,
+      "residual": 0
+    },
+    {
+      "total": 293,
+      "accounted": 293,
+      "residual": 0
+    },
+    {
+      "total": 297,
+      "accounted": 297,
+      "residual": 0
+    },
+    {
+      "total": 297,
+      "accounted": 297,
+      "residual": 0
+    },
+    {
+      "total": 496,
+      "accounted": 496,
+      "residual": 0
+    },
+    {
+      "total": 648,
+      "accounted": 648,
+      "residual": 0
+    },
+    {
+      "total": 495,
+      "accounted": 495,
+      "residual": 0
+    },
+    {
+      "total": 283,
+      "accounted": 283,
+      "residual": 0
+    },
+    {
+      "total": 286,
+      "accounted": 286,
+      "residual": 0
+    },
+    {
+      "total": 279,
+      "accounted": 279,
+      "residual": 0
+    },
+    {
+      "total": 375,
+      "accounted": 375,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 531,
+      "accounted": 531,
+      "residual": 0
+    },
+    {
+      "total": 306,
+      "accounted": 306,
+      "residual": 0
+    },
+    {
+      "total": 561,
+      "accounted": 561,
+      "residual": 0
+    },
+    {
+      "total": 585,
+      "accounted": 585,
+      "residual": 0
+    },
+    {
+      "total": 294,
+      "accounted": 294,
+      "residual": 0
+    },
+    {
+      "total": 282,
+      "accounted": 282,
+      "residual": 0
+    },
+    {
+      "total": 463,
+      "accounted": 463,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 370,
+      "accounted": 370,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 604,
+      "accounted": 604,
+      "residual": 0
+    },
+    {
+      "total": 604,
+      "accounted": 604,
+      "residual": 0
+    },
+    {
+      "total": 528,
+      "accounted": 528,
+      "residual": 0
+    },
+    {
+      "total": 841,
+      "accounted": 841,
+      "residual": 0
+    },
+    {
+      "total": 628,
+      "accounted": 628,
+      "residual": 0
+    },
+    {
+      "total": 285,
+      "accounted": 285,
+      "residual": 0
+    },
+    {
+      "total": 306,
+      "accounted": 306,
+      "residual": 0
+    },
+    {
+      "total": 358,
+      "accounted": 358,
+      "residual": 0
+    },
+    {
+      "total": 334,
+      "accounted": 334,
+      "residual": 0
+    },
+    {
+      "total": 271,
+      "accounted": 271,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    },
+    {
+      "total": 319,
+      "accounted": 319,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 302,
+      "accounted": 302,
+      "residual": 0
+    },
+    {
+      "total": 302,
+      "accounted": 302,
+      "residual": 0
+    },
+    {
+      "total": 350,
+      "accounted": 350,
+      "residual": 0
+    },
+    {
+      "total": 608,
+      "accounted": 608,
+      "residual": 0
+    },
+    {
+      "total": 495,
+      "accounted": 495,
+      "residual": 0
+    },
+    {
+      "total": 479,
+      "accounted": 479,
+      "residual": 0
+    },
+    {
+      "total": 510,
+      "accounted": 510,
+      "residual": 0
+    },
+    {
+      "total": 494,
+      "accounted": 494,
+      "residual": 0
+    },
+    {
+      "total": 521,
+      "accounted": 521,
+      "residual": 0
+    },
+    {
+      "total": 352,
+      "accounted": 352,
+      "residual": 0
+    },
+    {
+      "total": 270,
+      "accounted": 270,
+      "residual": 0
+    },
+    {
+      "total": 270,
+      "accounted": 270,
+      "residual": 0
+    },
+    {
+      "total": 238,
+      "accounted": 238,
+      "residual": 0
+    },
+    {
+      "total": 257,
+      "accounted": 257,
+      "residual": 0
+    },
+    {
+      "total": 314,
+      "accounted": 314,
+      "residual": 0
+    },
+    {
+      "total": 316,
+      "accounted": 316,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 205,
+      "accounted": 205,
+      "residual": 0
+    },
+    {
+      "total": 229,
+      "accounted": 229,
+      "residual": 0
+    },
+    {
+      "total": 267,
+      "accounted": 267,
+      "residual": 0
+    },
+    {
+      "total": 267,
+      "accounted": 267,
+      "residual": 0
+    },
+    {
+      "total": 340,
+      "accounted": 340,
+      "residual": 0
+    },
+    {
+      "total": 290,
+      "accounted": 290,
+      "residual": 0
+    },
+    {
+      "total": 258,
+      "accounted": 258,
+      "residual": 0
+    },
+    {
+      "total": 258,
+      "accounted": 258,
+      "residual": 0
+    },
+    {
+      "total": 257,
+      "accounted": 257,
+      "residual": 0
+    },
+    {
+      "total": 376,
+      "accounted": 376,
+      "residual": 0
+    },
+    {
+      "total": 324,
+      "accounted": 324,
+      "residual": 0
+    },
+    {
+      "total": 320,
+      "accounted": 320,
+      "residual": 0
+    },
+    {
+      "total": 247,
+      "accounted": 247,
+      "residual": 0
+    },
+    {
+      "total": 337,
+      "accounted": 337,
+      "residual": 0
+    },
+    {
+      "total": 530,
+      "accounted": 530,
+      "residual": 0
+    },
+    {
+      "total": 582,
+      "accounted": 582,
+      "residual": 0
+    },
+    {
+      "total": 672,
+      "accounted": 672,
+      "residual": 0
+    },
+    {
+      "total": 672,
+      "accounted": 672,
+      "residual": 0
+    },
+    {
+      "total": 348,
+      "accounted": 348,
+      "residual": 0
+    },
+    {
+      "total": 348,
+      "accounted": 348,
+      "residual": 0
+    },
+    {
+      "total": 196,
+      "accounted": 196,
+      "residual": 0
+    },
+    {
+      "total": 195,
+      "accounted": 195,
+      "residual": 0
+    },
+    {
+      "total": 280,
+      "accounted": 280,
+      "residual": 0
+    },
+    {
+      "total": 280,
+      "accounted": 280,
+      "residual": 0
+    },
+    {
+      "total": 312,
+      "accounted": 312,
+      "residual": 0
+    },
+    {
+      "total": 312,
+      "accounted": 312,
+      "residual": 0
+    },
+    {
+      "total": 232,
+      "accounted": 232,
+      "residual": 0
+    },
+    {
+      "total": 232,
+      "accounted": 232,
+      "residual": 0
+    },
+    {
+      "total": 263,
+      "accounted": 263,
+      "residual": 0
+    },
+    {
+      "total": 256,
+      "accounted": 256,
+      "residual": 0
+    },
+    {
+      "total": 224,
+      "accounted": 224,
+      "residual": 0
+    },
+    {
+      "total": 227,
+      "accounted": 227,
+      "residual": 0
+    },
+    {
+      "total": 256,
+      "accounted": 256,
+      "residual": 0
+    },
+    {
+      "total": 316,
+      "accounted": 316,
+      "residual": 0
+    },
+    {
+      "total": 279,
+      "accounted": 279,
+      "residual": 0
+    },
+    {
+      "total": 279,
+      "accounted": 279,
+      "residual": 0
+    },
+    {
+      "total": 496,
+      "accounted": 496,
+      "residual": 0
+    },
+    {
+      "total": 464,
+      "accounted": 464,
+      "residual": 0
+    },
+    {
+      "total": 529,
+      "accounted": 529,
+      "residual": 0
+    },
+    {
+      "total": 283,
+      "accounted": 283,
+      "residual": 0
+    },
+    {
+      "total": 286,
+      "accounted": 286,
+      "residual": 0
+    },
+    {
+      "total": 393,
+      "accounted": 393,
+      "residual": 0
+    },
+    {
+      "total": 256,
+      "accounted": 256,
+      "residual": 0
+    },
+    {
+      "total": 311,
+      "accounted": 311,
+      "residual": 0
+    },
+    {
+      "total": 391,
+      "accounted": 391,
+      "residual": 0
+    },
+    {
+      "total": 681,
+      "accounted": 681,
+      "residual": 0
+    },
+    {
+      "total": 531,
+      "accounted": 531,
+      "residual": 0
+    },
+    {
+      "total": 617,
+      "accounted": 617,
+      "residual": 0
+    },
+    {
+      "total": 561,
+      "accounted": 561,
+      "residual": 0
+    },
+    {
+      "total": 272,
+      "accounted": 272,
+      "residual": 0
+    },
+    {
+      "total": 264,
+      "accounted": 264,
+      "residual": 0
+    },
+    {
+      "total": 436,
+      "accounted": 436,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 510,
+      "accounted": 510,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 552,
+      "accounted": 552,
+      "residual": 0
+    },
+    {
+      "total": 604,
+      "accounted": 604,
+      "residual": 0
+    },
+    {
+      "total": 823,
+      "accounted": 823,
+      "residual": 0
+    },
+    {
+      "total": 823,
+      "accounted": 823,
+      "residual": 0
+    },
+    {
+      "total": 1101,
+      "accounted": 1101,
+      "residual": 0
+    },
+    {
+      "total": 286,
+      "accounted": 286,
+      "residual": 0
+    },
+    {
+      "total": 285,
+      "accounted": 285,
+      "residual": 0
+    },
+    {
+      "total": 327,
+      "accounted": 327,
+      "residual": 0
+    },
+    {
+      "total": 334,
+      "accounted": 334,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    },
+    {
+      "total": 310,
+      "accounted": 310,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 302,
+      "accounted": 302,
+      "residual": 0
+    },
+    {
+      "total": 318,
+      "accounted": 318,
+      "residual": 0
+    },
+    {
+      "total": 350,
+      "accounted": 350,
+      "residual": 0
+    },
+    {
+      "total": 344,
+      "accounted": 344,
+      "residual": 0
+    },
+    {
+      "total": 344,
+      "accounted": 344,
+      "residual": 0
+    },
+    {
+      "total": 479,
+      "accounted": 479,
+      "residual": 0
+    },
+    {
+      "total": 485,
+      "accounted": 485,
+      "residual": 0
+    },
+    {
+      "total": 576,
+      "accounted": 576,
+      "residual": 0
+    },
+    {
+      "total": 576,
+      "accounted": 576,
+      "residual": 0
+    },
+    {
+      "total": 352,
+      "accounted": 352,
+      "residual": 0
+    },
+    {
+      "total": 274,
+      "accounted": 274,
+      "residual": 0
+    },
+    {
+      "total": 275,
+      "accounted": 275,
+      "residual": 0
+    },
+    {
+      "total": 257,
+      "accounted": 257,
+      "residual": 0
+    },
+    {
+      "total": 238,
+      "accounted": 238,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 314,
+      "accounted": 314,
+      "residual": 0
+    },
+    {
+      "total": 323,
+      "accounted": 323,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 231,
+      "accounted": 231,
+      "residual": 0
+    },
+    {
+      "total": 225,
+      "accounted": 225,
+      "residual": 0
+    },
+    {
+      "total": 267,
+      "accounted": 267,
+      "residual": 0
+    },
+    {
+      "total": 262,
+      "accounted": 262,
+      "residual": 0
+    },
+    {
+      "total": 219,
+      "accounted": 219,
+      "residual": 0
+    },
+    {
+      "total": 233,
+      "accounted": 233,
+      "residual": 0
+    },
+    {
+      "total": 258,
+      "accounted": 258,
+      "residual": 0
+    },
+    {
+      "total": 261,
+      "accounted": 261,
+      "residual": 0
+    },
+    {
+      "total": 257,
+      "accounted": 257,
+      "residual": 0
+    },
+    {
+      "total": 257,
+      "accounted": 257,
+      "residual": 0
+    },
+    {
+      "total": 200,
+      "accounted": 200,
+      "residual": 0
+    },
+    {
+      "total": 200,
+      "accounted": 200,
+      "residual": 0
+    },
+    {
+      "total": 247,
+      "accounted": 247,
+      "residual": 0
+    },
+    {
+      "total": 247,
+      "accounted": 247,
+      "residual": 0
+    },
+    {
+      "total": 530,
+      "accounted": 530,
+      "residual": 0
+    },
+    {
+      "total": 530,
+      "accounted": 530,
+      "residual": 0
+    },
+    {
+      "total": 328,
+      "accounted": 328,
+      "residual": 0
+    },
+    {
+      "total": 333,
+      "accounted": 333,
+      "residual": 0
+    },
+    {
+      "total": 327,
+      "accounted": 327,
+      "residual": 0
+    },
+    {
+      "total": 350,
+      "accounted": 350,
+      "residual": 0
+    },
+    {
+      "total": 295,
+      "accounted": 295,
+      "residual": 0
+    },
+    {
+      "total": 201,
+      "accounted": 201,
+      "residual": 0
+    },
+    {
+      "total": 285,
+      "accounted": 285,
+      "residual": 0
+    },
+    {
+      "total": 284,
+      "accounted": 284,
+      "residual": 0
+    },
+    {
+      "total": 312,
+      "accounted": 312,
+      "residual": 0
+    },
+    {
+      "total": 320,
+      "accounted": 320,
+      "residual": 0
+    },
+    {
+      "total": 232,
+      "accounted": 232,
+      "residual": 0
+    },
+    {
+      "total": 232,
+      "accounted": 232,
+      "residual": 0
+    },
+    {
+      "total": 263,
+      "accounted": 263,
+      "residual": 0
+    },
+    {
+      "total": 272,
+      "accounted": 272,
+      "residual": 0
+    },
+    {
+      "total": 224,
+      "accounted": 224,
+      "residual": 0
+    },
+    {
+      "total": 304,
+      "accounted": 304,
+      "residual": 0
+    },
+    {
+      "total": 358,
+      "accounted": 358,
+      "residual": 0
+    },
+    {
+      "total": 293,
+      "accounted": 293,
+      "residual": 0
+    },
+    {
+      "total": 279,
+      "accounted": 279,
+      "residual": 0
+    },
+    {
+      "total": 496,
+      "accounted": 496,
+      "residual": 0
+    },
+    {
+      "total": 464,
+      "accounted": 464,
+      "residual": 0
+    },
+    {
+      "total": 479,
+      "accounted": 479,
+      "residual": 0
+    },
+    {
+      "total": 264,
+      "accounted": 264,
+      "residual": 0
+    },
+    {
+      "total": 263,
+      "accounted": 263,
+      "residual": 0
+    },
+    {
+      "total": 382,
+      "accounted": 382,
+      "residual": 0
+    },
+    {
+      "total": 279,
+      "accounted": 279,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 300,
+      "accounted": 300,
+      "residual": 0
+    },
+    {
+      "total": 1065,
+      "accounted": 1065,
+      "residual": 0
+    },
+    {
+      "total": 317,
+      "accounted": 317,
+      "residual": 0
+    },
+    {
+      "total": 561,
+      "accounted": 561,
+      "residual": 0
+    },
+    {
+      "total": 561,
+      "accounted": 561,
+      "residual": 0
+    },
+    {
+      "total": 264,
+      "accounted": 264,
+      "residual": 0
+    },
+    {
+      "total": 264,
+      "accounted": 264,
+      "residual": 0
+    },
+    {
+      "total": 463,
+      "accounted": 463,
+      "residual": 0
+    },
+    {
+      "total": 308,
+      "accounted": 308,
+      "residual": 0
+    },
+    {
+      "total": 278,
+      "accounted": 278,
+      "residual": 0
+    },
+    {
+      "total": 475,
+      "accounted": 475,
+      "residual": 0
+    },
+    {
+      "total": 278,
+      "accounted": 278,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 559,
+      "accounted": 559,
+      "residual": 0
+    },
+    {
+      "total": 341,
+      "accounted": 341,
+      "residual": 0
+    },
+    {
+      "total": 649,
+      "accounted": 649,
+      "residual": 0
+    },
+    {
+      "total": 823,
+      "accounted": 823,
+      "residual": 0
+    },
+    {
+      "total": 639,
+      "accounted": 639,
+      "residual": 0
+    },
+    {
+      "total": 285,
+      "accounted": 285,
+      "residual": 0
+    },
+    {
+      "total": 285,
+      "accounted": 285,
+      "residual": 0
+    },
+    {
+      "total": 358,
+      "accounted": 358,
+      "residual": 0
+    },
+    {
+      "total": 334,
+      "accounted": 334,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    },
+    {
+      "total": 299,
+      "accounted": 299,
+      "residual": 0
+    },
+    {
+      "total": 310,
+      "accounted": 310,
+      "residual": 0
+    },
+    {
+      "total": 310,
+      "accounted": 310,
+      "residual": 0
+    },
+    {
+      "total": 302,
+      "accounted": 302,
+      "residual": 0
+    },
+    {
+      "total": 318,
+      "accounted": 318,
+      "residual": 0
+    },
+    {
+      "total": 350,
+      "accounted": 350,
+      "residual": 0
+    },
+    {
+      "total": 336,
+      "accounted": 336,
+      "residual": 0
+    },
+    {
+      "total": 348,
+      "accounted": 348,
+      "residual": 0
+    },
+    {
+      "total": 479,
+      "accounted": 479,
+      "residual": 0
+    },
+    {
+      "total": 465,
+      "accounted": 465,
+      "residual": 0
+    },
+    {
+      "total": 576,
+      "accounted": 576,
+      "residual": 0
+    },
+    {
+      "total": 696,
+      "accounted": 696,
+      "residual": 0
+    },
+    {
+      "total": 460,
+      "accounted": 460,
+      "residual": 0
+    },
+    {
+      "total": 280,
+      "accounted": 280,
+      "residual": 0
+    },
+    {
+      "total": 275,
+      "accounted": 275,
+      "residual": 0
+    },
+    {
+      "total": 238,
+      "accounted": 238,
+      "residual": 0
+    },
+    {
+      "total": 259,
+      "accounted": 259,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 315,
+      "accounted": 315,
+      "residual": 0
+    },
+    {
+      "total": 277,
+      "accounted": 277,
+      "residual": 0
+    },
+    {
+      "total": 228,
+      "accounted": 228,
+      "residual": 0
+    },
+    {
+      "total": 205,
+      "accounted": 205,
+      "residual": 0
+    },
+    {
+      "total": 342,
+      "accounted": 342,
+      "residual": 0
+    },
+    {
+      "total": 342,
+      "accounted": 342,
+      "residual": 0
+    },
+    {
+      "total": 235,
+      "accounted": 235,
+      "residual": 0
+    },
+    {
+      "total": 235,
+      "accounted": 235,
+      "residual": 0
+    },
+    {
+      "total": 258,
+      "accounted": 258,
+      "residual": 0
+    },
+    {
+      "total": 261,
+      "accounted": 261,
+      "residual": 0
+    },
+    {
+      "total": 257,
+      "accounted": 257,
+      "residual": 0
+    },
+    {
+      "total": 259,
+      "accounted": 259,
+      "residual": 0
+    },
+    {
+      "total": 200,
+      "accounted": 200,
+      "residual": 0
+    },
+    {
+      "total": 206,
+      "accounted": 206,
+      "residual": 0
+    },
+    {
+      "total": 247,
+      "accounted": 247,
+      "residual": 0
+    },
+    {
+      "total": 334,
+      "accounted": 334,
+      "residual": 0
+    },
+    {
+      "total": 320,
+      "accounted": 320,
+      "residual": 0
+    },
+    {
+      "total": 320,
+      "accounted": 320,
+      "residual": 0
+    },
+    {
+      "total": 658,
+      "accounted": 658,
+      "residual": 0
+    },
+    {
+      "total": 333,
+      "accounted": 333,
+      "residual": 0
+    },
+    {
+      "total": 348,
+      "accounted": 348,
+      "residual": 0
+    },
+    {
+      "total": 348,
+      "accounted": 348,
+      "residual": 0
+    },
+    {
+      "total": 195,
+      "accounted": 195,
+      "residual": 0
+    },
+    {
+      "total": 296,
+      "accounted": 296,
+      "residual": 0
+    },
+    {
+      "total": 280,
+      "accounted": 280,
+      "residual": 0
+    },
+    {
+      "total": 280,
+      "accounted": 280,
+      "residual": 0
+    },
+    {
+      "total": 241,
+      "accounted": 241,
+      "residual": 0
+    },
+    {
+      "total": 322,
+      "accounted": 322,
+      "residual": 0
+    },
+    {
+      "total": 233,
+      "accounted": 233,
+      "residual": 0
+    },
+    {
+      "total": 232,
+      "accounted": 232,
+      "residual": 0
+    },
+    {
+      "total": 254,
+      "accounted": 254,
+      "residual": 0
+    },
+    {
+      "total": 266,
+      "accounted": 266,
+      "residual": 0
+    }
+  ],
+  "complete": false,
+  "systems": {
+    "fresh:selected": {
+      "task_executions": 144,
+      "unique_questions": 48,
+      "accuracy": 0.8541666666666666,
+      "definitive_coverage": 0.5833333333333334,
+      "correct_definitive_fraction": 0.5555555555555556,
+      "accepted_accuracy": 0.9523809523809523,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.6737069760432866,
+        0.9105016181506272
+      ],
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "p99_seconds": null,
+      "unknown_latency_count": 1,
+      "latency_quantile_bounds_seconds": {
+        "p50": [
+          1.8807342615000096,
+          1.906736831499984
+        ],
+        "p95": [
+          5.8216497827999945,
+          5.915730851949964
+        ],
+        "p99": [
+          13.388787489879967,
+          19.955471106259964
+        ]
+      },
+      "known_reported_token_cost_usd": 0.08584875,
+      "unreported_token_cost_calls": 0,
+      "token_cost_total_bounds_usd": [
+        0.08584875,
+        0.08584875
+      ],
+      "token_list_price_cost_usd": 0.08584875,
+      "model_calls": 119,
+      "failed_queries": 1,
+      "reported_input_tokens": 22760,
+      "reported_visible_output_tokens": 11838,
+      "reported_reasoning_tokens": 6503,
+      "model_calls_without_reported_reasoning_count": 84,
+      "actual_invoiced_all_in_cost_usd": null
+    },
+    "fresh:baseline": {
+      "task_executions": 144,
+      "unique_questions": 48,
+      "accuracy": 0.8263888888888888,
+      "definitive_coverage": 0.5694444444444444,
+      "correct_definitive_fraction": 0.5347222222222222,
+      "accepted_accuracy": 0.9390243902439024,
+      "question_all_repetitions_correct_95pct_interval": [
+        0.5815436346738113,
+        0.8472181313917835
+      ],
+      "p50_seconds": null,
+      "p95_seconds": null,
+      "p99_seconds": null,
+      "unknown_latency_count": 2,
+      "latency_quantile_bounds_seconds": {
+        "p50": [
+          2.2553559359999866,
+          2.3172645745000295
+        ],
+        "p95": [
+          10.514538320799995,
+          17.733112202949933
+        ],
+        "p99": [
+          46.946818869599895,
+          null
+        ]
+      },
+      "known_reported_token_cost_usd": 0.109581,
+      "unreported_token_cost_calls": 2,
+      "token_cost_total_bounds_usd": [
+        0.109581,
+        0.152589
+      ],
+      "token_list_price_cost_usd": null,
+      "model_calls": 144,
+      "failed_queries": 2,
+      "reported_input_tokens": 28283,
+      "reported_visible_output_tokens": 15406,
+      "reported_reasoning_tokens": 8159,
+      "model_calls_without_reported_reasoning_count": 99,
+      "actual_invoiced_all_in_cost_usd": null
+    }
+  },
+  "selection": [],
+  "configuration": [
+    {
+      "authorized_call_cap": 288,
+      "campaign": "oracle-cloud-05",
+      "config": {
+        "input_usd_per_million": 0.75,
+        "location": "global",
+        "max_input_tokens": 8192,
+        "max_output_tokens": 4096,
+        "model": "gemini-3.8-flash",
+        "output_usd_per_million": 3.75,
+        "pricing_source": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+        "pricing_valid_until": "2026-12-31",
+        "project": "project-f6e3c8ea-6b96-44a8-afa",
+        "response_format": "explanation_quotes",
+        "sdk_version": "2.34.0",
+        "seed": 1907,
+        "temperature": 0,
+        "thinking_budget": null,
+        "thinking_level": "LOW"
+      },
+      "kind": "configuration",
+      "policy": "fixed-logistic-.85-cold-cache"
+    }
+  ],
+  "unavailable_models": [],
+  "limitations": [
+    "Tiny pilot; confidence intervals are wide.",
+    "Matched historical evidence, no Google Search grounding or autonomous agent tool loop.",
+    "Model list-price usage is not verified all-in billing; startup/compute/egress/logging remain separate.",
+    "Incomplete execution must not be reported as a completed comparison."
+  ],
+  "comparisons": [
+    {
+      "phase": "fresh",
+      "candidate": "selected",
+      "unique_questions": 48,
+      "candidate_minus_baseline": {
+        "accuracy": 0.02777777777777779,
+        "coverage": 0.01388888888888895,
+        "cost": null,
+        "p50": null,
+        "p95": null
+      },
+      "paired_question_cluster_bootstrap_95pct_intervals": {
+        "accuracy": [
+          0.0,
+          0.0625
+        ],
+        "coverage": [
+          -0.02083333333333326,
+          0.04861111111111116
+        ],
+        "cost": null,
+        "p50": null,
+        "p95": null
+      },
+      "bootstrap_seed": 1905,
+      "bootstrap_draws": 10000,
+      "caveat": "48 question clusters; empirical bootstrap may be unstable on small samples. Missing latency/cost values suppress point comparisons and intervals. Zero observed accuracy difference does not prove equivalence or generalization."
+    }
+  ]
+}

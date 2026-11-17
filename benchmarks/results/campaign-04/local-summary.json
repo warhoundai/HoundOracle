@@ -1,0 +1,195 @@
+{
+  "dataset_sha256": "daab387b8ac857ba81dcd2c346c89f9eef35527fb1524506eb5b7e1e9b8a402a",
+  "questions": 480,
+  "repetitions": 3,
+  "model_config": {
+    "model_id": "cross-encoder/nli-MiniLM2-L6-H768",
+    "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+    "variant": "fp32",
+    "threads": 1,
+    "max_length": 512,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "807d33fffefd95ad60e2a91f54eed50a92aa53c077945a6842bb587a49a3fdf3",
+    "aggregation_head": "logistic",
+    "head_digest": "04d2668704172f3665bd8cac37f4019d26bd0ae4cff4cb1eed5ac406ec34ce13"
+  },
+  "calibration_production_qualified": false,
+  "systems": {
+    "baseline": {
+      "count": 1440,
+      "groups": 62,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16041666666666668,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.06493506493506496,
+      "definitive_count": 231,
+      "correct_definitive_count": 216,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.05156657449998647,
+        "p95": 0.10546698075001182,
+        "p99": 0.13689161559003024
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "fallbacks_required": 1209,
+      "empty_gate_count": 0
+    },
+    "empty_gate": {
+      "count": 1440,
+      "groups": 62,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16041666666666668,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.06493506493506496,
+      "definitive_count": 231,
+      "correct_definitive_count": 216,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.051553309000013314,
+        "p95": 0.10423033120003707,
+        "p99": 0.1368270720800217
+      },
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "fallbacks_required": 1209,
+      "empty_gate_count": 0
+    },
+    "reuse": {
+      "count": 1440,
+      "groups": 62,
+      "accuracy_all_decisions": 0.475,
+      "definitive_coverage": 0.16041666666666668,
+      "correct_definitive_fraction": 0.15,
+      "selective_risk": 0.06493506493506496,
+      "definitive_count": 231,
+      "correct_definitive_count": 216,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.0001663060000112182,
+        "p95": 0.08165251149998198,
+        "p99": 0.12301910274000187
+      },
+      "cache_hits": 960,
+      "failed_queries": 0,
+      "fallbacks_required": 1209,
+      "empty_gate_count": 0
+    }
+  },
+  "paired": {
+    "empty_gate": {
+      "accuracy_delta": {
+        "mean": 0.0,
+        "cluster_bootstrap_95pct_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "coverage_delta": {
+        "mean": 0.0,
+        "cluster_bootstrap_95pct_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "p50_latency_reduction": {
+        "mean": 0.0032486735234311423,
+        "cluster_bootstrap_95pct_interval": [
+          -0.008007924356939556,
+          0.01504798782134768
+        ]
+      },
+      "p95_latency_reduction": {
+        "mean": 0.000658933301908,
+        "cluster_bootstrap_95pct_interval": [
+          -0.022599867864682464,
+          0.02551141391552444
+        ]
+      }
+    },
+    "reuse": {
+      "accuracy_delta": {
+        "mean": 0.0,
+        "cluster_bootstrap_95pct_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "coverage_delta": {
+        "mean": 0.0,
+        "cluster_bootstrap_95pct_interval": [
+          0.0,
+          0.0
+        ]
+      },
+      "p50_latency_reduction": {
+        "mean": 0.9967431039399859,
+        "cluster_bootstrap_95pct_interval": [
+          0.9963503844790309,
+          0.9970603700594034
+        ]
+      },
+      "p95_latency_reduction": {
+        "mean": 0.22208617196564143,
+        "cluster_bootstrap_95pct_interval": [
+          0.11590593555725062,
+          0.34655174555303736
+        ]
+      }
+    }
+  },
+  "reuse_first_pass_including_priming": {
+    "count": 480,
+    "groups": 62,
+    "accuracy_all_decisions": 0.475,
+    "definitive_coverage": 0.16041666666666668,
+    "correct_definitive_fraction": 0.15,
+    "selective_risk": 0.06493506493506496,
+    "definitive_count": 77,
+    "correct_definitive_count": 72,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.052701327500003003,
+      "p95": 0.10217497774999047,
+      "p99": 0.13649999774002936
+    },
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "reuse_later_passes": {
+    "count": 960,
+    "groups": 62,
+    "accuracy_all_decisions": 0.475,
+    "definitive_coverage": 0.16041666666666668,
+    "correct_definitive_fraction": 0.15,
+    "selective_risk": 0.06493506493506496,
+    "definitive_count": 154,
+    "correct_definitive_count": 144,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.0001469624999970165,
+      "p95": 0.0002345700999853761,
+      "p99": 0.0003283235799614202
+    },
+    "cache_hits": 960,
+    "failed_queries": 0
+  },
+  "limitations": [
+    "Local evaluator and router only; fallback marker always abstains, no actual Gemini quality or latency measured.",
+    "Warm hit rate is constructed; priming first pass included in overall summary.",
+    "Historical validation is development evidence, not a new locked evaluation.",
+    "No production qualification, all-in cost or central/S3 economics claim."
+  ],
+  "seconds": 197.201313413
+}

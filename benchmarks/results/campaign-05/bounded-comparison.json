@@ -1,0 +1,48 @@
+{
+  "metrics": {
+    "token_cost": {
+      "observed_reduction_identification_bounds": [
+        0.2165726722698278,
+        0.4373857224308436
+      ],
+      "paired_cluster_bootstrap_outer_95pct_interval": [
+        0.06595342149747882,
+        0.6353196120900493
+      ]
+    },
+    "p50": {
+      "observed_reduction_identification_bounds": [
+        0.1545738740991367,
+        0.18838173154837323
+      ],
+      "paired_cluster_bootstrap_outer_95pct_interval": [
+        -0.020882368459145075,
+        0.318070388275996
+      ]
+    },
+    "p95": {
+      "observed_reduction_identification_bounds": [
+        0.4373760719243954,
+        0.6717073846839161
+      ],
+      "paired_cluster_bootstrap_outer_95pct_interval": [
+        -0.14569279917619804,
+        0.8895524160975365
+      ]
+    }
+  },
+  "question_clusters": 48,
+  "bootstrap_replicates": 5000,
+  "seed": 1909,
+  "assumptions": [
+    "Independent/exchangeable residual source components under this historical protocol.",
+    "Missing per-query duration is nonnegative with no assumed finite upper bound.",
+    "Unreported token usage consumes zero to its full pre-call reservation; no refunds assumed.",
+    "Outer bootstrap diagnostic incorporates missing-value bounds; not a formal guarantee under distribution shift or optional stopping."
+  ],
+  "limitations": [
+    "The planned three-repeat experiment is incomplete; results are provisional, not a release gate pass.",
+    "Token cost excludes compute/network/storage/logging, invoiced costs and discounts.",
+    "Whole-population/all-category advantage is not established."
+  ]
+}
