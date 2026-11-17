@@ -1,0 +1,22 @@
+name: checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: uv sync --locked --extra dev --extra api --extra mcp --extra s3 --extra benchmark
+      - run: uv run ruff check src tests examples benchmarks scripts
+      - run: uv run ruff format --check src tests examples benchmarks scripts
+      - run: uv run pytest -q
+      - run: uv run python -m build
+      - run: uv run pip-audit --progress-spinner off
+      - run: uv run python benchmarks/run.py --output /tmp/oracle-smoke.json

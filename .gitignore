@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+*.sqlite*
+.env
+
+research/experiments/results/validation-calibrated-*.jsonl
+
+node_modules/
+integrations/recaptcha-local/models/
+integrations/recaptcha-local/chrome-profile/

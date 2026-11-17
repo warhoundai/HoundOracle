@@ -1,0 +1,3928 @@
+{
+  "schema_version": 1,
+  "benchmark": "synthetic controlled-language smoke, not independent evaluation",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "max_rss_kib_linux": 30864
+  },
+  "test_digest": "c4bb0bc689e00ebe77ad1e80cedbf4356c506ec7b9936d6ec486a2565e1b5a04",
+  "calibration": {
+    "schema_version": 1,
+    "policy_id": "35b34640a6339210c85c290e7d41a46d06c5a8920cf51e336a763a1eef2e7a4c",
+    "population": "synthetic-controlled-release-records-only; NOT production qualification",
+    "supported_kinds": [
+      "release_year",
+      "not"
+    ],
+    "expires_at": 1794851104.5286605,
+    "dataset_digest": "a1cf22ca9465db7c9e5055c414a541046740aa5b2a18f8663a51617b417c2e9a",
+    "bins": [
+      {
+        "lower": 0.5,
+        "upper": 1.0,
+        "correct": 400,
+        "count": 400
+      }
+    ]
+  },
+  "default_uncalibrated": {
+    "count": 160,
+    "coverage": 0.0,
+    "selective_risk": null,
+    "selective_risk_95pct_wilson_interval": null,
+    "decision_match_fraction": 0.25,
+    "latency_seconds": {
+      "p50": 0.0007530880000103934,
+      "p95": 0.0010002080000504066
+    },
+    "cache_hits": 0,
+    "rows": [
+      {
+        "question": "Was TestWidget0 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0011168809999162477,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget0 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0011700889999701758,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget0 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007822160000614531,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget1 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009616310001092643,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget1 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008772360001785273,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget1 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007890659999247873,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget2 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009577650000665017,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget2 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008392299998831732,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget2 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009266090000892291,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget3 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008844369999678747,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget3 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008493349998843769,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget3 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009996169999340054,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget4 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0010059260000616632,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget4 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009395380000114528,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget4 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008751230000143551,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget5 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008675619999394257,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget5 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008566459998746723,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget5 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008043380000799516,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget6 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007902180000201042,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget6 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007291379999969649,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget6 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007529630001954501,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget7 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007329229999868403,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget7 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007418370000777941,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget7 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007608739999795944,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget8 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007350559999395045,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget8 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007283560000814759,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget8 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000745050999967134,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget9 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007181010000749666,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget9 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007531530000051134,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget9 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007493370001157018,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget10 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007394120000299154,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget10 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007131139998364233,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget10 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007428680000884924,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget11 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007245809999858466,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget11 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007596230000217474,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget11 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007257429999754095,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget12 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007418059999508841,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget12 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009780859998045344,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget12 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008727800000087882,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget13 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008847770000102173,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget13 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008434470000793226,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget13 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008835660000841017,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget14 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008243180000135908,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget14 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007956150000154594,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget14 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007738939998489514,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget15 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008240380000188452,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget15 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007695970000440866,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget15 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007303990000764315,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget16 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007836180000140303,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget16 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007431080000515067,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget16 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007448199999089411,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget17 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0010897500001192384,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget17 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008650690001559269,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget17 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007970879998993041,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget18 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000727105000123629,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget18 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0010002080000504066,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget18 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009375249999266089,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget19 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008101070000066102,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget19 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007501679999677435,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget19 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009492229999068513,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget20 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007737440000710194,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget20 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000718691999963994,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget20 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008703359999344684,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget21 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007775990000027377,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget21 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007413149999138113,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget21 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007179209999321756,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget22 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000825719999966168,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget22 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007964569999785454,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget22 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007617259998369263,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget23 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007400729998607858,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget23 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007075159999203606,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget23 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008789390001311403,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget24 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009351319999950647,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget24 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000782545999982176,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget24 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000843525999925987,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget25 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007611749999796302,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget25 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000720565000165152,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget25 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007862120000936557,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget26 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007471239998722012,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget26 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007601439999689319,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget26 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0011069550000684103,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget27 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008948020001753321,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget27 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0015648020000753604,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget27 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.001032045000101789,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget28 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0010983730001044023,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget28 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008660799999233859,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget28 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008774569998877269,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget29 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0009674190000623639,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget29 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007820559999345278,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget29 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007634980001967051,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget30 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007766270000502118,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget30 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000719742999990558,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget30 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008515889999216597,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget31 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007633180000539141,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget31 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007457619999513554,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget31 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007837780001409556,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget32 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007203750001281151,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget32 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007366280001406267,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget32 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007436490000145568,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget33 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007304499999918335,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget33 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007367890000296029,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget33 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007530230000156735,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget34 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007324020000396558,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget34 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007314819999919564,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget34 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007278049999968061,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget35 released in 2020?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000763818999985233,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget35 released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007406449999507458,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget35 not released in 2020?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007453509999777452,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget36 released in 2021?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007136039998840715,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget36 released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.000729859000102806,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget36 not released in 2021?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007431989999986399,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget37 released in 2022?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007548159999259951,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget37 released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007084369999574847,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget37 not released in 2022?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008504069999162311,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget38 released in 2023?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0008021959999950923,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget38 released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007886560001679754,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget38 not released in 2023?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007817559999239165,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget39 released in 2024?",
+        "expected": "YES",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007221870000648778,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget39 released in 2025?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007340950000980229,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget39 not released in 2024?",
+        "expected": "NO",
+        "decision": "MAYBE",
+        "reason": "UNCALIBRATED",
+        "latency_seconds": 0.0007673740001337137,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget0 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008327699999881588,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget1 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007322720000502159,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget2 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0006932849998975144,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget3 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007115109999631386,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget4 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0006990229999246367,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget5 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0006838799999968614,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget6 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007261329999437294,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget7 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007149160001063137,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget8 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009433550001176627,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget9 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008324499999616819,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget10 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007062930001211498,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget11 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007338949999393662,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget12 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008055399998738721,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget13 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007528220000949659,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget14 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0006964390001940046,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget15 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009870989999853919,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget16 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007897779998984333,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget17 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007236589999592979,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget18 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007052019998354808,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget19 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0006864040001346439,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget0 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 0.00019054200015489187,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget1 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 7.44100000247272e-05,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget2 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 1.1676999974952196e-05,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget3 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.622999985163915e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget4 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 7.310000000870787e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget5 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.629000154134701e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget6 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.5699998685886385e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget7 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.77000002724526e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget8 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.8199999532225775e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget9 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.450000000768341e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget10 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.52900007480639e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget11 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.629999916185625e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget12 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.399999847417348e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget13 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.3590000536351e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget14 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.279999979597051e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget15 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.548999863298377e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget16 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.149000000732485e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget17 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.309000127657782e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget18 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.069000164643512e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget19 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 6.209000048329472e-06,
+        "cache_hit": false
+      }
+    ]
+  },
+  "synthetic_calibrated_cold": {
+    "count": 160,
+    "coverage": 0.75,
+    "selective_risk": 0.0,
+    "selective_risk_95pct_wilson_interval": [
+      0,
+      0.031019166418703486
+    ],
+    "decision_match_fraction": 1.0,
+    "latency_seconds": {
+      "p50": 0.0008263810000244121,
+      "p95": 0.0010587149999992107
+    },
+    "cache_hits": 0,
+    "rows": [
+      {
+        "question": "Was TestWidget0 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008968360000380926,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget0 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008305070000460546,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget0 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008101870000700728,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget1 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007747849999759637,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget1 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007491569999729109,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget1 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008253299999978481,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget2 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007837379998818506,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget2 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007733730001291406,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget2 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007962670001688821,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget3 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007478150000679307,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget3 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008835759999783477,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget3 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008331410001574113,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget4 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007849500000247644,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget4 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007676539999010856,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget4 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007788809998601209,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget5 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008370969999305089,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget5 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007575900001484115,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget5 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009291329999996378,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget6 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009286020001582074,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget6 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008649880001030397,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget6 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008109780001177569,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget7 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0013338709998151899,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget7 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007756659999813564,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget7 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009270900000046822,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget8 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009008520000861608,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget8 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009733679999044398,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget8 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008338420000200131,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget9 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008387689999835857,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget9 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008083949999218021,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget9 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010587149999992107,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget10 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000908952999907342,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget10 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008145340000282886,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget10 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008367370000996743,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget11 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009806789998947352,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget11 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010173229998144961,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget11 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008101070000066102,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget12 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008140529998854618,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget12 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009045159999914176,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget12 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008689240000876453,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget13 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007814139999027248,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget13 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009377060000588244,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget13 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008412429999680171,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget14 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007959259999097412,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget14 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007802330001140945,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget14 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.00084077199994681,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget15 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008167670000602811,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget15 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007801330000347662,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget15 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008994290001282934,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget16 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009018319999540836,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget16 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008884829999260546,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget16 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010846220000075846,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget17 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009432639999431558,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget17 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010350400000334048,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget17 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008616540001185058,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget18 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007840480000140815,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget18 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008389800000259129,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget18 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010131770000043616,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget19 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009035949999542936,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget19 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008600200001183111,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget19 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008334920000834245,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget20 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009161340001355711,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget20 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008402820001265354,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget20 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009041670000442537,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget21 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009368940000058501,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget21 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009456569998747,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget21 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008593600000494916,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget22 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000859340000033626,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget22 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009093040000607289,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget22 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007954049999625568,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget23 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009247059999779594,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget23 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010564809999777935,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget23 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009180659999401541,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget24 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008162460001130967,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget24 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007717710000179068,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget24 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000813291999975263,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget25 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.001063722000026246,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget25 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008674219998283661,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget25 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008306869999614719,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget26 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008194110000658839,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget26 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007933720000892208,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget26 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009025730000757903,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget27 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008136819999435829,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget27 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007878240000991354,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget27 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008221149998917099,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget28 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007652910001070268,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget28 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000775895999822751,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget28 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007895859998825472,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget29 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007771079999656649,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget29 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008199819999390456,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget29 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007599529999424703,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget30 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007487770001262106,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget30 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010231109999949695,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget30 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.001071211999942534,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget31 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007816360000560962,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget31 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007830980000562704,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget31 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008843069999784348,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget32 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000857386999996379,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget32 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007959960000789579,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget32 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.001043861999960427,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget33 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.001023701999883997,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget33 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008075030000327388,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget33 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0012143050000759104,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget34 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008022660001643089,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget34 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000964234999855762,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget34 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.00187975800008644,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget35 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0011567400001695205,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget35 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000996863000182202,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget35 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000985136000053899,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget36 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008708469999874069,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget36 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009321479999471194,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget36 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009673500001099455,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget37 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009284220000154164,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget37 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009953010001026996,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget37 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009625420000247686,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget38 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010713140000007115,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget38 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000912548999849605,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget38 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008259999999609136,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget39 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007997420000265265,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget39 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008779980000781507,
+        "cache_hit": false
+      },
+      {
+        "question": "Was TestWidget39 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008293559999401623,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget0 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007851599998502934,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget1 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007665420000648737,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget2 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007753159998173942,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget3 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008678320000399253,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget4 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007525120001901087,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget5 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007509099998515012,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget6 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000763828000117428,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget7 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007462629998826742,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget8 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007011669999883452,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget9 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007975190001161536,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget10 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007728719999704481,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget11 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007599430000482243,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget12 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007570079999368318,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget13 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000960638999913499,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget14 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008362659998510935,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget15 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007659919999696285,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget16 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0010050349999346508,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget17 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008578679999118322,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget18 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009161739999399288,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget19 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008267620000879106,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget0 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 1.9247999944127514e-05,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget1 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 1.1796999842772493e-05,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget2 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 1.0695999890231178e-05,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget3 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.663999890108244e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget4 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.434000048713642e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget5 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.333999969385331e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget6 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.954000006473507e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget7 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.934999980032444e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget8 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.223000006386428e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget9 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.102999911192455e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget10 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.102999911192455e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget11 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.10400012799073e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget12 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.213000112140435e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget13 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.163999948214041e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget14 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.112999805438449e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget15 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.182999974655104e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget16 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.953000133260502e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget17 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.063000106834807e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget18 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.894000075088115e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget19 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.124000143856392e-06,
+        "cache_hit": false
+      }
+    ]
+  },
+  "synthetic_calibrated_warm": {
+    "count": 160,
+    "coverage": 0.75,
+    "selective_risk": 0.0,
+    "selective_risk_95pct_wilson_interval": [
+      0,
+      0.031019166418703486
+    ],
+    "decision_match_fraction": 1.0,
+    "latency_seconds": {
+      "p50": 3.765550002299278e-05,
+      "p95": 0.0007856709999032319
+    },
+    "cache_hits": 120,
+    "rows": [
+      {
+        "question": "Was TestWidget0 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0003082559999256773,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget0 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 9.791500019673549e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget0 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.00021396599981926556,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget1 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 6.021899980623857e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget1 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.54769999578275e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget1 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.921300001115014e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget2 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.2873999973380705e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget2 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.065999996782921e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget2 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.540700001598452e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget3 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.8896999967619195e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget3 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.60630001523532e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget3 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.2543000063233194e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget4 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.7564999956885003e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget4 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.00010940199990727706,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget4 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 5.809599997519399e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget5 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.026900001008471e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget5 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.705500012074481e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget5 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.298299995753041e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget6 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.7384999814094044e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget6 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.538299984029436e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget6 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.078100005244778e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget7 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.686399986690958e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget7 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.5382000078243436e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget7 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.0170000147554674e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget8 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.7345000009736395e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget8 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.51319999936095e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget8 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.1370999952050624e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget9 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.692399991450657e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget9 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.505099994072225e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget9 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.069000010531454e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget10 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.7425000073199044e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget10 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.444100002525374e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget10 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.0430000126434606e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget11 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.6354000030769384e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget11 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.56319999355037e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget11 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 6.829099993410637e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget12 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.267400004209776e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget12 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.6033000014867866e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget12 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.105100015294738e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget13 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.647399989858968e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget13 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.5421999882601085e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget13 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.1472000020803534e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget14 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.657399997791799e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget14 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.5522999951353995e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget14 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.9589000152773224e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget15 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.5793000051853596e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget15 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 7.332800009862694e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget15 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.2202000031466014e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget16 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.648400002020935e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget16 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.465099985078268e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget16 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.969899989897385e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget17 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.51319999936095e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget17 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.444999993007514e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget17 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.916799983016972e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget18 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.599299998313654e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget18 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.454099987720838e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget18 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.9397999898937996e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget19 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.508200006763218e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget19 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 6.295299999692361e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget19 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.66389999473904e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget20 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.615399987211276e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget20 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.528599993136595e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget20 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.093100005775341e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget21 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.482099987195397e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget21 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.488099991955096e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget21 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.894700012097019e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget22 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.515200000947516e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget22 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.3629999961704016e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget22 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.808600013144314e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget23 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.495099986139394e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget23 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.750499990928802e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget23 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.959800005759462e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget24 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.4791999951266916e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget24 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.498199998830387e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget24 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.885699993588787e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget25 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.520199993545248e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget25 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.392999997231527e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget25 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.885699993588787e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget26 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.489200003059523e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget26 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.3389000009265146e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget26 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.809599979831546e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget27 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.449099995123106e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget27 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 6.614699987039785e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget27 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.944300007991842e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget28 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.00011561099995560653,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget28 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.00014623600009144866,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget28 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 7.191599979705643e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget29 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.459600017980847e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget29 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.8506999999299296e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget29 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.3043000005127396e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget30 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.7255000052027754e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget30 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.5351999940758105e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget30 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.10599998303951e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget31 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.61329998668225e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget31 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.4360999961791094e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget31 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.987900004176481e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget32 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.576300014174194e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget32 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.566300006241363e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget32 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.0399999988949276e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget33 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.4972000094057876e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget33 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 7.517099993492593e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget33 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 5.089499995847291e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget34 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.774600008910056e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget34 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.5662999835039955e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget34 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.0260000105263316e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget35 released in 2020?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.549200005181774e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget35 released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.394000009393494e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget35 not released in 2020?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.935800009458035e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget36 released in 2021?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.584300020520459e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget36 released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.484100011519331e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget36 not released in 2021?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 4.0069000078801764e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget37 released in 2022?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.5322999792697374e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget37 released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.518200014696049e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget37 not released in 2022?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.987900004176481e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget38 released in 2023?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.6694000073111965e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget38 released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.386000003047229e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget38 not released in 2023?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.9818999994167825e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget39 released in 2024?",
+        "expected": "YES",
+        "decision": "YES",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.565299994079396e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget39 released in 2025?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.4210999956485466e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was TestWidget39 not released in 2024?",
+        "expected": "NO",
+        "decision": "NO",
+        "reason": "SUFFICIENT_EVIDENCE",
+        "latency_seconds": 3.958899992539955e-05,
+        "cache_hit": true
+      },
+      {
+        "question": "Was MissingWidget0 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007722309999280697,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget1 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007467929999620537,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget2 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007471439998880669,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget3 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008461610000267683,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget4 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008824040000945388,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget5 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0009092130001135956,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget6 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008814029999939521,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget7 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008570760001020972,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget8 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008364259999780188,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget9 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008544720001282258,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget10 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007856709999032319,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget11 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007133940000585426,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget12 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007194929999059241,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget13 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007180910001807206,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget14 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007354970000506,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget15 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000728296000033879,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget16 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007361880000189558,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget17 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.000725241999816717,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget18 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0008812920000309532,
+        "cache_hit": false
+      },
+      {
+        "question": "Was MissingWidget19 released in 2024?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "INSUFFICIENT_EVIDENCE",
+        "latency_seconds": 0.0007240100001126848,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget0 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 1.8576999991637422e-05,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget1 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 1.154699998551223e-05,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget2 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.905000069920789e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget3 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.284000043408014e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget4 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 9.083000122700469e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget5 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.97299992175249e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget6 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.842999932312523e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget7 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.793000006335205e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget8 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.994000154416426e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget9 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.913000101529178e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget10 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.90299997990951e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget11 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.611999874119647e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget12 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.812999794827192e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget13 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.602999969298253e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget14 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.682999805387226e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget15 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.842999932312523e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget16 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.913000101529178e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget17 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.622999985163915e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget18 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.65299989527557e-06,
+        "cache_hit": false
+      },
+      {
+        "question": "Is TestWidget19 safe?",
+        "expected": "MAYBE",
+        "decision": "MAYBE",
+        "reason": "UNSUPPORTED_OR_AMBIGUOUS",
+        "latency_seconds": 8.843000159686198e-06,
+        "cache_hit": false
+      }
+    ]
+  },
+  "cost": {
+    "external_requests": 0,
+    "provider_charges_usd": 0,
+    "host_cost_usd": null
+  },
+  "limitations": [
+    "No live search, FIRE reproduction, trained NLI, or human real-world gold labels.",
+    "Synthetic calibration does not qualify a production deployment.",
+    "Intervals treat examples as independent; shared templates violate that assumption.",
+    "No cost/latency/reliability advantage is established."
+  ]
+}
