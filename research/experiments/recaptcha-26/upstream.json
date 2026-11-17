@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/conghuy113/solveReCaptcha-Typescript",
+  "commit": "4d69b46b62855a439c42bd819f358907ad946644",
+  "npm_version": "0.5.1",
+  "npm_integrity": "sha512-H/50kzaq2VNO94vF+AOiMilc8J1bAFt2mt8As23CTZSIjuETYGZBb4KAjEAn4oXzl2d9HF9gl1ItCvEjC4cr0A==",
+  "helper_license": "AGPL-3.0-only",
+  "code_and_model_license_separate_from_core": true,
+  "cloud_fallback": false,
+  "rejected_candidate": {
+    "repository": "https://github.com/icemellow-me/recaptcha-v2-solver",
+    "reason": "README describes a hosted WebSocket fallback and stealth; unsuitable for required local-only inference without substantial audit/removal."
+  },
+  "provenance_limit": "Upstream maintainer approves model-weight release underAGPL, while original image collection/source permissions remain incompletely documented."
+}

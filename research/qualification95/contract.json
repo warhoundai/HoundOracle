@@ -1,0 +1,43 @@
+{
+  "status": "IMPLEMENTATION_AND_DATA_AUDIT_IN_PROGRESS_NOT_QUALIFIED",
+  "tracks": [
+    "passage",
+    "end_to_end"
+  ],
+  "locked_cases_per_track": 1000,
+  "locked_label_counts": {
+    "YES": 400,
+    "NO": 400,
+    "MAYBE": 200
+  },
+  "minimum_validation_cases_per_track": 500,
+  "minimum_calibration_cases_per_track": 1000,
+  "unlock_validation_accuracy_per_track": 0.97,
+  "final_observed_accuracy_per_track": 0.95,
+  "minimum_answerable_coverage": 0.95,
+  "minimum_definitive_precision": 0.95,
+  "minimum_independently_audited_citation_correctness": 0.95,
+  "critical_security_failures": 0,
+  "runtime": "Fullyselfhosted; no paid-model fallback",
+  "sampling": "Group by source/event/claim before splitting. Original human annotation and independent blind source audit required. No generated record questions in primary tests. No source-domain substitution for a broader task.",
+  "preexisting39": "Reserved old cohorts remain unscored and are not substituted for either new1000case gate.",
+  "budgets_unreserved_usd": {
+    "aws": 228,
+    "gcp": 24
+  },
+  "new_cloud_spend_usd": 0,
+  "live_gold_status": "Public human labels plus independent source/temporal audit still required; passageNEI cannot become webMAYBE automatically. No sealed.json exists until validator passes.",
+  "publication": "Blocked until both tracks and all acceptance checks pass; no automatic public publication.",
+  "minimum_category_counts": {
+    "technical": 200,
+    "nontechnical": 200,
+    "dates": 100,
+    "quantities": 100,
+    "negation": 100,
+    "comparisons": 100,
+    "multi_hop": 100,
+    "contradictory": 100,
+    "ambiguous": 100,
+    "adversarial": 100
+  }
+}

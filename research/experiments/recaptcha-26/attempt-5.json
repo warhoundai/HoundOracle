@@ -1,0 +1,80 @@
+{
+  "records": [
+    {
+      "test": "public_google_recaptcha_demo",
+      "before": {
+        "http_status": 200,
+        "frame_count": 5,
+        "widget_frames": 3
+      },
+      "result": {
+        "status": "TIMEOUT_OUTCOME_UNKNOWN",
+        "widget_solved": false,
+        "server_accepted": null,
+        "retry_automatically": false
+      },
+      "after": {
+        "origin": "https://www.google.com",
+        "frame_count": 5
+      },
+      "diagnostics": [
+        {
+          "checkbox": null,
+          "prompt": null,
+          "imageTiles": 0,
+          "blocked": false
+        },
+        {
+          "checkbox": "false",
+          "prompt": null,
+          "imageTiles": 0,
+          "blocked": false
+        },
+        {
+          "checkbox": null,
+          "prompt": "Select all images with crosswalksClick verify once there are none left.",
+          "imageTiles": 9,
+          "blocked": false
+        }
+      ]
+    }
+  ],
+  "model_smoke": {
+    "records": [
+      {
+        "id": "classification",
+        "input_shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "output_shape": [
+          1,
+          14
+        ],
+        "load_seconds": 0.316989718,
+        "inference_seconds": 0.445196241
+      },
+      {
+        "id": "detection",
+        "input_shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "output_shape": [
+          1,
+          84,
+          8400
+        ],
+        "load_seconds": 0.40920070799999997,
+        "inference_seconds": 0.923338182
+      }
+    ],
+    "scope": "Single zero-tensor CPU interface/profile smoke, two intra-op threads. Not accuracy or Google success."
+  },
+  "scope": "One public Google demo smoke attempt, not a success-rate benchmark or Google Search acceptance test. No stealth flags, proxy rotation, token replay or cloud inference.",
+  "hosted_solver_calls": 0
+}

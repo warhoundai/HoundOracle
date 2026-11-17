@@ -1,0 +1,20 @@
+{
+  "model_id": "houndoracle/minilm-fever-1912",
+  "revision": "8daf9bbd3640715c540805dba45c8e827c2b1b2e81c622cf10829fbf04e03a2a",
+  "declared_license": "Research checkpoint; base and dataset rights require separate redistribution review",
+  "max_length": 256,
+  "files": {
+    "config.json": {
+      "sha256": "3ad0190d54812dd589ade1aefe22222eb78960681a1ce59be4cc85b172da6a69",
+      "bytes": 987
+    },
+    "tokenizer.json": {
+      "sha256": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6",
+      "bytes": 1356048
+    },
+    "onnx/model.onnx": {
+      "sha256": "e6feeda91802e5a2296d459b581389c2ce8f0e7e8a74a13aaba571e420b07b2e",
+      "bytes": 328597332
+    }
+  }
+}

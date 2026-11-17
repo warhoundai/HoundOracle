@@ -1,0 +1,12 @@
+{
+ "production_best_checkpoint":"9123fdb decision policy; additive diagnostics only",
+ "new_models_promoted_to_production":[],
+ "research_checkpoints_retained":["fp32 NLI + logistic head","fp32 NLI + MLP head"],
+ "quantization":"Retain artifacts for research; reject adoption because repeated validation workload exceeds quality/coverage regression tolerances and p95 improvement uncertainty does not clear all targets.",
+ "int8_logistic":"Highest observed coverage, but heldout selective-risk interval extends above 20%; no promotion.",
+ "raw_NLI":"Reject as useful calibrated verifier: independent risk gate fails.",
+ "NNUE_and_learned_search":"Not trained: no real search trajectories and semantic encoding dominates measured CPU time.",
+ "Gemini_comparisons":"Unavailable: both permitted CPU job attempts rejected for quota before inference.",
+ "stop_reason":"Critical comparison execution resource unavailable; bounded local campaign completed. Not convergence or a global optimum.",
+ "public_release":"blocked"
+}

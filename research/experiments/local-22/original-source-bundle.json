@@ -1,0 +1,8 @@
+{
+  "archive_sha256": "335e8cb4e3a41fc08103245028efd3a4173da2a1a2594614e84898c7e5f0c75a",
+  "archive_bytes": 5166500,
+  "source_commit": "2f556ec42cee8344e64bbd9c1a3c89847547b111",
+  "working_tree_changes_included": true,
+  "credentials_included": false,
+  "scope": "Private offline deployment regression on fixed previously evaluated600 queries, not new gold-data evaluation."
+}

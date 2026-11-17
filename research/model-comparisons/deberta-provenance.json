@@ -1,0 +1,28 @@
+{
+  "model_id": "cross-encoder/nli-deberta-v3-small",
+  "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+  "declared_license": "Apache-2.0",
+  "pretraining_datasets": [
+    "SNLI",
+    "MultiNLI"
+  ],
+  "files": {
+    "README.md": {
+      "sha256": "a9aa108025ad1984374c5e80365406bafe331aea5abc30239e1796ec0a7c267d",
+      "bytes": 2864
+    },
+    "config.json": {
+      "sha256": "885d0dceae8fa5c136da9209121ec9eb11160488e840de3bc1f29353674e5712",
+      "bytes": 1052
+    },
+    "tokenizer.json": {
+      "sha256": "5124ef2ead1a10a717703bc436de7f353da76d6340e4587719b42b1693707964",
+      "bytes": 8656624
+    },
+    "onnx/model_quint8_avx2.onnx": {
+      "sha256": "03c2221313dc0c3eac9cec1f746d1319d33f2c2901fcce1c0f08f4daac9b6dae",
+      "bytes": 172503005
+    }
+  },
+  "rights_note": "Model card reviewed. Base model and training-data rights separate; weights excluded from Apache source distribution."
+}

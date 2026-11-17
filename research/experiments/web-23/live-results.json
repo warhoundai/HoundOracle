@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "engines": "google",
+      "results": 0,
+      "source_urls": [],
+      "unresponsive_engines": [
+        [
+          "google",
+          "access denied"
+        ]
+      ],
+      "seconds": 0.3114589369999976
+    },
+    {
+      "engines": "bing,duckduckgo",
+      "results": 11,
+      "source_urls": [
+        "https://www.python.org/downloads/release/python-3120/",
+        "https://www.python.org/downloads/release/python-31215/",
+        "https://blog.python.org/2023/10/python-3120-final-now-available/"
+      ],
+      "unresponsive_engines": [
+        [
+          "duckduckgo",
+          "CAPTCHA"
+        ]
+      ],
+      "seconds": 0.1578294420000077
+    },
+    {
+      "engines": "google,bing,duckduckgo",
+      "results": 11,
+      "source_urls": [
+        "https://www.python.org/downloads/release/python-3120/",
+        "https://www.python.org/downloads/release/python-31215/",
+        "https://blog.python.org/2023/10/python-3120-final-now-available/"
+      ],
+      "unresponsive_engines": [
+        [
+          "duckduckgo",
+          "CAPTCHA"
+        ],
+        [
+          "google",
+          "Suspended: access denied"
+        ]
+      ],
+      "seconds": 0.138236531000004
+    }
+  ],
+  "hosted_model_calls": 0,
+  "paid_search_api_calls": 0,
+  "cleanup": {
+    "instances": [
+      {
+        "id": "i-04c86d3d91f515060",
+        "state": "terminated"
+      },
+      {
+        "id": "i-0207fa83b77435ca3",
+        "state": "terminated"
+      }
+    ],
+    "security_group_deleted": true,
+    "remaining_attached_volumes": 0
+  }
+}

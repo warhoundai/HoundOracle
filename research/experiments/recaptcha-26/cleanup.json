@@ -1,0 +1,27 @@
+{
+  "instances": [
+    {
+      "id": "i-0c99cf447c4796765",
+      "state": "terminated"
+    },
+    {
+      "id": "i-063fe92cea880cdb4",
+      "state": "terminated"
+    },
+    {
+      "id": "i-08b2a86c7c7dfe02d",
+      "state": "terminated"
+    },
+    {
+      "id": "i-0a7e56f1ae45cf542",
+      "state": "terminated"
+    },
+    {
+      "id": "i-08083e421ccebc91c",
+      "state": "terminated"
+    }
+  ],
+  "security_group_deleted": true,
+  "remaining_attached_volumes": 0,
+  "active_project_workers": 0
+}

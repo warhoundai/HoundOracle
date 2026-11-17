@@ -1,0 +1,76 @@
+{
+  "status": "RESERVED_UNSCORED_AUDITS_PENDING_NOT_QUALIFIED",
+  "seed": 2003,
+  "source_family": "vitaminc",
+  "sources": {
+    "dev.jsonl": {
+      "sha256": "544934677f5d133873e6d38f4557f8966f4efa5d3d70874ffe6913f2091b86b5",
+      "bytes": 32876983
+    },
+    "train.jsonl": {
+      "sha256": "7461c6fd1a13459590317c5ccdc8651dd2daf7c1ad8ae4b10ccd88d164fccd5a",
+      "bytes": 193958244
+    },
+    "test.jsonl": {
+      "sha256": "7ad1808dbc30c62e0a1427a53022d0dfaff668a1fde3c4b612a2d266edd753ad",
+      "bytes": 28717099
+    }
+  },
+  "available_component_labels": {
+    "NO": 2200,
+    "MAYBE": 3195,
+    "YES": 5421
+  },
+  "rejected": {},
+  "panels": {
+    "development": {
+      "count": 500,
+      "label_counts": {
+        "NO": 200,
+        "MAYBE": 100,
+        "YES": 200
+      },
+      "sha256": "ce19d648d0379da24b5a36f5e7760e0f2c0d94467e231b7a132be7489e98b90a"
+    },
+    "validation": {
+      "count": 500,
+      "label_counts": {
+        "MAYBE": 100,
+        "YES": 200,
+        "NO": 200
+      },
+      "sha256": "3d9d21f09f62bf3bb5b802078971d7b0584088383fe2a80919d200cf1de114b1"
+    },
+    "calibration": {
+      "count": 1000,
+      "label_counts": {
+        "MAYBE": 200,
+        "YES": 400,
+        "NO": 400
+      },
+      "sha256": "a5f7f8fad761825329dd646fe719b3ddaa0c66e3b6d9e5f1ce7c34c1c702d9a7"
+    },
+    "locked": {
+      "count": 1000,
+      "label_counts": {
+        "MAYBE": 200,
+        "YES": 400,
+        "NO": 400
+      },
+      "sha256": "591a685d0de7cce72e6de4351bec213a4fc98be599cd9540ec5ce2f4046b3a24"
+    },
+    "training-reserve": {
+      "count": 7816,
+      "sha256": "426985991d1482aba1b659698cf210c400a143a9a7b46e1db9d421439e45cd92"
+    }
+  },
+  "known_previous_training_and_evaluation_components_excluded": true,
+  "metadata_files_checked": 131,
+  "sealed39_metadata_only_used_for_exclusion": true,
+  "sealed39_labels_scored": false,
+  "model_predictions_computed": 0,
+  "independent_source_audits_completed": 0,
+  "commercial_rights_review": "Pending; do not infer dataset rights from code license or redistribute text.",
+  "remaining_work": "Source/temporal audit, subjectdomain/difficulty classification and separate endtoendgold. PassageNEI cannot be copied to webMAYBE. Reserved locked panels must not be scored or used in training.",
+  "base_model_pretraining_contamination": "Unknown beyond known training/component exclusions; do not claim guaranteed absence."
+}

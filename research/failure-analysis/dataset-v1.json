@@ -1,0 +1,9 @@
+{
+ "status":"invalidated before locked evaluation",
+ "finding":"Gold-evidence mirror includes multiple evidence variants for the same original FEVER claim. Initial importer preserved variants under duplicate IDs. Paired query comparisons require unique IDs; duplicated questions also distort coverage and uncertainty.",
+ "observed_validation_distribution":{"MAYBE":224,"YES":8,"NO":8},
+ "initial_NLI_validation_selective_risk":0.9044117647058824,
+ "interpretation":"The model passed independent entailment/contradiction/neutral sanity checks; this result exposed duplicate sampling and a heavily NEI-skewed small-component population. No production calibration or performance claim is permitted from this invalidated run.",
+ "correction":"Deduplicate by original annotation ID using a deterministic smallest-evidence variant, retain all source pages for grouping, and stratify whole components using independently provided labels. Preserve original labels; do not relabel disagreements using NLI/Gemini.",
+ "locked_evaluation_opened":false
+}

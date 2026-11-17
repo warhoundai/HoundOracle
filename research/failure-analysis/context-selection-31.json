@@ -1,0 +1,53 @@
+{
+  "scope": "Exploratory reused development; no source text and no independent qualification",
+  "policies": {
+    "top1": {
+      "confusion": {
+        "YES": {
+          "YES": 100,
+          "NO": 2,
+          "MAYBE": 10
+        },
+        "NO": {
+          "YES": 5,
+          "NO": 15,
+          "MAYBE": 11
+        },
+        "MAYBE": {
+          "YES": 10,
+          "NO": 8,
+          "MAYBE": 46
+        }
+      },
+      "errors_by_expected": {
+        "MAYBE": 18,
+        "NO": 16,
+        "YES": 12
+      }
+    },
+    "top3": {
+      "confusion": {
+        "YES": {
+          "YES": 90,
+          "NO": 9,
+          "MAYBE": 13
+        },
+        "NO": {
+          "YES": 10,
+          "NO": 14,
+          "MAYBE": 7
+        },
+        "MAYBE": {
+          "YES": 17,
+          "NO": 16,
+          "MAYBE": 31
+        }
+      },
+      "errors_by_expected": {
+        "MAYBE": 33,
+        "NO": 17,
+        "YES": 22
+      }
+    }
+  }
+}

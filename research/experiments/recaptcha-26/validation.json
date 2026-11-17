@@ -1,0 +1,17 @@
+{
+  "python_tests": {
+    "3.11": 187,
+    "3.12": 187
+  },
+  "node_contract_tests": 6,
+  "lint": "passed",
+  "wheel_build": "passed",
+  "hardened_npm_audit_known_vulnerabilities": 0,
+  "live_google_image_completion_confirmed": false,
+  "production_qualification": "FAILED",
+  "all_five_ec2_workers_terminated": true,
+  "temporary_security_group_deleted": true,
+  "actual_invoice_usd": null,
+  "stop_reason": "Bounded campaign ended after corrected patched-runtime compatibility run; completed native CPU inference but Google image challenge timed out. More unchanged attempts do not establish general reliability.",
+  "final_entrypoint_space_path_regression": "passed"
+}

@@ -1,0 +1,32 @@
+{
+  "offline_result": {
+    "os_network_isolated": true,
+    "external_api_calls": 0,
+    "credentials_required": false,
+    "initialization_seconds": 0.979554319000016,
+    "questions": 600,
+    "runtime_fidelity_mismatches": [],
+    "accepted": 222,
+    "accepted_errors": 19,
+    "correct_definitive_fraction": 0.3383333333333333,
+    "high_precision_target": {
+      "target_precision": 0.99,
+      "minimum_coverage": 0.35,
+      "alpha": 0.05,
+      "valid_questions": 600,
+      "accepted": 0,
+      "errors": 0,
+      "coverage": 0,
+      "correct_definitive_fraction": 0,
+      "one_sided_error_upper": 1,
+      "citations_independently_audited": false,
+      "confidence_contract_satisfied": true,
+      "gate_passed": false,
+      "scope": "Only under independently sampled/exchangeable source-event components and independent ground truth/span audit. Fixed selection policy; no tuning on this evaluation or optional-stopping guarantee. Not an individual-answer truth probability or distribution-shift guarantee."
+    },
+    "scope": "Independent EC2 hardware regression on previously evaluated frozen600-query historical evidence cohort. Not a new independent quality measurement. Citation entailment unaudited.99% target gate can fail; do not relabel it as achieved."
+  },
+  "test_suite_attributes": [
+    "name=\"pytest\" errors=\"0\" failures=\"0\" skipped=\"0\" tests=\"163\" time=\"3.382\" timestamp=\"2026-11-16T16:02:40.952971+00:00\""
+  ]
+}

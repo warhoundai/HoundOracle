@@ -1,0 +1,15 @@
+# Local application with internet search — 2026-11-16
+
+The clarified product requirement is local execution with internet access, not mandatory disconnected execution. Oracle now supports a self-hosted SearXNG adapter for Google/Bing/DuckDuckGo discovery, bounded robots-aware source fetching, local evidence reuse, persisted snippet-versus-document provenance, and a standalone internet-enabled Compose profile. No paid search or hosted model account is required. Offline mode remains available.
+
+Official references consulted: https://docs.searxng.org/dev/search_api.html, https://docs.searxng.org/admin/settings/settings.html, upstream settings and LICENSE at https://github.com/searxng/searxng. JSON search must be enabled. SearXNG remains a separate AGPL-3.0-or-later service; Oracle code is Apache-2.0. Upstream and source-content licensing remain separate.
+
+Local verification: 170 tests passed on Python 3.11 and 3.12, lint and wheel build passed, Compose configuration validated. A real local HTTP fixture exercises adapter-to-engine ingestion and cache reuse. Public source acquisition and redirect/robots restrictions have regression tests. The real complete Oracle+SearXNG Compose stack was not tested on this workspace: pulling the image exhausted its disk. Do not equate the following upstream smoke test with a complete end-to-end factual benchmark.
+
+Temporary EC2 c7i.xlarge, Ubuntu 24.04, us-east-1 tested pinned amd64 SearXNG image sha256:d8645d64b8d71bab51e97cf3a3bfd90499618dd64290bf3532c0236f0001a008 (runtime 2026.11.15-2d500cb6b). The query was `Python 3.12.0 release date site:python.org`.
+
+Google-only: zero results, access denied. Bing+DuckDuckGo: 11 results, DuckDuckGo CAPTCHA. Combined three-engine configuration: 11 results, Google suspended/access denied and DuckDuckGo CAPTCHA. Primary URLs included the Python 3.12.0 release page and Python's official announcement. Response times approximately 0.311, 0.158 and 0.138 seconds respectively; later requests share upstream state/caches and are not independent latency samples. No hosted model or paid search API calls. These are discovery counts, not correct answers or measured accuracy gains.
+
+First worker produced no retrievable EC2 console output; its test outcome is unknown. A second bounded attempt uploaded private logs/results with short-lived signed PUTs. Neither worker had SSH ingress, a public application endpoint, IAM role or cloud credentials in the runtime. Both i-0207fa83b77435ca3 and i-04c86d3d91f515060 terminated. Temporary security group sg-0319fb360d08e6f20 was deleted; no attached test volumes remained. Existing private artifact lifecycle retained. A $5 campaign reservation covered these attempts; actual invoice unknown. Quoted compute rate $0.1785/hour, plus storage and network costs.
+
+99–100% accuracy remains unmet. Existing calibration does not qualify arbitrary retrieved webpages. Continue independent retrieval/evidence labeling before promoting broader verification or claiming a factual advantage. Search-engine challenges are operational limits, never evidence against a proposition; do not bypass them.

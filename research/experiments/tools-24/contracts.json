@@ -1,0 +1,11 @@
+{
+  "validated_against_original_model_classes": [
+    "HoundCrawler scrape",
+    "HoundScraper scrape",
+    "HoundCrawler crawl",
+    "HoundSearch search"
+  ],
+  "external_requests": 0,
+  "scope": "Request schema qualification, not live service integration or accuracy benchmark",
+  "rejected_compatibility": "HoundScraper job schema lacks HoundCrawler scope/concurrency fields; bounded jobs are restricted to HoundCrawler"
+}

@@ -1,0 +1,13 @@
+{
+  "campaign": "oracle-cloud-03",
+  "shared_abstention_errors": [
+    {"id":"fever:4818", "partition":"development", "expected":"NO", "observed_both":"MAYBE", "repetitions_per_arm":2},
+    {"id":"fever:68459", "partition":"supplemental", "expected":"NO", "observed_both":"MAYBE", "repetitions_per_arm":3}
+  ],
+  "label_policy":"Retain original independent human labels; score abstention as incorrect classification but not false definitive evidence.",
+  "limitation":"Open-world relation/profession nonexclusivity and evidence-subset sufficiency need independent adjudication. Do not tune or relabel these holdouts after observing outcomes.",
+  "initial_mlp_failure":"Development P95 higher than standalone Gemini; candidate screened with development-only replay and frozen before confirmation.",
+  "precision_route_failure":"Fresh confirmation P95 31.7% higher despite token-cost and median reductions; no general latency win.",
+  "compact_failure":"Every supplemental case fell back to Gemini; no model calls avoided. Two-question accuracy only 50% for both. No production promotion.",
+  "unmeasured":"Grounded search, full agent tool loop, all-in invoiced cost, current primary-record evaluation, central S3 economics, independent citation entailment adjudication."
+}

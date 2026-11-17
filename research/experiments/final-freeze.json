@@ -1,0 +1,16 @@
+{
+  "baseline_commit": "9123fdb",
+  "dataset_evaluation_digest": "c9a3370aa178944aa733d0be092373ac2e4f53ada510bb14aa238554b5339279",
+  "variants": {
+    "fp32": "032d5f74ee462b05e449e38d1c123674da73a4920d870309f31fe564af7ecec8",
+    "int8": "642bc9b7fadc15a86a892ec3fbc745b2aa56092b267926c6bfa24b79b3a3b339",
+    "logistic": "364c45573f2b65c4712a846eca38cfdd7ffb35ba46aec1ba10b244b5e86ee5fc",
+    "mlp": "70bd77a0442d37382a05ee4e304b3e53345a72970097ed093f83f4e7e51f2082",
+    "logistic-int8": "9e040797a4f82ef36114f1a4dd66d8933a08841ffab50ba721c5ac566e2dfd48",
+    "mlp-int8": "b19f8a540db8222c9ecc0426b6474a5d7c9cd7725199d0cf24f775b4aa638149"
+  },
+  "head_digest": "6cf925cf96377035ed452107c2b8a46e2b6c2399a1982d321b9ed0a629c48012",
+  "selection": "All four calibrated head configurations retained as a validation Pareto set; raw encoders are negative controls.",
+  "production_replacement": false,
+  "locked_test_tuning_permitted": false
+}

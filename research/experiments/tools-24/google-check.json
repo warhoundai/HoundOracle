@@ -1,0 +1,12 @@
+{
+  "endpoint": "https://www.google.com/search",
+  "query": "Python 3.12.0 release date site:python.org",
+  "language": "en",
+  "http_status": 200,
+  "bytes": 92976,
+  "snapshot_sha256": "23ab470c3bf886e350e74ccfb1d7d3def25f0b74f88ef92002f7a5f6de60baff",
+  "javascript_gate": true,
+  "expected_primary_release_url_present": false,
+  "conclusion": "Successful retrieval not demonstrated. HTTP200 is not a verified search result.",
+  "scope": "Single proxy-mediated request from workspace; not an EC2 SearXNG comparison or CAPTCHA solver test"
+}

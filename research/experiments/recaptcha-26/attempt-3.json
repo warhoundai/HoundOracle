@@ -1,0 +1,44 @@
+{
+  "records": [
+    {
+      "test": "public_google_recaptcha_demo",
+      "before": {
+        "http_status": 200,
+        "frame_count": 5,
+        "widget_frames": 3
+      },
+      "result": {
+        "status": "TIMEOUT_OUTCOME_UNKNOWN",
+        "widget_solved": false,
+        "server_accepted": null,
+        "retry_automatically": false
+      },
+      "after": {
+        "origin": "https://www.google.com",
+        "frame_count": 5
+      },
+      "diagnostics": [
+        {
+          "checkbox": null,
+          "prompt": null,
+          "imageTiles": 0,
+          "blocked": false
+        },
+        {
+          "checkbox": "false",
+          "prompt": null,
+          "imageTiles": 0,
+          "blocked": false
+        },
+        {
+          "checkbox": null,
+          "prompt": "Select all images with carsClick verify once there are none left",
+          "imageTiles": 9,
+          "blocked": false
+        }
+      ]
+    }
+  ],
+  "scope": "One public Google demo smoke attempt, not a success-rate benchmark or Google Search acceptance test. No stealth flags, proxy rotation, token replay or cloud inference.",
+  "hosted_solver_calls": 0
+}

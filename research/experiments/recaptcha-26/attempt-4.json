@@ -1,0 +1,10 @@
+{
+  "stage": "HARNESS_FAILED_BEFORE_GOOGLE_ATTEMPT",
+  "failure": "Private Puppeteer filesystem entrypoint changed in25.17.0; use public package export instead.",
+  "model_hashes_verified": true,
+  "native_model_smoke_exit_success": true,
+  "native_model_smoke_measurements_retained": false,
+  "google_attempted": false,
+  "source_bundle": "source-bundle.json (fourth attempt hash532d504e...)",
+  "decision": "Fix harness import and repeat compatibility validation; do not count as successful Google solve."
+}

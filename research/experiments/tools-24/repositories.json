@@ -1,0 +1,30 @@
+[
+  {
+    "repository": "https://github.com/warhoundai/HoundBrowser",
+    "commit": "bcdcbe5f78251e5171d9a5b74c60ffd7e44a68f8",
+    "declared_license": "Apache-2.0",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "integration": "HTTP; no source vendoring"
+  },
+  {
+    "repository": "https://github.com/warhoundai/HoundCrawler",
+    "commit": "8a3134a4de8c697e83565eb6541e14ad423d8281",
+    "declared_license": "Apache-2.0",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "integration": "HTTP; no source vendoring"
+  },
+  {
+    "repository": "https://github.com/warhoundai/HoundScraper",
+    "commit": "89cfaa12e7ba9abe46cce790a6b0b3c97bf5fe39",
+    "declared_license": "Apache-2.0",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "integration": "HTTP; no source vendoring"
+  },
+  {
+    "repository": "https://github.com/warhoundai/HoundSearch",
+    "commit": "47d64d98702b51420aa613b915fcfa58b853222d",
+    "declared_license": "Apache-2.0",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "integration": "HTTP; no source vendoring"
+  }
+]

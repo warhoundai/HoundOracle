@@ -1,0 +1,26 @@
+{
+  "raw_confusion": {
+    "YES": {
+      "YES": 468,
+      "NO": 20,
+      "MAYBE": 19
+    },
+    "NO": {
+      "YES": 22,
+      "NO": 123,
+      "MAYBE": 46
+    },
+    "MAYBE": {
+      "YES": 44,
+      "NO": 20,
+      "MAYBE": 238
+    }
+  },
+  "scope": "Opened only after frozen development gate. No label changes or retraining on this cohort. Raw neural labels do not qualify public verdicts.",
+  "remaining_blockers": [
+    "Strict99 threshold accepts zero",
+    "Independent citation span audit absent",
+    "General public compiler support absent",
+    "Live-search distribution and whole-agent costs not established"
+  ]
+}

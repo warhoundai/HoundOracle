@@ -1,0 +1,19 @@
+{
+  "live_result_count": 3,
+  "live_usage": {
+    "requests": 1,
+    "reserved_cost_usd": 0.02,
+    "actual_cost_usd": null,
+    "latency_seconds": 2.028599714001757
+  },
+  "live_reason": null,
+  "cached_result_count": 3,
+  "cached_source": "local",
+  "cached_usage": {
+    "requests": 0,
+    "reserved_cost_usd": 0,
+    "latency_seconds": 0.0015443520023836754
+  },
+  "verified": false,
+  "scope": "Actual CLI to Exa to SQLite evidence ingestion and second local BM25 lookup, not answer reuse or an accuracy benchmark."
+}

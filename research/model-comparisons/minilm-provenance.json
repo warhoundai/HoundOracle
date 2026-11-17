@@ -1,0 +1,32 @@
+{
+  "model_id": "cross-encoder/nli-MiniLM2-L6-H768",
+  "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+  "declared_license": "Apache-2.0",
+  "pretraining_datasets": [
+    "SNLI",
+    "MultiNLI"
+  ],
+  "files": {
+    "config.json": {
+      "sha256": "8b0e41caff7567c0f53e6983f35591c3dec59507c9173ab125c5823394fb57f3",
+      "bytes": 875
+    },
+    "tokenizer.json": {
+      "sha256": "82139106e603ee4e1d5bc99d056ccbed5a92bc24848b1b5a7137c26e00d0dbf6",
+      "bytes": 1356048
+    },
+    "README.md": {
+      "sha256": "1a6e3f880df3584acc1b209c7c667eb22cb7ddd98ab56a5905dda5cfc446ddd1",
+      "bytes": 2695
+    },
+    "onnx/model.onnx": {
+      "sha256": "807d33fffefd95ad60e2a91f54eed50a92aa53c077945a6842bb587a49a3fdf3",
+      "bytes": 328649957
+    },
+    "onnx/model_quint8_avx2.onnx": {
+      "sha256": "44391a5241a62e0083c1a8899a71e69a092b95aea5ba89e14062925468eceac7",
+      "bytes": 82823063
+    }
+  },
+  "rights_note": "Model card reviewed. Training-data and base-model rights remain separate; no public model redistribution in this campaign."
+}

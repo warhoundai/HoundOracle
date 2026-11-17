@@ -1,0 +1,30 @@
+{
+  "status": "INSUFFICIENT_UNUSED_COMPONENTS",
+  "available": {
+    "MAYBE": 2028,
+    "NO": 15,
+    "YES": 45
+  },
+  "required": {
+    "YES": 1200,
+    "NO": 1200,
+    "MAYBE": 600
+  },
+  "sources": {
+    "original": {
+      "url": "https://fever.ai/download/fever/train.jsonl",
+      "bytes": 33024303,
+      "sha256": "eba7e8f87076753f8494718b9a857827af7bf73e76c9e4b75420207d26e588b6"
+    },
+    "mirror": {
+      "url": "https://huggingface.co/datasets/copenlu/fever_gold_evidence/resolve/a6b8d891d393e97a4efac791afffb2d7de5e57c6/train.jsonl",
+      "bytes": 96931344,
+      "sha256": "bfa7b19109af675e5ce914dd96779b6382ca5c8c60d32c38e26f0072dd32f1c1"
+    }
+  },
+  "rejected": {
+    "prior_component_overlap": 135558,
+    "no_complete_original_evidence_set": 1046,
+    "transitive_prior_component_overlap": 54077
+  }
+}
