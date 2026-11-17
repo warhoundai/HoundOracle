@@ -1,0 +1,14 @@
+{
+  "variant": "fp32",
+  "queries": 621,
+  "unique_queries": 207,
+  "repetitions": 3,
+  "threads": 1,
+  "model_initialization_seconds": 2.1753284269980213,
+  "p50_seconds": 0.05361649100086652,
+  "p95_seconds": 0.11097592800069833,
+  "peak_process_rss_bytes": 639893504,
+  "resident_bytes_after_queries": 587628544,
+  "model_bytes": 328597332,
+  "scope": "Isolated process, warm model, local verify_evidence call including encoding/head/calibration/hash, result cache disabled. No retrieval/agent/Gemini timing."
+}
