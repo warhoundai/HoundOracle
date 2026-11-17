@@ -1,0 +1,141 @@
+{
+  "source_sha256": "68c4e85e98bc3c233b18ab04faaee19d2b627dccc0ab502944bdaf54711cab94",
+  "model_configuration": {
+    "weights_sha256": "c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70",
+    "assets": {
+      "config.json": "7cdc1841aeafb7a0bad7941e1d451f280136b61f30f6d7e730af85df74d84c53",
+      "tokenizer_config.json": "3dd09fcbf87e99e22a6e9d359ab7ecaceca29dd3774e509df9de6a16ecdaa394",
+      "tokenizer.json": "561fd1b229749e08cc8b9b0a77e467b07ac5549418682e603925753429a8cd3e"
+    },
+    "max_length": 256,
+    "dtype": "float32",
+    "threads": 2,
+    "packing": "passage-exact-proposition-v1"
+  },
+  "accepted_API": {
+    "legacy": {
+      "count": 207,
+      "groups": 207,
+      "accuracy_all_decisions": 0.30917874396135264,
+      "definitive_coverage": 0.0,
+      "correct_definitive_fraction": 0.0,
+      "selective_risk": null,
+      "definitive_count": 0,
+      "correct_definitive_count": 0,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 6.206100078998134e-05,
+        "p95": 0.00010404870117781684,
+        "p99": 0.00045034808099444465
+      },
+      "observed_latency_count": 207,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "general": {
+      "count": 207,
+      "groups": 207,
+      "accuracy_all_decisions": 0.30917874396135264,
+      "definitive_coverage": 0.0,
+      "correct_definitive_fraction": 0.0,
+      "selective_risk": null,
+      "definitive_count": 0,
+      "correct_definitive_count": 0,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.2019947430017055,
+        "p95": 0.3434954836004181,
+        "p99": 0.4231783419389102
+      },
+      "observed_latency_count": 207,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0
+    }
+  },
+  "unqualified_diagnostic_candidates": {
+    "legacy": {
+      "count": 207,
+      "groups": 207,
+      "accuracy_all_decisions": 0.30917874396135264,
+      "definitive_coverage": 0.0,
+      "correct_definitive_fraction": 0.0,
+      "selective_risk": null,
+      "definitive_count": 0,
+      "correct_definitive_count": 0,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 6.206100078998134e-05,
+        "p95": 0.00010404870117781684,
+        "p99": 0.00045034808099444465
+      },
+      "observed_latency_count": 207,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "general": {
+      "count": 207,
+      "groups": 207,
+      "accuracy_all_decisions": 0.8502415458937198,
+      "definitive_coverage": 0.6908212560386473,
+      "correct_definitive_fraction": 0.6086956521739131,
+      "selective_risk": 0.11888111888111885,
+      "definitive_count": 143,
+      "correct_definitive_count": 126,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.2019947430017055,
+        "p95": 0.3434954836004181,
+        "p99": 0.4231783419389102
+      },
+      "observed_latency_count": 207,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0
+    }
+  },
+  "paired_candidate_comparison": {
+    "accuracy_delta": {
+      "mean": 0.5412584541062802,
+      "cluster_bootstrap_95pct_interval": [
+        0.4541062801932368,
+        0.6231884057971014
+      ]
+    },
+    "coverage_delta": {
+      "mean": 0.6919565217391305,
+      "cluster_bootstrap_95pct_interval": [
+        0.6280193236714976,
+        0.7536231884057971
+      ]
+    },
+    "p50_latency_reduction": {
+      "mean": -3270.4269743554128,
+      "cluster_bootstrap_95pct_interval": [
+        -3417.478492063169,
+        -3158.3953145870623
+      ]
+    },
+    "p95_latency_reduction": {
+      "mean": -2957.2837627592403,
+      "cluster_bootstrap_95pct_interval": [
+        -3636.9911338565757,
+        -2145.827791932255
+      ]
+    }
+  },
+  "new_cloud_spend_usd": 0,
+  "qualification95_passed": false,
+  "production_qualified": false,
+  "scope": "All207olddevelopment examples through actual publicAPI; curated supplied passages only. Candidate metrics are unqualified diagnostic measurements, not accepted accuracy, liveweb performance or a fresh95%gate."
+}

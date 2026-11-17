@@ -1,0 +1,10 @@
+{
+  "attempt": 2,
+  "only_change": "Correct supported stopping-criteria API and add pre-acquisition signature checks. Same source/model/questions/prompt/token limits/seed/selection gate.",
+  "code_sha256": {
+    "scripts/local_reasoning_screen.py": "e464393a4074c452359a38121dad82eae799c78b7bd1903348a7dfe1814d1d83",
+    "src/houndoracle/experiments/completion_control.py": "8888cd7c2a3fe289c2118b87e50553bdb7544764e74eea961b30179c8a691572"
+  },
+  "new_cloud_spend_usd": 0,
+  "attempt1_failures_preserved": true
+}

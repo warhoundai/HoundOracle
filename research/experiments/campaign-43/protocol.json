@@ -1,0 +1,16 @@
+{
+  "hypothesis": "Explicit primary-record retrieval plus local logical/date tools eliminates generative interpretation errors on supported software release-index propositions.",
+  "scope": "Node.js release-index facts only. Separate new task, not comparable to VitaminC passage-entailment accuracy; general95% target remains distinct.",
+  "candidate": "ReleaseRecords exact compiler + official index retrieval + SQLite evidence snapshots + deterministic date and Kleene Boolean proofs",
+  "selection": "First96unique versions in SHA256(1993:version) order, no outcome filtering; fixed12question forms cycled. Remaining sorted versions supply pair comparisons. 16fixed absent/unsupported cases remain in denominator.",
+  "ground_truth": "Mechanical reference from frozen official JSON facts and Python calendar arithmetic, not independent human annotations. Up to12hash-selected release dates cross-checked against official announcement heading. Shared publisher is not independent evidence.",
+  "questions": 112,
+  "seed": 1993,
+  "target": "At least95% all112verdicts correct, all missing/failing cases retained; definitive coverage and correct definitive fraction separately reported. No general or production qualification from a scoped synthetic-question benchmark.",
+  "latency": "Complete local SDK verify including live source download for each cold query; new emptySQLite per query. Warm pass reuses finalfrozen snapshot, computes each exact question again. Sequential bounded retrieval, no paid API keys, no cloud account. API/MCP transport overhead separate.",
+  "freshness": "OfficialHTTPS only, pinned DNS and same-origin redirects;10secondrequestlimit2MBmax;1hourTTL; changedsourcehash halts reconciliation instead of silently changinggold.",
+  "training": "Unit fixtures only, no optimization against this evaluation. Realworldtextverification benchmark and locked39cohorts untouched.",
+  "cloud_spending_usd": 0,
+  "promotion": "Experimental source-scoped tool only even if point target passes; probabilistic confidence isnull, generalengine80%calibration gate unchanged. No public release.",
+  "transport_amendment_before_any_outcomes": "Default direct network unavailable in execution sandbox. Explicit fixed-official-source environment proxy transport, redirects disabled, globalDNSchecked; proxy is trusted. No candidate/evaluation predictions existed before amendment."
+}

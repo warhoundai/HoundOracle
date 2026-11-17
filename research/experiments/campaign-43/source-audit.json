@@ -1,0 +1,154 @@
+{
+  "rows": [
+    {
+      "version": "v10.23.1",
+      "url": "https://nodejs.org/en/blog/release/v10.23.1",
+      "page_sha256": "de7c331979bf4a329591797c1a6843f084db07ee692ec82bd45969784d56b3dc",
+      "index_date": "2021-01-04",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2021-01-04",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v17.6.0",
+      "url": "https://nodejs.org/en/blog/release/v17.6.0",
+      "page_sha256": "33312dcbbf9e555b4d51fdb98914b7b0edfc9aa92aee03fe8fa175be357dca66",
+      "index_date": "2022-02-22",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2022-02-23",
+      "last_updated_matches_index": false,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v25.0.0",
+      "url": "https://nodejs.org/en/blog/release/v25.0.0",
+      "page_sha256": "73d98a8c7cae94a806d053eda544604e373058e541f38977ff50d6d4d320619c",
+      "index_date": "2025-10-15",
+      "failure": null,
+      "explicit_release_heading_dates": [
+        "2025-10-15"
+      ],
+      "heading_date_match": true,
+      "last_updated_date": "2025-10-15",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v0.11.9",
+      "url": "https://nodejs.org/en/blog/release/v0.11.9",
+      "page_sha256": "a1a8e3d8a462d5867218c19184fb9457646b1d152ef53ea8f8a400ef23bfa583",
+      "index_date": "2013-11-21",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2013-11-21",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v0.4.11",
+      "url": "https://nodejs.org/en/blog/release/v0.4.11",
+      "page_sha256": "979b270cdbf29fce04946c6fc013e4ebad8b5849a074f8476bc29e00f8c38773",
+      "index_date": "2011-08-26",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2011-08-18",
+      "last_updated_matches_index": false,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v20.7.0",
+      "url": "https://nodejs.org/en/blog/release/v20.7.0",
+      "page_sha256": "b28551076d6ffb4bc97838a7d41127f80d75e8d5f5f7436872bed44ea0fc1d3d",
+      "index_date": "2023-09-18",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2023-09-18",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v0.5.2",
+      "url": "https://nodejs.org/en/blog/release/v0.5.2",
+      "page_sha256": "4adb49b1c8b07dd2c89e18db43affda6030c01cf99685387e2fd61c5fc6cec6e",
+      "index_date": "2011-08-26",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2011-07-22",
+      "last_updated_matches_index": false,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v18.1.0",
+      "url": "https://nodejs.org/en/blog/release/v18.1.0",
+      "page_sha256": "1d0d31e2ab86a9c6abcaa64b2bcbd4b990e3daa3c785963bd0ee26b546d2ab11",
+      "index_date": "2022-05-03",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2022-05-03",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v8.16.2",
+      "url": "https://nodejs.org/en/blog/release/v8.16.2",
+      "page_sha256": "2d55b89604d973de8bdbfe52445a66cb95bd53aa2712c95c6ba00499d6963639",
+      "index_date": "2019-10-09",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2019-10-09",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v0.8.26",
+      "url": "https://nodejs.org/en/blog/release/v0.8.26",
+      "page_sha256": "64cccc3724adc18af293ae7e5e809b352a147626187d9100ca0468d41300bc30",
+      "index_date": "2013-10-18",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2013-10-18",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v0.5.9",
+      "url": "https://nodejs.org/en/blog/release/v0.5.9",
+      "page_sha256": "77f2a9af6ffccee89b8cfe57c9fc798759288f3c49bc04a32bea40abe23af928",
+      "index_date": "2011-10-11",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2011-10-11",
+      "last_updated_matches_index": true,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    },
+    {
+      "version": "v6.13.0",
+      "url": "https://nodejs.org/en/blog/release/v6.13.0",
+      "page_sha256": "e6864d32c3ec39670b73b284b8d544b52c9a2b18a99b7a1263a8f6705a4cdaa7",
+      "index_date": "2018-02-10",
+      "failure": null,
+      "explicit_release_heading_dates": [],
+      "heading_date_match": null,
+      "last_updated_date": "2018-02-13",
+      "last_updated_matches_index": false,
+      "note": "Last Updated is not independently established original-release time; missing heading is unknown, not a contradiction."
+    }
+  ],
+  "label_changes": 0,
+  "excluded_cases": 0,
+  "independent_human_audits": 0,
+  "interpretation": "Initial narrow heading extractor returned no dates on11pages. Its false match values must not be read as11factual contradictions. Source record proof remains conditional onindex; date meanings need care. LastUpdated differs from index in some legacyrecords, preventing unrestricted actual-release-date claims."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "CLOSED_COMPLETED_48_OF_48_JOB_DELETED",
+  "job": "houndoracle-relation42-20261117",
+  "execution": "houndoracle-relation42-20261117-x6xjw",
+  "project": "project-f6e3c8ea-6b96-44a8-afa",
+  "region": "us-central1",
+  "maximum_usd": 4,
+  "maximum_calls": 48,
+  "timeout_seconds": 1200,
+  "private_logs": "/workspace/houndoracle-data/campaign-42/logs.json",
+  "succeeded_count": 1,
+  "job_deleted": true,
+  "verified_remaining_jobs": 0,
+  "provider_failure_slots": 2,
+  "completed_at": "2026-11-17T10:56:58.006831Z"
+}

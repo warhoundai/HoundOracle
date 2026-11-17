@@ -1,0 +1,166 @@
+{
+  "systems": {
+    "cold": {
+      "count": 112,
+      "groups": 112,
+      "accuracy_all_decisions": 1.0,
+      "definitive_coverage": 0.8571428571428571,
+      "correct_definitive_fraction": 0.8571428571428571,
+      "selective_risk": 0.0,
+      "definitive_count": 96,
+      "correct_definitive_count": 96,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.0950703415001044,
+        "p95": 0.14336776664931675,
+        "p99": 0.17049697110040143
+      },
+      "observed_latency_count": 112,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "warm": {
+      "count": 112,
+      "groups": 112,
+      "accuracy_all_decisions": 1.0,
+      "definitive_coverage": 0.8571428571428571,
+      "correct_definitive_fraction": 0.8571428571428571,
+      "selective_risk": 0.0,
+      "definitive_count": 96,
+      "correct_definitive_count": 96,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.01346498950260866,
+        "p95": 0.02109812075068475,
+        "p99": 0.06678622389896191
+      },
+      "observed_latency_count": 112,
+      "missing_latency_count": 0,
+      "cache_hits": 104,
+      "failed_queries": 0
+    }
+  },
+  "target95_scoped_point_met": true,
+  "independent_general95_qualified": false,
+  "production_qualified": false,
+  "new_cloud_spend_usd": 0,
+  "source_snapshot_sha256": "cb36ee534b08ef30f63c0c8e1bff66ec143fb2ceedb26b331b58309165a4451d",
+  "source_crosschecks": [
+    {
+      "version": "v10.23.1",
+      "url": "https://nodejs.org/en/blog/release/v10.23.1",
+      "page_sha256": "de7c331979bf4a329591797c1a6843f084db07ee692ec82bd45969784d56b3dc",
+      "dates": [],
+      "index_date": "2021-01-04",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v17.6.0",
+      "url": "https://nodejs.org/en/blog/release/v17.6.0",
+      "page_sha256": "33312dcbbf9e555b4d51fdb98914b7b0edfc9aa92aee03fe8fa175be357dca66",
+      "dates": [],
+      "index_date": "2022-02-22",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v25.0.0",
+      "url": "https://nodejs.org/en/blog/release/v25.0.0",
+      "page_sha256": "73d98a8c7cae94a806d053eda544604e373058e541f38977ff50d6d4d320619c",
+      "dates": [
+        "2025-10-15"
+      ],
+      "index_date": "2025-10-15",
+      "match": true,
+      "failure": null
+    },
+    {
+      "version": "v0.11.9",
+      "url": "https://nodejs.org/en/blog/release/v0.11.9",
+      "page_sha256": "a1a8e3d8a462d5867218c19184fb9457646b1d152ef53ea8f8a400ef23bfa583",
+      "dates": [],
+      "index_date": "2013-11-21",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v0.4.11",
+      "url": "https://nodejs.org/en/blog/release/v0.4.11",
+      "page_sha256": "979b270cdbf29fce04946c6fc013e4ebad8b5849a074f8476bc29e00f8c38773",
+      "dates": [],
+      "index_date": "2011-08-26",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v20.7.0",
+      "url": "https://nodejs.org/en/blog/release/v20.7.0",
+      "page_sha256": "b28551076d6ffb4bc97838a7d41127f80d75e8d5f5f7436872bed44ea0fc1d3d",
+      "dates": [],
+      "index_date": "2023-09-18",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v0.5.2",
+      "url": "https://nodejs.org/en/blog/release/v0.5.2",
+      "page_sha256": "4adb49b1c8b07dd2c89e18db43affda6030c01cf99685387e2fd61c5fc6cec6e",
+      "dates": [],
+      "index_date": "2011-08-26",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v18.1.0",
+      "url": "https://nodejs.org/en/blog/release/v18.1.0",
+      "page_sha256": "1d0d31e2ab86a9c6abcaa64b2bcbd4b990e3daa3c785963bd0ee26b546d2ab11",
+      "dates": [],
+      "index_date": "2022-05-03",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v8.16.2",
+      "url": "https://nodejs.org/en/blog/release/v8.16.2",
+      "page_sha256": "2d55b89604d973de8bdbfe52445a66cb95bd53aa2712c95c6ba00499d6963639",
+      "dates": [],
+      "index_date": "2019-10-09",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v0.8.26",
+      "url": "https://nodejs.org/en/blog/release/v0.8.26",
+      "page_sha256": "64cccc3724adc18af293ae7e5e809b352a147626187d9100ca0468d41300bc30",
+      "dates": [],
+      "index_date": "2013-10-18",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v0.5.9",
+      "url": "https://nodejs.org/en/blog/release/v0.5.9",
+      "page_sha256": "77f2a9af6ffccee89b8cfe57c9fc798759288f3c49bc04a32bea40abe23af928",
+      "dates": [],
+      "index_date": "2011-10-11",
+      "match": false,
+      "failure": null
+    },
+    {
+      "version": "v6.13.0",
+      "url": "https://nodejs.org/en/blog/release/v6.13.0",
+      "page_sha256": "e6864d32c3ec39670b73b284b8d544b52c9a2b18a99b7a1263a8f6705a4cdaa7",
+      "dates": [],
+      "index_date": "2018-02-10",
+      "match": false,
+      "failure": null
+    }
+  ],
+  "limits": "Mechanically generated112questions from one official project index; shared facts/questions correlated. Source crosschecks share publisher. No binomial general-world guarantee, generative benchmark replacement, hidden abstentions or calibrated probability. All cold fetch and failed cases retained."
+}

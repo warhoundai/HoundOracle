@@ -1,0 +1,15 @@
+{
+  "status": "PENDING_INDEPENDENT_REVIEW",
+  "selection": "All4candidate errors among originalNOlabels, not a representative label-quality sample",
+  "blinded_packet_sha256": "036f081c3f21d5de412f1fbc7cd2337794a29530f91cf98f6c74b1607934529e",
+  "ids": [
+    "vitaminc:5eafed7ec9e77c0009ce0a05_2",
+    "vitaminc:5ec7d50ec9e77c0008442eae_3",
+    "vitaminc:5ed4de09c9e77c000848a971_2",
+    "vitaminc:5ed7acfec9e77c00084a5761_2"
+  ],
+  "initial_engineering_observations": "Potential scope/annotation issues: a singular guest appearance need not exclude other appearances; supplied description of explosive devices appears to support one claim labeledNO. Date mismatch and implicit exhaustiveness also require review. These are hypotheses, not corrected labels.",
+  "labels_changed": 0,
+  "evaluation_rows_removed": 0,
+  "independently_reviewed_count": 0
+}

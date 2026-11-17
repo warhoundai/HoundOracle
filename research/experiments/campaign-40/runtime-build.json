@@ -1,0 +1,13 @@
+{
+  "wheel_attempt": "Official0.3.19Linuxwheel failed ABI load: libc.musl-x86_64.so.1 absent. No model inference ran.",
+  "source_attempt1": "DefaultCC=clang did not exist; fixed explicitCC=/usr/bin/gcc CXX=/usr/bin/g++. No model inference ran.",
+  "source_attempt2": "Built0.3.19locally with GGML_NATIVE=ON, CUDA=OFF, BLAS=OFF,2buildthreads; native import passed.",
+  "native_libllama_sha256": "cdc6d36c5edcd69285698a00a9501f16bb72c3aa5b0a78731eb08517accba3b3",
+  "files_sha256": {
+    "scripts/local_reasoning_screen.py": "0a6e3923b477bbdd2fb18f2131482aa1ac4b863c4884841045dcb6306fcd0263",
+    "scripts/run_reasoning_with_cleanup.py": "0bbbb9e4f3e321d6cb3d9513fd9185405b19fcb6330976d828eeb31c5e55e220",
+    "src/houndoracle/experiments/draft_verifier.py": "b4e319d745b50f1abf47cb119a6a7ff81112ecd39fe4d33edea25db075d07aa8"
+  },
+  "model_downloaded_to_ram_not_repo": true,
+  "production_qualified": false
+}

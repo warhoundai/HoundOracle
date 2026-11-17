@@ -1,0 +1,15 @@
+{
+  "hypothesis": "A second generative formatter can change explicit first-pass semantic relations. Preserve unambiguous draft conclusions with a deterministic three-way mapping; missing is not refutation.",
+  "design_examples": [
+    "vitaminc:5ed4de0ac9e77c000848aed1_3",
+    "vitaminc:5ec7d50dc9e77c00084423ad_1",
+    "vitaminc:5ece9463c9e77c00084672e4_2"
+  ],
+  "design_status": "Post-hoc development fix after inspecting3wrong cases; not independent validation or a new model result.",
+  "policy": "Decode only explicit relation JSON or standalone final answer after closing think tag. Reject conflicting labels, unknown explicit labels, wrong proposition echoes, and multiple-source binding. Fall back to original formatter only when no explicit draft conclusion exists.",
+  "source_scope": "One permitted passage only; index0binding does not prove entailment or provenance. No draft added as evidence.",
+  "labels": "Unchanged original human labels, no filtering or case-specific rules",
+  "gate": "Development accuracy gain>=.02 over original reasoning-first, correct-definitive fraction nonregression, coverage>=.35. No public promotion even if passed.",
+  "resources": "Cached model drafts;0new model calls or cloud spend. Any foregone formatter latency is counterfactual, not a measured new workflow.",
+  "production_qualified": false
+}

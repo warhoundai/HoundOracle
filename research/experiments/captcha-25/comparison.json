@@ -1,0 +1,23 @@
+{
+  "case_projection_effect_on_same_development_images": {
+    "before": 15,
+    "after": 25,
+    "count": 40,
+    "difference": 0.25,
+    "paired_percentile_bootstrap_95_interval": [
+      0.125,
+      0.4
+    ],
+    "scope": "Descriptive resampling of synthetic development cases, not independent real-world generalization or Google acceptance."
+  },
+  "selected_default": "tesseract",
+  "selection_reason": "26/40 exact versus25/40 for adjusted ddddocr; simpler and lower measured cold process latency. Difference is not evidence of general superiority.",
+  "versions": {
+    "tesseract": "tesseract 5.5.0",
+    "ddddocr": "1.6.1",
+    "pillow": "13.0.0",
+    "onnxruntime": "1.32.0",
+    "numpy": "2.5.4",
+    "opencv-python-headless": "5.0.0.93"
+  }
+}

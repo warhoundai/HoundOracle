@@ -1,0 +1,46 @@
+{
+  "cold": {
+    "count": 96,
+    "groups": 96,
+    "accuracy_all_decisions": 1.0,
+    "definitive_coverage": 1.0,
+    "correct_definitive_fraction": 1.0,
+    "selective_risk": 0.0,
+    "definitive_count": 96,
+    "correct_definitive_count": 96,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.0950703415001044,
+      "p95": 0.14304445524976472,
+      "p99": 0.17273844710052796
+    },
+    "observed_latency_count": 96,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "warm": {
+    "count": 96,
+    "groups": 96,
+    "accuracy_all_decisions": 1.0,
+    "definitive_coverage": 1.0,
+    "correct_definitive_fraction": 1.0,
+    "selective_risk": 0.0,
+    "definitive_count": 96,
+    "correct_definitive_count": 96,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.013861344499673578,
+      "p95": 0.021721655499277404,
+      "p99": 0.06853192149901584
+    },
+    "observed_latency_count": 96,
+    "missing_latency_count": 0,
+    "cache_hits": 96,
+    "failed_queries": 0
+  }
+}

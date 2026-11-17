@@ -1,0 +1,19 @@
+{
+  "tests": {
+    "python3.12": 184,
+    "python3.11": 184
+  },
+  "lint": "passed",
+  "wheel_build": "passed",
+  "compose_configuration": "passed",
+  "native_cli_tesseract_fixture": "7K4P9",
+  "native_cli_ddddocr_uppercase_fixture": "7K4P9",
+  "oversized_aspect_ratio_fixture": "INVALID_IMAGE",
+  "new_container_image_built": false,
+  "google_interactive_solver_supported": false,
+  "source_hashes_at_final_validation": {
+    "src/houndoracle/captcha.py": "05f05850b23fc82459987561fcd0d6574b0d3d1538954970d70623c8393ee7d7",
+    "src/houndoracle/captcha_worker.py": "4bb377f1196de500370c94677e7e5bb97cfaec31c82321dc161462e88babfa4a",
+    "benchmarks/captcha_text.py": "b71dd2dea27d440734bc1c4c477a3ae560cb48889cf5d33ea71edf46971191d9"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "hypothesis": "The failed generative screens required immediate JSON from nonthinking models. Test a pretrained reasoning model with an analysis pass before structured verdict against the SAME reasoning model producing immediate JSON.",
+  "model": {
+    "repo": "unsloth/DeepSeek-R1-Distill-Qwen-7B-GGUF",
+    "revision": "097680e4eed7a83b3df6b0bb5e5134099cadf1b0",
+    "file": "DeepSeek-R1-Distill-Qwen-7B-Q4_K_M.gguf",
+    "bytes": 4683073248,
+    "sha256": "78272d8d32084548bd450394a560eb2d70de8232ab96a725769b1f9171235c1c",
+    "quant_card_license": "Apache2",
+    "base": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "base_revision": "916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "base_license": "MIT; Qwen2.5upstreamApache2"
+  },
+  "runtime": "llama-cpp-python0.3.19nativeGCCCPUbuild; source build repairs an unusable musl binary wheel. No model result from installation failures.",
+  "configuration": {
+    "threads": 2,
+    "context": 4096,
+    "batch": 16,
+    "analysis_tokens": 1024,
+    "analysis_temperature": 0.6,
+    "analysis_top_p": 0.95,
+    "verdict_tokens": 128,
+    "verdict_temperature": 0,
+    "seed": 1989,
+    "gpu_layers": 0
+  },
+  "provider_guidance": "Official model card recommends temperature.5-.7and user-only prompts. Both arms use user-only instructions.",
+  "dataset": "12balanced reused development cases (4per label) selected by IDhash1989, not outcomes;24planned slots. Snapshot URLs pinned, same original claims/text/labels.",
+  "gate": "All24slots complete, reasoning-first>=2more correct than direct, no loss of correct-definitive fraction, definitive coverage>=.35. Development only, never99qualification from12cases.",
+  "accuracy_priority": "Do not require retaining incorrect definitive assertions merely to preserve raw coverage; preserve useful correct answers and enforce coverage floor. All-decision accuracy penalizes wrong abstentions. Historical failed screens unchanged.",
+  "resources": {
+    "new_cloud_spend_usd": 0,
+    "memory_limit_bytes": 8589934592,
+    "model_file": "Temporary task-owned /dev/shm file, hash-verified, deleted on exit",
+    "process_timeout_seconds": 2400,
+    "request_window_seconds": 2100,
+    "per_analysis_seconds": 180,
+    "per_final_seconds": 45
+  },
+  "network": "Public model acquisition only; Python network connects disabled before inference. No private agent question uploaded.",
+  "privacy": "Drafts stored privately, only hashes/usage in public observations; drafts never indexed as evidence.",
+  "inputs_sha256": "78cae9aa047545a7f946aeaa8584bc9e5653059afd309cec7207c180369eae35",
+  "production_qualified": false
+}

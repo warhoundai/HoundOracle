@@ -1,0 +1,14 @@
+{
+  "status": "CLOSED",
+  "session_id": 69640,
+  "directory": "/dev/shm/houndoracle-reasoning40",
+  "process_timeout_seconds": 2400,
+  "new_cloud_spend_usd": 0,
+  "outputs": "/workspace/houndoracle-data/campaign-40/{progress,result,exit}.json",
+  "warning": "Never end with the RAM checkpoint/worker still active; wrapper cleans only its owned model file.",
+  "model_slots": 24,
+  "questions": 12,
+  "attempt": 3,
+  "owned_ram_directory_removed": true,
+  "returncode": 0
+}

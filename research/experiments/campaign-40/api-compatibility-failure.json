@@ -1,0 +1,12 @@
+{
+  "attempt": 1,
+  "planned_slots": 24,
+  "api_invocation_attempts": 24,
+  "native_completions_started": 0,
+  "cause": "Llama.create_chat_completion0.3.19does not accept stopping_criteria; Llama.create_completion does. All invocations failed before native decoding.",
+  "repair": "Scoped chat formatter wrapper injects stopping at the supported completion API and restores it afterward; signature preflight before downloading weights.",
+  "input_model_prompt_and_token_budgets_unchanged": true,
+  "accuracy_result": null,
+  "attempt1_ram_cleanup_verified": true,
+  "new_cloud_spend_usd": 0
+}

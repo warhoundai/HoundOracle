@@ -1,0 +1,8 @@
+{
+  "failure": "ConnectionRefusedError from default direct pinned transport; environment needs operator-configured proxy",
+  "model_queries": 0,
+  "evaluation_rows_scored": 0,
+  "dataset_generated": false,
+  "repair": "Use explicit official-source-only environment proxy transport. No arbitrary URLs, no redirects, globalDNS validation, fixed10s/2MB limits. No changes to generic fetch security.",
+  "initial_test_command_error": "Nonexistent test_api.py requested; no test result claimed."
+}

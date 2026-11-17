@@ -1,0 +1,25 @@
+{
+  "repository": "https://github.com/sml2h3/ddddocr",
+  "package_version": "1.6.1",
+  "declared_license": "MIT",
+  "wheel_sha256": "c7c70f4ae2d0335440ae8b272eea48c9f6888ecef46785fe2311f0c97a133935",
+  "selected_model": "ddddocr/common_old.onnx",
+  "models": [
+    {
+      "path": "ddddocr/common.onnx",
+      "bytes": 54088400,
+      "sha256": "33b5cd351ee94e73a6bf8fa18c415ed8b819b3ffd342e267c30d8ad8334e34e8"
+    },
+    {
+      "path": "ddddocr/common_det.onnx",
+      "bytes": 20127694,
+      "sha256": "6faa8ea85a8c1a634e5050c4a138fca10f30194e0d7abbe9ade1fcd423af6ed6"
+    },
+    {
+      "path": "ddddocr/common_old.onnx",
+      "bytes": 13606051,
+      "sha256": "b8f2ad9cbc1f2e3922a6cb9459e30824e7e2467f3fb4fd61420640e34ea0bf68"
+    }
+  ],
+  "licensing_scope": "Repository and distribution declare MIT, including packaged assets; no separate training-data provenance established. No model weights vendored in HoundOracle."
+}

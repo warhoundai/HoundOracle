@@ -1,0 +1,17 @@
+{
+  "status": "COMPLETED_WORKER_TERMINATED_IAM_PROFILE_SG_DELETED",
+  "region": "us-east-1",
+  "bucket": "houndoracle-research-751446514671-20261116",
+  "prefix": "general46",
+  "role": "houndoracle-general46-20261117",
+  "profile": "houndoracle-general46-20261117",
+  "instance_id": "i-0cb22a7bcc397d7f0",
+  "security_group": "sg-0077604dc7d54cc8f",
+  "maximum_reservation_usd": 12,
+  "watchdog_seconds": 3600,
+  "userdata_sha256": "b03620c1d1f17e465735b9e322592698ae6d9dd5fba6a754ea393f8faae02109",
+  "worker_terminated": true,
+  "role_deleted": true,
+  "profile_deleted": true,
+  "security_group_deleted": true
+}

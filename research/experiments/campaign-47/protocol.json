@@ -1,0 +1,15 @@
+{
+ "hypothesis":"Preserving neural uncertainty permits defensible full-pipeline research calibration; calibration alone must not be presented as improved underlying factual accuracy.",
+ "frozen_model":"Stable c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70, no46adapter",
+ "frozen_policy":"GeneralVerifier v3, lexical round-robin evidence selection, maxpooled uncertainty, offline supplied-source population; max_seconds120,max_requests4,allow_networkfalse",
+ "data":"New1000case calibration candidate partition, first500fit remaining500risk by existing frozen order. Source component disjointness required. Independent source/citation audits pending; research only.",
+ "methods":["temperature","logistic","isotonic"],
+ "primary_method_predeclared":"logistic",
+ "threshold":0.8,
+ "risk_alpha_each":0.016666666666666666,
+ "minimum_selected_groups":30,
+ "validation_guard":"Only a passing primary logistic80%research risk certificate may trigger scoring of separate500validation cases. No threshold/method retuning after risk. No locked data opened.",
+ "measurements":["Brier","10binECE","reliabilitydiagramdata","riskcoverage","heldoutselectiveprecision","coverage","allcaseaccuracy"],
+ "acceptance":"Research calibration diagnostics only. GeneralCalibration qualification_status=research cannot authorize API YES/NO. Both1000case95%gates remain blocked until audits and97%validation pass.",
+ "new_cloud_spend_usd":0
+}

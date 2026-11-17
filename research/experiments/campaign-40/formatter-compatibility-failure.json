@@ -1,0 +1,10 @@
+{
+  "attempt": 2,
+  "api_invocation_attempts": 24,
+  "native_completions_started": 0,
+  "cause": "Our wrapper rejected the formatter stopping_criteria key even when None; preserve native/EOS rule and compose it with the deadline.",
+  "repair": "Compose callable rules with OR; handle None.6unit tests and the actual library formatter path pass before acquisition. Add a loaded-model synthetic readiness probe before dataset questions.",
+  "model_questions_prompts_and_selection_gate_unchanged": true,
+  "accuracy_result": null,
+  "attempt2_ram_cleanup_verified": true
+}

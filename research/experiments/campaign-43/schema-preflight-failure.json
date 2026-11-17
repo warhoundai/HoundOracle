@@ -1,0 +1,1 @@
+{"failure":"Strict initial stable-only version schema rejected official alpha release entries","candidate_predictions":0,"evaluation_rows_removed":0,"repair":"Validate bounded prerelease suffixes and preserve exact version identity. Added non-alias regression test. Frozen source and112questions preserved; no gold changes."}

@@ -1,0 +1,7 @@
+{
+  "error": "Second-run exporter used hard-coded campaign44metadata directory and replaced initial per-case traces. Aggregate screen44remains intact.",
+  "repair": "Move actual second-run records to45; dynamic exclusive output paths; reproduce44from hash-verified archived source, explicitly distinguish reconstructed outcomes/new timings from original lost timings.",
+  "labels_changed": 0,
+  "rows_removed": 0,
+  "qualification_claim": false
+}

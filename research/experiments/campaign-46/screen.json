@@ -1,0 +1,89 @@
+{
+  "systems_unqualified_candidates": {
+    "baseline": {
+      "count": 500,
+      "groups": 500,
+      "accuracy_all_decisions": 0.788,
+      "definitive_coverage": 0.75,
+      "correct_definitive_fraction": 0.636,
+      "selective_risk": 0.15200000000000002,
+      "definitive_count": 375,
+      "correct_definitive_count": 318,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.08689377350000171,
+        "p95": 0.10600851325000064,
+        "p99": 0.1174725435299984
+      },
+      "observed_latency_count": 500,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0
+    },
+    "candidate": {
+      "count": 500,
+      "groups": 500,
+      "accuracy_all_decisions": 0.778,
+      "definitive_coverage": 0.718,
+      "correct_definitive_fraction": 0.618,
+      "selective_risk": 0.1392757660167131,
+      "definitive_count": 359,
+      "correct_definitive_count": 309,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 0.08727090499996848,
+        "p95": 0.10555737510007929,
+        "p99": 0.11857565407001171
+      },
+      "observed_latency_count": 500,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0
+    }
+  },
+  "paired": {
+    "accuracy_delta": {
+      "mean": -0.010054000000000002,
+      "cluster_bootstrap_95pct_interval": [
+        -0.02400000000000002,
+        0.0040000000000000036
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.03211800000000002,
+      "cluster_bootstrap_95pct_interval": [
+        -0.04800000000000004,
+        -0.018000000000000016
+      ]
+    },
+    "p50_latency_reduction": {
+      "mean": -0.0076406368980604,
+      "cluster_bootstrap_95pct_interval": [
+        -0.012885354431161945,
+        -0.0010104089503886757
+      ]
+    },
+    "p95_latency_reduction": {
+      "mean": 0.001656715317246999,
+      "cluster_bootstrap_95pct_interval": [
+        -0.005771001827948874,
+        0.012025107250562654
+      ]
+    }
+  },
+  "training_steps": 512,
+  "training_complete": true,
+  "training_seconds": 407.610655482,
+  "total_application_seconds": 501.570167912,
+  "adapter_sha256": "535a088c995972d39ff62a0aa22881fe57d95a626fb79c3975a112a019d85e58",
+  "decision": "reject",
+  "screen_passed": false,
+  "actual_invoice_usd": null,
+  "reservation_usd": 12,
+  "production_qualified": false,
+  "scope": "New500case development, original human annotations but independent source/citation audits pending. No97%or95%acceptance gate passed. Baseline-before-training/candidate-after-training timings are not randomized paired agent latency comparisons."
+}

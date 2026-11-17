@@ -1,0 +1,6 @@
+{
+  "snapshot_sha256": "cb36ee534b08ef30f63c0c8e1bff66ec143fb2ceedb26b331b58309165a4451d",
+  "cases_sha256": "9e502f5b0750999f565a4637f8937ce2c01cb8ed3cb012491a4b3af4ba4e9cd2",
+  "case_count": 112,
+  "reference": "Mechanically derived records, no human gold or independent generalization claim"
+}

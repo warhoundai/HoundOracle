@@ -1,0 +1,14 @@
+{
+  "v1_reproduced": {
+    "count": 207,
+    "correct_candidates": 176,
+    "distinct_definitive_scores": 2,
+    "uncalibrated_correctness_brier": 0.15073815073815075
+  },
+  "v2": {
+    "count": 207,
+    "correct_candidates": 176,
+    "distinct_definitive_scores": 143,
+    "uncalibrated_correctness_brier": 0.10255026815305512
+  }
+}

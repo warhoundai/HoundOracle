@@ -1,0 +1,3456 @@
+{
+  "baseline_raw": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.8502415458937198,
+    "definitive_coverage": 0.7101449275362319,
+    "correct_definitive_fraction": 0.6135265700483091,
+    "selective_risk": 0.13605442176870752,
+    "definitive_count": 147,
+    "correct_definitive_count": 127,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 207,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "pilot_raw": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.8647342995169082,
+    "definitive_coverage": 0.7053140096618358,
+    "correct_definitive_fraction": 0.6231884057971014,
+    "selective_risk": 0.11643835616438358,
+    "definitive_count": 146,
+    "correct_definitive_count": 129,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 207,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "candidate_raw": {
+    "count": 207,
+    "groups": 207,
+    "accuracy_all_decisions": 0.8405797101449275,
+    "definitive_coverage": 0.6811594202898551,
+    "correct_definitive_fraction": 0.5942028985507246,
+    "selective_risk": 0.12765957446808507,
+    "definitive_count": 141,
+    "correct_definitive_count": 123,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 207,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "paired_vs_base": {
+    "accuracy_delta": {
+      "mean": -0.009589371980676328,
+      "cluster_bootstrap_95pct_interval": [
+        -0.0434782608695653,
+        0.024154589371980673
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.029048309178743962,
+      "cluster_bootstrap_95pct_interval": [
+        -0.0628019323671497,
+        0.0
+      ]
+    },
+    "p50_latency_reduction": null,
+    "p95_latency_reduction": null
+  },
+  "paired_vs_pilot": {
+    "accuracy_delta": {
+      "mean": -0.024031400966183572,
+      "cluster_bootstrap_95pct_interval": [
+        -0.05797101449275366,
+        0.009661835748792202
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.024364734299516907,
+      "cluster_bootstrap_95pct_interval": [
+        -0.05797101449275366,
+        0.004830917874396157
+      ]
+    },
+    "p50_latency_reduction": null,
+    "p95_latency_reduction": null
+  },
+  "training": {
+    "arm": "ce-continuation",
+    "completed": true,
+    "steps": 384,
+    "training_seconds": 566.2110495439999,
+    "trainable_parameters": 100611,
+    "pair_weight": 0,
+    "initial_parity_max_error": 0.0,
+    "adapter_update_l2": 1.9023759365081787,
+    "checkpoint_sha256": "7e2ba3d387e477b9759fda14eb4635c1b6d9f44d2e6a4950accd03fed0f8933f",
+    "targets": [
+      "deberta.encoder.layer.8.attention.self.query_proj",
+      "deberta.encoder.layer.8.attention.self.value_proj",
+      "deberta.encoder.layer.9.attention.self.query_proj",
+      "deberta.encoder.layer.9.attention.self.value_proj",
+      "deberta.encoder.layer.10.attention.self.query_proj",
+      "deberta.encoder.layer.10.attention.self.value_proj",
+      "deberta.encoder.layer.11.attention.self.query_proj",
+      "deberta.encoder.layer.11.attention.self.value_proj"
+    ],
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "transformers": "5.23.0",
+      "safetensors": "0.8.0",
+      "numpy": "2.5.4"
+    },
+    "base_checkpoint_sha256": "c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70",
+    "initial_adapter_sha256": "ed4d27578dcfb2155a4ecbf3c123c15f6789bf81d413227de83c785f9d532ffa",
+    "production_qualified": false,
+    "new_cloud_cost_usd": 0
+  },
+  "screen_passed": false,
+  "decision": "reject-before-new-held-out-data",
+  "records": [
+    {
+      "id": "vitaminc:5ec55989c9e77c000842bb0f_2",
+      "group_id": "694017ea1204b248285ef6eecbf0333d164c3b25de6df29e108ed8f1858e64e4",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9708779454231262,
+      "logits": [
+        2.7240777015686035,
+        -1.1574832201004028,
+        -1.9454344511032104
+      ],
+      "truncated": false,
+      "token_count": 50,
+      "latency_seconds": 0.1912569789999452,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9461c9e77c0008465e36_1",
+      "group_id": "ef90698fdd9950bf670ae7d19fc2354807a1d077bd1c0796604f9996ed52353d",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9288495779037476,
+      "logits": [
+        -3.27724552154541,
+        2.5235438346862793,
+        -0.08590159565210342
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.2202306070000759,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29888c9e77c0008d935dc_2",
+      "group_id": "1874b6f3db90cf74164e622d6aecdaf59680504a0f34d7cbcf4bb9b4f5304678",
+      "expected": "MAYBE",
+      "candidate": "YES",
+      "raw_score": 0.9858719706535339,
+      "logits": [
+        -2.8801302909851074,
+        3.1512842178344727,
+        -1.2775436639785767
+      ],
+      "truncated": false,
+      "token_count": 44,
+      "latency_seconds": 0.18631079700003284,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55990c9e77c000842d3b7_3",
+      "group_id": "3c69a7f77fac3161a4f7df3c1ddd3c8d35ab3642b89c735160bd7d5066e83992",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9895647764205933,
+      "logits": [
+        -2.83077335357666,
+        3.2712440490722656,
+        -1.5194249153137207
+      ],
+      "truncated": false,
+      "token_count": 129,
+      "latency_seconds": 0.3540441049999572,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32ac9e77c0009294db1_3",
+      "group_id": "a7f454d63dfcf33d0f2a44dd8f7c3a260bd69af7ef58ab63de73dd3c5a9e642a",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.9107135534286499,
+      "logits": [
+        -0.09259013831615448,
+        -2.2352569103240967,
+        2.340740442276001
+      ],
+      "truncated": false,
+      "token_count": 49,
+      "latency_seconds": 0.17948834300000271,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29887c9e77c0008d92e4c_1",
+      "group_id": "e842500ad57db4c357f22f0827c0c94ba622b4cc13457eaa9b2fe7edc878db6f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9843102693557739,
+      "logits": [
+        -2.9275128841400146,
+        3.105438232421875,
+        -1.1965570449829102
+      ],
+      "truncated": false,
+      "token_count": 47,
+      "latency_seconds": 0.1823917250001159,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50fc9e77c00084432c3_4",
+      "group_id": "ac7bbf9c39338cc3e954b5248bacc8210ecfedea975369304867d169ef6529de",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9918056726455688,
+      "logits": [
+        -2.65019154548645,
+        3.381361484527588,
+        -1.7581969499588013
+      ],
+      "truncated": false,
+      "token_count": 35,
+      "latency_seconds": 0.17042406400014443,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f2dc9e77c0008407787_2",
+      "group_id": "6472c4085b74132b2707b12d13618c98fc48205fa8ec36aeffe6016593bede72",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9986718893051147,
+      "logits": [
+        -3.4891750812530518,
+        -1.8345013856887817,
+        4.96307897567749
+      ],
+      "truncated": false,
+      "token_count": 60,
+      "latency_seconds": 0.197919426999988,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29889c9e77c0008d94438_2",
+      "group_id": "6a53965932d5c650be2f5e042dcc68f640c07e88da79fc521b1037471f518b9a",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9441011548042297,
+      "logits": [
+        -2.3947865962982178,
+        2.3409106731414795,
+        -0.6462138891220093
+      ],
+      "truncated": false,
+      "token_count": 26,
+      "latency_seconds": 0.24991731399995842,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f30c9e77c00084087a5_2",
+      "group_id": "31d4b29c8283f59714e43f7f7bb0027b670c3a639a68bcb8ff4d91bcc551e8eb",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9674888253211975,
+      "logits": [
+        2.726285219192505,
+        -0.8507438898086548,
+        -2.4506940841674805
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.20685992199992143,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed7ec9e77c0009ce080e_4",
+      "group_id": "f1bf5409da1d1840decfd79297010f89f5502b1109ab0a98770b2c7c0671381f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9803023338317871,
+      "logits": [
+        -1.8039140701293945,
+        2.818208932876587,
+        -1.7611440420150757
+      ],
+      "truncated": false,
+      "token_count": 59,
+      "latency_seconds": 0.27929015700010495,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed81c9e77c0009ce1af8_4",
+      "group_id": "0618acaa1210a79a616585829cc926976541b7da95748af0ef033733ee367978",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9859086871147156,
+      "logits": [
+        -2.539400100708008,
+        3.0707650184631348,
+        -1.4731000661849976
+      ],
+      "truncated": false,
+      "token_count": 48,
+      "latency_seconds": 0.22269427899982475,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c0008467267_1",
+      "group_id": "27509dac78e4219fb475f0d802cd05f31a69cc05063e5044bb0b2514d0bdfac8",
+      "expected": "YES",
+      "candidate": "MAYBE",
+      "raw_score": 0.7535571455955505,
+      "logits": [
+        -4.523198127746582,
+        1.2598499059677124,
+        2.3805992603302
+      ],
+      "truncated": false,
+      "token_count": 49,
+      "latency_seconds": 0.22112456500008193,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c0009295163_3",
+      "group_id": "20721d077681f04ee2d085fece2a0b977f3c4e665dcd80f8f61a21cfad878fdd",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9882739782333374,
+      "logits": [
+        3.3370168209075928,
+        -1.6032718420028687,
+        -2.0204906463623047
+      ],
+      "truncated": false,
+      "token_count": 46,
+      "latency_seconds": 0.18265772399990965,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de03c9e77c00084893b1_1",
+      "group_id": "ee2c60eef13bd943125a2eea29012af6ac493c9845855029172a4dc5a3b57a76",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.907424807548523,
+      "logits": [
+        -1.6604056358337402,
+        -0.6938040256500244,
+        1.911139726638794
+      ],
+      "truncated": false,
+      "token_count": 52,
+      "latency_seconds": 0.22366406300011477,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7acffc9e77c00084a5918_1",
+      "group_id": "a69169548b105cd77dac0b23b377de2cba22fb3ba1a7aa856775bc40e76ae5d1",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9885850548744202,
+      "logits": [
+        -2.2853875160217285,
+        3.1283767223358154,
+        -1.8204330205917358
+      ],
+      "truncated": false,
+      "token_count": 128,
+      "latency_seconds": 0.29503321299989693,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a6af5_1",
+      "group_id": "9272d5f7045509e3dfbe075d5967688cb8f5db5f1d023f29e102f492e45a512e",
+      "expected": "MAYBE",
+      "candidate": "YES",
+      "raw_score": 0.8467096090316772,
+      "logits": [
+        -1.5310226678848267,
+        1.5569536685943604,
+        -0.4422115385532379
+      ],
+      "truncated": false,
+      "token_count": 48,
+      "latency_seconds": 0.1846695770000224,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c0008467192_2",
+      "group_id": "100dca6719da7c04c32fe5252172541ead2dd01830f48be9891c4c721a092080",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.7068274617195129,
+      "logits": [
+        -0.7805790305137634,
+        -0.3773922324180603,
+        1.0143706798553467
+      ],
+      "truncated": false,
+      "token_count": 58,
+      "latency_seconds": 0.24377013599996644,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c0008441e96_1",
+      "group_id": "17025f44938fcc3097f8c7c30cdb960c1b92add2ce9510987112796293c4a53b",
+      "expected": "YES",
+      "candidate": "NO",
+      "raw_score": 0.8954569101333618,
+      "logits": [
+        1.9156532287597656,
+        -1.2396395206451416,
+        -0.6863835453987122
+      ],
+      "truncated": false,
+      "token_count": 81,
+      "latency_seconds": 0.26435012900014954,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ede072fc9e77c00084d2b4b_1",
+      "group_id": "f6c92a5e913d3d34aad3eb87e72ae88da295215f9d507de378c9445d445d1ea0",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9869261980056763,
+      "logits": [
+        -2.4845311641693115,
+        3.0759716033935547,
+        -1.5910630226135254
+      ],
+      "truncated": false,
+      "token_count": 71,
+      "latency_seconds": 0.2321492120001949,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284ffc9e77c0008417e3d_4",
+      "group_id": "3bb8db451fa2422797952d791e40eb8dff340d9a26359d051ef292c012671957",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.988835871219635,
+      "logits": [
+        -2.9048078060150146,
+        3.261002779006958,
+        -1.4286171197891235
+      ],
+      "truncated": false,
+      "token_count": 46,
+      "latency_seconds": 0.18632337100007135,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c0009295171_2",
+      "group_id": "8a88165a4b74afdfad8d117686ebf63592e91fe104c2b32093a02d49e84238b4",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.866458535194397,
+      "logits": [
+        -0.20935869216918945,
+        -1.7570652961730957,
+        1.8535219430923462
+      ],
+      "truncated": false,
+      "token_count": 50,
+      "latency_seconds": 0.18431989999999132,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de05c9e77c0008489b1b_1",
+      "group_id": "3bf2e679b92d030529a97ec7d63f4d35d2b9456c323c393f3529ed46cf013030",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9981726408004761,
+      "logits": [
+        -1.971591591835022,
+        -2.7957985401153564,
+        4.695126533508301
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.16651271499995346,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad01c9e77c00084a64e7_4",
+      "group_id": "acf463af748971bf740bf2e246d5ce8e65f6fc7b1d14d7278bc03b6490f69dde",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9829760193824768,
+      "logits": [
+        -3.0713212490081787,
+        3.135927677154541,
+        -1.0437099933624268
+      ],
+      "truncated": false,
+      "token_count": 58,
+      "latency_seconds": 0.18890927100005683,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fcc9e77c0008415adb_2",
+      "group_id": "30074b12810322ace18dfafe3ff256071cb736a06c6fe3835fffc12454c41c33",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9895744919776917,
+      "logits": [
+        -2.5158424377441406,
+        3.225672960281372,
+        -1.6907404661178589
+      ],
+      "truncated": false,
+      "token_count": 33,
+      "latency_seconds": 0.180785546999914,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c0009295791_2",
+      "group_id": "43364659750a2c557e078b50a93886a3725afe8a361f585e93c591a0e11caefe",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9918481111526489,
+      "logits": [
+        -2.218667984008789,
+        3.3280162811279297,
+        -2.1168453693389893
+      ],
+      "truncated": false,
+      "token_count": 55,
+      "latency_seconds": 0.18146680399991055,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f32c9e77c0008409a85_1",
+      "group_id": "6aac277fd635d3800b9dd0848a4895dbc82ab3a0f61b4c09b3b2dc343465782b",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9855221509933472,
+      "logits": [
+        -2.2596805095672607,
+        3.004066228866577,
+        -1.6508512496948242
+      ],
+      "truncated": false,
+      "token_count": 40,
+      "latency_seconds": 0.1621537220000846,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad01c9e77c00084a65d5_2",
+      "group_id": "cf5685bbaa380b38a3bf9e6155f85b2cfe3f7825292aea95e1ad6197127fa703",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9409655332565308,
+      "logits": [
+        -2.6931159496307373,
+        2.4155218601226807,
+        -0.45456555485725403
+      ],
+      "truncated": false,
+      "token_count": 38,
+      "latency_seconds": 0.16033053799992558,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fec9e77c0008417390_2",
+      "group_id": "d481a7e910284acfde338691fa0197e7e098af12ca51a521b4f9e7d0b42c985b",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9934536218643188,
+      "logits": [
+        -2.6491270065307617,
+        3.4880778789520264,
+        -1.9315792322158813
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.17795044799981952,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55991c9e77c000842d810_3",
+      "group_id": "093dd0bb94293d4be5dbd92f43bc704bde5ce8fb5ef066dd2207538cdd1f9f93",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.824241042137146,
+      "logits": [
+        1.5215871334075928,
+        -1.0390796661376953,
+        -0.47363007068634033
+      ],
+      "truncated": false,
+      "token_count": 48,
+      "latency_seconds": 0.17124709299991991,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50cc9e77c0008440f05_1",
+      "group_id": "cb4f02f29d77e9874f0d1e5d0eac460bc32e20c6b504ec68d63aa8765e3ab3ce",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9841843843460083,
+      "logits": [
+        -0.7581130266189575,
+        -2.7457759380340576,
+        3.5011065006256104
+      ],
+      "truncated": false,
+      "token_count": 38,
+      "latency_seconds": 0.16938500999981443,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c00084423ad_1",
+      "group_id": "6f019591a2d72e538946bb4cb3b40e8c78956c2ef4fa42e5e43eed562367a71f",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.39314979314804077,
+      "logits": [
+        -0.3234805762767792,
+        0.04191736876964569,
+        0.1348716914653778
+      ],
+      "truncated": false,
+      "token_count": 66,
+      "latency_seconds": 0.19117938099998355,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284ffc9e77c0008417c7d_1",
+      "group_id": "5f92fe22869834c0cb3ae9c0eaa186622e5583167fe51545278a502564c73cb5",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9855416417121887,
+      "logits": [
+        -2.631669282913208,
+        3.0680739879608154,
+        -1.412786841392517
+      ],
+      "truncated": false,
+      "token_count": 43,
+      "latency_seconds": 0.17770430599989595,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29885c9e77c0008d92689_4",
+      "group_id": "f036bcdf9c1ce515997c92f26d8d77af6bef140f0fa077e48ab2964b29350c0f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9966979026794434,
+      "logits": [
+        -2.641042709350586,
+        3.8644914627075195,
+        -2.4455792903900146
+      ],
+      "truncated": false,
+      "token_count": 43,
+      "latency_seconds": 0.17785763800020504,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a6979_2",
+      "group_id": "64b0fd41df9ee2ddd63fbe7cc29655e6981a16a4f2f8a193d088549ef8fb0cfe",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.994284451007843,
+      "logits": [
+        -2.710045576095581,
+        3.572483777999878,
+        -1.9795212745666504
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.18714828199995281,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50fc9e77c000844320b_2",
+      "group_id": "8895eb4cc17a4f35d980c15547f89ba16f34a72edbf27b5604576ae627576df7",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.6139972805976868,
+      "logits": [
+        1.508963704109192,
+        -2.3740315437316895,
+        1.011518955230713
+      ],
+      "truncated": false,
+      "token_count": 47,
+      "latency_seconds": 0.1809411890001229,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdb32c_2",
+      "group_id": "5501d125d8a28c0e0a421eadcb723ad85637661543e2da4b50594d43a91ecdb4",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9925530552864075,
+      "logits": [
+        -2.751938819885254,
+        -1.4172619581222534,
+        3.7088963985443115
+      ],
+      "truncated": false,
+      "token_count": 84,
+      "latency_seconds": 0.244221214999925,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c0008416380_2",
+      "group_id": "a74346c33e02a78c8ab3a82e51255ea8cc173eb197ff5597f578d73d5a94005c",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.6547186970710754,
+      "logits": [
+        -0.7827140688896179,
+        0.8345090746879578,
+        -0.2774178385734558
+      ],
+      "truncated": false,
+      "token_count": 91,
+      "latency_seconds": 0.2730076419998113,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f31c9e77c00084093b9_2",
+      "group_id": "afbaf806fbe3c652892f0f3c3c5001ac3404bcbe2aa207b15a23a6bc34a218ef",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9292003512382507,
+      "logits": [
+        -3.8394289016723633,
+        2.785759449005127,
+        0.19372479617595673
+      ],
+      "truncated": false,
+      "token_count": 67,
+      "latency_seconds": 0.2597655990000476,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c0008441dca_1",
+      "group_id": "d3a6ba342987293ad7c1d2a8bc7fc8db2cf47338692d2f54559f87b76a78c675",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9952528476715088,
+      "logits": [
+        -1.6466844081878662,
+        -2.520829439163208,
+        4.047455787658691
+      ],
+      "truncated": false,
+      "token_count": 82,
+      "latency_seconds": 0.21636035500000617,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29889c9e77c0008d93ee7_2",
+      "group_id": "dd15c0f96f62cf3bc44634952e62fb186572bb57f68293a54683f829be98ebc8",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9896156787872314,
+      "logits": [
+        3.4353981018066406,
+        -1.4474905729293823,
+        -2.401416540145874
+      ],
+      "truncated": false,
+      "token_count": 50,
+      "latency_seconds": 0.19574869300004138,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55991c9e77c000842dab6_2",
+      "group_id": "aed7133ce3ebf732e24f1ce0e4d915512168f4daf30b34196f31bf25b360aec5",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9968054294586182,
+      "logits": [
+        -2.0366933345794678,
+        -2.3986620903015137,
+        4.234856128692627
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.17484248599998864,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284ffc9e77c0008417d29_1",
+      "group_id": "6c60eeea9577a0032e1409159264800c3e8cf29e10f15d863a4409df075abd91",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9993621706962585,
+      "logits": [
+        -2.4587485790252686,
+        -2.928643226623535,
+        5.383561134338379
+      ],
+      "truncated": false,
+      "token_count": 32,
+      "latency_seconds": 0.20554189699987546,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de05c9e77c0008489b09_1",
+      "group_id": "a0dd42721b05020251286c74fcd12be437da5a66fc9fd215d1754c3375b4747b",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.8350380063056946,
+      "logits": [
+        -0.9410156607627869,
+        -0.8132789731025696,
+        1.439800500869751
+      ],
+      "truncated": false,
+      "token_count": 29,
+      "latency_seconds": 0.1635218359999726,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284ffc9e77c0008417ad8_3",
+      "group_id": "a725cb739e7bbbfafc27fc3d1a88ff2107867f6ce0803c4e6ec1562c1679f33c",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9961104989051819,
+      "logits": [
+        -2.687262535095215,
+        3.7701430320739746,
+        -2.289249897003174
+      ],
+      "truncated": false,
+      "token_count": 30,
+      "latency_seconds": 0.16128353700014486,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad03c9e77c00084a75e1_2",
+      "group_id": "53aba26bfdf045f4e2090bfe0fa0a71d32d1f45540e0685a2058d32da3df5420",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9946160912513733,
+      "logits": [
+        -2.6004881858825684,
+        3.582752227783203,
+        -2.1162397861480713
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.19850764099987828,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55991c9e77c000842db6b_1",
+      "group_id": "4abef3531ff1ef4f7c5218fa7cc117c0e0c456005986339a9c1c56e6e40920f7",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9966890215873718,
+      "logits": [
+        -2.686232805252075,
+        3.8623135089874268,
+        -2.408980369567871
+      ],
+      "truncated": false,
+      "token_count": 32,
+      "latency_seconds": 0.21542408099981003,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50fc9e77c00084431ac_4",
+      "group_id": "78ffbca5979cd3df5bb295c65d47c7612a388085ecb0bebf8d5694c9a5cb59f1",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9934859871864319,
+      "logits": [
+        -2.892286777496338,
+        3.546217918395996,
+        -1.7605618238449097
+      ],
+      "truncated": false,
+      "token_count": 29,
+      "latency_seconds": 0.18692301000010048,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de0bc9e77c000848b6fd_3",
+      "group_id": "3d7aa56cef4f0d4c0398653c206ae8802160cd50b303ab22d1d01fe3758f1fbf",
+      "expected": "MAYBE",
+      "candidate": "YES",
+      "raw_score": 0.7283329367637634,
+      "logits": [
+        -1.12361478805542,
+        1.0891671180725098,
+        -0.24414539337158203
+      ],
+      "truncated": false,
+      "token_count": 29,
+      "latency_seconds": 0.16326512599994203,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed80c9e77c0009ce1062_1",
+      "group_id": "cea41fd75e5a39565733c86bdbf715233070025b5ad7d9e51b6c78c93432dcd8",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9385120272636414,
+      "logits": [
+        -2.2539258003234863,
+        2.252139091491699,
+        -0.6578817963600159
+      ],
+      "truncated": false,
+      "token_count": 60,
+      "latency_seconds": 0.19295374700004686,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fec9e77c000841773f_2",
+      "group_id": "a5d55ae5d87d27f70994438e7e7b714184c3891da77c39ca9d7350ac89b0b87f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9954000115394592,
+      "logits": [
+        -2.8340065479278564,
+        3.6976449489593506,
+        -2.0580718517303467
+      ],
+      "truncated": false,
+      "token_count": 98,
+      "latency_seconds": 0.2951329610000357,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de09c9e77c000848a971_2",
+      "group_id": "b02223f816f0b165a32d251b3a44d812947e880579dc1db3664ce758b63e31ab",
+      "expected": "NO",
+      "candidate": "YES",
+      "raw_score": 0.6324055790901184,
+      "logits": [
+        -1.5535931587219238,
+        0.9757740497589111,
+        0.2857307195663452
+      ],
+      "truncated": false,
+      "token_count": 60,
+      "latency_seconds": 0.24188018999984706,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f2ac9e77c0008407483_3",
+      "group_id": "d38992afd39dddde6bcedd49a311072c8b18ea5973ce05774c10adeb46de4211",
+      "expected": "MAYBE",
+      "candidate": "NO",
+      "raw_score": 0.9853531718254089,
+      "logits": [
+        3.256909132003784,
+        -1.140702486038208,
+        -2.7116782665252686
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.20454717699999492,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284ffc9e77c00084179b5_2",
+      "group_id": "d137ca701077ac36ad44def967b94137707ff1dcbe6b2e937a9b6877967d3699",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9642581343650818,
+      "logits": [
+        -2.11031174659729,
+        2.48946213722229,
+        -1.1219921112060547
+      ],
+      "truncated": false,
+      "token_count": 47,
+      "latency_seconds": 0.1963665560001573,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598bc9e77c000842bf0a_2",
+      "group_id": "9095f7506ac2643ba264bf87e9677ea13b0c23a7f1dac94c4b857ccfcfc11561",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9884023070335388,
+      "logits": [
+        -2.3422582149505615,
+        3.1384551525115967,
+        -1.7454537153244019
+      ],
+      "truncated": false,
+      "token_count": 54,
+      "latency_seconds": 0.19958852800004934,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598ec9e77c000842c9d0_1",
+      "group_id": "066e6123dc4a750242facf59a5b2c78a741480d2505a1fd21d4fe9c2ba2a95eb",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9958767890930176,
+      "logits": [
+        -2.461101531982422,
+        3.7317698001861572,
+        -2.43582820892334
+      ],
+      "truncated": false,
+      "token_count": 43,
+      "latency_seconds": 0.1891985229999591,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de0ac9e77c000848b231_1",
+      "group_id": "c27f1dc05b2f78089ad0f96f3419937aabe489acfaa15b8e4462c6144cffecb6",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.8567672371864319,
+      "logits": [
+        -5.658243656158447,
+        1.428830623626709,
+        3.2183613777160645
+      ],
+      "truncated": false,
+      "token_count": 35,
+      "latency_seconds": 0.2281773490001342,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598ec9e77c000842c83e_1",
+      "group_id": "ca798ff0d9f03a6599518963f42d4d3fd6830a77a554b8bfdfa630ba88d9175c",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9950188398361206,
+      "logits": [
+        -2.5911147594451904,
+        3.633270263671875,
+        -2.1674020290374756
+      ],
+      "truncated": false,
+      "token_count": 77,
+      "latency_seconds": 0.2865408130001015,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad01c9e77c00084a64cd_1",
+      "group_id": "595739c5343992d677956216c6dc6c3d218a15a1a8ed298a8de1c1385bc2c97f",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.8075020909309387,
+      "logits": [
+        -0.1951894760131836,
+        -1.4618743658065796,
+        1.4869083166122437
+      ],
+      "truncated": false,
+      "token_count": 104,
+      "latency_seconds": 0.28462402000013753,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f2bc9e77c00084075cc_2",
+      "group_id": "089bc6fb3e0b1db2d63b097778814cb3f116907ea762f9f6d8f161364282ec3b",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9989499449729919,
+      "logits": [
+        -2.534134864807129,
+        -2.593998908996582,
+        4.987403392791748
+      ],
+      "truncated": false,
+      "token_count": 38,
+      "latency_seconds": 0.20874175499989178,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97bc9e77c0009cda497_1",
+      "group_id": "b9b15f565a39ef2b22ca631ec02580905ac23ece6d26912622c2d702cf965a09",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.6962523460388184,
+      "logits": [
+        -0.5558068752288818,
+        0.928065836429596,
+        -0.6349512934684753
+      ],
+      "truncated": false,
+      "token_count": 49,
+      "latency_seconds": 0.21486878999985493,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9464c9e77c0008467af5_1",
+      "group_id": "25395e7b05b752aa445f2780b3b91ce66eedce51072e0f9623401a60b0973f5f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9717562198638916,
+      "logits": [
+        -1.266173005104065,
+        2.6363162994384766,
+        -2.0884132385253906
+      ],
+      "truncated": false,
+      "token_count": 28,
+      "latency_seconds": 0.2155768170000556,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fcc9e77c0008415af1_2",
+      "group_id": "c4e82eb648098f285c6798b2f89292814f7845dd296197c5ee43a9ecec5d2302",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9432888031005859,
+      "logits": [
+        -2.5474908351898193,
+        2.3796579837799072,
+        -0.5601921677589417
+      ],
+      "truncated": false,
+      "token_count": 63,
+      "latency_seconds": 0.21824327599983917,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50ec9e77c0008442bda_1",
+      "group_id": "133503f16acffc01b204a6d1ec1e421df6502cc00ff62cfdc777ab721c160fea",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9698039293289185,
+      "logits": [
+        -2.124225378036499,
+        2.580292224884033,
+        -1.2327011823654175
+      ],
+      "truncated": false,
+      "token_count": 56,
+      "latency_seconds": 0.23913720699988517,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29889c9e77c0008d940a7_3",
+      "group_id": "4b692898927a35362655d0eec867385ee04bd68dde7dc571b43d8769bac2d148",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.478463351726532,
+      "logits": [
+        0.44394901394844055,
+        -0.7010030746459961,
+        0.18489986658096313
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.16693331800001943,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad03c9e77c00084a773e_1",
+      "group_id": "25b63cfff8f75189f917fb286aa9c138c8ba8933dc475c3dffc5466979e07a98",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9942470788955688,
+      "logits": [
+        -2.049501895904541,
+        3.557173728942871,
+        -2.602527141571045
+      ],
+      "truncated": false,
+      "token_count": 59,
+      "latency_seconds": 0.21441436800000702,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de07c9e77c000848a343_3",
+      "group_id": "6a0a85d69e8e936b0666833f9a6ea83f4ebc774cbe4112bb331039bc238fcfe5",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9585837721824646,
+      "logits": [
+        -1.3344826698303223,
+        -1.4148187637329102,
+        2.461087465286255
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.17538245300011113,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdb13c_1",
+      "group_id": "7b782a0e45f75dd6172067f0e5f545ffcd88df8a0cf8d0ea945fec934622f4cb",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9837027788162231,
+      "logits": [
+        -1.3968679904937744,
+        3.004350185394287,
+        -2.4436569213867188
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.16745985600005042,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fcc9e77c0008416048_2",
+      "group_id": "c07e952da8a3e38b4d93ddee32158b11e76d7b1ff99381906e8960da89ac2d4e",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.8354029655456543,
+      "logits": [
+        -0.8075733780860901,
+        -0.9279540181159973,
+        1.4516078233718872
+      ],
+      "truncated": false,
+      "token_count": 81,
+      "latency_seconds": 0.22975439700007882,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c00092952c6_4",
+      "group_id": "1c54ca5e212189bb164ba0925ef3fa281334b0551885050c2e1c3a4192e8383b",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9913396239280701,
+      "logits": [
+        -2.3384621143341064,
+        3.2998194694519043,
+        -1.963701605796814
+      ],
+      "truncated": false,
+      "token_count": 32,
+      "latency_seconds": 0.21563971799992032,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c000844167b_2",
+      "group_id": "d2318378b03f12eceac7d8377d59f3530ae84bbd92d9d1c3f1f7089dc826ad52",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9966099858283997,
+      "logits": [
+        -2.037555456161499,
+        -2.34230375289917,
+        4.198310852050781
+      ],
+      "truncated": false,
+      "token_count": 46,
+      "latency_seconds": 0.27730121200011126,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7acfec9e77c00084a5761_2",
+      "group_id": "513306cb207c5da5da1be7db6dee329dae543fc1e8f7c1db066e7973283bb2e1",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.48259687423706055,
+      "logits": [
+        0.646751880645752,
+        -1.3359994888305664,
+        0.7061110138893127
+      ],
+      "truncated": false,
+      "token_count": 63,
+      "latency_seconds": 0.36106630299991593,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c0008441df3_1",
+      "group_id": "437507cf82f96d1db54105f277b445f83cc3838283ccfecc6222296037c4e8ef",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9939872026443481,
+      "logits": [
+        -2.7377431392669678,
+        3.5419883728027344,
+        -1.9365785121917725
+      ],
+      "truncated": false,
+      "token_count": 34,
+      "latency_seconds": 0.25705051599993567,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7acffc9e77c00084a5b28_1",
+      "group_id": "51bfba827faf691667a15781222f450811bd8cee0e5d471adcbf76d252ad6687",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9816588759422302,
+      "logits": [
+        -0.017871931195259094,
+        -3.6397311687469482,
+        3.9886069297790527
+      ],
+      "truncated": false,
+      "token_count": 47,
+      "latency_seconds": 0.31785289100002956,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50ec9e77c0008442d0c_1",
+      "group_id": "4156e59aa16bd2b837e464868b33a201904e4a1a7051081c76d11f0b2de9c678",
+      "expected": "YES",
+      "candidate": "NO",
+      "raw_score": 0.7983490824699402,
+      "logits": [
+        1.4311821460723877,
+        -1.085181474685669,
+        -0.3300548791885376
+      ],
+      "truncated": false,
+      "token_count": 52,
+      "latency_seconds": 0.3350867289998405,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55991c9e77c000842d802_1",
+      "group_id": "f5465248ceae8df176da28485d2302038f2d4794cc22df9ade1f0456b8192068",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9965344667434692,
+      "logits": [
+        -1.8770798444747925,
+        -2.4982686042785645,
+        4.214386463165283
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.2927102510000168,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97bc9e77c0009cda0b5_1",
+      "group_id": "c73c765abaa4744803569dc8254961e738f0cbef45c9202bf2f024bbb9fb7ed3",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9179599285125732,
+      "logits": [
+        -2.219752550125122,
+        2.09793758392334,
+        -0.47853949666023254
+      ],
+      "truncated": false,
+      "token_count": 38,
+      "latency_seconds": 0.3642586199998732,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdb079_1",
+      "group_id": "331ddb4a4217683bbb195227523c3562c4d9029755e45a824228fd8fd172c680",
+      "expected": "MAYBE",
+      "candidate": "YES",
+      "raw_score": 0.882168173789978,
+      "logits": [
+        -2.3769869804382324,
+        1.9468454122543335,
+        -0.17074155807495117
+      ],
+      "truncated": false,
+      "token_count": 28,
+      "latency_seconds": 0.21504845899994507,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50ec9e77c0008442eae_3",
+      "group_id": "155b97f0104566cf1f12b161ae7d759dfde96f5f62c2e728b45af7aecfc4c65a",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.5751867890357971,
+      "logits": [
+        0.8830174207687378,
+        -1.3382822275161743,
+        0.4211370050907135
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.21182668400001603,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c000846781a_2",
+      "group_id": "4a489c5dc266d2ce8edeb9d4c01442521dfbbd7107d5a957a973247af7b580ec",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9069837927818298,
+      "logits": [
+        -0.2364884465932846,
+        2.130978584289551,
+        -2.597752571105957
+      ],
+      "truncated": false,
+      "token_count": 80,
+      "latency_seconds": 0.2861140559998603,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9464c9e77c0008467e93_2",
+      "group_id": "5a79b876dc341dd9cd7064b6131558784333ced9b39747bde3d43ef512d31d39",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9953938722610474,
+      "logits": [
+        -2.7012932300567627,
+        3.6805367469787598,
+        -2.1503822803497314
+      ],
+      "truncated": false,
+      "token_count": 58,
+      "latency_seconds": 0.2457412230000955,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c000841675c_1",
+      "group_id": "a1ac93b08c7fd12bfea9b37f5ff6ab08e1f6bdb5802ad921cc345f3be429f498",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9901680946350098,
+      "logits": [
+        -2.446535348892212,
+        3.233527660369873,
+        -1.7999297380447388
+      ],
+      "truncated": false,
+      "token_count": 45,
+      "latency_seconds": 0.20777515500003574,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad00c9e77c00084a5fdc_2",
+      "group_id": "c179e414ba1912feee982c8147afba013ccdcc477929e478d451d8e2a2c59aa0",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9650148749351501,
+      "logits": [
+        2.6331167221069336,
+        -1.430588722229004,
+        -1.3266112804412842
+      ],
+      "truncated": false,
+      "token_count": 88,
+      "latency_seconds": 0.2603772220002156,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a70cf_2",
+      "group_id": "4f3fe7336ac783178990fff997ac2c4de3cc97acfe0113cd18800dc7fd181568",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9769455194473267,
+      "logits": [
+        -2.2242143154144287,
+        -1.1500991582870483,
+        2.8903348445892334
+      ],
+      "truncated": false,
+      "token_count": 35,
+      "latency_seconds": 0.2390945700001339,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ede072ec9e77c00084d2613_2",
+      "group_id": "d30afeff8d0bd86e281e7728dda2e521a3ed07e0a2c3be17bd5606b1d65e0f04",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9929395914077759,
+      "logits": [
+        -1.5429884195327759,
+        -2.369016647338867,
+        3.7662880420684814
+      ],
+      "truncated": false,
+      "token_count": 27,
+      "latency_seconds": 0.226457850000088,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9461c9e77c0008465cf7_2",
+      "group_id": "671eeef0a3f37f9423409a76baa63fcdb26609274bd633ca0e9dffb42d8b7674",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.971478283405304,
+      "logits": [
+        2.7569797039031982,
+        -1.436820149421692,
+        -1.4925967454910278
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.2603655789998811,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c000846663b_1",
+      "group_id": "017d3ee112e830c58cde25d076572d92f94a529192c9dd55bceacd41d23dc88b",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9960512518882751,
+      "logits": [
+        -2.58711314201355,
+        3.759897232055664,
+        -2.35375714302063
+      ],
+      "truncated": false,
+      "token_count": 29,
+      "latency_seconds": 0.15912681200006773,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fec9e77c00084170a4_3",
+      "group_id": "01e64e6bc6429a979aa8f331523304df18db7fa9bf2ba2f1897b9a8076019c80",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9967002272605896,
+      "logits": [
+        -2.7085065841674805,
+        3.872509479522705,
+        -2.380697250366211
+      ],
+      "truncated": false,
+      "token_count": 79,
+      "latency_seconds": 0.27002837500003807,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c0009295803_3",
+      "group_id": "24f30a45bdb4481576d3a540c3235a8ec42abf3687e0da8b23f9e5192936c32f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9870109558105469,
+      "logits": [
+        -2.5034244060516357,
+        3.102325916290283,
+        -1.5558968782424927
+      ],
+      "truncated": false,
+      "token_count": 60,
+      "latency_seconds": 0.23563123200005975,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9461c9e77c0008466069_3",
+      "group_id": "955a3fb4a5d2681cf86366b015afbe7261e3055376c6e701ee4f9513cf46c0cc",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.99594646692276,
+      "logits": [
+        -2.806030750274658,
+        3.7594926357269287,
+        -2.1691877841949463
+      ],
+      "truncated": false,
+      "token_count": 70,
+      "latency_seconds": 0.2353946629998518,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f2fc9e77c0008407f1c_2",
+      "group_id": "74ac2370bc3b9bb8280591aa835df95a8f14fb45654a759ad94b3d160ae26c27",
+      "expected": "YES",
+      "candidate": "MAYBE",
+      "raw_score": 0.9812191128730774,
+      "logits": [
+        -2.2576489448547363,
+        -1.2234114408493042,
+        3.036715030670166
+      ],
+      "truncated": false,
+      "token_count": 55,
+      "latency_seconds": 0.1917679399998633,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55990c9e77c000842cfdc_4",
+      "group_id": "424f960cae7e7935b7f2a3f1dab79b51415eecfb82c20f4bd2d77495ce349f2a",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9884621500968933,
+      "logits": [
+        -2.841562509536743,
+        3.2402474880218506,
+        -1.428031325340271
+      ],
+      "truncated": false,
+      "token_count": 44,
+      "latency_seconds": 0.17947558400010166,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50cc9e77c000844152e_4",
+      "group_id": "d174627ec1335e20def4f9523403180ad0c112ef649012466e242db971b753b8",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9760754108428955,
+      "logits": [
+        -2.175159215927124,
+        2.729109764099121,
+        -1.339793086051941
+      ],
+      "truncated": false,
+      "token_count": 36,
+      "latency_seconds": 0.19956269399995108,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7acffc9e77c00084a5b81_4",
+      "group_id": "fa7eaae9b283489d1e60a02c42f6f9b3c26af8a6f3e47899d980c06afb72ffd2",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9962978959083557,
+      "logits": [
+        -2.6781206130981445,
+        3.8093817234039307,
+        -2.312816858291626
+      ],
+      "truncated": false,
+      "token_count": 23,
+      "latency_seconds": 0.15829365099989445,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97bc9e77c0009cda6a2_3",
+      "group_id": "2d335b295dd3c0b29f5b2ec4870c4b0cb226b1420e5c852a395e688833f23914",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.877916157245636,
+      "logits": [
+        2.321882486343384,
+        -2.2789182662963867,
+        0.2740733325481415
+      ],
+      "truncated": false,
+      "token_count": 26,
+      "latency_seconds": 0.1709214410000186,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c0008416800_1",
+      "group_id": "07554d404288240decef667a750d2728da8c59ea8fba5f94278db491f17e879a",
+      "expected": "YES",
+      "candidate": "MAYBE",
+      "raw_score": 0.6505371928215027,
+      "logits": [
+        -1.3030948638916016,
+        0.07169093191623688,
+        0.9185481071472168
+      ],
+      "truncated": false,
+      "token_count": 69,
+      "latency_seconds": 0.21119415800012575,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de03c9e77c0008489406_1",
+      "group_id": "2d32416f6e1eb1d10e10216a0762e76cf181dc0860ce1bfd93329ad087977c81",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9988728165626526,
+      "logits": [
+        -2.3155832290649414,
+        -2.715097427368164,
+        4.9845170974731445
+      ],
+      "truncated": false,
+      "token_count": 26,
+      "latency_seconds": 0.15842432399995232,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de08c9e77c000848a493_1",
+      "group_id": "810b2399ce6c08aa24bb9f0a15ea2c0d96bc142aa03f50ee872747b6967cb2cc",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9894834160804749,
+      "logits": [
+        -2.453887462615967,
+        -1.4074382781982422,
+        3.4377713203430176
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.16970795899987934,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c0008441662_1",
+      "group_id": "0d10647633547f5517aaca10c06281fff49a46b287886115eb939e4a992bbfdb",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.984474778175354,
+      "logits": [
+        -2.4967281818389893,
+        3.0094945430755615,
+        -1.437930941581726
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.17168593099995633,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f31c9e77c0008408b8f_4",
+      "group_id": "acbd63da45b787ab7ed06ac150d00f050220cb31b4e5c042e1fb4514999d1ddd",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9906424880027771,
+      "logits": [
+        -2.2591278553009033,
+        3.2612016201019287,
+        -1.9525110721588135
+      ],
+      "truncated": false,
+      "token_count": 113,
+      "latency_seconds": 0.2668107699998927,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ee39329c9e77c0008cc9249_2",
+      "group_id": "6887a74823202376ae32cd0875f86deffd7e77f51bfdec721350db4ffb12fbe7",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9755128622055054,
+      "logits": [
+        2.83085036277771,
+        -1.3772284984588623,
+        -1.7518863677978516
+      ],
+      "truncated": false,
+      "token_count": 40,
+      "latency_seconds": 0.16974185000003672,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed7ec9e77c0009ce083e_1",
+      "group_id": "08061469f80a3311383375ebe9cbca911f4ece6bd81d2d5d8325d6982fe47438",
+      "expected": "YES",
+      "candidate": "NO",
+      "raw_score": 0.5849611163139343,
+      "logits": [
+        0.7721600532531738,
+        -0.802191436290741,
+        0.08374843746423721
+      ],
+      "truncated": false,
+      "token_count": 43,
+      "latency_seconds": 0.17892496999979812,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50fc9e77c000844334a_1",
+      "group_id": "837a7e15fc3a7c165558a620a1462672415d03992db2deda410366d06a82886c",
+      "expected": "MAYBE",
+      "candidate": "YES",
+      "raw_score": 0.992259681224823,
+      "logits": [
+        -2.411146879196167,
+        3.3637502193450928,
+        -1.9972702264785767
+      ],
+      "truncated": false,
+      "token_count": 57,
+      "latency_seconds": 0.1974977279999166,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdad86_2",
+      "group_id": "67cf4762747bb38bd4d9e02c90957d135d9fcfb8c179eab4dbbccf7a26972bd4",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9982023239135742,
+      "logits": [
+        -2.7380776405334473,
+        -2.131772994995117,
+        4.6229329109191895
+      ],
+      "truncated": false,
+      "token_count": 27,
+      "latency_seconds": 0.175619375999986,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c0008416242_2",
+      "group_id": "35ba885a14b54bb65535cfdb8b7a3fd7ac593958d59417c2e0f15f0544e0cdb6",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.995116114616394,
+      "logits": [
+        -2.886220932006836,
+        3.6787562370300293,
+        -1.9765019416809082
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.17213535800010504,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9461c9e77c0008465dbe_2",
+      "group_id": "f3cf5f52bb8b3f23446f58c3eeb5d1d722eecd6708d7dcb5fcd52e59ed343bce",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.7276856899261475,
+      "logits": [
+        -2.5692551136016846,
+        0.4511435031890869,
+        1.4816851615905762
+      ],
+      "truncated": false,
+      "token_count": 35,
+      "latency_seconds": 0.24519556299992473,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50cc9e77c00084412ac_2",
+      "group_id": "8b065948eb2e60595f666eda60f6e5c6857535fb5461136989136723c2c5c428",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9767695069313049,
+      "logits": [
+        -0.0662059560418129,
+        -3.402536153793335,
+        3.7075297832489014
+      ],
+      "truncated": false,
+      "token_count": 20,
+      "latency_seconds": 0.16108953299999484,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c0009295488_1",
+      "group_id": "8eb2fa3c99fe4f003fc7b75eb8014f7a10359d055057a835a914bd0e561f4be1",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9429205656051636,
+      "logits": [
+        -1.8732355833053589,
+        -0.8611031770706177,
+        2.253448963165283
+      ],
+      "truncated": false,
+      "token_count": 34,
+      "latency_seconds": 0.18078265600001941,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de0ac9e77c000848b2ca_1",
+      "group_id": "ded7122a75bb1291c400f7a5912b92102461b8a31c50cd999293d0350d7a83df",
+      "expected": "YES",
+      "candidate": "MAYBE",
+      "raw_score": 0.7314422726631165,
+      "logits": [
+        -1.096553087234497,
+        -0.3313330113887787,
+        1.0526326894760132
+      ],
+      "truncated": false,
+      "token_count": 50,
+      "latency_seconds": 0.18893997100008164,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466e2b_2",
+      "group_id": "b585a0c02320ff9e16be2cb3d72295c7d7228cc6f8ddf13e73d32107cbd5cbeb",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9991975426673889,
+      "logits": [
+        -2.1656744480133057,
+        -3.0848255157470703,
+        5.296967506408691
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.19789469500005907,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cda883_1",
+      "group_id": "a5beb06a4a041aa0d7d54c7ddbc4f2a90b2409471b4090de82f23e99c4006c71",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.996855616569519,
+      "logits": [
+        -2.535701036453247,
+        3.8932650089263916,
+        -2.582615375518799
+      ],
+      "truncated": false,
+      "token_count": 40,
+      "latency_seconds": 0.18195863400001144,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9461c9e77c0008465eff_3",
+      "group_id": "83457f247be6b6b92d1aeae098152844a4ccc8daddcc74a27643f93654ab40ce",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9201164841651917,
+      "logits": [
+        2.905912399291992,
+        -2.8213038444519043,
+        0.4237556755542755
+      ],
+      "truncated": false,
+      "token_count": 67,
+      "latency_seconds": 0.2325428300000567,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466e48_1",
+      "group_id": "454a9a4bc162636ef5f62b2631a7f5d2cbb3f940346945cf726a0c8f49d2a540",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9630207419395447,
+      "logits": [
+        -2.5042431354522705,
+        2.5833747386932373,
+        -0.8515897989273071
+      ],
+      "truncated": false,
+      "token_count": 33,
+      "latency_seconds": 0.1603718530000151,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9464c9e77c0008467bd8_2",
+      "group_id": "b148f5119778ed2e81e61536939df70be6e858ddeb1239bbfc24fa2af168a4fb",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9686296582221985,
+      "logits": [
+        -2.2768807411193848,
+        -0.9495282769203186,
+        2.715705633163452
+      ],
+      "truncated": false,
+      "token_count": 70,
+      "latency_seconds": 0.20927847799998744,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fcc9e77c0008415d00_3",
+      "group_id": "591ad17d38b412888dd0d2490a4a4f302eee334e0c8a75427ee58e2411032ad8",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.8637569546699524,
+      "logits": [
+        0.017535356804728508,
+        -2.0060601234436035,
+        1.9885306358337402
+      ],
+      "truncated": false,
+      "token_count": 68,
+      "latency_seconds": 0.2489628159999029,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c0009295215_1",
+      "group_id": "6c7fb4ef362dab472c79b42961d79cc788cb5be36c844fb5d8a88d647a8116e4",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9888836741447449,
+      "logits": [
+        -2.943913698196411,
+        3.2948756217956543,
+        -1.3840364217758179
+      ],
+      "truncated": false,
+      "token_count": 35,
+      "latency_seconds": 0.19728359100008674,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a6d66_1",
+      "group_id": "d97ad7bd012e91b3919f80c7c44c2a0bcfe50f2a09638e8656d9ea2781b6eefc",
+      "expected": "MAYBE",
+      "candidate": "NO",
+      "raw_score": 0.9100118279457092,
+      "logits": [
+        2.466787815093994,
+        -2.2167820930480957,
+        0.0548439621925354
+      ],
+      "truncated": false,
+      "token_count": 43,
+      "latency_seconds": 0.17917936699996062,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdb244_4",
+      "group_id": "b1060a35d06f4f13342bcb4a277f6c8d657ee472c0be424861ed53ba0ea876c9",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.961729109287262,
+      "logits": [
+        -1.5517750978469849,
+        2.3981244564056396,
+        -1.487388253211975
+      ],
+      "truncated": false,
+      "token_count": 54,
+      "latency_seconds": 0.2102192389997981,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598fc9e77c000842cb87_4",
+      "group_id": "c7be424a79644bc37f31e289b700d18717a4570f535c369599bb92b290d0178e",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9829529523849487,
+      "logits": [
+        -2.589094400405884,
+        2.987881898880005,
+        -1.312843918800354
+      ],
+      "truncated": false,
+      "token_count": 61,
+      "latency_seconds": 0.25537426000005325,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de07c9e77c000848a13f_1",
+      "group_id": "9b187bcc200b433181bd465ecdab624d912a1ac5f83d50b6b99bb14994020f84",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9989374279975891,
+      "logits": [
+        -2.8341825008392334,
+        -2.3372061252593994,
+        4.984001636505127
+      ],
+      "truncated": false,
+      "token_count": 35,
+      "latency_seconds": 0.24055392900004335,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7acfcc9e77c00084a54a8_1",
+      "group_id": "7f5c245d5508abff69dd9080e7719a50247340916707efee2a467f5506a34f82",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9940715432167053,
+      "logits": [
+        -2.583566904067993,
+        3.528653144836426,
+        -2.0578396320343018
+      ],
+      "truncated": false,
+      "token_count": 51,
+      "latency_seconds": 0.31189149199985877,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c0008441746_3",
+      "group_id": "30e79c2d693655d405c1f14750ec56e4af3f502a9dbec3e46d8ab08907fed83f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9959180951118469,
+      "logits": [
+        -2.6707894802093506,
+        3.7453277111053467,
+        -2.2607645988464355
+      ],
+      "truncated": false,
+      "token_count": 59,
+      "latency_seconds": 0.20128246099989155,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f32c9e77c00084097c0_1",
+      "group_id": "e3ae8f7bf4fae1876af96c81cc92ba44ae9755023f349ce56b7ad50ae893b6a8",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9899080991744995,
+      "logits": [
+        -2.6040091514587402,
+        3.261138916015625,
+        -1.6508005857467651
+      ],
+      "truncated": false,
+      "token_count": 51,
+      "latency_seconds": 0.19348410699990382,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb9573cc9e77c0008fa1bdb_1",
+      "group_id": "67aa1426c3fc89e93db626d83e24965c7459beb876045bd739d346426fbeb97c",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9962620139122009,
+      "logits": [
+        -2.8712923526763916,
+        3.8196239471435547,
+        -2.1679320335388184
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.17897278100008407,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598bc9e77c000842bfd5_1",
+      "group_id": "9205a343de05e53f64a0a44fbd1f54ac47eb91a34c6223b0dc32c0ae4303a77a",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.8166306614875793,
+      "logits": [
+        -0.6465336680412292,
+        -0.9811640381813049,
+        1.3869152069091797
+      ],
+      "truncated": false,
+      "token_count": 27,
+      "latency_seconds": 0.1633944100001372,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97bc9e77c0009cda775_1",
+      "group_id": "7cc7cb35fa7d8f141b4fbd321ef7748e1175993cbcf6818b4b4fe5672819cacc",
+      "expected": "YES",
+      "candidate": "MAYBE",
+      "raw_score": 0.5345926284790039,
+      "logits": [
+        -0.7613455653190613,
+        -0.03894544392824173,
+        0.49545538425445557
+      ],
+      "truncated": false,
+      "token_count": 88,
+      "latency_seconds": 0.2355280709998624,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdaa9b_1",
+      "group_id": "1f3bc266a579a37ed31919b42a67dce5c9ff6b4b9e5bb0bb2d059e08e51fa625",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9920642971992493,
+      "logits": [
+        -2.9332356452941895,
+        3.4448440074920654,
+        -1.6222351789474487
+      ],
+      "truncated": false,
+      "token_count": 57,
+      "latency_seconds": 0.19794912600013959,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de03c9e77c000848939d_2",
+      "group_id": "7bf5c64424ae1e62840c41be104fb7bee8a31ee59914f3d10414e3dea833fd55",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9905495047569275,
+      "logits": [
+        -2.2812843322753906,
+        3.2517364025115967,
+        -1.9356441497802734
+      ],
+      "truncated": false,
+      "token_count": 39,
+      "latency_seconds": 0.27188670200007437,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50ec9e77c00084424c9_2",
+      "group_id": "f529fe483e1e941e83607b0d0c90a5b4f37227f53dd7995f1b99dc874bd5b3f0",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.900615394115448,
+      "logits": [
+        -2.8869330883026123,
+        -0.004564677365124226,
+        2.2540063858032227
+      ],
+      "truncated": false,
+      "token_count": 30,
+      "latency_seconds": 0.18162307800002964,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb9573cc9e77c0008fa1c1b_1",
+      "group_id": "1a36f9ad6b73dba63696dae585bb44c7e0bca7bd098e57adf83bc1c0b70d457b",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9924575090408325,
+      "logits": [
+        -2.376720428466797,
+        3.3843817710876465,
+        -2.0299599170684814
+      ],
+      "truncated": false,
+      "token_count": 31,
+      "latency_seconds": 0.18883651900000586,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50cc9e77c0008441338_2",
+      "group_id": "b03ae46870883811e2cef1cfdc4c54adc55f0a3b73b6d796cff4611e02448e2f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9235539436340332,
+      "logits": [
+        -1.9460301399230957,
+        2.04399037361145,
+        -0.7006023526191711
+      ],
+      "truncated": false,
+      "token_count": 124,
+      "latency_seconds": 0.2958594199999425,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c00084419cc_2",
+      "group_id": "ff21ef185a325e45639f7701ac8cd8f0aeee6446f51af8079f3590cef2095046",
+      "expected": "MAYBE",
+      "candidate": "YES",
+      "raw_score": 0.7843913435935974,
+      "logits": [
+        -2.4696266651153564,
+        1.6200125217437744,
+        0.26571494340896606
+      ],
+      "truncated": false,
+      "token_count": 40,
+      "latency_seconds": 0.189317458000005,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50fc9e77c0008443379_1",
+      "group_id": "6b2783c52d0e322b64fe4699c3da34c642b87c8910b9aafa56a46f437be1ca2a",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9947992563247681,
+      "logits": [
+        -2.9327633380889893,
+        3.65307354927063,
+        -1.9070711135864258
+      ],
+      "truncated": false,
+      "token_count": 27,
+      "latency_seconds": 0.1626285380000354,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad01c9e77c00084a622b_1",
+      "group_id": "3ed43be2e29e8d02b428befe1bba073ed5e79f5f25a1e477c065f6243ab04194",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.991820216178894,
+      "logits": [
+        -2.7260520458221436,
+        3.3771326541900635,
+        -1.7369526624679565
+      ],
+      "truncated": false,
+      "token_count": 64,
+      "latency_seconds": 0.24483137899983376,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c00084677d0_1",
+      "group_id": "49b9321bfeeb6f3fa2d2e4b5da2528cc8e7cce023f50ee761947109cd448c371",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9890871047973633,
+      "logits": [
+        -2.579549789428711,
+        3.207995891571045,
+        -1.6243441104888916
+      ],
+      "truncated": false,
+      "token_count": 60,
+      "latency_seconds": 0.21169215500003702,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c000929521f_2",
+      "group_id": "901aefdc2555cf447b1ddd557c9af65cc83bfa5e44d1cccaf68faa2f6480c9a4",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9953317046165466,
+      "logits": [
+        -2.642258644104004,
+        3.668027400970459,
+        -2.1844780445098877
+      ],
+      "truncated": false,
+      "token_count": 60,
+      "latency_seconds": 0.19466272399995432,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a69ca_1",
+      "group_id": "8e9c32112b22669dcd7bb7cba65c22e83b28a04f01e4abe7785338b2081daab4",
+      "expected": "MAYBE",
+      "candidate": "NO",
+      "raw_score": 0.717304527759552,
+      "logits": [
+        1.7052216529846191,
+        -2.2599356174468994,
+        0.7247740030288696
+      ],
+      "truncated": false,
+      "token_count": 32,
+      "latency_seconds": 0.16235564899989186,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdad55_1",
+      "group_id": "cbddf6d45553e4c8d4579d917092fe025b6ff188a9fb27aaab991263353af8fb",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9286782145500183,
+      "logits": [
+        -1.9626471996307373,
+        2.068993330001831,
+        -0.7603068947792053
+      ],
+      "truncated": false,
+      "token_count": 90,
+      "latency_seconds": 0.23271688499994525,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55989c9e77c000842ba68_3",
+      "group_id": "b823ef18008d28354ae1a32b5289c00f9a2d1fe7699e0dd8159e124c108357d1",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9670854806900024,
+      "logits": [
+        3.192991018295288,
+        -2.481316328048706,
+        -0.29370808601379395
+      ],
+      "truncated": false,
+      "token_count": 39,
+      "latency_seconds": 0.18421428700003162,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55988c9e77c000842b920_2",
+      "group_id": "6026592fb2de789b683a4efc4d21f1fc0c54bc6cb64fbcc1a558c0f135cb4781",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9838437438011169,
+      "logits": [
+        -1.8938210010528564,
+        2.9097609519958496,
+        -1.8912699222564697
+      ],
+      "truncated": false,
+      "token_count": 32,
+      "latency_seconds": 0.15612458600003265,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb2988ac9e77c0008d9456b_2",
+      "group_id": "03bc087b07cdd98a7572438b70166f94c297ab35fc23bb0032a85fc57051829a",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9763290882110596,
+      "logits": [
+        2.8647828102111816,
+        -1.5284279584884644,
+        -1.5677931308746338
+      ],
+      "truncated": false,
+      "token_count": 47,
+      "latency_seconds": 0.17762391699989166,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb9573ac9e77c0008fa1838_3",
+      "group_id": "760892446e542aab546c79d3ae8b46a2f5135c6183fd75b451c5927f9d33cbde",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9459940791130066,
+      "logits": [
+        2.355130910873413,
+        -1.2206623554229736,
+        -1.1820271015167236
+      ],
+      "truncated": false,
+      "token_count": 49,
+      "latency_seconds": 0.18332266800007346,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de04c9e77c0008489534_1",
+      "group_id": "1498c4e5a09402f53a6fb20ef8b2727998fba6dbfd225c49e042b0f65f330710",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9960190653800964,
+      "logits": [
+        -3.1916744709014893,
+        -1.4832849502563477,
+        4.205451965332031
+      ],
+      "truncated": false,
+      "token_count": 46,
+      "latency_seconds": 0.18532118099983563,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c00084674df_2",
+      "group_id": "93875880de75cb2d1bb42211b4c1108d7e5c6227a717ea75a10023c0b8f5d12f",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9970040917396545,
+      "logits": [
+        -2.60541033744812,
+        -1.9601539373397827,
+        4.2690300941467285
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.24510315799989257,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ede0730c9e77c00084d35a9_4",
+      "group_id": "4905a499a89c295ac7b4d070dfa9f159db97412659734745d3c57fa058e81528",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9895837903022766,
+      "logits": [
+        -2.571502208709717,
+        3.2397820949554443,
+        -1.648788332939148
+      ],
+      "truncated": false,
+      "token_count": 37,
+      "latency_seconds": 0.19504242800007887,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de08c9e77c000848a56d_1",
+      "group_id": "32250f68eecad365ee349aa7ffd83e1bb7bfcb81ab0a0c4beff27110e9d36662",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9889495372772217,
+      "logits": [
+        -1.8823192119598389,
+        3.1483588218688965,
+        -2.224757194519043
+      ],
+      "truncated": false,
+      "token_count": 67,
+      "latency_seconds": 0.284059058000139,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de09c9e77c000848ad2b_1",
+      "group_id": "f8bc73cec09049a9ed04c11999b171f4d9cdffdb9674eed116dab5a8e9e3b55f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9927390217781067,
+      "logits": [
+        -2.4158546924591064,
+        3.4038054943084717,
+        -2.0348308086395264
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.2172325900000942,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29887c9e77c0008d93186_2",
+      "group_id": "759d030a39510a9576f4c76a3ed93d6dc1d8e673f164f2739a4928b66b97265f",
+      "expected": "YES",
+      "candidate": "NO",
+      "raw_score": 0.8759449124336243,
+      "logits": [
+        1.7568975687026978,
+        -0.5247496962547302,
+        -1.4743430614471436
+      ],
+      "truncated": false,
+      "token_count": 154,
+      "latency_seconds": 0.37679312199998094,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ee393b7c9e77c0008ccc7e6_2",
+      "group_id": "e7ef0b7ce17e42ca60ba6c1e39b921f8c198aa490264fb7f166b73cf8febe084",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9838796257972717,
+      "logits": [
+        -1.4403449296951294,
+        2.9967257976531982,
+        -2.39504337310791
+      ],
+      "truncated": false,
+      "token_count": 33,
+      "latency_seconds": 0.1869503379998605,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29885c9e77c0008d928b0_3",
+      "group_id": "89e37755e13cf20e4f8828af9f493180ecc19acb27e7f7d2595b7b8f39a65efc",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9960364699363708,
+      "logits": [
+        -3.026520252227783,
+        3.806278705596924,
+        -2.036278247833252
+      ],
+      "truncated": false,
+      "token_count": 85,
+      "latency_seconds": 0.267917344000125,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55991c9e77c000842dfd1_1",
+      "group_id": "0d40294e6e6bd9672af4b49cd028764b648826556eec7ff61d3cd984863e8dc7",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9851299524307251,
+      "logits": [
+        -3.105795383453369,
+        3.190378189086914,
+        -1.1332861185073853
+      ],
+      "truncated": false,
+      "token_count": 32,
+      "latency_seconds": 0.16303525200009972,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c0008467117_1",
+      "group_id": "8db070ca25f16fdf1712f739aed6a6e995d5e8afddfd0e825dffb749f32a57d1",
+      "expected": "MAYBE",
+      "candidate": "NO",
+      "raw_score": 0.4960889518260956,
+      "logits": [
+        1.4852142333984375,
+        -2.657642126083374,
+        1.4851044416427612
+      ],
+      "truncated": false,
+      "token_count": 56,
+      "latency_seconds": 0.1938809719999881,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29889c9e77c0008d93e09_2",
+      "group_id": "04aeb2cb37fd5a33199bf18cb3bbdc4a0c21c447d0558d44109251eb0e00f73e",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9989063739776611,
+      "logits": [
+        -2.95554256439209,
+        -2.2489662170410156,
+        4.969202041625977
+      ],
+      "truncated": false,
+      "token_count": 19,
+      "latency_seconds": 0.16010506500015254,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c000846711a_3",
+      "group_id": "d8eab0ce09bd42cdb0d75655c1344b9cf973da538d580937661058ddb67bdea4",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.5324240922927856,
+      "logits": [
+        0.30906814336776733,
+        -1.038231372833252,
+        0.6700118780136108
+      ],
+      "truncated": false,
+      "token_count": 56,
+      "latency_seconds": 0.2761835539999993,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ede072fc9e77c00084d30fe_4",
+      "group_id": "7828b081f73964a91cfb1de07e3b74fa09b3f0724b2c543244b17c1779a448f0",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9955638647079468,
+      "logits": [
+        -2.7641029357910156,
+        3.705720901489258,
+        -2.135120391845703
+      ],
+      "truncated": false,
+      "token_count": 58,
+      "latency_seconds": 0.20057781699983934,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de09c9e77c000848ac34_4",
+      "group_id": "ed68a26f47e507821163e7abdc320bf70f93b0e051c957a9a615471f1d8af62a",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.7981751561164856,
+      "logits": [
+        -1.393918752670288,
+        1.3294683694839478,
+        -0.3460782468318939
+      ],
+      "truncated": false,
+      "token_count": 47,
+      "latency_seconds": 0.24091739200002849,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f31c9e77c0008408f19_2",
+      "group_id": "8da90c709f0d94967f4f1c6a46965ebf38da9e6bf0ee0c0a1b2533860807a0b3",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.856357991695404,
+      "logits": [
+        -2.831522226333618,
+        0.18971937894821167,
+        2.0226736068725586
+      ],
+      "truncated": false,
+      "token_count": 66,
+      "latency_seconds": 0.23250742300001548,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed80c9e77c0009ce14ae_4",
+      "group_id": "24ccc2f1c911cc53d05e49a6a81b794be0a679f063c832e22fb048b7a81b07b4",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9603762626647949,
+      "logits": [
+        -4.286870002746582,
+        3.1591880321502686,
+        -0.04295862466096878
+      ],
+      "truncated": false,
+      "token_count": 119,
+      "latency_seconds": 0.3347093600000335,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb9573bc9e77c0008fa19c1_1",
+      "group_id": "a099d814af9db32cdbe2e273eb2a8b7042500bbc96e40cbe254ee631a52fb8ff",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9909304976463318,
+      "logits": [
+        -2.8219375610351562,
+        3.347257137298584,
+        -1.6061136722564697
+      ],
+      "truncated": false,
+      "token_count": 44,
+      "latency_seconds": 0.2035388030001286,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9461c9e77c0008465ddb_3",
+      "group_id": "1af19fd0cd4f697dc6b17b82f8c8fab663181108f693dfe7ed683df0b579c86f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.983091413974762,
+      "logits": [
+        -2.5704147815704346,
+        2.9810550212860107,
+        -1.3376060724258423
+      ],
+      "truncated": false,
+      "token_count": 44,
+      "latency_seconds": 0.22380617499993605,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c0008416757_2",
+      "group_id": "5092880411b861ed55cdd6b1742947d9d6607815fd1fe62433df71dc73b9d55e",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9897592067718506,
+      "logits": [
+        -2.4008584022521973,
+        3.2083115577697754,
+        -1.799931526184082
+      ],
+      "truncated": false,
+      "token_count": 51,
+      "latency_seconds": 0.20522793999998612,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de03c9e77c0008489279_1",
+      "group_id": "5da5402c918b6f9be9aaa2a8a731f0ab0f781e7cb347774f055314fba6fc973e",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.7563344836235046,
+      "logits": [
+        0.5712989568710327,
+        -2.2989327907562256,
+        1.759123682975769
+      ],
+      "truncated": false,
+      "token_count": 43,
+      "latency_seconds": 0.1869823259999066,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de09c9e77c000848a9ef_3",
+      "group_id": "2e4af39e19c19f603fff28c7809483f6cff0828bb0d6d7e457dbfc86a153231b",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9684786796569824,
+      "logits": [
+        2.779127597808838,
+        -1.67804753780365,
+        -1.0863858461380005
+      ],
+      "truncated": false,
+      "token_count": 43,
+      "latency_seconds": 0.17603780299987193,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed80c9e77c0009ce13e7_3",
+      "group_id": "2e88ba6ff9de92cf6acd8b98feaf746f52558d8e6af960429626fc0ebb0f097d",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9951257109642029,
+      "logits": [
+        -2.569251775741577,
+        3.6400625705718994,
+        -2.2072620391845703
+      ],
+      "truncated": false,
+      "token_count": 49,
+      "latency_seconds": 0.17901102599989827,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29888c9e77c0008d932e4_2",
+      "group_id": "4ee94ececbf10dceee345de5cc532c2b9ddc7a279b8440c249e07c2715abb83d",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9729456305503845,
+      "logits": [
+        -2.4457380771636963,
+        2.716435194015503,
+        -1.0967644453048706
+      ],
+      "truncated": false,
+      "token_count": 40,
+      "latency_seconds": 0.2092619410000225,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c0008442377_2",
+      "group_id": "3227e2748c0e1e47c98c12ba5e025955910a621120ecd9aaae6c80b580ddeb16",
+      "expected": "YES",
+      "candidate": "MAYBE",
+      "raw_score": 0.973517656326294,
+      "logits": [
+        -1.2931193113327026,
+        -1.7141146659851074,
+        2.8159618377685547
+      ],
+      "truncated": false,
+      "token_count": 64,
+      "latency_seconds": 0.20601459500016972,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec7d50dc9e77c000844201b_1",
+      "group_id": "04f0ca3e1f32df17aa37b473745a0acf51d87042de3c6e19a39c9beefaae96f2",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9645707011222839,
+      "logits": [
+        -0.6817048788070679,
+        -2.198399305343628,
+        2.820826768875122
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.19681035100006739,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466667_1",
+      "group_id": "88b84b82cdc8c785afce4ee5a2b505ddbaf63fe2520fbdb8a993c0dcfa4e9124",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.8527623414993286,
+      "logits": [
+        0.8137332797050476,
+        -3.112788200378418,
+        2.589686870574951
+      ],
+      "truncated": false,
+      "token_count": 31,
+      "latency_seconds": 0.19312299500006702,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c00084161ae_4",
+      "group_id": "c8d0cda2890d0eb52b2a0d447793bc74bc51f2bd451e9cf190aa41e426c087a8",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9928552508354187,
+      "logits": [
+        -2.7641921043395996,
+        3.4624369144439697,
+        -1.7928104400634766
+      ],
+      "truncated": false,
+      "token_count": 45,
+      "latency_seconds": 0.1887196729999232,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29887c9e77c0008d930f7_1",
+      "group_id": "b92de090ba3236a276ab5cc09ebf1b3532bb7c34102f8f4231282ed824aae59d",
+      "expected": "MAYBE",
+      "candidate": "NO",
+      "raw_score": 0.8627380132675171,
+      "logits": [
+        1.9201284646987915,
+        -1.6458734273910522,
+        -0.113715261220932
+      ],
+      "truncated": false,
+      "token_count": 132,
+      "latency_seconds": 0.29442288300015207,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466ec1_1",
+      "group_id": "15b7124728cc6ed4bbeab5a75e02668aa7df91bdfcd87f15703975c633cc86cf",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9847244024276733,
+      "logits": [
+        -2.220395565032959,
+        2.9655814170837402,
+        -1.647809386253357
+      ],
+      "truncated": false,
+      "token_count": 69,
+      "latency_seconds": 0.22144518599998264,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fdc9e77c0008416b03_2",
+      "group_id": "c155bdb4f67d61b31ae02cac16e2f8670cc669bbc5a3ad43cd0e075decc5bc10",
+      "expected": "MAYBE",
+      "candidate": "YES",
+      "raw_score": 0.9899744391441345,
+      "logits": [
+        -2.3946263790130615,
+        3.21368670463562,
+        -1.828467845916748
+      ],
+      "truncated": false,
+      "token_count": 39,
+      "latency_seconds": 0.20244585899990852,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c0008467315_3",
+      "group_id": "d1616400ca186b59ed38e5b6196bc677493620575aedeb3fd47b7fc5391de87c",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.7097528576850891,
+      "logits": [
+        -0.4256161153316498,
+        -0.7588629722595215,
+        1.0089095830917358
+      ],
+      "truncated": false,
+      "token_count": 46,
+      "latency_seconds": 0.1776172160000442,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de0ac9e77c000848aed1_3",
+      "group_id": "3ec4c8e749d524ef82ac728e60be83d265eba10dd3197b0807fbe6859050021b",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.93885338306427,
+      "logits": [
+        2.423309087753296,
+        -1.6624970436096191,
+        -0.6066113710403442
+      ],
+      "truncated": false,
+      "token_count": 62,
+      "latency_seconds": 0.19920827399982954,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32bc9e77c00092950a5_1",
+      "group_id": "44b0aa9263b9173d4dff5ae6bd514c221faacc4a6cf247c36f04dc786e561654",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9914159178733826,
+      "logits": [
+        -2.6767654418945312,
+        3.351356267929077,
+        -1.7240726947784424
+      ],
+      "truncated": false,
+      "token_count": 81,
+      "latency_seconds": 0.22140058900004078,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c00084672e4_2",
+      "group_id": "11bdc91a0cf10032a04a8f55e5f4e67054b31122e106151d0bfe2dcb02813c8e",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9723366498947144,
+      "logits": [
+        -2.978362560272217,
+        -0.6663849353790283,
+        2.987668514251709
+      ],
+      "truncated": false,
+      "token_count": 44,
+      "latency_seconds": 0.17918119799992382,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9463c9e77c0008467143_2",
+      "group_id": "9b31d0b0c0cbb2a5dcc522cac2d5eaf6f6b26bdeee0face607336b91d298b962",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9911454319953918,
+      "logits": [
+        3.5404186248779297,
+        -1.4585301876068115,
+        -2.5840132236480713
+      ],
+      "truncated": false,
+      "token_count": 60,
+      "latency_seconds": 0.21995219900009033,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de06c9e77c0008489de3_2",
+      "group_id": "c5fb5ff47d65fc6b723e337156519245ecc51ec235150fb91a819fab810f0ad6",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.8432431221008301,
+      "logits": [
+        1.4881560802459717,
+        -4.036547660827637,
+        3.174694776535034
+      ],
+      "truncated": false,
+      "token_count": 42,
+      "latency_seconds": 0.181954044999884,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55991c9e77c000842dfd3_1",
+      "group_id": "0765da985786bf582807c5b3a43c53b917589a99878eeea3f26e70bf4c919f47",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9989038705825806,
+      "logits": [
+        -2.518667697906494,
+        -2.554600477218628,
+        4.971510887145996
+      ],
+      "truncated": false,
+      "token_count": 30,
+      "latency_seconds": 0.16771055599997453,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284ffc9e77c0008417967_2",
+      "group_id": "8c06ba703a13f7126b279cadd248fdad2c94cae42c6b06ff1b98d0c90c8c2e4e",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9937798380851746,
+      "logits": [
+        -2.6011860370635986,
+        3.513772487640381,
+        -1.9953895807266235
+      ],
+      "truncated": false,
+      "token_count": 70,
+      "latency_seconds": 0.21303165799986346,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f30c9e77c0008408a5e_2",
+      "group_id": "04a6aa9352d9dc955e6d586dfecc74d6b0cac477ec89b939e384fc39021f2875",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9986934065818787,
+      "logits": [
+        -2.1712241172790527,
+        -2.7851412296295166,
+        4.900371551513672
+      ],
+      "truncated": false,
+      "token_count": 34,
+      "latency_seconds": 0.17311715699997876,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f2fc9e77c0008407e35_1",
+      "group_id": "941321f5e7bb90318da33d0bb022dbef03518b63005871967349fd4278a2a5c9",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9916478395462036,
+      "logits": [
+        -2.5900728702545166,
+        3.3529155254364014,
+        -1.7972757816314697
+      ],
+      "truncated": false,
+      "token_count": 34,
+      "latency_seconds": 0.19322469100006856,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97dc9e77c0009cdab55_2",
+      "group_id": "8180ef9594b7dda55d95183b6c0e2082c97927680191d7f531baff1252bd55b2",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.8145906925201416,
+      "logits": [
+        -0.24925726652145386,
+        -1.3894634246826172,
+        1.5083073377609253
+      ],
+      "truncated": false,
+      "token_count": 65,
+      "latency_seconds": 0.19081477700001415,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29889c9e77c0008d9443d_1",
+      "group_id": "75c91dbca43941dc7678d7537b7d04e0b017f7abebe8ded3892b881758d86e7d",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9879863858222961,
+      "logits": [
+        -2.05288028717041,
+        -1.5994009971618652,
+        3.302122116088867
+      ],
+      "truncated": false,
+      "token_count": 39,
+      "latency_seconds": 0.16986350700017283,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec284fcc9e77c0008415b5f_2",
+      "group_id": "a5f7c20f8c48caf14b3a524d4dd8e88b135856c0b74633264e85e27fef43fa7d",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9896221160888672,
+      "logits": [
+        -3.8122873306274414,
+        -0.7188863754272461,
+        3.883103132247925
+      ],
+      "truncated": false,
+      "token_count": 27,
+      "latency_seconds": 0.16449082700000872,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ea2d97bc9e77c0009cda15e_1",
+      "group_id": "9ff811e22f8fdfe0b4f2f6e2510018a0a8fd9998550bad80bcea6e1b9ab9aaa8",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9987990856170654,
+      "logits": [
+        -2.949697256088257,
+        -2.1816556453704834,
+        4.922974586486816
+      ],
+      "truncated": false,
+      "token_count": 33,
+      "latency_seconds": 0.20980215400004454,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad03c9e77c00084a770d_1",
+      "group_id": "adcbccacfea84286305c4770f33bfb29ec09ed1c755b032da6f9e90ecdf4f863",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9775223731994629,
+      "logits": [
+        -2.4531919956207275,
+        2.803407907485962,
+        -1.2261914014816284
+      ],
+      "truncated": false,
+      "token_count": 61,
+      "latency_seconds": 0.2520843050001531,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de05c9e77c0008489801_1",
+      "group_id": "d2187abb80e9efaf6be10ede8ea9bf87f8acb125cf37f4a212fe8776a6b09c4a",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9648845791816711,
+      "logits": [
+        -2.4039130210876465,
+        2.5543200969696045,
+        -0.973529040813446
+      ],
+      "truncated": false,
+      "token_count": 53,
+      "latency_seconds": 0.2196062069999698,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598ec9e77c000842c73b_2",
+      "group_id": "97ec182f5feb57a97682ff8b0c88245c27d249c2fa604efbdc5ce9b60603dc07",
+      "expected": "YES",
+      "candidate": "MAYBE",
+      "raw_score": 0.7661826014518738,
+      "logits": [
+        -1.0058566331863403,
+        -0.4826524257659912,
+        1.169607400894165
+      ],
+      "truncated": false,
+      "token_count": 85,
+      "latency_seconds": 0.24277267100001154,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ede072ec9e77c00084d24fc_2",
+      "group_id": "b2f3000928a675eb7a4d99a589d35bdd2d83de18355bba31e52ad54f435091e1",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.5458512306213379,
+      "logits": [
+        0.8411387205123901,
+        0.5687551498413086,
+        -1.8118692636489868
+      ],
+      "truncated": false,
+      "token_count": 29,
+      "latency_seconds": 0.2261067249999087,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32ac9e77c0009294d4b_1",
+      "group_id": "619fa7c1ddb0c07818309d4a56fa267842e9c53ae02fd164122d9440e19611fb",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.7199671268463135,
+      "logits": [
+        0.49256834387779236,
+        -1.7611253261566162,
+        1.5367220640182495
+      ],
+      "truncated": false,
+      "token_count": 63,
+      "latency_seconds": 0.21257580500014228,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29883c9e77c0008d9242b_2",
+      "group_id": "a658f4a98289fa6b83f74ce4fa0a0b31002a6154cc3c53f90638c76f52607a6f",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.981391966342926,
+      "logits": [
+        -0.9738317728042603,
+        -2.3156802654266357,
+        3.2237396240234375
+      ],
+      "truncated": false,
+      "token_count": 50,
+      "latency_seconds": 0.252192715000092,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebe6f2cc9e77c0008407618_4",
+      "group_id": "9ff0fbf8be7ea6cd3cc746350ce643d62f197c23a5ce3c97fb11565905dd3e8f",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9923624992370605,
+      "logits": [
+        -2.8264565467834473,
+        3.434821844100952,
+        -1.717240571975708
+      ],
+      "truncated": false,
+      "token_count": 44,
+      "latency_seconds": 0.17770692299995972,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed7ec9e77c0009ce0a05_2",
+      "group_id": "c1f5332c60f39837c67626633f1bac282ababf4c590ca6b44cb647c0205e97fc",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.9586054682731628,
+      "logits": [
+        -0.01088193990290165,
+        -2.981374502182007,
+        3.1814558506011963
+      ],
+      "truncated": false,
+      "token_count": 46,
+      "latency_seconds": 0.17865617500001463,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ede072fc9e77c00084d346c_1",
+      "group_id": "c10cff19b6854489433b946848dc702d3a645639b9d5edeb97a115622a21b489",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.969341516494751,
+      "logits": [
+        -2.179176092147827,
+        2.5830330848693848,
+        -1.185693383216858
+      ],
+      "truncated": false,
+      "token_count": 80,
+      "latency_seconds": 0.22918474500011143,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec55991c9e77c000842df7e_2",
+      "group_id": "b30e77a69a83be543b49ca02ac60c3876c415bf4792a40ede7e8e485981f2211",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.931906521320343,
+      "logits": [
+        2.265827178955078,
+        -0.492989182472229,
+        -2.3695762157440186
+      ],
+      "truncated": false,
+      "token_count": 52,
+      "latency_seconds": 0.23455609400002686,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c00084669ef_1",
+      "group_id": "ab8a7eda7a33712b915baa1df8d1c8ca6c3ee2e49fce3b43eb99e7ce075455b9",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9947138428688049,
+      "logits": [
+        -2.6685256958007812,
+        3.598649024963379,
+        -2.0804338455200195
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.2087021239999558,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad02c9e77c00084a6953_3",
+      "group_id": "d5e7f559d002aed19843b56a8aae420c03a3a50b8a8cbf5d3c0765371387307a",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9893802404403687,
+      "logits": [
+        -2.1320929527282715,
+        -1.6142359972000122,
+        3.3875036239624023
+      ],
+      "truncated": false,
+      "token_count": 48,
+      "latency_seconds": 0.19166066799994042,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598ec9e77c000842c861_4",
+      "group_id": "f9e7e13fc39ccb2aaa47c042def3efc8112901f81832f5e6ad377b821fa2160e",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9910923838615417,
+      "logits": [
+        -2.6091949939727783,
+        3.3103556632995605,
+        -1.7566394805908203
+      ],
+      "truncated": false,
+      "token_count": 141,
+      "latency_seconds": 0.2961785239999699,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7ad01c9e77c00084a6555_1",
+      "group_id": "ab945b9213882b5597de650378ab1c6b5e47fe3844bb0a874f11627738e5f259",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9943179488182068,
+      "logits": [
+        -2.9353890419006348,
+        3.603559970855713,
+        -1.8529338836669922
+      ],
+      "truncated": false,
+      "token_count": 64,
+      "latency_seconds": 0.2865873119999378,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ece9462c9e77c0008466fc0_3",
+      "group_id": "58f20d08960d177b92fb3cedcfd002b6517fbbf4597201507355c1fafe6e3305",
+      "expected": "NO",
+      "candidate": "NO",
+      "raw_score": 0.9508211016654968,
+      "logits": [
+        2.8408925533294678,
+        -2.2486984729766846,
+        -0.24778690934181213
+      ],
+      "truncated": false,
+      "token_count": 76,
+      "latency_seconds": 0.35250797899993813,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ec5598dc9e77c000842c3e8_2",
+      "group_id": "01919db491e8049f1150ca4d6c053f16401b3a5efdfe74a99a598dadbcb4bd9f",
+      "expected": "MAYBE",
+      "candidate": "MAYBE",
+      "raw_score": 0.9577022790908813,
+      "logits": [
+        -0.28121787309646606,
+        -2.5377957820892334,
+        2.938166618347168
+      ],
+      "truncated": false,
+      "token_count": 78,
+      "latency_seconds": 0.23183693600003608,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed7acffc9e77c00084a5c15_1",
+      "group_id": "e3d7503e76aebeea4471331f3fd76dd8a354f1476345c2470bc0ecbab6820316",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.5741889476776123,
+      "logits": [
+        -0.7427358031272888,
+        0.6126500368118286,
+        -0.1135592833161354
+      ],
+      "truncated": false,
+      "token_count": 52,
+      "latency_seconds": 0.2383754410000165,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ed4de0ac9e77c000848b084_3",
+      "group_id": "a0f9f65acbff7fe5d6a9a4aadcb19a77a38961976f928f15c0edd4c3941f4d18",
+      "expected": "MAYBE",
+      "candidate": "NO",
+      "raw_score": 0.9748626351356506,
+      "logits": [
+        2.867008924484253,
+        -1.6114840507507324,
+        -1.3710834980010986
+      ],
+      "truncated": false,
+      "token_count": 41,
+      "latency_seconds": 0.22188156000015624,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eb29889c9e77c0008d94302_1",
+      "group_id": "d5e9e7b2c1f40356761ef46112968f739b4ada3abe02d0046585b73169cbffda",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.9829996228218079,
+      "logits": [
+        -2.0296812057495117,
+        2.878598213195801,
+        -1.7356832027435303
+      ],
+      "truncated": false,
+      "token_count": 62,
+      "latency_seconds": 0.22321953799996663,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5ebbf32ac9e77c0009294da9_1",
+      "group_id": "b891f85550dd578ddeb149c224d3c8716651735e1a625368309ae3d90df0c2ce",
+      "expected": "YES",
+      "candidate": "YES",
+      "raw_score": 0.990635097026825,
+      "logits": [
+        -2.8431835174560547,
+        3.3299052715301514,
+        -1.5806094408035278
+      ],
+      "truncated": false,
+      "token_count": 51,
+      "latency_seconds": 0.1872116410002036,
+      "citation_supported": null
+    },
+    {
+      "id": "vitaminc:5eafed80c9e77c0009ce16f7_3",
+      "group_id": "92870e765fc21a0afd492548e110f65627a891d293db1bc44367520152384228",
+      "expected": "NO",
+      "candidate": "MAYBE",
+      "raw_score": 0.7559736967086792,
+      "logits": [
+        -0.34646856784820557,
+        -1.0180875062942505,
+        1.1969552040100098
+      ],
+      "truncated": true,
+      "token_count": 256,
+      "latency_seconds": 0.5388080610000543,
+      "citation_supported": null
+    }
+  ],
+  "production_qualified": false,
+  "fresh_risk_opened": false,
+  "locked_opened": false,
+  "scope": "207reused development queries; no independent promotion, truth confidence, citation audit or99claim.",
+  "new_cloud_spend_usd": 0
+}

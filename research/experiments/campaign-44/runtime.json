@@ -1,0 +1,9 @@
+{
+  "source_sha256": {
+    "src/houndoracle/general.py": "c90e6c0c7ba4b114c4cb1d5bf7a4ecef4312d1218a7e198d98fbdddd6e8550d0",
+    "src/houndoracle/local_semantics.py": "266b9773aaa0a5725061eb5f65c8df16423cf6643afcad5bd27266ff43df74de",
+    "src/houndoracle/engine.py": "0ef68033ba1b95e436f4249f05c476085eefc162972afcc6574ed52fcbb6859a"
+  },
+  "aggregation": "general-grouped-v1; observed2distinctdefinitiveconfidencevalues; resolution collapse motivates45",
+  "new_cloud_spending_usd": 0
+}

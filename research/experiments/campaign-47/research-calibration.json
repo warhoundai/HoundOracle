@@ -1,0 +1,19 @@
+{
+  "schema_version": "general-1",
+  "policy_id": "dee28e9ff72c756398ac7a330f61a72c908df57b4b155673ba29c4f18db1dc39",
+  "population": "Historical supplied VitaminC real revision components only; independent sourceaudit pending",
+  "supported_kinds": [
+    "prose",
+    "not"
+  ],
+  "expires_at": 1797513104.739463,
+  "dataset_digest": "363301bdebde750fd563c05e9d6af4bf1f019db14c283bea101fd43d0451efbc",
+  "method": "logistic",
+  "weight": 0.972807076592608,
+  "bias": -1.2626080851690724,
+  "threshold": 0.8,
+  "risk_lower_bound": 0.8676382347569275,
+  "risk_groups": 244,
+  "qualification_status": "research",
+  "audit_references": []
+}

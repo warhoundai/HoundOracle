@@ -1,0 +1,14 @@
+{
+ "milestone":"Connect exact general propositions and the pinned local research evaluator to public Oracle.verify; maintain evidence qualification and policy-bound calibration.",
+ "dataset":"All207previously observed campaign35validation cases; development regression only, never either95%locked gate.",
+ "systems":["legacy public API","public API with local semantic evaluator and grouped aggregator"],
+ "checkpoint_sha256":"c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70",
+ "source_kind":"Curator-imported supplied passages, not live retrieval. Acquisition qualification separately exercised by integration tests.",
+ "calibration":"None: accepted API decisions remainMAYBE unless existing deterministic fixture qualification applies. Report diagnostic candidates separately, never as accepted accuracy.",
+ "max_length":256,
+ "threads":2,
+ "context_policy":"Up to16exact800character windows;100character overlap; sourcegroups deduplicated; opposing qualified signs abstain. No generative model, downloads or cloud fallback.",
+ "success":"General prose reaches local model through the public API, old compiler failures are observable, all207outcomes preserved, calibration gates enforced. No95%qualification claim.",
+ "new_cloud_spending_usd":0,
+ "locked39_opened":false
+}

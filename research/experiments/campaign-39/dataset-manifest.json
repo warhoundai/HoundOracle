@@ -1,0 +1,27 @@
+{
+  "seed": 1987,
+  "source_file_sha256": {
+    "train": "7461c6fd1a13459590317c5ccdc8651dd2daf7c1ad8ae4b10ccd88d164fccd5a",
+    "dev": "544934677f5d133873e6d38f4557f8966f4efa5d3d70874ffe6913f2091b86b5",
+    "test": "7ad1808dbc30c62e0a1427a53022d0dfaff668a1fde3c4b612a2d266edd753ad"
+  },
+  "selection": "Component-uniform hash selection then fixed hash query within case; no label or prediction filtering. Exclude all prior source/claim/span components and previously used component IDs.",
+  "snapshot_references": "Explicit oldid URLs; passage-to-upstream match and citation support not independently audited.",
+  "license": "VitaminC/Wikipedia attribution/share-alike rights; text private, no AVeriTeC/ANLI or model-generated labels.",
+  "protocol": "Only passing38development candidate may enter risk; freeze map on old1000fit; only passing80risk gate may open500locked. No tuning after risk/test. Strict99joint/citation gate separate.",
+  "panels": {
+    "risk": {
+      "n": 1000,
+      "groups": 1000,
+      "sha256": "77b2de6b6ddc4e6957ddf04a082f2e428a5742441fec4a626e6ffd213ca56454",
+      "source_partition": "train"
+    },
+    "locked": {
+      "n": 500,
+      "groups": 500,
+      "sha256": "d42a6ee6cb5a10c181af0940ba86b9d101c227daf932b92a21435cbd079b9fef",
+      "source_partition": "test"
+    }
+  },
+  "production_qualified": false
+}

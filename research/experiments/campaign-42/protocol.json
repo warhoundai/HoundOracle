@@ -1,0 +1,37 @@
+{
+  "hypothesis": "An explicit relation-by-relation evidence audit improves three-way decisions without outside knowledge.",
+  "target_accuracy": 0.95,
+  "primary_metric": "All24original verdicts including MAYBE and failures; coverage and correct-definitive fraction separate",
+  "design": "Paired reused24development cases, one call per policy, randomized order seed1991. Post-development diagnostic, not independent qualification. No labels changed or cases removed.",
+  "policies": [
+    "baseline",
+    "relation_audit"
+  ],
+  "model": "gemini-3.8-flash",
+  "thinking": "HIGH",
+  "sdk": "2.34.0",
+  "location": "global",
+  "temperature": 0,
+  "seed": 1991,
+  "maximum_calls": 48,
+  "max_input_tokens": 8192,
+  "max_output_tokens": 4096,
+  "token_reservation_usd": 1.032192,
+  "compute_allowance_usd": 0.5,
+  "total_reserved_usd": 4,
+  "timeout_seconds": 1200,
+  "retries": 0,
+  "grounding": false,
+  "dataset_sha256": "7a61dbf6cbdac9307ebf497d3a595999ec36f250ffc6d64bb26053fadd132e69",
+  "source_hashes": {
+    "runner.py": "b095353f32af8d1f7bcd88c7bda66be69986c8a7341eb65bf2225fa22cbb481f",
+    "houndoracle/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "houndoracle/experiments/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "requirements.txt": "ba388fc3badbe86551577b98fed13befe6de5144cb77cf9f1c83895485824b3c",
+    "houndoracle/experiments/vertex.py": "c1da8d7959c342b12c020a6c15b9024a4636e7fa265eed19288c8196144b7c2b",
+    "houndoracle/experiments/citations.py": "0e1ae5b15abc03cf9171855ff64a49e405bbf743c6c169bfdb736b4aef8d4568",
+    "houndoracle/experiments/relation_policy.py": "3663a6f6068a078c77692b420dd558e0423cc59e408bed78920295f6b3a88bbd"
+  },
+  "acceptance": "Development gain>=2/24 with no decline in correct-definitive count;95%target separately requires>=23/24. Never production promotion from reused cases.",
+  "billing": "Existing50USD authorization; prices from pinned valid-through2026-12-31 record,0.75input/3.75output per million. Actual invoices/credits unverified. No new IAM or public endpoint."
+}

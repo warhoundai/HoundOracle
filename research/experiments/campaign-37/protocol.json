@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Adjusting all three relation logits may correct class bias that a max-score correctness map cannot fix. This is a distinct post-hoc score calibration experiment, not new encoder training.",
+  "model": "FrozenDeBERTa29",
+  "fit": "Dedicated calibration-fit1000 split deterministically into500class-map fit and500correctness-map fit, source/event-disjoint. Validation207remains separate.",
+  "selection": "Single C1standardizedmultinomiallogistic map, seed1985 max_iter1000, no hyperparameter search",
+  "features": "three-relation-logits-NO-YES-MAYBE-v1",
+  "gate": "Raw accuracy improvement>=.02 and raw definitive coverage regression<=.02 vs frozen29. No public promotion from development.",
+  "confidence": "Fit separate logistic correctness map on second500only. Report provisional80diagnostics, not a guarantee.",
+  "resources": "Cached scores, no new model calls or cloud spend",
+  "production_qualified": false
+}

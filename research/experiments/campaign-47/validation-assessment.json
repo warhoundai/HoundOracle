@@ -1,0 +1,169 @@
+{
+  "raw_candidates": {
+    "count": 500,
+    "groups": 500,
+    "accuracy_all_decisions": 0.782,
+    "definitive_coverage": 0.732,
+    "correct_definitive_fraction": 0.63,
+    "selective_risk": 0.139344262295082,
+    "definitive_count": 366,
+    "correct_definitive_count": 315,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.20906572050080285,
+      "p95": 0.31674551244886967,
+      "p99": 0.38383618675827147
+    },
+    "observed_latency_count": 500,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "research_selected80": {
+    "count": 500,
+    "groups": 500,
+    "accuracy_all_decisions": 0.638,
+    "definitive_coverage": 0.488,
+    "correct_definitive_fraction": 0.452,
+    "selective_risk": 0.07377049180327866,
+    "definitive_count": 244,
+    "correct_definitive_count": 226,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.20906572050080285,
+      "p95": 0.31674551244886967,
+      "p99": 0.38383618675827147
+    },
+    "observed_latency_count": 500,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "accepted_API": {
+    "count": 500,
+    "groups": 500,
+    "accuracy_all_decisions": 0.2,
+    "definitive_coverage": 0.0,
+    "correct_definitive_fraction": 0.0,
+    "selective_risk": null,
+    "definitive_count": 0,
+    "correct_definitive_count": 0,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.20906572050080285,
+      "p95": 0.31674551244886967,
+      "p99": 0.38383618675827147
+    },
+    "observed_latency_count": 500,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "calibration": {
+    "eligible": 366,
+    "brier": 0.11432902571831835,
+    "ece_10_fixed_bins": 0.051435140156243425,
+    "reliability_bins": [
+      {
+        "lower": 0.2,
+        "count": 8,
+        "mean_confidence": 0.2669961991481278,
+        "empirical_correctness": 0.5
+      },
+      {
+        "lower": 0.30000000000000004,
+        "count": 12,
+        "mean_confidence": 0.3456003166526598,
+        "empirical_correctness": 0.5
+      },
+      {
+        "lower": 0.4,
+        "count": 18,
+        "mean_confidence": 0.45655490054813685,
+        "empirical_correctness": 0.5555555555555556
+      },
+      {
+        "lower": 0.5,
+        "count": 14,
+        "mean_confidence": 0.5718275793948837,
+        "empirical_correctness": 1.0
+      },
+      {
+        "lower": 0.6000000000000001,
+        "count": 26,
+        "mean_confidence": 0.6504928639885141,
+        "empirical_correctness": 0.8076923076923077
+      },
+      {
+        "lower": 0.7000000000000001,
+        "count": 44,
+        "mean_confidence": 0.7509680656546208,
+        "empirical_correctness": 0.7727272727272727
+      },
+      {
+        "lower": 0.8,
+        "count": 73,
+        "mean_confidence": 0.8607458179680878,
+        "empirical_correctness": 0.8904109589041096
+      },
+      {
+        "lower": 0.9,
+        "count": 171,
+        "mean_confidence": 0.9422331174021752,
+        "empirical_correctness": 0.9415204678362573
+      }
+    ],
+    "risk_coverage": [
+      {
+        "threshold": 0.5,
+        "coverage": 0.656,
+        "selective_risk": 0.10060975609756095
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.628,
+        "selective_risk": 0.10509554140127386
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.576,
+        "selective_risk": 0.09722222222222221
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.488,
+        "selective_risk": 0.07377049180327866
+      },
+      {
+        "threshold": 0.85,
+        "coverage": 0.44,
+        "selective_risk": 0.07272727272727275
+      },
+      {
+        "threshold": 0.9,
+        "coverage": 0.342,
+        "selective_risk": 0.05847953216374269
+      },
+      {
+        "threshold": 0.95,
+        "coverage": 0.134,
+        "selective_risk": 0.014925373134328401
+      },
+      {
+        "threshold": 0.99,
+        "coverage": 0.0,
+        "selective_risk": null
+      }
+    ],
+    "note": "Correctness calibration among candidate definitive answers; not a per-answer guarantee."
+  },
+  "production_qualified": false,
+  "qualification95_passed": false,
+  "note": "500caseprovisional-source validation diagnostics. Not either1000case acceptance gate; API remains research-unqualified. No locked cases read."
+}

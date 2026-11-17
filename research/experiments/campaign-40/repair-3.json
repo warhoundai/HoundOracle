@@ -1,0 +1,12 @@
+{
+  "attempt": 3,
+  "change": "Compose native formatter and deadline stop policies; real library formatter integration tested for None/false/true native rules before acquiring weights. Synthetic loaded-model readiness probe before all dataset questions.",
+  "same_model_inputs_prompts_token_budgets_and_gate": true,
+  "code_sha256": {
+    "scripts/local_reasoning_screen.py": "bbdab0fcec2061ab4cb549afaa524912f9be1d866077ded26f753b4b407eeadc",
+    "scripts/check_reasoning_runtime.py": "08323cea2041b8d7f447f8e37dfb017afd0d12f7cfde75e4e6e35c9fc7cb12b7",
+    "src/houndoracle/experiments/completion_control.py": "670b435dc35bb5fd1ac3c76d7c394fb08fc3b5ab453f6108fa98330deb1bd6e2"
+  },
+  "additional_unscored_readiness_calls": 1,
+  "new_cloud_spend_usd": 0
+}

@@ -1,0 +1,11 @@
+{
+  "frozen_before38result": true,
+  "fit": "One logistic correctness map on old dedicated1000fit cases; no hyperparameter/threshold search",
+  "threshold": 0.8,
+  "risk_gate": "One-sided CP lower>=.8 atalpha.025 with>=30accepted fresh source groups",
+  "test": "500untouched components, exact paired marginal NI lower bounds atalpha.0125each for overall accuracy margin.01 and coverage margin.02. Risk plus endpoint union error budget.05 under independent/exchangeable sampling assumptions.",
+  "material_gain": "Overall accuracy or correct definitive fraction improvement>=.02 on locked cohort, plus both NI gates. Raw/accepted results both reported.",
+  "strict99": "Separate joint accuracy/precision/coverage/span-audit gate. No independent citation audit exists, so no public99qualification.",
+  "timings": "No paired latency/cost superiority claim from separately scored feature traces.",
+  "rollback": "No public/default change; preserve29until independently justified."
+}

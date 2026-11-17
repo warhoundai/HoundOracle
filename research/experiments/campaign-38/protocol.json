@@ -1,0 +1,27 @@
+{
+  "hypothesis": "The CE-only512-pair pilot corrected3development errors without a material-gain gate pass. Investigate whether one fixed continuation on1536additional training components yields a material improvement. No promotion of the failed pilot itself.",
+  "seed": 1983,
+  "training_pairs": 1536,
+  "training_rows": 3072,
+  "training_source_groups": 1536,
+  "additional_groups_disjoint_from_pilot": true,
+  "pilot_source_groups": 512,
+  "training_data": "Previously available human real-revision training partition; no new held-out or generated labels. Some rows seen by frozen base29.",
+  "base_checkpoint_sha256": "c520871a91b6497b628d60aad945b54c34819d8b53c5c3b0bf814fab7d3f3e70",
+  "initial_adapter_sha256": "ed4d27578dcfb2155a4ecbf3c123c15f6789bf81d413227de83c785f9d532ffa",
+  "inputs_sha256": "d9cc9f9481af4d2fe694484e1295fed6ee1cf71cad2e5176fd3b0694f93e0b43",
+  "initialization": "Warm CE pilot adapter, optimizer and RNG reset explicitly; same attention rank8 last4layers and classifier. Not an isolated causal test of dataset size alone.",
+  "optimizer": "AdamW LoRA2e-4 classifier2e-5 weight_decay.01 clip1, batch8,1epoch",
+  "pair_weight": 0,
+  "gate": "Raw accuracy improvement>=.02 versus independently validated29baseline, coverage regression<=.02; must also not regress versus CEpilot. Development-only retention; fresh qualification required.",
+  "screen": "Same207reused development queries; no final-test selection.",
+  "resources": {
+    "local_cpu_threads": 2,
+    "training_timeout_seconds": 1200,
+    "process_timeout_seconds": 1800,
+    "new_cloud_spend_usd": 0,
+    "base_weights_modified": false
+  },
+  "excluded_impossible_encoded_input_pairs": 2,
+  "production_qualified": false
+}

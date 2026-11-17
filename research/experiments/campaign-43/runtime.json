@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14",
+  "sqlite": "3.53.1",
+  "source_sha256": {
+    "src/houndoracle/tools/releases.py": "d498b8035d337af1b6ed053ef61cfc40717dfdbbf695c6c0f76437a033645398",
+    "src/houndoracle/tools/official_transport.py": "62cf0ce6c207716325b5fc3a56c47b3d6a873bbe5455dd697fd9230d551cfd73",
+    "scripts/benchmark_release_records.py": "d157f04a70a30347eed45bc974cefa37dff5e373f46e26ea52e3a5a628d497a5"
+  },
+  "cold_means": "Empty local evidence database per question; upstreamCDN/proxycache notcontrolled",
+  "model_calls": 0,
+  "new_cloud_spending_usd": 0,
+  "host_and_bandwidth_cost_usd": null
+}

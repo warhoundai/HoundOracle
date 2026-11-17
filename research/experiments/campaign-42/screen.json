@@ -1,0 +1,269 @@
+{
+  "systems": {
+    "baseline": {
+      "count": 24,
+      "groups": 24,
+      "accuracy_all_decisions": 0.7083333333333334,
+      "definitive_coverage": 0.625,
+      "correct_definitive_fraction": 0.4583333333333333,
+      "selective_risk": 0.2666666666666667,
+      "definitive_count": 15,
+      "correct_definitive_count": 11,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 5.22414728199999,
+        "p95": 53.68976861709997,
+        "p99": 58.22556624936006
+      },
+      "observed_latency_count": 24,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 2,
+      "accuracy_exact_95pct_interval": [
+        0.4890521861421669,
+        0.8738479114763087
+      ],
+      "known_token_list_price_subtotal_usd": 0.09664199999999999,
+      "token_cost_observed_count": 22,
+      "reported_token_list_price_usd": null
+    },
+    "relation_audit": {
+      "count": 24,
+      "groups": 24,
+      "accuracy_all_decisions": 0.75,
+      "definitive_coverage": 0.5833333333333334,
+      "correct_definitive_fraction": 0.4583333333333333,
+      "selective_risk": 0.2142857142857143,
+      "definitive_count": 14,
+      "correct_definitive_count": 11,
+      "citation_supported_definitive_fraction": null,
+      "all_in_cost_usd": null,
+      "cost_per_correct_definitive_usd": null,
+      "latency_seconds": {
+        "p50": 7.310744675999985,
+        "p95": 31.962038541600002,
+        "p99": 35.03227372212009
+      },
+      "observed_latency_count": 24,
+      "missing_latency_count": 0,
+      "cache_hits": 0,
+      "failed_queries": 0,
+      "accuracy_exact_95pct_interval": [
+        0.5328871975773307,
+        0.902269590525467
+      ],
+      "known_token_list_price_subtotal_usd": 0.14209425,
+      "token_cost_observed_count": 24,
+      "reported_token_list_price_usd": 0.14209425
+    }
+  },
+  "historical_local_NLI29_reference": {
+    "count": 24,
+    "groups": 24,
+    "accuracy_all_decisions": 0.7916666666666666,
+    "definitive_coverage": 0.75,
+    "correct_definitive_fraction": 0.5833333333333334,
+    "selective_risk": 0.2222222222222222,
+    "definitive_count": 18,
+    "correct_definitive_count": 14,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": null,
+      "p95": null,
+      "p99": null
+    },
+    "observed_latency_count": 0,
+    "missing_latency_count": 24,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "local_reference_note": "Previously scored identical supplied evidence cases, no new local timing or agent workflow measurement. Raw uncalibrated component scores.",
+  "label_breakdown": {
+    "baseline": {
+      "YES": {
+        "count": 8,
+        "groups": 8,
+        "accuracy_all_decisions": 0.625,
+        "definitive_coverage": 0.75,
+        "correct_definitive_fraction": 0.625,
+        "selective_risk": 0.16666666666666663,
+        "definitive_count": 6,
+        "correct_definitive_count": 5,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": {
+          "p50": 15.161621031999971,
+          "p95": 58.04937483720005,
+          "p99": 58.46048813224006
+        },
+        "observed_latency_count": 8,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 2
+      },
+      "NO": {
+        "count": 8,
+        "groups": 8,
+        "accuracy_all_decisions": 0.75,
+        "definitive_coverage": 0.875,
+        "correct_definitive_fraction": 0.75,
+        "selective_risk": 0.1428571428571429,
+        "definitive_count": 7,
+        "correct_definitive_count": 6,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": {
+          "p50": 8.71314556300004,
+          "p95": 27.819352742799975,
+          "p99": 31.638913218159942
+        },
+        "observed_latency_count": 8,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 0
+      },
+      "MAYBE": {
+        "count": 8,
+        "groups": 8,
+        "accuracy_all_decisions": 0.75,
+        "definitive_coverage": 0.25,
+        "correct_definitive_fraction": 0.0,
+        "selective_risk": 1.0,
+        "definitive_count": 2,
+        "correct_definitive_count": 0,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": {
+          "p50": 2.4820211455000276,
+          "p95": 18.192058003800007,
+          "p99": 21.403812695960013
+        },
+        "observed_latency_count": 8,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 0
+      }
+    },
+    "relation_audit": {
+      "YES": {
+        "count": 8,
+        "groups": 8,
+        "accuracy_all_decisions": 0.875,
+        "definitive_coverage": 1.0,
+        "correct_definitive_fraction": 0.875,
+        "selective_risk": 0.125,
+        "definitive_count": 8,
+        "correct_definitive_count": 7,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": {
+          "p50": 10.678846956499967,
+          "p95": 31.81957328205008,
+          "p99": 35.028843513210106
+        },
+        "observed_latency_count": 8,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 0
+      },
+      "NO": {
+        "count": 8,
+        "groups": 8,
+        "accuracy_all_decisions": 0.5,
+        "definitive_coverage": 0.625,
+        "correct_definitive_fraction": 0.5,
+        "selective_risk": 0.19999999999999996,
+        "definitive_count": 5,
+        "correct_definitive_count": 4,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": {
+          "p50": 13.931448470499987,
+          "p95": 31.43443951040001,
+          "p99": 32.17307815408001
+        },
+        "observed_latency_count": 8,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 0
+      },
+      "MAYBE": {
+        "count": 8,
+        "groups": 8,
+        "accuracy_all_decisions": 0.875,
+        "definitive_coverage": 0.125,
+        "correct_definitive_fraction": 0.0,
+        "selective_risk": 1.0,
+        "definitive_count": 1,
+        "correct_definitive_count": 0,
+        "citation_supported_definitive_fraction": null,
+        "all_in_cost_usd": null,
+        "cost_per_correct_definitive_usd": null,
+        "latency_seconds": {
+          "p50": 2.7377714454999875,
+          "p95": 9.405376869950004,
+          "p99": 9.669240918789995
+        },
+        "observed_latency_count": 8,
+        "missing_latency_count": 0,
+        "cache_hits": 0,
+        "failed_queries": 0
+      }
+    }
+  },
+  "paired": {
+    "accuracy_delta": {
+      "mean": 0.040125,
+      "cluster_bootstrap_95pct_interval": [
+        -0.125,
+        0.20833333333333337
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.03979166666666667,
+      "cluster_bootstrap_95pct_interval": [
+        -0.20833333333333337,
+        0.125
+      ]
+    },
+    "p50_latency_reduction": {
+      "mean": -0.3688433855830371,
+      "cluster_bootstrap_95pct_interval": [
+        -1.5591466537762717,
+        0.40766480592253074
+      ]
+    },
+    "p95_latency_reduction": {
+      "mean": 0.2857953430190876,
+      "cluster_bootstrap_95pct_interval": [
+        -0.30878551545848554,
+        0.5766999376474413
+      ]
+    }
+  },
+  "all_planned_slots": 48,
+  "screen_passed": false,
+  "observed_95pct_target_met": false,
+  "independently_qualified_95pct": false,
+  "production_qualified": false,
+  "scope": "Reused24development cases, matched supplied historical evidence; no live search or whole-agent comparison. Citation entailment unaudited; model candidates uncalibrated. No label changes or failed-row exclusions.",
+  "completion": {
+    "campaign": "houndoracle-relation-42",
+    "halted": null,
+    "kind": "completed",
+    "planned_slots": 48,
+    "versions": {
+      "baseline": "gemini-3.8-flash",
+      "relation_audit": "gemini-3.8-flash"
+    }
+  }
+}
