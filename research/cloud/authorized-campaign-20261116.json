@@ -1,0 +1,147 @@
+{
+  "authorized_at": "2026-11-16T10:45:55.295150+00:00",
+  "authorization": "User: Continue repeat fix repeat you have authorisation to spend 300$ AWS 50$ google cloud",
+  "ceilings_usd": {
+    "aws": 300,
+    "gcp": 50
+  },
+  "reservations": [
+    {
+      "id": "campaign14",
+      "provider": "gcp",
+      "maximum_usd": 5,
+      "state": "CANCELLED_JOB_DELETED_RETAIN_UNKNOWN_CHARGES",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "campaign14-repaired",
+      "provider": "gcp",
+      "maximum_usd": 5,
+      "state": "COMPLETED_JOB_DELETED",
+      "actual_invoice_usd": null,
+      "reported_token_list_price_usd": 0.102543
+    },
+    {
+      "id": "workflow18",
+      "provider": "gcp",
+      "maximum_usd": 8,
+      "state": "PREPARED_NOT_PROVISIONED_AUTHENTICATION_BLOCKED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "private-artifact-transfer18",
+      "provider": "aws",
+      "maximum_usd": 2,
+      "state": "RESERVED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "scaled-training19",
+      "provider": "aws",
+      "maximum_usd": 10,
+      "state": "COMPLETED_REJECTED_COMPUTE_TERMINATED_IAM_CLEANED",
+      "actual_invoice_usd": null,
+      "training_seconds": 924.334176684,
+      "instance_id": "i-05a35b29f3cd13f3c"
+    },
+    {
+      "id": "fully-local-ec2-test22",
+      "provider": "aws",
+      "maximum_usd": 5,
+      "state": "COMPLETED_COMPUTE_TERMINATED_IAM_SG_CLEANED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "fully-local-ec2-test22-recovery",
+      "provider": "aws",
+      "maximum_usd": 5,
+      "state": "COMPLETED_COMPUTE_TERMINATED_IAM_SG_CLEANED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "fully-local-ec2-container22-final",
+      "provider": "aws",
+      "maximum_usd": 5,
+      "state": "COMPLETED_COMPUTE_TERMINATED_IAM_SG_CLEANED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "selfhost-web23",
+      "provider": "aws",
+      "maximum_usd": 5,
+      "state": "COMPLETED_INSTANCES_TERMINATED_SG_DELETED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "recaptcha26",
+      "provider": "aws",
+      "maximum_usd": 5,
+      "state": "COMPLETED_EXPERIMENTAL_NOT_QUALIFIED_ALL_WORKERS_TERMINATED_SG_DELETED",
+      "actual_invoice_usd": null,
+      "workers": 5
+    },
+    {
+      "id": "larger-nli28",
+      "provider": "aws",
+      "maximum_usd": 5,
+      "state": "COMPLETED_REJECTED_WORKER_TERMINATED_SG_DELETED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "deberta-adaptation29",
+      "provider": "aws",
+      "maximum_usd": 5,
+      "state": "COMPLETED_RESEARCH_GATE_PASSED_WORKER_TERMINATED_IAM_SG_CLEANED",
+      "actual_invoice_usd": null,
+      "instance_id": "i-0d5d6256c11453ede",
+      "training_seconds": 1092.160232367
+    },
+    {
+      "id": "local-generative32",
+      "provider": "aws",
+      "maximum_usd": 10,
+      "state": "COMPLETED_REJECTED_BOTH_WORKERS_TERMINATED_IAM_SG_CLEANED",
+      "actual_invoice_usd": null
+    },
+    {
+      "id": "gemini-reasoning33",
+      "provider": "gcp",
+      "maximum_usd": 4,
+      "state": "COMPLETED_48_OF_48_JOB_DELETED",
+      "actual_invoice_usd": null,
+      "reported_model_token_list_price_usd": 0.1431075
+    },
+    {
+      "id": "local-generative34",
+      "provider": "aws",
+      "maximum_usd": 15,
+      "state": "COMPLETED_REJECTED_WORKER_TERMINATED_IAM_SG_CLEANED",
+      "actual_invoice_usd": null,
+      "instance_id": "i-0927514528c509ee3"
+    },
+    {
+      "id": "relation-audit42",
+      "provider": "gcp",
+      "maximum_usd": 4,
+      "state": "COMPLETED_REJECTED_48_OF_48_JOB_DELETED",
+      "actual_invoice_usd": null,
+      "reported_known_token_list_price_subtotal_usd": 0.23873625,
+      "token_usage_missing_requests": 2,
+      "complete_token_cost_usd": null
+    },
+    {
+      "id": "general-adapter46",
+      "provider": "aws",
+      "maximum_usd": 12,
+      "state": "COMPLETED_REJECTED_WORKER_TERMINATED_IAM_PROFILE_SG_DELETED",
+      "actual_invoice_usd": null,
+      "instance_id": "i-0cb22a7bcc397d7f0",
+      "training_seconds": 407.610655482
+    }
+  ],
+  "unreserved_usd": {
+    "aws": 216,
+    "gcp": 24
+  },
+  "controls": "Reserve before provisioning or inference; retain unknown charges; no unrelated infrastructure changes; clean temporary resources. These are application campaign limits, not account-wide billing caps."
+}

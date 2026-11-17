@@ -1,0 +1,38 @@
+{
+  "fit_counts": {
+    "balanced": {
+      "rows": 1200,
+      "guarded_eligible": 561,
+      "errors": 72
+    },
+    "strict-pages": {
+      "rows": 400,
+      "guarded_eligible": 83,
+      "errors": 56
+    }
+  },
+  "retired_data_diagnostics": {
+    "balanced": {
+      "local_coverage": 0.125,
+      "selected": 150,
+      "errors": 7
+    },
+    "strict-pages": {
+      "local_coverage": 0.01,
+      "selected": 4,
+      "errors": 1
+    }
+  },
+  "mappings": {
+    "balanced": {
+      "method": "logistic",
+      "weight": 0.7107175285943519,
+      "bias": 0.0753549812345512
+    },
+    "strict-pages": {
+      "method": "logistic",
+      "weight": 1.423317977015672,
+      "bias": -4.004921607968248
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "original_successful_records": 196,
+  "failed_query": {
+    "id": "fever:93342",
+    "repeat": 2,
+    "arm": "baseline"
+  },
+  "previous_reserved_attempts": 179,
+  "remaining_unattempted_tasks": 91,
+  "maximum_cumulative_attempts": 270,
+  "worker_timeout_seconds": 400,
+  "previous_worker_elapsed_seconds_conservative": 792.145,
+  "maximum_cumulative_worker_seconds": 1192.145,
+  "same_job_definition": true,
+  "same_inference_modules": true,
+  "failed_query_retried": false,
+  "policy_changed": false,
+  "authorization_usd": 8,
+  "reason": "Recover unattempted tasks after provider 504; retain original failure and uncertainty. No new spending envelope."
+}

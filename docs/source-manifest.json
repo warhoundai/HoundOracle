@@ -1,0 +1,117 @@
+{
+  "retrieved_date": "2026-11-15",
+  "sources": [
+    {
+      "name": "nnue",
+      "url": "https://official-stockfish.github.io/docs/nnue-pytorch-wiki/docs/nnue.html",
+      "sha256": "1a3e6eb170ec1410ea567ea1b507782aaa5657c505d798ade6e0fef5be00f142",
+      "bytes": 753359,
+      "status": "retrieved"
+    },
+    {
+      "name": "stockfish_search",
+      "url": "https://raw.githubusercontent.com/official-stockfish/Stockfish/master/src/search.cpp",
+      "sha256": "cb3ee91bc722d2da08682f594334f141a261475887941103654f3429d3996623",
+      "bytes": 95389,
+      "status": "retrieved"
+    },
+    {
+      "name": "alphazero",
+      "url": "https://arxiv.org/pdf/1712.01815",
+      "sha256": "26c43408551c22f4fdc98e47f9b4592ab2161fac1ba5df27c897f46d8b6cec7f",
+      "bytes": 636527,
+      "status": "retrieved"
+    },
+    {
+      "name": "muzero",
+      "url": "https://arxiv.org/pdf/1911.08265",
+      "sha256": "25588ee1d48690b33359a08a42fadfe86335aefefeee241d465b8bbd5eaa445c",
+      "bytes": 2701361,
+      "status": "retrieved"
+    },
+    {
+      "name": "alphageometry2",
+      "url": "https://www.jmlr.org/papers/volume26/25-1654/25-1654.pdf",
+      "sha256": "54ea0a3c557cbf19f57a9c255e096cd4241c94d8563939a174f8a17a7ecefd28",
+      "bytes": 863616,
+      "status": "retrieved"
+    },
+    {
+      "name": "deepsets",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/f22e4747da1aa27e363d86d40ff442fe-Paper.pdf",
+      "sha256": "ae1e9a4655b8ada5292b3dd3558dd7e18b05913106ebc36bf9f609c917f163c0",
+      "bytes": 1990691,
+      "status": "retrieved"
+    },
+    {
+      "name": "settransformer",
+      "url": "https://proceedings.mlr.press/v97/lee19d/lee19d.pdf",
+      "sha256": "965aee34a80935c775156bf96c059e74a226282cbcaee69eb6f9cf6f2603525d",
+      "bytes": 4877237,
+      "status": "retrieved"
+    },
+    {
+      "name": "calibration",
+      "url": "https://proceedings.mlr.press/v70/guo17a/guo17a.pdf",
+      "sha256": "df7c93f97204f8a3c2b10f6d5bf5265baac25f00c1ae3b473a3e1dbc102dacb2",
+      "bytes": 828420,
+      "status": "retrieved"
+    },
+    {
+      "name": "fever",
+      "url": "https://aclanthology.org/N18-1074.pdf",
+      "sha256": "5d328bad901f488c4cff1dd073b55e30653b29c9c21c48700b926421cb84c9f7",
+      "bytes": 460896,
+      "status": "retrieved"
+    },
+    {
+      "name": "hover",
+      "url": "https://aclanthology.org/2020.findings-emnlp.309.pdf",
+      "sha256": "1054a03641f89e915f36b8f3a5dcb8b5038fb451c29737a6617baade4c62a672",
+      "bytes": 3149351,
+      "status": "retrieved"
+    },
+    {
+      "name": "feverous",
+      "url": "https://arxiv.org/pdf/2106.05707",
+      "sha256": "ccab004de543fa77dc2fe961690ec5c3bc969fb673302842f7925bbf04273fcb",
+      "bytes": 3503391,
+      "status": "retrieved"
+    },
+    {
+      "name": "averitec",
+      "url": "https://fever.ai/dataset/averitec.html",
+      "sha256": "35c987c1446b0974e3f0edaa39de753201358843960004dd376b56c8046ffa27",
+      "bytes": 29495,
+      "status": "retrieved"
+    },
+    {
+      "name": "riskcontrol",
+      "url": "https://arxiv.org/pdf/2101.02703",
+      "sha256": "082cb7f952b4a4f91ad184a394ebe3766e66a1ccc4c7bbb295b2f7b7994a7983",
+      "bytes": 15543592,
+      "status": "retrieved"
+    },
+    {
+      "name": "selective",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/4a8423d5e91fda00bb7e46540e2b0cf1-Paper.pdf",
+      "sha256": "167ed5f7292edd07b90c27b2711dea70947ccb024681af020f4bfc4fbbad2e40",
+      "bytes": 414761,
+      "status": "retrieved"
+    },
+    {
+      "name": "fire",
+      "url": "https://aclanthology.org/2025.findings-naacl.158.pdf",
+      "sha256": "ff48e27a2d0bbbced51025bba517dcc88178502be143a164d74b00ea7e8d0f99",
+      "bytes": 397432,
+      "status": "retrieved"
+    },
+    {
+      "name": "fire_algorithm",
+      "url": "https://github.com/mbzuai-nlp/fire/blob/main/eval/fire/verify_atomic_claim.py",
+      "sha256": "05567e08e9a8b3d84cc549c26b682d5917857f58b6eb520b1d2fee1d209c8cec",
+      "bytes": 12003,
+      "status": "retrieved"
+    }
+  ]
+}

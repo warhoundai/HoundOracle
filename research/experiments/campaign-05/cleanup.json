@@ -1,0 +1,10 @@
+{
+  "deletion": {
+    "stderr": "Deleting [houndoracle-fresh-20261116]...\n.........................done.\nDeleted job [houndoracle-fresh-20261116].\n"
+  },
+  "verification": {
+    "stdout": "[]\n"
+  },
+  "api": "Existing Cloud Run API left enabled; no job or public service retained.",
+  "iam": "No new grants; existing service account preserved."
+}

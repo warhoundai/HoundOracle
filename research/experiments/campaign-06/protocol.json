@@ -1,0 +1,107 @@
+{
+  "baseline_commit": "3b1783a",
+  "new_cloud_spend_authorized_usd": 0,
+  "local_optimization_limit_minutes": 45,
+  "download_limit_bytes": 170000000,
+  "objectives": [
+    "Reduce unnecessary Gemini fallback without material definitive-coverage loss",
+    "Make benchmark continuation durable and avoid restarting successful or uncertain paid tasks",
+    "Use profiles to decide whether C++ can improve end-to-end latency"
+  ],
+  "experiments": [
+    {
+      "id": "A01",
+      "hypothesis": "A separately calibrated high-confidence insufficient-evidence gate can return MAYBE locally without losing more than 2 percentage points of potential definitive coverage.",
+      "mapping": "Logistic correctness mapping fitted on old calibration fit groups only, restricted to existing head's MAYBE candidates. Gate scores are not truth probabilities.",
+      "thresholds": [
+        0.9,
+        0.95,
+        0.975,
+        0.99
+      ],
+      "selection": "Old validation only: maximize fallback avoidance subject to <=1% observed false-abstention/all; no new calibration or locked outcomes used for selection.",
+      "risk_gate": "One fixed policy evaluated once on 400 fresh independent components, one question per component, deterministic hash selection with no class filtering. One-sided 95% Clopper-Pearson bound on false-abstention/all must be <=2%, and at least 5% calls avoided. Reject rather than retune on this risk set.",
+      "heldout": "200 additional fresh independent components, sealed before inference; one-shot local assessment only after policy freeze. Previous scored cohorts never count as fresh."
+    },
+    {
+      "id": "A02",
+      "hypothesis": "Durable per-task and per-call journal permits safe continuation after process/provider failure without duplicate successful/uncertain paid work.",
+      "acceptance": "SQLite transactions durably reserve requests/spend before provider work; checkpoint transitions; refuse input/model/policy mismatches; restart marks outstanding work uncertain and does not silently retry it; failure reasons never mean falsehood. Wall-time preflight stops before launching a call that cannot fit."
+    },
+    {
+      "id": "A03",
+      "hypothesis": "Native inference already dominates local evaluation; a C++ rewrite is justified only if Python accounts for enough of end-to-end time.",
+      "gate": "Record cProfile costs and an Amdahl upper bound before any native implementation. Retain Python unless measured bottleneck and meaningful total benefit justify new build/maintenance cost."
+    },
+    {
+      "id": "A04",
+      "hypothesis": "A fixed .80 insufficiency-score threshold, after A01 selected no cases at >=.90, may avoid useful fallback while preserving coverage. It never authorizes definitive YES/NO.",
+      "selection": "A new separately named candidate; fixed .80 before evaluating it. Old validation loss <=1% and skip >=5% required before fresh risk use.",
+      "risk_gate": "Same untouched 400-component risk cohort; one-sided CP upper false-abstention/all <=2%; no retuning after risk outcomes."
+    },
+    {
+      "id": "A05",
+      "hypothesis": "Combined context plus per-passage max/mean/min NLI signals improve simple aggregation without adding generative models.",
+      "architecture": "Same pinned encoder; one C=1 logistic head, seed1911, max_iter500; deduplicate exact passage text, cap eight passages and abstain when truncated.",
+      "gate": "Calibrated old validation accuracy and definitive coverage must not decrease; selective error must not increase. Otherwise reject before fresh tests. No production promotion from validation."
+    },
+    {
+      "id": "A06",
+      "hypothesis": "Domain fine-tuning the existing compact semantic evaluator addresses evidence-understanding failures that score calibration and richer aggregation did not repair.",
+      "training": "Exactly one epoch over 2000 existing development claims; seed1912, AdamW lr2e-5 weight_decay.01, batch8, max_length256, CPU threads2. Stop training after900 seconds; partial epochs are rejected. No fresh/locked examples or Gemini labels.",
+      "resources": "Isolated CPU-only torch2.15.0+cpu/transformers5.23.0 environment; one pinned safetensors base; combined new package/weight downloads bounded1GB. No GPU, cloud provisioning or paid API calls.",
+      "gate": "One fixed logistic aggregator and existing disjoint correctness-calibration process. Retain research only if old validation accuracy/coverage do not decrease and selective error does not increase; reject otherwise. New 400/200 independent components remain unscored until the final policy is frozen.",
+      "export": "Safe weights only; no remote Python model code. Export ONNX and verify parity before runtime use. No trained weights publicly redistributed."
+    },
+    {
+      "id": "A07",
+      "hypothesis": "A newly fine-tuned verifier may need a different calibrated operating threshold; choose the best safe policy using old validation, then freeze before fresh risk/test.",
+      "thresholds": [
+        0.8,
+        0.85,
+        0.9,
+        0.95
+      ],
+      "reference": "Current stable research routing policy: original FP32 logistic at .85, not a weaker raw head.",
+      "gate": "Choose maximal correct-definitive coverage with no validation accuracy/definitive-coverage loss or selective-risk increase versus .85 reference. Scores remain calibrated correctness estimates, not guarantees. Fresh risk and locked sets remain unscored until chosen policy is frozen."
+    }
+  ],
+  "data_policy": "Original FEVER human labels and pinned gold evidence mirror; same rights review as existing local research. Source text/weights remain outside Apache repository. Exclude any component sharing page/subject/claim with previous original dataset. No AVeriTeC.",
+  "stopping": "Local resource bound, unavailable independent evidence, or three consecutive controlled experiments without material improvement. Preserve failures, no universal-optimum claim.",
+  "production": "No automatic promotion or public release. Existing confidence floor, products and OPS preserved. New paid runs require a concrete separately authorized budget.",
+  "balanced_panel_amendment": {
+    "reason": "Strict whole-page graph residual is ~90% MAYBE, so it cannot support a broad accuracy claim. Before scoring any new cases, add a separate balanced fact/entity-disjoint panel; preserve original strict natural regime and its untouched locked data.",
+    "risk": "600 groups, 200/label; exact source sentence/normalized span, primary entity, leading subject and claim disjoint from prior dataset and between splits. Pages may overlap and this weaker split is explicitly reported.",
+    "locked": "300 additional groups, 100/label, sealed before inference. Never retune on risk or locked outcomes.",
+    "coverage_diagnostic": "Per-YES/NO-stratum one-sided CP bounds with Bonferroni alpha .025 each; balanced overall false-abstention bound is their sum divided by3. No claim of universal shift-proof risk control."
+  },
+  "risk_power_extension": {
+    "time": "Before scoring any fresh risk or locked examples",
+    "justification": "Old validation gate false-abstention rate3/480 implies 600 balanced risk questions may be underpowered for a2% coverage-opportunity-loss bound. Increase to1200,400/class, with fixed policy and alpha.025/class. Preserve all existing risk/locked files and assign additional unused whole components only.",
+    "not_allowed": "No second threshold selection or sample-size change after fresh outcomes are inspected."
+  },
+  "successor_episode": {
+    "reason": "One-epoch fine-tune improved balanced validation but failed strict-page heldout factual reliability (40.6% selected error). Do not promote globally.",
+    "A08": "Add original pretrained NLI semantic agreement at score>=.5 before definitive fine-tuned decisions. Calibrate final guarded score separately on each retired risk regime, use the minimum estimated correctness at fixed .85. No false independence claim.",
+    "data_rule": "All already scored balanced1200+300 and strict400+200 become retired fit/diagnostic data. Create separate successor risk and locked panels before evaluating this successor.",
+    "gate": "Independent error upper bound<=20% in BOTH regimes and no material accuracy/coverage loss versus the old .85 research route. Do not retune on successor outcomes. Qualified MAYBE gate signal unchanged, rebind only with identical original fine-model features and assess again.",
+    "scope": "A separate bounded local architecture episode, max30 additional minutes, no new cloud spending or public release."
+  },
+  "safe_specialist_successor": {
+    "A10": "Retain the original .85 verifier for definitive decisions. Invoke the new fine-tuned model only after original abstention, solely to apply its previously qualified .90 insufficiency gate. Never permit the specialist to emit YES/NO.",
+    "safety_argument": "Original local definitive answers remain identical. New local abstentions are a subset of the already assessed insufficiency selections, so unconditional false-abstention opportunity loss cannot exceed the qualified selector bound under those population assumptions. This is not a bound under arbitrary shift.",
+    "comparison": "Compare fallback requirements and missed definitive opportunities on untouched successor panels; do not claim Gemini accuracy/latency without live calls.",
+    "data_availability_amendment": "The first successor construction failed before writing or scoring any cases because excluding entire new strict page components also from the fact-based panel left only105YES cases. Keep each regime definition, but exclude cross-regime duplicate fact/entity components rather than all shared background pages. Disclose possible cross-regime correlation; do not pool the panels. No seen groups or predictions used for selection.",
+    "A08_status": "Rejected before successor scoring: worst-regime calibration collapsed retired balanced coverage to12.5% and strict coverage to1%, not a useful upgrade."
+  },
+  "amendments": [
+    {
+      "stage": "before successor scoring",
+      "change": "Added pinned mirror test.jsonl crosschecked against official shared_task_dev: 9847 accepted, zero original-ID overlap with prior mirror valid. Strict and fact components recomputed across train plus added cohort. Fresh balanced locked size reduced to 60 per class before scoring; only 73 unused supported components remained after 200/class risk. No model scores used."
+    },
+    {
+      "stage": "before successor scoring; both earlier builders failed before writing",
+      "change": "Refuting components were scarcer than supporting: only213 total available under the unchanged exclusion rule. Seal balanced risk100/class and locked100/class, no outcome-based selection. Preserve original failed construction attempts in history."
+    }
+  ]
+}

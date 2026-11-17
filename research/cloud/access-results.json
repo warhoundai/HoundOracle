@@ -1,0 +1,20 @@
+{
+ "project":"project-f6e3c8ea-6b96-44a8-afa",
+ "project_state":"ACTIVE",
+ "vertex_api":"enabled",
+ "authorization":{"new_spend_usd":3,"scope":"at most 48 matched-evidence calls and one 10-minute CPU job; no grounding"},
+ "local_adc":"unavailable",
+ "quota_inspection":"Cloud Quotas API disabled; connector rejects alternative quota command",
+ "billing_and_credit_balance":"not available through permitted connector commands",
+ "attempts":[
+  {"region":"us-central1","operation":"CreateCustomJob","http_status":429,"code":"RESOURCE_EXHAUSTED","metric":"aiplatform.googleapis.com/custom_model_training_cpus","job_created":false},
+  {"region":"us-east1","operation":"CreateCustomJob","http_status":429,"code":"RESOURCE_EXHAUSTED","metric":"aiplatform.googleapis.com/custom_model_training_cpus","job_created":false}
+ ],
+ "cloud_shell_fallback":"Connector explicitly disallows gcloud cloud-shell ssh; not bypassed",
+ "model_availability":"Official documentation verifies gemini-3.8-flash; project inference access remains untested because execution failed before any generation",
+ "actual_gemini_generations":0,
+ "started_training_workers":0,
+ "model_and_training_usage_charges_usd":0,
+ "invoice_verified":false,
+ "stop_reason":"Critical cloud execution resource unavailable; no quota increase, new API enablement or credential export attempted"
+}

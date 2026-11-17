@@ -1,0 +1,27 @@
+{
+  "campaign": "01",
+  "baseline_commit": "9123fdb",
+  "seed": 1729,
+  "authorized_new_cloud_spend_usd": 0,
+  "local_wall_time_limit_minutes": 45,
+  "max_model_files_bytes": 700000000,
+  "max_training_examples": 2000,
+  "max_validation_examples": 240,
+  "max_calibration_examples": 240,
+  "locked_evaluation_examples": 240,
+  "min_confidence": 0.8,
+  "accuracy_noninferiority_margin": 0.01,
+  "coverage_noninferiority_margin": 0.02,
+  "cost_reduction_target": 0.30,
+  "p95_latency_reduction_target": 0.20,
+  "bootstrap_replicates": 2000,
+  "stopping_rules": ["resource limit", "critical comparison evidence unavailable", "three consecutive controlled experiments without material Pareto improvement"],
+  "experiments": [
+    {"id":"E01", "hypothesis":"A pinned pretrained MiniLM NLI evaluator can recover meaningful evidence-conditioned coverage on independent FEVER annotations where the controlled-language parser abstains.", "risk":"NLI entailment is not truth; Wikipedia evidence policy differs from production primary-source policy", "gate":"held-out validation accuracy and selective-risk analysis; research-only until final-policy calibration qualifies"},
+    {"id":"E02", "hypothesis":"Dedicated final-policy calibration improves correctness estimates over raw softmax.", "methods":["temperature","logistic","isotonic"], "selection":"validation Brier score using calibration-fit half only; other half estimates conservative correctness by fixed bins", "risk":"constant scores or sparse independent groups cannot qualify", "gate":"group-aware uncertainty and explicit abstention"},
+    {"id":"E03", "hypothesis":"Published int8 ONNX weights reduce CPU latency with noninferior predictions relative to fp32.", "gate":"paired p95 reduction >=20%, accuracy loss <=1 point, coverage loss <=2 points", "rollback":"isolate if failed; no core replacement"}
+  ],
+  "locked_test_policy":"Hash entire split manifest before candidate validation. Do not execute locked test until configurations are frozen. No tuning on evaluation outcomes.",
+  "data_policy":"External data stays outside Apache source repository; retain attribution and source licensing. Exclude AVeriTeC. Original FEVER human labels cross-check gold-evidence mirror; preserve NEI. Group all shared evidence pages before splitting.",
+  "scope":"Historical evidence-conditioned classification and scoped source-record checks; not unrestricted live-world verification. Full Gemini comparisons pending project/access/spend preflight."
+}

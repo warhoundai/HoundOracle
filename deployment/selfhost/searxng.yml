@@ -1,0 +1,27 @@
+use_default_settings:
+  engines:
+    keep_only:
+      - google
+      - bing
+      - duckduckgo
+search:
+  formats:
+    - html
+    - json
+  safe_search: 1
+  default_lang: en-US
+server:
+  bind_address: "0.0.0.0"
+  port: 8080
+  limiter: false
+  public_instance: false
+outgoing:
+  request_timeout: 5.0
+  max_request_timeout: 8.0
+engines:
+  - name: google
+    disabled: false
+  - name: bing
+    disabled: false
+  - name: duckduckgo
+    disabled: false

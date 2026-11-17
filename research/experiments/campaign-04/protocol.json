@@ -1,0 +1,54 @@
+{
+  "baseline_commit": "09a940f",
+  "new_cloud_spend_authorized_usd": 0,
+  "local_wall_time_limit_minutes": 45,
+  "experiments": [
+    {
+      "id": "E01",
+      "hypothesis": "Explicit complete-permitted-corpus mode can abstain without generative inference when evidence is exactly empty.",
+      "risk": "Does not apply to live retrieval, unsupported malformed input, or permission to use outside knowledge.",
+      "acceptance": "No verdict/coverage changes on development and validation; zero fallback calls for empty corpus; no shortcut for partial corpus or bypass. Archived cloud replay is counterfactual call/cost accounting, never live Gemini latency."
+    },
+    {
+      "id": "E02",
+      "hypothesis": "Bounded exact evaluator reuse reduces warm local CPU overhead with identical verdicts.",
+      "risk": "Stale or cross-scope reuse; mutable cached objects; model/calibration changes.",
+      "acceptance": "At least 20% P95 local evaluation reduction on repeated validation, zero verdict drift; TTL, revision, polarity, temporal, evidence and permission isolation tests pass. No Gemini answers cached, no semantic-similarity reuse; no central-cache claim."
+    },
+    {
+      "id": "E03",
+      "hypothesis": "Fixed lightweight lexical/numeric-context features improve a logistic evidence head beyond five baseline features. No feature independently establishes truth.",
+      "training": "Existing 2000 development questions only; C=1, seed1729, max_iter500; one prespecified candidate; no hyperparameter sweep.",
+      "calibration": "Same existing disjoint fit/risk calibration components, all three mappings compared by validation Brier. Never open locked evaluation or fresh48 cohort.",
+      "gate": "Retain candidate only if calibrated validation decision accuracy and definitive coverage do not decrease and empirical selective risk does not increase; otherwise reject. No production qualification or live Gemini advantage claim."
+    },
+    {
+      "id": "E04",
+      "hypothesis": "Two available CPU cores reduce FP32 encoder latency versus one inference thread.",
+      "gate": "At least 20% local P95 improvement with no observed decision drift on 120 fixed balanced validation questions x3 paired randomized repeats. Keep runtime experimental until independent recalibration; reject if no material gain.",
+      "resources": "Two CPU cores already available; no new compute provisioning or charges."
+    },
+    {
+      "id": "E05",
+      "hypothesis": "A pinned Apache-2.0 DeBERTa-v3-small NLI encoder improves evidence understanding over MiniLM; evaluate quantized ONNX without Torch/GPU.",
+      "revision": "fa2804872c3b4bd748f38c0185cc85775361e735",
+      "new_download_maximum_bytes": 190000000,
+      "data": "Existing development/validation/calibration only; never score fresh48 or locked evaluation.",
+      "screen": "120 fixed balanced validation questions; proceed only if raw classification accuracy is at least MiniLM FP32.",
+      "gate": "One fixed C=1 logistic head if screen passes; separate existing calibration groups; retain research only if calibrated validation accuracy and coverage do not decrease and selective risk does not increase. No public/production promotion.",
+      "resource_stop": "45-minute total local bound, source licensing failure, download limit, or no material improvement. Current live paid campaign remains frozen on MiniLM."
+    },
+    {
+      "id": "E06",
+      "hypothesis": "Fail closed on definitive matched-evidence Gemini responses whose cited URL/quote cannot be matched to the permitted evidence. This is a provenance-format guard, not entailment proof.",
+      "rule": "At least one citation, every URL and exact nonempty quote belongs to the supplied corpus; allow URL field capitalization. Apply equally to standalone and routed responses. Invalid outputs become MAYBE with a distinct failure reason, not INVALID input.",
+      "evaluation": "Unit/security regressions plus archived label-independent citation audit. Current live job stays frozen on its submitted implementation; any replay of this new guard is explicitly counterfactual, not a new live result.",
+      "scope": "No guard on Google Search grounded mode in this change; matched evidence only."
+    }
+  ],
+  "measurement": "Fixed existing validation corpus; no reopening or tuning on locked evaluation. Three randomized paired repetitions. Cold-cache and warm-cache conditions separate; warm priming included in amortized aggregate and separately reported.",
+  "stopping": "30 minute local bound, critical independent evaluation unavailable, or three experiments without material Pareto improvement. Larger live Gemini follow-up requires separate concrete spending authorization after preparation.",
+  "production_policy": "Preserved. New features opt-in in research router, .80 floor unchanged. No public release without full gates.",
+  "campaign05_authorization": "User explicitly authorized up to $8 for the prepared 48-question comparison; reauthentication remains pending. Campaign04 itself made no paid calls.",
+  "extension_reason": "Use the waiting time of the already frozen live cloud comparison for one separately isolated CPU-only pretrained-model challenger; no new paid calls or cloud policy changes."
+}

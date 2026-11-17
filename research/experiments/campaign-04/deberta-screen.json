@@ -1,0 +1,7 @@
+{
+  "rows": 120,
+  "baseline_raw_accuracy": 0.6,
+  "candidate_raw_accuracy": 0.5083333333333333,
+  "seconds": 5.277030801999899,
+  "decision": "reject"
+}

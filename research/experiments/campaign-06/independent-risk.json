@@ -1,0 +1,75 @@
+{
+  "statistics": {
+    "balanced:baseline": {
+      "rows": 1200,
+      "local_definitive_coverage": 0.18833333333333332,
+      "correct_definitive_fraction": 0.16833333333333333,
+      "selective_error": 0.10619469026548672,
+      "local_definitive_errors": 24,
+      "local_definitive_count": 226,
+      "selective_error_cp_upper": 0.14608853433232222,
+      "proposed_abstention_fraction": 0.0,
+      "false_abstentions": 0,
+      "local_verifier_accuracy": 0.49,
+      "note": "Gemini fallback not executed; local-verifier accuracy is not hybrid workflow accuracy."
+    },
+    "balanced:finetuned": {
+      "rows": 1200,
+      "local_definitive_coverage": 0.43083333333333335,
+      "correct_definitive_fraction": 0.39,
+      "selective_error": 0.09477756286266925,
+      "local_definitive_errors": 49,
+      "local_definitive_count": 517,
+      "selective_error_cp_upper": 0.1186990401412952,
+      "proposed_abstention_fraction": 0.07166666666666667,
+      "false_abstentions": 5,
+      "local_verifier_accuracy": 0.7016666666666667,
+      "note": "Gemini fallback not executed; local-verifier accuracy is not hybrid workflow accuracy."
+    },
+    "strict-pages:baseline": {
+      "rows": 400,
+      "local_definitive_coverage": 0.06,
+      "correct_definitive_fraction": 0.0425,
+      "selective_error": 0.2916666666666667,
+      "local_definitive_errors": 7,
+      "local_definitive_count": 24,
+      "selective_error_cp_upper": 0.4787279058719694,
+      "proposed_abstention_fraction": 0.0,
+      "false_abstentions": 0,
+      "local_verifier_accuracy": 0.92,
+      "note": "Gemini fallback not executed; local-verifier accuracy is not hybrid workflow accuracy."
+    },
+    "strict-pages:finetuned": {
+      "rows": 400,
+      "local_definitive_coverage": 0.1175,
+      "correct_definitive_fraction": 0.07,
+      "selective_error": 0.40425531914893614,
+      "local_definitive_errors": 19,
+      "local_definitive_count": 47,
+      "selective_error_cp_upper": 0.5346290159673055,
+      "proposed_abstention_fraction": 0.165,
+      "false_abstentions": 1,
+      "local_verifier_accuracy": 0.9175,
+      "note": "Gemini fallback not executed; local-verifier accuracy is not hybrid workflow accuracy."
+    }
+  },
+  "truth_policy_qualified_for_research": true,
+  "insufficiency_gate_qualified": true,
+  "stratum_loss_bounds": {
+    "YES": {
+      "errors": 3,
+      "rows": 400,
+      "one_sided_97_5pct_upper": 0.0217606685144171
+    },
+    "NO": {
+      "errors": 2,
+      "rows": 400,
+      "one_sided_97_5pct_upper": 0.017944144605585428
+    }
+  },
+  "balanced_opportunity_loss_upper": 0.01323493770666751,
+  "strict_page_opportunity_loss_upper": 0.01180430445398703,
+  "assumptions": "Component exchangeability within declared residual datasets; balanced stratum CP diagnostics use Bonferroni alpha .025. Not a shift-proof guarantee or general production confidence.",
+  "frozen_policy_sha256": "3c2d130da8e151c8260cd4317825c8c410f49a7390af25ec2068ac40c6da1fed",
+  "production_qualified": false
+}

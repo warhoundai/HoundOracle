@@ -1,0 +1,10 @@
+{
+  "deletion": {
+    "stderr": "Deleting [houndoracle-compare-20261115-a]...\n........................done.\nDeleted job [houndoracle-compare-20261115-a].\n"
+  },
+  "verification": {
+    "stdout": "[]\n"
+  },
+  "cloud_run_api": "Remains enabled; no always-on compute created. Avoid disabling a project-wide API that other resources may use.",
+  "existing_service_account": "Preserved; no new IAM grants"
+}

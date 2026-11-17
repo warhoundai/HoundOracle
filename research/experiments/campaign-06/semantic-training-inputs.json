@@ -1,0 +1,10 @@
+{
+  "base_id": "cross-encoder/nli-MiniLM2-L6-H768",
+  "base_revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+  "base_safetensors_sha256": "ec9c5b6a08b60d7a01b465c7ed44b496244dfd1bed3274c95875a74cea89ab35",
+  "training_source_sha256": "c7f980f06b12ae704d40306a1bae2da269beecd8c89b52f8c500b63c306d0b88",
+  "tokenized_sha256": "b8bae8966facddde0780571208294d7f77307627f47db5c808e47b5b5e4bfca8",
+  "training_rows": 2000,
+  "tokenizer_version": "0.22.2",
+  "rights": "Base model card Apache-2.0; dataset/base-training rights separate; local research only, no public weights."
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "checks": [
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "examples",
+        "benchmarks",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "seconds": 0.032917828999870835,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "ruff",
+        "format",
+        "--check",
+        "src",
+        "tests",
+        "examples",
+        "benchmarks",
+        "scripts"
+      ],
+      "exit_code": 0,
+      "seconds": 0.026643616000001202,
+      "stdout": "27 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "seconds": 2.069527963000155,
+      "stdout": "......................................................................   [100%]\n=============================== warnings summary ===============================\n.venv/lib/python3.12/site-packages/fastapi/testclient.py:1\n  /workspace/HoundOracle/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n70 passed, 1 warning in 1.39s\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "-m",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 1.8731166529998973,
+      "stdout": "Successfully built houndoracle-0.1.0.dev1.tar.gz and houndoracle-0.1.0.dev1-py3-none-any.whl\n",
+      "stderr": "* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - hatchling>=1.27,<2\n* Getting build dependencies for sdist...\n* Installed build dependency versions:\n  - hatchling==1.33.0\n* Building sdist...\n* Building wheel from sdist\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - hatchling>=1.27,<2\n* Getting build dependencies for wheel...\n* Installed build dependency versions:\n  - hatchling==1.33.0\n* Building wheel...\n"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "pip-audit",
+        "--progress-spinner",
+        "off"
+      ],
+      "exit_code": 0,
+      "seconds": 0.8866049260000182,
+      "stdout": "Name        Skip Reason\n----------- -------------------------------------------------------------------------------\nhoundoracle Dependency not found on PyPI and could not be audited: houndoracle (0.1.0.dev1)\n",
+      "stderr": "No known vulnerabilities found\n"
+    },
+    {
+      "command": [
+        "uv",
+        "run",
+        "python",
+        "benchmarks/run.py",
+        "--output",
+        "benchmarks/local-result.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.1936959340000612,
+      "stdout": "{\n  \"default_uncalibrated\": {\n    \"count\": 160,\n    \"coverage\": 0.0,\n    \"selective_risk\": null,\n    \"selective_risk_95pct_wilson_interval\": null,\n    \"decision_match_fraction\": 0.25,\n    \"latency_seconds\": {\n      \"p50\": 0.0007530880000103934,\n      \"p95\": 0.0010002080000504066\n    },\n    \"cache_hits\": 0\n  },\n  \"synthetic_calibrated_cold\": {\n    \"count\": 160,\n    \"coverage\": 0.75,\n    \"selective_risk\": 0.0,\n    \"selective_risk_95pct_wilson_interval\": [\n      0,\n      0.031019166418703486\n    ],\n    \"decision_match_fraction\": 1.0,\n    \"latency_seconds\": {\n      \"p50\": 0.0008263810000244121,\n      \"p95\": 0.0010587149999992107\n    },\n    \"cache_hits\": 0\n  },\n  \"synthetic_calibrated_warm\": {\n    \"count\": 160,\n    \"coverage\": 0.75,\n    \"selective_risk\": 0.0,\n    \"selective_risk_95pct_wilson_interval\": [\n      0,\n      0.031019166418703486\n    ],\n    \"decision_match_fraction\": 1.0,\n    \"latency_seconds\": {\n      \"p50\": 3.765550002299278e-05,\n      \"p95\": 0.0007856709999032319\n    },\n    \"cache_hits\": 120\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}

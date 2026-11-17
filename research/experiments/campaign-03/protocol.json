@@ -1,0 +1,50 @@
+{
+  "objective": "Actual Gemini comparison with and without the existing experimental HoundOracle evidence pipeline",
+  "authorization": {
+    "cap_usd": 3,
+    "maximum_generation_attempts": 48,
+    "cpu_jobs": 1,
+    "timeout_seconds": 600,
+    "grounding": false
+  },
+  "execution": "One temporary Cloud Run Job, 1 vCPU, 2 GiB; existing narrowly scoped warhound-gemini service account; no IAM grants or public endpoint",
+  "infrastructure_change": "Cloud Run API enabled for this authorized job because training quotas blocked prior execution",
+  "model_candidates_in_order": [
+    "gemini-3.8-flash",
+    "gemini-3.7-flash",
+    "gemini-3.6-flash",
+    "gemini-2.5-flash"
+  ],
+  "model_selection": "First successful bounded smoke generation; record exact response modelVersion. No training VM required.",
+  "settings": {
+    "sdk": "2.34.0",
+    "region": "global",
+    "temperature": 0,
+    "seed": 1729,
+    "max_input_tokens": 8192,
+    "max_output_tokens": 4096,
+    "3_x_thinking_level": "LOW",
+    "2_5_thinking_budget": 1024
+  },
+  "model_preflight": "Up to four bounded smoke attempts, included in the 48-attempt cap; first successful model is fixed for all arms",
+  "initial_comparison": {
+    "questions": 6,
+    "repetitions": 2,
+    "arms": [
+      "Gemini with supplied evidence",
+      "Oracle MLP at calibrated minimum .80, Gemini fallback on abstention"
+    ]
+  },
+  "improvement_rule": "If initial Oracle-first workflow loses factual decision accuracy, definitive coverage, model cost or p95 latency, screen fixed precision-logistic (.85 minimum calibrated correctness) and bypass candidates using development trace replay. Keep only a candidate with no development accuracy/coverage regression and no greater model-call count; bypass is the safe fallback.",
+  "confirmation": {
+    "fresh_source_disjoint_questions": 4,
+    "repetitions": 2,
+    "arms": [
+      "Gemini with supplied evidence",
+      "frozen selected router"
+    ]
+  },
+  "selection_data": "Development outcomes only; fresh confirmation outcomes never change the selected router",
+  "limits": "Tiny pilot; no universal accuracy, all-in cost or live retrieval superiority claims. No counterfactual replay latency is presented as a live measurement. Full Gemini-agent tool-calling and Google Search grounding remain outside this pilot.",
+  "stable_production_policy": "Preserved; router experiments are explicit opt-in for the historical supplied-evidence population"
+}

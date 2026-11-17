@@ -1,0 +1,7 @@
+{
+  "checked_rows": 1680,
+  "changed_policy_tuples": 0,
+  "max_logit_delta": 0.0,
+  "note": "Runtime equivalence check only; no fresh held-out/general production qualification. Never opens locked or campaign05 data.",
+  "decision": "retain-scoped-runtime-port"
+}

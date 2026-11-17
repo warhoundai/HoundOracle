@@ -1,0 +1,12 @@
+{
+  "url": "https://huggingface.co/datasets/copenlu/fever_gold_evidence/resolve/a6b8d891d393e97a4efac791afffb2d7de5e57c6/test.jsonl",
+  "sha256": "3f4c9a9c6919f9a08af2ad2bcb9cc2be77a656169d93ff69a68fbd750c677b9e",
+  "bytes": 6626459,
+  "accepted": 9847,
+  "excluded": {
+    "incomplete_gold_evidence_set": 106,
+    "duplicate_evidence_variants_collapsed": 6086
+  },
+  "rights": "Same FEVER/Wikipedia and mirror local-research restrictions; no source text redistributed.",
+  "official_labels_sha256": "e89865bfe1b4dd054e03dd57d7241a6fde24862905f31117cf0cd719f7c78df7"
+}

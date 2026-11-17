@@ -1,0 +1,7 @@
+{
+  "threshold": 0.8,
+  "selected": 0,
+  "false_abstentions": 0,
+  "questions": 480,
+  "decision": "reject-before-fresh-risk"
+}

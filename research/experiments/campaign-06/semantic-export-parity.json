@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "tolerance": 0.0001,
+  "cases": [
+    {
+      "batch": 1,
+      "sequence_length": 15,
+      "max_absolute_error": 5.960464477539062e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 19,
+      "max_absolute_error": 1.1920928955078125e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 29,
+      "max_absolute_error": 1.1920928955078125e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 39,
+      "max_absolute_error": 2.7418136596679688e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 49,
+      "max_absolute_error": 8.344650268554688e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 64,
+      "max_absolute_error": 1.1920928955078125e-06,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 106,
+      "max_absolute_error": 4.76837158203125e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 1,
+      "sequence_length": 256,
+      "max_absolute_error": 7.748603820800781e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 2,
+      "sequence_length": 256,
+      "max_absolute_error": 7.748603820800781e-07,
+      "argmax_matches": true
+    },
+    {
+      "batch": 3,
+      "sequence_length": 106,
+      "max_absolute_error": 1.0728836059570312e-06,
+      "argmax_matches": true
+    }
+  ],
+  "model_config": {
+    "model_id": "houndoracle/minilm-fever-1912",
+    "revision": "8daf9bbd3640715c540805dba45c8e827c2b1b2e81c622cf10829fbf04e03a2a",
+    "variant": "fp32",
+    "threads": 2,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "e6feeda91802e5a2296d459b581389c2ce8f0e7e8a74a13aaba571e420b07b2e"
+  }
+}

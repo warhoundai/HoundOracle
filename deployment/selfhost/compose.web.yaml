@@ -1,0 +1,36 @@
+# Standalone internet-enabled self-hosted profile. No paid search/model account.
+services:
+  oracle:
+    build:
+      context: ../..
+      dockerfile: deployment/selfhost/Dockerfile
+    command: ["--web", "--searxng-url", "http://searxng:8080", "serve", "--host", "0.0.0.0", "--port", "8083"]
+    ports:
+      - "127.0.0.1:8083:8083"
+    environment:
+      HOUNDORACLE_API_KEY: ${HOUNDORACLE_API_KEY:?Set a local service access token}
+    volumes:
+      - evidence:/data
+    depends_on:
+      - searxng
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+  searxng:
+    # Separate upstream AGPL-3.0-or-later service, amd64 image pinned for reproduction.
+    image: docker.io/searxng/searxng@sha256:d8645d64b8d71bab51e97cf3a3bfd90499618dd64290bf3532c0236f0001a008
+    platform: linux/amd64
+    environment:
+      SEARXNG_SECRET: ${HOUNDORACLE_API_KEY:?Set a local service access token}
+      SEARXNG_BIND_ADDRESS: "0.0.0.0"
+      SEARXNG_PORT: "8080"
+    volumes:
+      - ./searxng.yml:/etc/searxng/settings.yml:ro
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  evidence:

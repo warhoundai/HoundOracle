@@ -1,0 +1,48 @@
+{
+  "model_variant": "finetuned-logistic",
+  "minimum_confidence": 0.85,
+  "model_config": {
+    "model_id": "houndoracle/minilm-fever-1912",
+    "revision": "8daf9bbd3640715c540805dba45c8e827c2b1b2e81c622cf10829fbf04e03a2a",
+    "variant": "fp32",
+    "threads": 2,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "e6feeda91802e5a2296d459b581389c2ce8f0e7e8a74a13aaba571e420b07b2e",
+    "aggregation_head": "finetuned-logistic",
+    "head_digest": "6534982e706d0aeb1fbc75d42d7c6e83a7b8ab2ba25adc5dcc50409a2f3aa9ce"
+  },
+  "validation_policy_passed": true,
+  "insufficiency_gate": {
+    "mapping": {
+      "method": "logistic",
+      "weight": 0.5159212930179313,
+      "bias": -0.2683875818275205
+    },
+    "threshold": 0.9,
+    "model_config": {
+      "model_id": "houndoracle/minilm-fever-1912",
+      "revision": "8daf9bbd3640715c540805dba45c8e827c2b1b2e81c622cf10829fbf04e03a2a",
+      "variant": "fp32",
+      "threads": 2,
+      "max_length": 256,
+      "runtime": "1.32.0",
+      "tokenizers": "0.22.2",
+      "file_sha256": "e6feeda91802e5a2296d459b581389c2ce8f0e7e8a74a13aaba571e420b07b2e",
+      "aggregation_head": "finetuned-logistic",
+      "head_digest": "6534982e706d0aeb1fbc75d42d7c6e83a7b8ab2ba25adc5dcc50409a2f3aa9ce"
+    },
+    "verification_policy_digest": "9290a51725302b63484491d551307e3caea80d034a0a07696fc6e6cc8d74e54b",
+    "risk_certificate": {
+      "qualified": true,
+      "balanced_opportunity_loss_upper": 0.01323493770666751,
+      "strict_page_opportunity_loss_upper": 0.01180430445398703
+    },
+    "production_qualified": false
+  },
+  "insufficiency_gate_screen_passed": true,
+  "fresh_risk_and_locked_scored": false,
+  "production_qualified": false,
+  "independent_truth_risk_passed": true
+}

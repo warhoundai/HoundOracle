@@ -1,0 +1,11 @@
+{
+  "rows": 1200,
+  "added_rows": 600,
+  "sha256": "b97f7f13db39242e62eb0527931272a7b76a9f2b611fda2f1c4e416ea23db26e",
+  "reason": "Power extension chosen from old-validation false-abstention rate before any fresh model predictions; original risk and locked files preserved.",
+  "class_counts": {
+    "YES": 400,
+    "NO": 400,
+    "MAYBE": 400
+  }
+}

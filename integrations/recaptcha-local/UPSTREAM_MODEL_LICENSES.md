@@ -1,0 +1,50 @@
+Upstream record copied from https://github.com/conghuy113/solveReCaptcha-Typescript/blob/4d69b46b62855a439c42bd819f358907ad946644/MODEL_LICENSES.md. Relative source/build references below refer to that upstream repository.
+
+# Model licenses and provenance
+
+The runtime model files are intentionally excluded from Git. They must be
+published as immutable release assets with the same AGPL-3.0 license notice,
+hashes, model cards, and source/export information before the npm package is
+published.
+
+## `recaptcha_classification_57k.onnx`
+
+- Source: <https://huggingface.co/DannyLuna/recaptcha-classification-57k>
+- Source repository label: MIT (reviewed 2026-08-17)
+- Local size: `113597179` bytes
+- SHA-256: `4092e8917ee8c2963895d66ba10a97d6ef975c468a95858a8a7bd9e70681b65d`
+- ONNX producer: `pytorch`
+- Embedded description: `Ultralytics YOLO11x-cls model trained on dataset_cls`
+- Embedded Ultralytics version: `8.3.235`
+- Embedded license: `AGPL-3.0 License (https://ultralytics.com/license)`
+- Runtime input: dynamic batch, `3 x height x width`
+- Runtime output: 14-class probability vector
+
+The source repository's MIT label and the exported ONNX file's embedded
+AGPL-3.0 metadata are not the same statement. The public model release uses the
+more restrictive AGPL-3.0-only terms and preserves both facts; this does not
+resolve the separate training-image provenance gap recorded in
+`DATASET_PROVENANCE.md`.
+
+## `yolo12x.onnx`
+
+- Source checkpoint: <https://github.com/ultralytics/assets/releases/download/v8.3.0/yolo12x.pt>
+- Export recipe: [`packaging/prepare_models.py`](packaging/prepare_models.py)
+- Release size: `236935676` bytes after deterministic metadata normalization
+- SHA-256: `3ca6164a7bd3d472447604c79e686f053e90c23218f68848ea912dab62f8aa43`
+- ONNX producer: `pytorch`
+- Embedded description: `Ultralytics YOLOv12x model`
+- Embedded Ultralytics version: `8.3.241`
+- Embedded license: `AGPL-3.0 License (https://ultralytics.com/license)`
+- Runtime input: `1 x 3 x 640 x 640`
+- Runtime output: `1 x 84 x 8400`
+
+## Release gate
+
+Do not publish either model until the release contains:
+
+1. An immutable URL, byte size, and SHA-256 for every asset.
+2. The complete AGPL-3.0 license text and this provenance record.
+3. Model cards describing inputs, outputs, class mappings, and limitations.
+4. Public build/export scripts and pinned source checkpoints.
+5. A completed training-dataset provenance review.

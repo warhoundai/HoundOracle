@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "mapping": {
+    "method": "logistic",
+    "weight": 0.8542738959297538,
+    "bias": -0.2864881461696503
+  },
+  "threshold": 0.8,
+  "model_config": {
+    "model_id": "cross-encoder/nli-MiniLM2-L6-H768",
+    "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+    "variant": "fp32",
+    "threads": 2,
+    "max_length": 512,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "807d33fffefd95ad60e2a91f54eed50a92aa53c077945a6842bb587a49a3fdf3",
+    "aggregation_head": "logistic",
+    "head_digest": "04d2668704172f3665bd8cac37f4019d26bd0ae4cff4cb1eed5ac406ec34ce13"
+  },
+  "verification_policy_digest": "1fd0576d4b53f83dad871edcddde36156118f54382983775971f90c3fc782fbb",
+  "population": "source-disjoint FEVER residual components, historical supplied evidence only",
+  "risk_certificate": {
+    "qualified": false,
+    "reason": "Fresh risk set not evaluated"
+  },
+  "production_qualified": false
+}

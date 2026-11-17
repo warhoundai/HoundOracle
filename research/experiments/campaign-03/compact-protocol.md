@@ -1,0 +1,13 @@
+# Supplemental frozen experiment
+
+Hypothesis: generating evidence indices and reconstructing exact citations locally reduces generative output and tail latency without losing answer quality. Apply identically to standalone Gemini and Oracle fallback. This is separate from the earlier verbose-format cohort; cross-cohort latency changes are not causal estimates.
+
+Use the same verified gemini-3.8-flash version, LOW thinking, SDK 2.34.0, temperature 0, seed 1729, global Vertex endpoint, 8192 input/4096 output caps. Response schema requires decision and evidence indices. Invalid/duplicate/out-of-range indices or uncited definitive answers fail closed. Exact URLs/passages are reconstructed from the supplied corpus; quote integrity does not prove entailment.
+
+Two deterministic hash-selected fresh source components, excluding all earlier splits, invalidated scores and cloud questions; selection does not inspect predictions. Three paired repetitions with randomized order (seed 1904). Frozen logistic route at confidence .85; no retraining. Labels never enter model prompts. No optimization on these results.
+
+Resource limits: first execution completed at 35 cumulative attempts, 193 seconds execution elapsed. At most 12 further generation attempts, cumulative <=47 of 48. Supplemental ledger $0.258048 worst-case tokens. Reuse the same job sequentially, 1 CPU/2GiB, timeout 300 seconds, no retries, no grounding/GPU/public endpoint/new IAM grant. Combined execution envelope <600 seconds; existing $3 authorization persists. Stop on model-version mismatch.
+
+Acceptance: retain compact mode as experimental only if all outputs validate and no observed quality/coverage regression. Production promotion requires a larger independent evaluation. Report costs and P50/P95 even when unfavorable; two unique questions cannot establish general superiority. No additional paid experiments after this bounded run.
+
+Infrastructure recovery amendment (before any supplemental generation): execution `8m7v8` failed on a Hugging Face HTTP 429 during model download, before evaluator initialization or Gemini calls. Preserve the failure; retry once sequentially with a 180-second worker timeout. Honor Retry-After (numeric or HTTP-date); stop if it exceeds 60 seconds, otherwise wait once and retry the same immutable URL. No endpoint rotation or rate-limit bypass. Total observed prior worker runtime ~155 seconds plus the remaining maximum 180 seconds is below the original 600-second CPU envelope. Cumulative generation count remains 35; supplemental limit remains 12. No further infrastructure attempts after this retry.

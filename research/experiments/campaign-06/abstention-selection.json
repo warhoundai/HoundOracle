@@ -1,0 +1,42 @@
+{
+  "fit_rows": 209,
+  "fit_groups": 70,
+  "candidates": [
+    {
+      "threshold": 0.9,
+      "selected": 0,
+      "false_abstentions": 0,
+      "lost_definitive_fraction_upper_proxy": 0.0,
+      "avoided_fraction": 0.0
+    },
+    {
+      "threshold": 0.95,
+      "selected": 0,
+      "false_abstentions": 0,
+      "lost_definitive_fraction_upper_proxy": 0.0,
+      "avoided_fraction": 0.0
+    },
+    {
+      "threshold": 0.975,
+      "selected": 0,
+      "false_abstentions": 0,
+      "lost_definitive_fraction_upper_proxy": 0.0,
+      "avoided_fraction": 0.0
+    },
+    {
+      "threshold": 0.99,
+      "selected": 0,
+      "false_abstentions": 0,
+      "lost_definitive_fraction_upper_proxy": 0.0,
+      "avoided_fraction": 0.0
+    }
+  ],
+  "selected": {
+    "threshold": 0.99,
+    "selected": 0,
+    "false_abstentions": 0,
+    "lost_definitive_fraction_upper_proxy": 0.0,
+    "avoided_fraction": 0.0
+  },
+  "note": "Fresh risk and locked data were never opened for threshold selection. Error rate is an upper proxy for lost definitive coverage, not a new truth probability."
+}

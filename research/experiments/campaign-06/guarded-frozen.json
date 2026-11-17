@@ -1,0 +1,48 @@
+{
+  "model_config": {
+    "policy": "fine-plus-base-semantic-guard-v1",
+    "fine": {
+      "model_id": "houndoracle/minilm-fever-1912",
+      "revision": "8daf9bbd3640715c540805dba45c8e827c2b1b2e81c622cf10829fbf04e03a2a",
+      "variant": "fp32",
+      "threads": 2,
+      "max_length": 256,
+      "runtime": "1.32.0",
+      "tokenizers": "0.22.2",
+      "file_sha256": "e6feeda91802e5a2296d459b581389c2ce8f0e7e8a74a13aaba571e420b07b2e",
+      "aggregation_head": "finetuned-logistic",
+      "head_digest": "6534982e706d0aeb1fbc75d42d7c6e83a7b8ab2ba25adc5dcc50409a2f3aa9ce"
+    },
+    "semantic_guard": {
+      "model_id": "cross-encoder/nli-MiniLM2-L6-H768",
+      "revision": "b95119ce93d3e065de6214e38cd4a97b0f2f2c6d",
+      "variant": "fp32",
+      "threads": 2,
+      "max_length": 512,
+      "runtime": "1.32.0",
+      "tokenizers": "0.22.2",
+      "file_sha256": "807d33fffefd95ad60e2a91f54eed50a92aa53c077945a6842bb587a49a3fdf3"
+    },
+    "minimum_guard_score": 0.5
+  },
+  "regime_mappings": {
+    "balanced": {
+      "method": "logistic",
+      "weight": 0.7107175285943519,
+      "bias": 0.0753549812345512
+    },
+    "strict-pages": {
+      "method": "logistic",
+      "weight": 1.423317977015672,
+      "bias": -4.004921607968248
+    }
+  },
+  "minimum_confidence": 0.85,
+  "population": "historical-fact-and-page-regime-guarded-v1",
+  "certificate": {
+    "qualified": false,
+    "reason": "New successor risk sets not evaluated"
+  },
+  "production_qualified": false,
+  "note": "Worst of two separately fitted correctness estimates; assumes calibration regimes bracket deployment. No guarantee under arbitrary shift. Semantic agreement is not source independence."
+}

@@ -1,0 +1,40 @@
+{
+  "baseline": {
+    "count": 480,
+    "groups": 62,
+    "accuracy_all_decisions": 0.5291666666666667,
+    "definitive_coverage": 0.23333333333333334,
+    "correct_definitive_fraction": 0.2125,
+    "selective_risk": 0.0892857142857143,
+    "definitive_count": 112,
+    "correct_definitive_count": 102,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "candidate": {
+    "count": 480,
+    "groups": 62,
+    "accuracy_all_decisions": 0.7541666666666667,
+    "definitive_coverage": 0.48125,
+    "correct_definitive_fraction": 0.44583333333333336,
+    "selective_risk": 0.07359307359307354,
+    "definitive_count": 231,
+    "correct_definitive_count": 214,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": null,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "decision": "retain-research-candidate",
+  "training_log_loss": 0.24362332633921116,
+  "C": 1,
+  "seed": 1912,
+  "evaluation_seconds": 124.74443347000033,
+  "fresh_and_locked_scored": false
+}

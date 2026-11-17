@@ -1,0 +1,22 @@
+{
+  "project": "project-f6e3c8ea-6b96-44a8-afa",
+  "job": "houndoracle-compare-20261115-a",
+  "development_ids": [],
+  "confirmation_ids": [
+    "fever:68459",
+    "fever:5136"
+  ],
+  "cohort_digest": "ee696188368814930364fbb8bb87ef1cd3b2234a4c0c8bb66e17b872f4a9c596",
+  "script_sha256": "b879a552d2b99b683e363d02c110bea8d3a9590b42264054661de532e6682001",
+  "maximum_model_attempts": 48,
+  "maximum_comparison_attempts": 12,
+  "maximum_smoke_attempts": 0,
+  "previous_model_attempts": 35,
+  "new_authorized_usd": 3,
+  "timeout_seconds": 180,
+  "cpu": 1,
+  "memory": "2Gi",
+  "region": "us-central1",
+  "no_grounding": true,
+  "new_iam_grants": false
+}

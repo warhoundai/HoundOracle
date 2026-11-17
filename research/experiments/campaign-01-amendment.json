@@ -1,0 +1,17 @@
+{
+  "timing": "Before any model inference or evaluation outcomes were inspected",
+  "reason": "Initial split manifest had only 16 calibration components despite 263 rows and exceeded declared row caps. This cannot support useful group-aware uncertainty.",
+  "change": "Whole-component packing enforces exact row caps; validation, calibration and evaluation draw components with at most eight claims, reserving these before development. Four-claim components were insufficient for the requested partitions; the cap was increased to eight before model inference. No selection uses model predictions or label outcomes.",
+  "limitation": "Results apply to small-component FEVER population and may not generalize to large connected topics. Locked evaluation still runs once after candidate selection.",
+  "data_v2": {
+    "reason": "Deduplication exposed inadequate balanced holdout capacity under eight-claim cap; original labels are balanced by whole components before any v2 model outcomes.",
+    "development_max": 2000,
+    "validation_max": 480,
+    "calibration_max": 1200,
+    "evaluation_max": 600,
+    "holdout_component_cap": 20,
+    "source_row_text_stays_outside_repo": true,
+    "v1_model_results_invalidated": true,
+    "locked_test_not_executed": true
+  }
+}

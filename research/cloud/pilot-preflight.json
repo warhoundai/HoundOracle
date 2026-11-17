@@ -1,0 +1,25 @@
+{
+  "questions": 12,
+  "model_calls_max": 48,
+  "thinking": [
+    "LOW",
+    "MEDIUM"
+  ],
+  "project": "project-f6e3c8ea-6b96-44a8-afa",
+  "model": "gemini-3.8-flash",
+  "location": "global",
+  "model_reservations_upper_usd": 1.032192,
+  "cpu_allowance_usd": 0.25,
+  "billing_status": "unverified",
+  "credits": "unverified",
+  "submission_status": "authorized_prepared",
+  "no_grounding_in_this_pilot": true,
+  "job_timeout_seconds": 600,
+  "notes": [
+    "No GPU, public endpoint, persistent bucket or automatic retry.",
+    "Container image is pinned to the observed immutable registry digest.",
+    "The model reservation is not a universal cloud-billing hard cap."
+  ],
+  "authorized_new_spend_usd": 3,
+  "authorization": "Explicit user approval in this session"
+}

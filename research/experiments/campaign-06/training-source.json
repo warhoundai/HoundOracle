@@ -1,0 +1,4 @@
+{
+  "sha256": "de4d8c29d92cafef4e811d00acd49a87009e52386f56010e7578742ad44e8e01",
+  "note": "Exact training/export source loaded by the running process. Later runner edits do not change this execution."
+}

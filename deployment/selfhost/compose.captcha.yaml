@@ -1,0 +1,6 @@
+# Layer over compose.web.yaml. Installs local OCR and enables its authenticated API.
+services:
+  oracle:
+    build:
+      dockerfile: deployment/selfhost/Dockerfile.captcha
+    command: ["--web", "--searxng-url", "http://searxng:8080", "--captcha", "serve", "--host", "0.0.0.0", "--port", "8083"]
