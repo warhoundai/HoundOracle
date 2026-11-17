@@ -1,0 +1,50 @@
+{
+  "paired_slots": 144,
+  "unique_components": 48,
+  "raw_verdict_disagreements": {
+    "gemini_only_correct": 18,
+    "oracle_raw_only_correct": 21,
+    "both_correct": 90,
+    "both_wrong": 15
+  },
+  "strata": {
+    "no_numeric_tokens": {
+      "count": 78,
+      "gemini_correct": 56,
+      "oracle_raw_correct": 63,
+      "oracle_accepted": 39
+    },
+    "no_explicit_negation": {
+      "count": 144,
+      "gemini_correct": 108,
+      "oracle_raw_correct": 111,
+      "oracle_accepted": 54
+    },
+    "gold_NO": {
+      "count": 27,
+      "gemini_correct": 13,
+      "oracle_raw_correct": 12,
+      "oracle_accepted": 6
+    },
+    "gold_YES": {
+      "count": 60,
+      "gemini_correct": 48,
+      "oracle_raw_correct": 57,
+      "oracle_accepted": 42
+    },
+    "gold_MAYBE": {
+      "count": 57,
+      "gemini_correct": 47,
+      "oracle_raw_correct": 42,
+      "oracle_accepted": 6
+    },
+    "numeric_tokens": {
+      "count": 66,
+      "gemini_correct": 52,
+      "oracle_raw_correct": 48,
+      "oracle_accepted": 15
+    }
+  },
+  "questions_with_gemini_decision_variation": 5,
+  "scope": "Post-frozen-test diagnostics only. Raw Oracle candidates are not accepted answers. Strata are overlapping regex descriptors, not independently adjudicated task families. Three repetitions are not three independent ground-truth samples. No tuning on this cohort follows."
+}

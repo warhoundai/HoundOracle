@@ -1,0 +1,37 @@
+{
+  "count": 144,
+  "groups": 48,
+  "accuracy_all_decisions": 0.6666666666666666,
+  "definitive_coverage": 0.375,
+  "correct_definitive_fraction": 0.3125,
+  "selective_risk": 0.16666666666666663,
+  "definitive_count": 54,
+  "correct_definitive_count": 45,
+  "citation_supported_definitive_fraction": null,
+  "all_in_cost_usd": null,
+  "cost_per_correct_definitive_usd": null,
+  "latency_seconds": {
+    "p50": 0.050355054499959806,
+    "p95": 0.08566606890035472,
+    "p99": 0.11276741067045803
+  },
+  "cache_hits": 0,
+  "failed_queries": 0,
+  "unique_queries": 48,
+  "repetitions": 3,
+  "model_initialization_seconds": 2.1498279459992773,
+  "model_config": {
+    "model_id": "houndoracle/minilm-vitc-fever-1921",
+    "revision": "8bdfefab3243dca9df371923315f71e735b0df8d3ba0c7461844012bab4b5ddf",
+    "variant": "fp32",
+    "threads": 1,
+    "max_length": 256,
+    "runtime": "1.32.0",
+    "tokenizers": "0.22.2",
+    "file_sha256": "56148d5f12ef499168f4a11da8ad603009903d5abc1f204fa7d021c81d636cbd",
+    "aggregation_head": "continued-mixture",
+    "head_digest": "a92aedab2eb54bb32349d6308e4fbdef0816a8d2b748f0ad2e71df80b3f2b95a"
+  },
+  "dataset_sha256": "d46391eca064717e488a6c89e85fd372a0795434ad459d71ab9ad9448a079fcb",
+  "scope": "Standalone local conditional verifier, one thread, warm model, result cache disabled; not client-to-cloud or agent/hybrid latency."
+}

@@ -1,0 +1,112 @@
+{
+  "status": "OBSERVED_LOGS_NOT_INVOICE",
+  "unique_questions": 48,
+  "repetitions": 3,
+  "reported_model_versions": [
+    "gemini-3.8-flash"
+  ],
+  "configuration_consistent": true,
+  "gemini_matched_evidence": {
+    "count": 144,
+    "groups": 48,
+    "accuracy_all_decisions": 0.75,
+    "definitive_coverage": 0.5555555555555556,
+    "correct_definitive_fraction": 0.4236111111111111,
+    "selective_risk": 0.23750000000000004,
+    "definitive_count": 80,
+    "correct_definitive_count": 61,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 2.0695484849999914,
+      "p95": 7.9467262942,
+      "p99": 25.45767023050998
+    },
+    "observed_latency_count": 144,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "local_calibrated": {
+    "count": 144,
+    "groups": 48,
+    "accuracy_all_decisions": 0.6666666666666666,
+    "definitive_coverage": 0.375,
+    "correct_definitive_fraction": 0.3125,
+    "selective_risk": 0.16666666666666663,
+    "definitive_count": 54,
+    "correct_definitive_count": 45,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.050355054499959806,
+      "p95": 0.08566606890035472,
+      "p99": 0.11276741067045803
+    },
+    "observed_latency_count": 144,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "local_raw_candidate": {
+    "count": 144,
+    "groups": 48,
+    "accuracy_all_decisions": 0.7708333333333334,
+    "definitive_coverage": 0.6666666666666666,
+    "correct_definitive_fraction": 0.4791666666666667,
+    "selective_risk": 0.28125,
+    "definitive_count": 96,
+    "correct_definitive_count": 69,
+    "citation_supported_definitive_fraction": null,
+    "all_in_cost_usd": null,
+    "cost_per_correct_definitive_usd": null,
+    "latency_seconds": {
+      "p50": 0.050355054499959806,
+      "p95": 0.08566606890035472,
+      "p99": 0.11276741067045803
+    },
+    "observed_latency_count": 144,
+    "missing_latency_count": 0,
+    "cache_hits": 0,
+    "failed_queries": 0
+  },
+  "local_minus_gemini_paired_cluster_bootstrap": {
+    "accuracy_delta": {
+      "mean": -0.08287152777777777,
+      "cluster_bootstrap_95pct_interval": [
+        -0.22916666666666674,
+        0.06944444444444442
+      ]
+    },
+    "coverage_delta": {
+      "mean": -0.1796736111111111,
+      "cluster_bootstrap_95pct_interval": [
+        -0.3333333333333333,
+        -0.02777777777777779
+      ]
+    },
+    "p50_latency_reduction": {
+      "mean": 0.9761248590451311,
+      "cluster_bootstrap_95pct_interval": [
+        0.9721822479150243,
+        0.9799889673452222
+      ]
+    },
+    "p95_latency_reduction": {
+      "mean": 0.9888028771307853,
+      "cluster_bootstrap_95pct_interval": [
+        0.9820794050944917,
+        0.9937832971065533
+      ]
+    }
+  },
+  "gemini_token_list_price_usd_bounds": [
+    0.102543,
+    0.102543
+  ],
+  "unknown_token_cost_tasks": 0,
+  "cost_limitations": "No invoice, host/storage/network or local host cost measurement; implicit cached-token discounts not deducted. Unknown/unobserved tasks retain maximum reservations, including tasks that may never have executed. No all-in savings claim.",
+  "scope": "Conditional historical claim-evidence labels; no live retrieval, citation audit or full agent/hybrid workflow. Local warm-model and remote API timing are distinct deployment measurements. Failed MAYBE is incorrect even when gold is MAYBE. Missing latency stays unknown. No locked-data tuning or model promotion follows this pilot."
+}
